@@ -1,0 +1,1608 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Startup Responsive Landing page Template for startup, web services, newsletter signup, lead generation etc..">
+    <title>Memorial Omurğa Sağlığı Merkezi</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/css/responsive33.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/css/style.css" rel="stylesheet">
+    <link href="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/css/carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/css/intlInputPhone.css">
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/css/intlInputPhone.min.css">
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/css/custom.css">
+
+    <!-- Custom Google Font : Open Sans -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/js/html5shiv.js"></script>
+      <script src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/js/respond.min.js"></script>
+    <![endif]-->
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/images/favicon.png">
+    <!-- Subtle Loading bar -->
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/js/pace.js"></script>
+    <style>
+
+
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 99; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+            .close:hover,
+            .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+    </style>
+
+    <script>window.gtmFormName = 'omurga-cerrahisi-tr';</script>
+
+    <!-- tel interaction, whatsapp interaction,  -->
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}js/gtmSenderLP.js"></script>
+
+</head>
+<body class="web-app">
+
+    <!-- Parallax Header Starts -->
+    <div class="modal bd-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-image: url('{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/images/header_bg.jpg'); ">
+                <button type="button" id="close" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <!-- Logo -->
+                <div class="logo"> <a href="#"><img src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/images/memorial_logo.png" class="image" alt="readymade-logo"></a> </div>
+                <!-- Hero Title -->
+                <h4 class="main-title text-center" style="color: black">Thank you, we will contact you shortly !</h4>
+
+
+                <!-- Web app banner -->
+                <div class="row">
+                    <div class="col-md-12 text-center tick">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/images/tick2.png" alt="Web App Banner" style="width:300px;height:auto" class="img-responsive center-block">
+                    </div>
+                </div>
+                <!-- // Web app banner Ends -->
+            </div>
+
+        </div>
+    </div>
+    <!--<div class="preloader"></div>-->
+    <!-- Fixed navbar -->
+    <!--<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/images/memorial_logomin.png" alt="logo"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Site Map <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+
+                            <li><a href="#lung-transplantation">Lung Transplantation</a></li>
+                            <li><a href="#why">Why Memorial</a></li>
+                            <li><a href="#preperation">Preperation and Surgery</a></li>
+                            <li><a href="#after">After The Lung Transplantation</a></li>
+                            <li><a href="#doctors">Doctors</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#form">Contact Us</a></li>
+                </ul>
+            </div>-->
+    <!--/.nav-collapse -->
+    <!--</div>
+    </div>-->
+    <main id="top" class="masthead" role="main">
+        <!--style="margin-top:4vh"-->
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo"> <a href="#"><img src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/images/memorial_logo.png" alt="readymade-logo"></a> </div>
+            <!-- Hero Title -->
+            <!-- Sub Title -->
+            <h3 class="main-title" style="color: #A91022">
+                Transplantation gives hope to thousands of people with organ failure and provides
+                many others with active and renewed lives.
+            </h3>
+
+            <!-- Web app banner -->
+            <div class="row">
+
+                <div class="col-md-12" style="padding:0px">
+                    <img src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/images/web-app-banner1.png" style="max-width:100%" alt="Web App Banner" class="img-responsive center-block">
+                </div>
+            </div>
+            <!-- // Web app banner Ends -->
+
+
+        </div>
+        <!--  Scroll to Explore -->
+        <a href="#explore" class="scrollto">
+            <p class="scrollto--arrow"><img src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/images/down_arrow.png" alt="scroll down arrow"></p>
+        </a>
+        <!-- // Scroll to Explore Ends -->
+    </main>
+    <!-- // Parallax Header Ends -->
+    <!-- Container -->
+    <div class="container" id="">
+        <!-- Hero Image -->
+        <div class="section-title">
+            <h2>Memorial Bahçelievler Omurğa Sağlığı Merkezi</h2>
+
+        </div>
+        <div class="">
+            <div class="row">
+                <div class="col-md-5">
+                    <img class="img-responsive center-block" style="width:300px" src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/images/image_1.jpg">
+                </div>
+                <div class="col-md-7">
+                    <p style="font-size:18px">
+                        Memorial Bahçelievler Hastanesi Omurga Sağlığı Merkezi, çocuk ve yetişkinlerde görülen tüm omurga rahatsızlıklarının tanı ve tedavisini; seçkin akademik kadro, ileri tanı ve görüntüleme teknolojileri, hastaya özel cerrahiler ve özellikli ameliyatlar, omurga sağlığı ile ilişkili pek çok branşın bir çatı altında bulunduğu multidisipliner yaklaşımlar ve “KONSEY” kararı sonrası kişi özelinde belirlenen tedavi programları ile gerçekleştirmektedir. Omurga Konseyi’nde, her hastanın omurgaya bağlı sorunları ayrı ayrı değerlendirilerek hastalığa özel cerrahi ya da medikal tedaviler uygulanmaktadır.<br /><br />
+
+                        Omurganın en sık görülen hastalıklarının yanı sıra tanısı konulamayan ve ender görülen omurga problemleri de merkezde özel olarak ele alınmakta, her hastalık detaylı bir şekilde incelenmektedir. Özellikle çocukluk dönemi omurga sorunlarının cerrahi tedavileri, kız ve erkek çocuklarının anatomik yapılarına uygun olarak planlanmakta, erişkin dönemdeki yaşamları ve beklentileri göz önüne alınarak yapılmaktadır.
+                        <br /><br />
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+                <div class="col-md-7">
+                    <h4 class="zigzag-lead">MULTİDİSİPLİNER YAKLAŞIM VE KONSEY KARARI</h4><br />
+                    Omurga ya da omurilik kökenli pek çok hastalığın tedavisi, bazı durumlarda, pek çok branşın bir arada olduğu bütüncül bir yaklaşım gerektirmektedir. Memorial Bahçelievler Hastanesi Omurga Merkezi’nde çocuk ve yetişkinlerde görülen tüm omurga rahatsızlıklarının tanı ve tedavisi; beyin<br /><br />
+                    ve sinir cerrahisi, ortopedi ve travmatoloji, nöroloji, fizik tedavi ve rehabilitasyon, onkoloji, radyoloji, psikiyatri ve anestezi uzmanlarından oluşan bir “konseyin kararı” ile belirlenmektedir.<br /><br />
+
+                </div>
+                <div class="col-md-5">
+                    <img class="img-responsive center-block" style="width:300px" src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/images/image_2.jpg">
+                </div>
+            </div>
+
+        </div>
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+                <div class="col-md-5">
+                    <img class="img-responsive center-block" style="width:300px" src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/images/image_3.jpg">
+                </div>
+                <div class="col-md-7">
+                    <h4 class="zigzag-lead">HASTAYA ÖZEL TEDAVİ PLANI </h4><br />
+                    Omurga hastalıklarının tedavisi, hastaya özel bir planla oluşturulmaktadır. Tanı aşaması hastanın öyküsü ve fizik muayenesi ile ortaya çıkan bulguların incelenmesi ile başlar. Hastanın şikayetlerine uygun radyolojik görüntülemeler sonrası radyoloji raporu ile hasta tekrar değerlendirilir. Tanıya uygun medikal tedavi ile hasta izleme alınır. Bu arada hastanın tedavisine katkı sağlayacak olan diğer branşlar da tedavi planına dahil edilmektedir. Hastanın durumuna uygun şekilde fizik tedavi ve rehabilitasyon tedavisi de seçenekler arasında yer alır. Hastanın omurga ya da omurilik tümörünün varlığı durumunda ise medikal onkoloji, radyasyon onkolojisi ve ilgili pek çok branş kararının uygulandığı bir tedavi süreci yürütülür. <br /><br />
+
+
+                </div>
+
+                <div class="col-md-12">
+                    <h5>Tedavi Seçenekleri</h5><br />
+                    Memorial Bahçelievler Omurga Sağlığı Merkezi’ne başvuran hastalara pek çok tedavi seçeneği sunulmaktadır. Cerrahi dışı tedaviler, hastalık cerrahi tedavi gerektirmeyen bir nedene bağlıysa; ilaç, ağrı (algoloji) tedavisi ve fizik tedavinin yanı sıra korse kullanımı ve akupunktur seçeneklerinden biri hastaya önerilmektedir. Omurga hastalıklarının bazıları ise yalnızca cerrahi tedavi gerektirir. Alanında uzman ve deneyimli omurga cerrahları tarafından; omurga, kalça ya da diz sorunlarına modern cerrahiler uygulanmaktadır. Klasik cerrahilerin yanı sıra hastaya konfor sağlayan ve iyileşme sürecini kısaltan minimal invaziv yöntemler de cerrahi seçenekleri arasındadır. Bu sayede hastaların hastanede kalış süreleri kısalmakta, normal yaşamlarına daha çabuk dönüş yapabilmeleri kolaylaşmaktadır.
+                    <br /><br />
+                    <h5>Memorial Bahçelievler Hastanesi Omurga Merkezi’nde Tedavisi Yapılan Hastalıklar:</h5>
+                    <ul>
+                        <li>Bel Ağrısı</li>
+                        <li>Bel Fıtığı</li>
+                        <li>Belde Kanal Daralması Bel Kayması (Spondilolistezis)</li>
+                        <li>Boyun Ağrısı</li>
+                        <li>Boyun Fıtığı</li>
+                        <li>Boyunda Kanal Daralması</li>
+                        <li>Beyincik Sarkması</li>
+                        <li>Omurilikte Sıvı Birikmesi Omurga Kırıkları</li>
+                        <li>Omurga ve Omurilik Travmaları Dejeneratif Hastalıklar</li>
+                        <li>Enfeksiyöz ve Enflamatuar Hastalıklar</li>
+                        <li>Doğumsal Omurga ve Omurilik Anomalileri Spinal Deformiter (Travma sonrası, doğumsal, ergenlik dönemi ya da yaşlanma ile oluşan)</li>
+                        <li>Kifoz (Kamburluk)</li>
+                        <li>Skolyoz</li>
+                        <li>Omurga ve Omuriliğin Birincil (Primer) ve Metastatik Tümörleri</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- // Container Ends -->
+    </div>
+
+    <!-- Container -->
+    <section class="faqs" id="DEJENERATİFHASTALIKLAR">
+        <div class="container" style="margin-top:50px!important">
+
+            <div class="section-title">
+                <h4><strong>DEJENERATİF HASTALIKLAR</strong></h4>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="collapsed"><strong>Boyun Fıtığı (Servikal Disk Hernisi)<img src="https://cdn.memorial.com.tr/files/images/icon-down.svg" class="collaspeIconDown" /></strong></a> </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body" style="color:black;">
+                                    Boyunda yer alan omurlar arasındaki disklerin yapısının bozulmasına bağlı olarak diski yerinde tutan bağların zayıflamasıyla kıkırdak dokusu omurilik kanalına çıkmaktadır. Omurilik ya da kollara giden sinirlere bası yapan kıkırdak dokusu boyun ağrısı ve/veya kol ağrısına neden olmaktadır. Kollarda ya da parmaklarda uyuşukluk ve kuvvetsizlik de boyun fıtıklarında görülebilen diğer bulgulardır.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><strong>Servikal Dar Kanal (Servikal Spondiloz)<img src="https://cdn.memorial.com.tr/files/images/icon-down.svg" class="collaspeIconDown" /></strong></a> </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body" style="color:black;">
+                                    Omur ve omurlar arasındaki kıkırdak dokusunun yaşın ilerlemesine bağlı olarak su içeriğini kaybetmesiyle beraber yük dağılımı değişmektedir. Omurga bütünlüğünü sağlayan faset eklemlerinin büyümesi ile omurilik kanalı daralmaktadır. Omurlar arasında bütünlüğü sağlamakla görevli sarı bağların (ligamentum flavumun) kalınlaşması ile beraber omurilik kanalı daha da daralmaktadır. Beyinden kollara ve bacaklara giden sinirlerin bası altında kalması ile beraber kollarda, parmaklarda ağrı, uyuşukluk ve kuvvetsizlik ayrıca bacak ve ayaklara giden sinirlerin etkilenmesi ile bacak ve ayaklarda ağrı, uyuşukluk ve kuvvetsizlik gelişmektedir.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree3">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3"><strong>Sırt Fıtığı (Torakal Disk Hernisi)<img src="https://cdn.memorial.com.tr/files/images/icon-down.svg" class="collaspeIconDown" /></strong></a> </h4>
+                            </div>
+                            <div id="collapseThree3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree3">
+                                <div class="panel-body" style="color:black;">
+                                    Sırt fıtıkları bel ve boyun fıtıklarına göre daha az görülmektedir. Genellikle aşırı yük kaldıran hastalarda görülür. Travma sonrası da kıkırdağın omurilik ya da sırt bölgesine giden sinirlere bası yapması sonrası görülebilmektedir. Bu hasta grubunda sırt ağrısı, bası altında kalan sinir köklerinin izlediği yol boyunca ağrı ve uyuşukluk şikayetleri olabilir. İlerlemiş ve omuriliğe daha fazla bası yapan sırt fıtıklarında bacaklara giden sinirlerin etkilenmesi ile beraber bacaklarda kuvvetsizlik uyuşukluk, idrar ve büyük abdest kontrol sorunları ortaya çıkarmaktadır.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree34">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree34" aria-expanded="false" aria-controls="collapseThree34"><strong>Bel Fıtığı (Lomber Disk Hernisi)<img src="https://cdn.memorial.com.tr/files/images/icon-down.svg" class="collaspeIconDown" /></strong></a> </h4>
+                            </div>
+                            <div id="collapseThree34" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree34">
+                                <div class="panel-body" style="color:black;">
+                                    Omurganın yaşlanmasına bağlı olarak kemiklerin arasında yer alan kıkırdak dokusu yırtılarak omurilik ya da bacağa giden sinirlere bası yapmakta olup, hastalarda bel ağrısı ve bacak ağrısına neden olmaktadır. Hastaların bacaklarında uyuşukluk, karıncalanma ve kuvvetsizlik şikayetleri de olabilir. Bu bası uzun süre devam ettiğinde, omuriliğe bası yapan orta hat fıtıklarında idrar kontrolü ile ilgili sorunlar da olabilmektedir.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><strong>Bel Kayması (Lomber Listezis)<img src="https://cdn.memorial.com.tr/files/images/icon-down.svg" class="collaspeIconDown" /></strong></a> </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body" style="color:black;">
+                                    Omurganın eklem, kıkırdak ve bağlarının bozulmasına bağlı olarak omurga bütünlüğünü koruyamamaktadır. Üsteki omurga alttaki omurganın önüne ya da arkasına doğru yer değiştirebilmektedir. Yer değiştirme ile beraber omuriliğin üzerinde ya da bacaklara giden sinirlerde bası olmaktadır. Hastaların bel ağrıları ile beraber bacak ağrıları da olmaktadır. Hastaların yürümekle ve ayakta durmakla şikayetleri artmaktadır. Uyuşukluk ve bacaklarda kuvvetsizlik görülebilecek diğer bulgulardır.
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingNine">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                        <strong>
+                                            Lomber Dar Kanal (Lomber Stenoz)<img src="https://cdn.memorial.com.tr/files/images/icon-down.svg" class="collaspeIconDown" />
+                                        </strong>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+                                <div class="panel-body" style="color:black;">
+                                    Omurganın yaşam boyu karşılaştığı yüklere bağlı olarak disk mesafesinde değişiklikler olmaktadır. Omurgayı sabit olarak tutmaya çalışan omurların arkasında iki taraflı yer alan faset adındaki eklemler ve omurların arasındaki bağların kalınlaşmasına bağlı olarak omurilik kanalını daraltmaktadır. Daralan omurilik kanalı hastanın yürüme mesafesini kısaltmaktadır. Bu durum hastalarda yürüme sırasında dinlenme ihtiyacına neden olmaktadır. Merdiven çıkmada ve inmede, rampa iniş ve çıkışlarında zorlanmalar olur. Hastalarda gece krampları, ayaklarda uyuşukluk ve idrar kontrolünde problemlere neden olabilmektedir.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingNinen">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNinen" aria-expanded="false" aria-controls="collapseNinen"><strong>Erişkin Bel Eğriliği (Erişkin Lomber Skolyoz)<img src="https://cdn.memorial.com.tr/files/images/icon-down.svg" class="collaspeIconDown" /></strong> </a> </h4>
+                            </div>
+                            <div id="collapseNinen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNinen">
+                                <div class="panel-body" style="color:black;">
+                                    Omurgada yaşın ilerlemesiyle birlikte ortaya çıkan kıkırdak, eklem, bağ ve kas değişiklikleri omurilik kanalında daralmaya neden olmaktadır. Omurlar arasındaki ilişkinin zayıflaması, omurların diğeri üstünde öne, arkaya ya da yana kayması sonucu bacaklara giden sinirlerde sıkışmaya neden olmaktadır. Sıkışma ve daralmalar bel ağrısı, bacak ağrısı, bacaklarda uyuşma, kuvvetsizlik ve idrar kontrolü ile ilgili sorunlara neden olmaktadır.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- // Container Ends -->
+
+    <div class="container" id="">
+        <!-- Hero Image -->
+        <div class="section-title">
+            <h4><strong>OMURGA VE OMURİLİK TRAVMALARI</strong></h4>
+
+        </div>
+
+
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+                <div class="col-md-7">
+                    <h4 class="zigzag-lead">Omurga Travmaları</h4><br />
+
+                    Yüksekten düşme, trafik kazası ya da yüksek enerjili travmalar sonrası boyun, sırt, bel ya da kuyruk omurlarında (sakrum) çatlak, kırık veya kırıklı çıkıklar oluşabilmektedir. İleri yaş grubundaki hastalarda travma olmaksızın kemik kalitesinin bozulmasına (osteoporoz) bağlı olarak omurgada kırıklar oluşabilir. Bu hasta grubunda kırığın yerine bağlı olarak boyun, sırt, bel ve kuyruk sokumunda ağrı görülebilir. Kollar, eller, bacaklar ile ayaklarda uyuşukluk ve kuvvetsizlik (felç) ortaya çıkabilir. Omuriliğin üzerindeki basıya bağlı olarak idrar ya da büyük abdestin kontrolü ile ilgili sorunlar da ortaya çıkabilir.
+                </div>
+
+                <div class="col-md-5">
+                    <img class="img-responsive center-block" style="width:300px" src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/images/image_5.jpg">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container" id="">
+        <!-- Hero Image -->
+        <div class="section-title">
+            <h4><strong>DOĞUMSAL OMURGA YA DA OMURİLİK ANOMALİLERİ</strong></h4>
+
+        </div>
+
+
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+                <div class="col-md-5">
+                    <img class="img-responsive center-block" style="width:300px" src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/images/image_6.jpg">
+                </div>
+                <div class="col-md-7">
+                    <h5 class="zigzag-lead">Doğumsal Omurilik Anomalileri </h5><br />
+
+                    Anne karnında bebeğin gelişim sırasında omurilik ve omuriliğin içinde yer aldığı kanal içten dışa doğru kapanır. İçten dışa kapanma sırasında ortaya çıkan sorunlar, omuriliğin tamamının ya da bir kısmının ciltle temas halinde kalmasına neden olmaktadır. Meningosel, meningomiyolsel, lipomeningosel, ayrık omurilik ve gergin omurilik anomalileri ortaya çıkabilir. Bu grup hastaların hafif olanlarında hiçbir sorun görülmezken anomalinin yeri, büyüklüğü ve şekline göre bu hastalarda sırtta, belde renk değişikliği, kıllanma artışı ve ciltte gamzeleşme oluşabilir. Orta şiddette olanlarda bacaklarda uyuşma, ağrı, kuvvetsizlik, sık idrar yolu enfeksiyonu görülebilir. Ağır formlarında ise bacaklarda tam kuvvetsizlik (felç) gözlemlenmektedir.
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+
+                <div class="col-md-12">
+                    <h5 class="zigzag-lead">Doğumsal Omurga Anomalileri </h5><br />
+
+                    Omurlar ve arasındaki kıkırdak dokusu anne karnında belirli bir düzen içinde oluşur. Bu gelişim sırasında ortaya çıkan herhangi bir sorun omurga ve kıkırdak dokusunun düzgün gelişmemesine neden olmaktadır. Omurlar birbirine kısmen ya da tam olarak birleşik kalabilir. Ayrılma ya da oluşumun durduğu bölgeye göre; herhangi bir bulgu olmayacağı gibi yaşın ilerlemesi ile beraber ağrı, uyuşukluk, kuvvetsizlik, idrar kontrol sorunları ortaya çıkabilir. Anomalinin tipine ve yerine göre sadece takip gereken hastalar olduğu gibi yaşın ilerlemesi ve boyun artması ile beraber omurga anomalisi olan hastalarda omurgada şekil değişikliği yapabileceği için (skolyoz, kifoz, kifoskolyoz) bu hasta grubunda cerrahi ya da cerrahi olmayan yöntemlerle tedavi gerekebilir.
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <div class="container" id="">
+        <!-- Hero Image -->
+        <div class="section-title">
+            <h4><strong>ENFEKSİYÖZ YA DA ENFLAMATUAR HASTALIKLAR</strong></h4>
+
+        </div>
+
+
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+                <div class="col-md-12">
+                    <h4 class="zigzag-lead">Enfeksiyöz Hastalıklar </h4><br />
+
+                    Omurgada omurları veya kıkırdakları tutabilen spesifik ya da spesifik olmayan enfeksiyonlar olabilir. Bağışıklık sisteminde zayıflık olan ya da daha önce herhangi bir cerrahi geçiren hastalarda enfeksiyon, stafilokok, streptokok, tüberküloz veya brucella gibi etkenlere bağlı olarak omurganın bir bölümünü tutulabilir. Bu hastalarda ateş, terleme ve kilo kaybı görülebilir. Tutulan omurga bölümüne göre boyun, sırt ya da bel ağrısı olabilir. Omuriliğin ya da omurilikten çıkan sinirlerin basısına bağlı olarak kollarda, bacaklarda uyuşukluk, ağrı ve kuvvetsizlik görülebilir.
+                </div>
+
+            </div>
+
+        </div>
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+
+                <div class="col-md-12">
+                    <h4 class="zigzag-lead">Enflamatuar Hastalıklar </h4><br />
+
+                    Omurgada kemik ya da kıkırdakları tutan romatizmal hastalıklar tuttuğu bölgeye göre bulgular gösterebilir. Gece terlemeleri, gece artan ağrılar, sabah tutukluğu olan hastalarda akla gelmesi gereken hastalıklardır. Bazı romatizmalar hastalıklar tek bir atak şeklinde olabileceği gibi yaşam süresince giderek artan etki göstererek omurgada değişikliklere neden olmaktadır. Ankilozan spondilit, romatoid artrit omurgaya tutan enflamatuar hastalık grubundandır.
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <div class="container" id="">
+        <!-- Hero Image -->
+        <div class="section-title">
+            <h4><strong>SPİNAL DEFORMİTELER</strong></h4>
+
+        </div>
+        <div class="col-md-12">
+
+        </div>
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+                <div class="col-md-7">
+                    Birçok faktöre bağlı olarak çocukluk, gelişme ve erişkin döneminde omurgada şekil değişikliği görülebilir. Ön arka planda yana doğru şekil bozukluğuna skolyoz denilirken yan planda eğrilik olmasına kifoz (kamburluk) olarak adlandırılır. Spinal deformiteler sadece görsel olarak şikayet oluşturabileceği gibi ileri formları yaşamı tehdit edebilir.
+                </div>
+                <div class="col-md-5">
+                    <img class="img-responsive center-block" style="width:300px;padding-top:0px" src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/images/image_5.jpg">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+                <div class="col-md-12">
+                    <h5 class="zigzag-lead">Çocukluk Çağında Görülen Spinal Deformiteler </h5><br />
+
+                    Omuriliğin ya da omurganın gelişimi sırasında ortaya çıkan duraksama ya da anomaliler omurgadaki eğriliğin artmasına neden olmaktadır. Altta yatan bazı anomaliler herhangi bir bulgu vermezken bazıları ise omurga üzerindeki ciltte renk değişikliği, kıllanma artışı ya da gamzeleşme gibi bulgular gösterebilir, hatta bazıları doğumdan itibaren omurgada şekil değişikliği meydana getirebilir. Anomalinin yerine, tipine ve ağırlığına göre omurgadaki şekil değişikliği çok az ilerlerken bazıları hızlı bir şekilde ilerleyerek hastanın yaşam kalitesini olumsuz yönde etkilemektedir.
+                </div>
+
+            </div>
+
+        </div>
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+
+                <div class="col-md-12">
+                    <h5 class="zigzag-lead">
+                        Nedeni Bilinmeyen Ergenlik Döneminde Görülen Skolyoz
+                        (Adolesan İdiopatik Skolyoz)
+                    </h5><br />
+                    Çocukluk çağından itibaren görülebilecek bu hasta grubunda omurgada şekil değişikliğini açıklayabilecek bir neden yoktur. Görülme yaşına göre alt gruplara ayrılır. Kız çocuklarında daha sık görülür. Ergenlik dönemine girilmesi ile beraber omurganın hızlı büyümesiyle eğriliğin derecesinin ilerlemesi olasılığı artar. Genellikle sırtta yamukluk, omuzların aynı hizada olmaması ya da kemerin iki kalça üzerinde eşit durmaması ile tespit edilir. Eğriliğin tepe noktasına (apeks) göre, cinsiyete ve ilk tespit edildiği zamandaki derecesine göre eğriliğin ilerleme hızı konusunda kaba tahminler yapılabilir. Erken dönemde tespit edilirse gerekli egzersiz ve hastaya uygun hazırlanan korselerle, eğriliğin derecesinin ilerlemesi engellenebilir. Ancak eğriliğin 50
+                    derecenin üstünde olduğu hastalarda cerrahi tedavi düşünülebilir.
+                </div>
+            </div>
+        </div>
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+
+                <div class="col-md-12">
+                    <h5 class="zigzag-lead">
+                        Erişkin Dönem Skolyozu (Adut Dejeneratif Skolyoz)
+                    </h5><br />
+                    Yaşlı hasta grubunda omurganın kemik ve kıkırdaklarında yaşlanma ortaya çıkar. Erişkin dönemde görülen skolyozun asıl tetikleyicisi kıkırdak dokusunun su içeriğini kaybetmesidir. Diskin kireçlenmesi ve yüksekliğini kaybetmesi ile beraber bacaklara giden sinirler sıkışır. Bacak ve ayaklarda ağrı ve uyuşma şikayetleri ortaya çıkar. Bozulan disk yük dağılımını bozar ve arka tarafta omurganın gücünü artıran faset eklemlere fazladan yük biner. Artan yükler karşı koyabilmek için faset eklem ve omurlar arasındaki bağlar kalınlaşır. Önden disk dokusunun arkadan sarı ligamentin (Ligamentum flavum) ve faset eklemin büyümesi ile omurilik kanalı iyice daralır. Hastaların yürüyüş mesafeleri iyice kısalır. Omurgadaki bu değişikliklerle beraber omurganın sağlamlığı bozulduğu için omurlar arasında öne, arkaya ve yanlara doğru kayma olabilir. Bunun sonucu mevcut bel ağrısı şikayetleri daha da artar. Hastanın ön-arka plandaki röntgen filmine bakıldığında omurganın yana doğru eğrildiği görülür. Omurganın eğrildiği taraftaki sinirlerin basıya diğer tarafta ise gerilmeye maruz kalması ile bacaklarda ve ayaklarda, daha fazla ağrı ve uyuşukluk oluşabilir.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="">
+        <!-- Hero Image -->
+        <div class="section-title">
+            <h4><strong>OMURGA VE OMURİLİK TÜMÖRLERİ</strong></h4>
+
+        </div>
+        <div class="col-md-12">
+
+        </div>
+
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+                <div class="col-md-7">
+                    <h5 class="zigzag-lead">Omurga Tümörleri  </h5><br />
+                    Omurganın kendisinden ya da vücudun herhangi bir yerinden kaynaklanan tümörün omurgaya metastaz yapması sonrası omurganın değişik bölümlerinde tümörler oluşabilir. Gece terlemesi, kilo kaybı görülebilir. Tutulan omurga bölümüne göre boyun, sırt, bel veya kuyruk sokumunda şiddetli ağrılar olabilir. Omurilik kanalına bası yapan kitle etkisi ile kollarda, ellerde ağrı, uyuşukluk ya da kuvvetsizlik oluşabilir. Bacaklara giden omurilik veya sinirlerin bası altında olması sonrası bacaklarda ve ayaklarda ağrı, uyuşukluk, kuvvetsizlik görülebilir. Basının miktarına göre idrar ve büyük abdest kontrol sorunları oluşabilir. Erkeklerde omurga dışından kaynaklanabilecek birincil (primer) tümörler akciğer, prostat ve rektum tümörleri iken kadınlarda en sık meme ve ürogenital sistemden kaynaklanan tümörlerdir.
+                </div>
+                <div class="col-md-5">
+                    <img class="img-responsive center-block" style="width:300px;padding-top:0px" src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/images/image_7.jpg">
+                </div>
+            </div>
+
+        </div>
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+
+                <div class="col-md-12">
+                    <h5 class="zigzag-lead">
+                        Omurilik Tümörleri
+                    </h5><br />
+                    Omurilik tümörleri omurga tümörlerine göre daha nadir görülür. Omurilik zarının dışında, omurilik zarının içinde olmak üzere iki ana grupta incelenebilir. Omurilik zarının için olanlar ise omuriliğin içinde ve omuriliğin dışında olmak üzere yine alt iki grupta incelenir. İyi huylu olabileceği gibi kötü huyu olan tipleri de mevcuttur. Omuriliğin tutulan bölümüne göre boyun, sırt, bel ve kuyruk sokumunda ağrı, uyuşukluk, karıncalanma görülebilir. Üst ya da alt ekstremitelerde (kol ya da bacaklarda) kuvvetsizlik veya tam felç durumu olabilir.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="">
+        <!-- Hero Image -->
+        <div class="section-title">
+            <h4><strong>OMURGA MERKEZİ’NDE TEDAVİ YÖNTEMLERİ NELERDİR? </strong></h4>
+
+        </div>
+        <div class="col-md-12">
+
+        </div>
+
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+                <div class="col-md-7">
+                    Omurga Merkezi’ne gelen bir hastanın tanısı konulduktan sonra multidisipliner bir şekilde tedavi edilmesi gerekmektedir. Hastaneye başvuru nedenleri içinde üst solunum yolu enfeksiyonundan sonrası en sık ikinci neden bel ağrısıdır. Omurga merkezine omurga ile ilgili herhangi bir nedenle başvurulduğunda tedavinin belirli bir sıralaması mevcuttur. Örneğin bir bel ağrısı şikayetinde tanı sonrası tedavi planlaması şu şekilde olmaktadır:
+                </div>
+                <div class="col-md-5">
+                    <img class="img-responsive center-block" style="width:300px;padding-top:0px" src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/images/image_8.jpg">
+                </div>
+            </div>
+
+        </div>
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+
+                <div class="col-md-12">
+                    <h4 class="zigzag-lead">
+                        Medikal Tedavi ve İstirahat
+                    </h4><br />
+                    Hastanın bel ağrısının nedeni basit bir kas spazmı ise bu hastaya medikal tedavi ve istirahat önerilebilir. Bel ağrısını azaltmak amacıyla lumbosakral çelik balenli korse kullanılabilir.
+                </div>
+            </div>
+        </div>
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+
+                <div class="col-md-12">
+                    <h4 class="zigzag-lead">
+                        Fizik Tedavi ve Rehabilitasyon
+                    </h4><br />
+                    Hastanın ilerleyen dönemlerde aynı sorunları yaşamaması için fizik tedavi hekimi tarafından değerlendirilen hastaya bel kaslarını kuvvetlendirilecek egzersiz programı başlanır. Plates ve yoga, bel kaslarının kuvvetlendirilmesi ve esnekliğinin arttırılması için faydalı olacaktır.
+                </div>
+            </div>
+        </div>
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+
+                <div class="col-md-12">
+                    <h4 class="zigzag-lead">
+                        Faset ya da Transforaminal Enjeksiyonlar
+                    </h4><br />
+                    Hastanın ağrısının nedeni faset eklem ise algoloji tarafından değerlendirilen hastaya, faset ekleme yönelik enjeksiyon yapılabilir. Hastanın bacak ağrısı da varsa buna neden olan sinir kökünün blokajı için röntgen cihazı eşliğinde transforaminal enjeksiyon uygulanır.
+                </div>
+            </div>
+        </div>
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+
+                <div class="col-md-12">
+                    <h4 class="zigzag-lead">
+                        Polinöropatinin Değerlendirilmesi
+                    </h4><br />
+                    Hastanın bel ağrısı dışında bacaklarında yanma, uyuşma şikayeti mevcutsa ve alta bunu açıklayabilecek ek hastalık diyabet (şeker hastalığı) ya da tiroit hormonu bozuklukları varsa yapılacak olan EMG (elektromiyelografi) tetkiki ile hastanın polinöropati açısından değerlendirilmesi ve nöroloji hekiminin görüşünün alınması gereklidir.
+                </div>
+            </div>
+        </div>
+
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+
+                <div class="col-md-12">
+                    <h4 class="zigzag-lead">
+                        Lomber ve Servikal Mikrodiskektomi
+                    </h4><br />
+                    Hastanın şikayetleri koruyucu tedavi adı verilen cerrahi olmayan yöntemlerle geçmiyorsa, hastaya cerrahi tedavinin artıları ve eksileri anlatılarak cerrahi önerilebilir.
+                </div>
+            </div>
+        </div>
+
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+
+                <div class="col-md-12">
+                    <h4 class="zigzag-lead">
+                        Endoskopik Omurga Cerrahisi
+                    </h4><br />
+                    Endoskopik omurga cerrahisi dünyada son 25-30 yılda geliştirilmiştir. Günümüzde bel fıtığı, boyun fıtığı, omurilik kanalında daralma, bel kırıkları, omurga tümörleri, omurga metastazlarının tedavisinde kullanılmaktadır. Bu yöntemin gelecekte daha fazla hasta grubunda uygulanması öngörülmektedir. Yaklaşık 7mm’lik bir kesiden yapılan ameliyatlarda; hastaların bir kısmı sadece lokal anestezi ile (ameliyat yapılan bölgenin uyuşturulması), geri kalan kısmı da spinal anestezi (belden aşağısının uyuşturulması) ya da genel anestezi (hastanın uyutulması) ile opere edilmektedir. Ameliyatlar; ucunda kamera olan kalem kalınlığındaki bir cihazın içinden 3-4 mm kalınlığındaki aletlerin kullanılması ile yapılır. Cerrahi sahada kamera olduğu için cerrahın gözü bütün ameliyat yapılan bölgeye hakim olmaktadır. Bu şekilde ameliyat tamamlanmakta ve kanama miktarı minimal düzeyde olmaktadır. Hastalar ameliyat sonrası çok kısa zamanda normal hayatlarına dönmektedir. Hastalar ameliyat olduktan 2 saat sonra rahatlıkla ayağa kalkabilir ve aynı gün taburcu edilebilir.
+                </div>
+            </div>
+        </div>
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+
+                <div class="col-md-12">
+                    <h4 class="zigzag-lead">
+                        Endoskopik Omurga Cerrahisi
+                    </h4><br />
+                    Endoskopik omurga cerrahisi dünyada son 25-30 yılda geliştirilmiştir. Günümüzde bel fıtığı, boyun fıtığı, omurilik kanalında daralma, bel kırıkları, omurga tümörleri, omurga metastazlarının tedavisinde kullanılmaktadır. Bu yöntemin gelecekte daha fazla hasta grubunda uygulanması öngörülmektedir. Yaklaşık 7mm’lik bir kesiden yapılan ameliyatlarda; hastaların bir kısmı sadece lokal anestezi ile (ameliyat yapılan bölgenin uyuşturulması), geri kalan kısmı da spinal anestezi (belden aşağısının uyuşturulması) ya da genel anestezi (hastanın uyutulması) ile opere edilmektedir. Ameliyatlar; ucunda kamera olan kalem kalınlığındaki bir cihazın içinden 3-4 mm kalınlığındaki aletlerin kullanılması ile yapılır. Cerrahi sahada kamera olduğu için cerrahın gözü bütün ameliyat yapılan bölgeye hakim olmaktadır. Bu şekilde ameliyat tamamlanmakta ve kanama miktarı minimal düzeyde olmaktadır. Hastalar ameliyat sonrası çok kısa zamanda normal hayatlarına dönmektedir. Hastalar ameliyat olduktan 2 saat sonra rahatlıkla ayağa kalkabilir ve aynı gün taburcu edilebilir.
+                </div>
+            </div>
+        </div>
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+
+                <div class="col-md-7">
+                    <h4 class="zigzag-lead">
+                        Endoskopik Bel Fıtığı Ameliyatı
+                    </h4><br />
+                    Bel fıtığı ameliyatı; klasik, mikroskobik ve endoskopik yöntemlerle yapılabilmektedir. Günümüzde en ileri yöntem ‘endoskopik’ uygulamalardır. Bu işlemler 7 mm’lik bir cilt kesisi yapılır. Kalem kalınlığında, ucunda kamera olan çalışma kanülü içinden 3-4 mm kalınlığındaki aletler kullanılarak cerrahi tamamlanmaktadır. Ameliyat çoğunlukla lokal anestezi altında yapılmaktadır. Bazı vakalarda spinal anestezi ya da genel anestezi tercih edilmektedir. Ameliyat süresi hastadan hastaya değişmekle birlikte 10-45 dakika arasındadır. Hastalar ameliyattan 2 saat sonra ayağa kalkabilir ve aynı gün taburcu edilebilir. Diğer cerrahi yöntemlere göre hastaların sosyal ve iş hayatına dönme süreleri çok kısadır.
+                </div>
+                <div class="col-md-5">
+                    <img class="img-responsive center-block" style="width:300px;padding-top:0px" src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/images/image_9.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+
+                <div class="col-md-12">
+                    <h4 class="zigzag-lead">
+                        Endoskopik Dar Kanal (Spinal Stenoz) Ameliyatı
+                    </h4><br />
+                    Omurilik ve bacaklara giden sinirler; etrafını kemik, ligaman ve disklerin oluşturduğu bir kanal içinde yer almaktadır. Omurganın bel bölgesinde, bu kanaldaki daralma, bazen sadece bir siniri bazen de bacaklara giden bütün sinirleri etkilemektedir. Buna bağlı olarak da bel ve bacak ağrısı, bacaklarda uyuşma, kuvvet kaybı, yürüme mesafesinde azalma, uzun süre ayakta duramama gibi bir takım şikayetler ortaya çıkmaktadır. Buna ‘dar kanal’ ya da ‘spinal stenoz’ denilmektedir. Hastaların önemli bir kısmına ilaç tedavisi ve fizik tedavi gibi cerrahi dışı yöntemler uygulanırken, bir kısmı için de ameliyat kararı verilmektedir. Cerrahi de hastaya uygun ve farklı tekniklerle gerçekleştirilmektedir. Günümüzde, en minimal invaziv yöntem, endoskopik uygulamalardır. Bu yöntemde 7 mm’lik bir cilt kesisi ile ucunda kamera olan bir çalışma kanülü içinden 3-4 mm’lik aletler kullanılarak ameliyat yapılmaktadır. Omurgadaki darlık açılarak bacaklara giden sinirler rahatlatılmaktadır. Hastalar spinal anestezi ya da genel aneztezi ile opere edilebilir. Ameliyat süresi hastadan hastaya değişmekle birlikte 25-90 dakika arasındadır. Hastalar ameliyat akşamı mobilize edilerek sonraki gün taburcu edilmektedir. Hastaların belinde çok küçük bir kesi olduğu için normal hayata dönme süreleri oldukça kısadır.
+                </div>
+
+            </div>
+        </div>
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+
+                <div class="col-md-12">
+                    <h4 class="zigzag-lead">
+                        Endoskopik Boyun Fıtığı Ameliyatı
+                    </h4><br />
+                    Boyun fıtığı ameliyatlarının çoğu günümüzde mikroskopla yapılmaktadır. Ancak hastaların bir kısmı endoskopik yaklaşım için uygundur. Bu cerrahide boynun ön tarafından ya da boynun arka tarafından 6 mm’lik ucunda kamera olan çalışma kanülü içinden fıtık dokusu çıkarılarak bası altında kalan sinir ya da omurilik rahatlatılmaktadır. Endoskopik cerrahide boyun kemikleri arasına herhangi bir kafes koymaya gerek yoktur. Ameliyat süresi 30-75 dakika arasında değişmektedir. Hastalar ameliyat oldukları günün akşamı yürütülerek sonraki gün taburcu edilir. Bir hafta boyunluk kullanmaları istenir. Hastalar iş hayatına 2 hafta içinde dönebilir.
+                </div>
+
+            </div>
+        </div>
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+
+                <div class="col-md-12">
+                    <h4 class="zigzag-lead">
+                        Vertebroplasti ve Kifoplasti
+                    </h4><br />
+                    Boyun fıtığı ameliyatlarının çoğu günümüzde mikroskopla yapılmaktadır. Ancak hastaların bir kısmı endoskopik yaklaşım için uygundur. Bu cerrahide boynun ön tarafından ya da boynun arka tarafından 6 mm’lik ucunda kamera olan çalışma kanülü içinden fıtık dokusu çıkarılarak bası altında kalan sinir ya da omurilik rahatlatılmaktadır. Endoskopik cerrahide boyun kemikleri arasına herhangi bir kafes koymaya gerek yoktur. Ameliyat süresi 30-75 dakika arasında değişmektedir. Hastalar ameliyat oldukları günün akşamı yürütülerek sonraki gün taburcu edilir. Bir hafta boyunluk kullanmaları istenir. Hastalar iş hayatına 2 hafta içinde dönebilir.
+                </div>
+
+            </div>
+        </div>
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+
+                <div class="col-md-7">
+                    <h4 class="zigzag-lead">
+                        Omurga Stabilizasyonu (Vida yerleştirilmesi)
+                    </h4><br />
+                    Travma, deformite, bel kayması gibi omurganın bazı hastalıklarında omurgayı sağlamlaştırmak amacıyla omurgaya vida yerleştirmek gerekebilir. Bu amaçla işlemin daha güvenli yapılması için nöromonitörleme denilen ameliyat sırasında kol ve bacaklara giden sinirlerin kontrol edilmesi gerekir. Aynı zamanda vidanın doğru bir şekilde yerleştirilmesini sağlamak amacıyla ameliyathane ortamında C- kollu floroskopi denilen cihazla kontrollerin yapılması gerekmektedir.
+                </div>
+                <div class="col-md-5">
+                    <img class="img-responsive center-block" style="width:300px;padding-top:0px" src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/images/image_10.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+
+                <div class="col-md-12">
+                    <h4 class="zigzag-lead">
+                        Biyopsi, Cerrahi, Radyoterapi, Kemoterapi
+                    </h4><br />
+                    Hastanın şikayetlerinin nedeninin omurga ya da omurilik tümörü olduğu düşünülüyorsa hastadan mutlaka biyopsi yapılması gereklidir. İyi huylu tümörleri takip etmek gerekirken kötü huylu tümörlerde vücudun başka bir yerine atlayıp atlamadığı kontrol edilmelidir. Biyopsi sonucu vücudun başka bir yerinden omurgaya sıçradığı durumlarda kaynak organı ve vücudun başka bir yerine atlayıp atlamadığını kontrol etmek amacıyla ileri araştırma yapmak gerekir. Hastanın yaşam beklentisi, primer (kaynak organ) organ ve sıçradığı organlar göre medikal onkoloji uzmanı ve radyasyon onkoloğu ile görüşülüp radyoterapi ve/veya kemoterapi alınması gerekebilir. Bu aşamada hastanın durumuna göre cerrahi gerekli olup olmadığı belirlendikten sonra cerrahinin tipine karar verilir.
+                </div>
+
+            </div>
+        </div>
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+
+                <div class="col-md-12">
+                    <h4 class="zigzag-lead">
+                        Omurga Merkezinde Algolojik Girişimler
+                    </h4><br />
+                    Memorial Bahçelievler Hastanesi Omurga Sağlığı Merkezi'nde omurgaya ait akut ağrıların çözümlenmesinde ve özellikle kronik ağrılarının tedavilerinde algolojik girişimler önemli yer tutar.
+                </div>
+
+            </div>
+        </div>
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+
+                <div class="col-md-12">
+                    <h4 class="zigzag-lead">
+                        Ağrı Enjeksiyonları Tetik Nokta Enjeksiyonları:
+                    </h4><br />
+                    Kas dokusu içinde ağrı oluşturan düğüm noktalarına tetik nokta denir. Bu ağrılar halk arasında kulunç olarak bilinir. Bu noktalar baş, boyun, omuz, sırt ve bel ağrılarına neden olurlar. En sık bilinen sendrom miyofasyal ağrı sendromudur. Miyofasyal ağrılar travma, düzensiz kas aktiviteleri ve bozuk postürden kaynaklanan ağrılardır. Sıklıkla boyun bölgesinde görülür. Bu tip ağrılara konservatif
+                    tedaviler fayda etmezse tetik nokta enjeksiyonlarıyla ağrı giderilir.
+
+                </div>
+
+            </div>
+        </div>
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+
+                <div class="col-md-12">
+                    <h4 class="zigzag-lead">
+                        Faset Eklem Enjeksiyonları:
+                    </h4><br />
+                    Omurları arka taraftan bir biri üzerinde tutan eklemlere faset eklemi adı verilir. Bu eklemlerde travma, zorlama, ters hareketler ve yaşlanma ya bağlı kireçlenme durumlarında bozulmalar meydana gelir. Buna bağlı öne arkaya eğilme ile artan, öksürme-hapşırma ile şiddetlenen ağrılar ortaya çıkar. Bu şekilde oluşan kliniğe faset sendromu adı verilir. Faset sendromunda medikal tedavi istirahat, egzersiz ve fizik tedavi ile sorun çözülemezse faset ekleminin ağrısına yönelik faset eklem blokajı veya faset eklem içi enjeksiyon ile sorun giderilebilir.
+
+                </div>
+
+            </div>
+        </div>
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+
+                <div class="col-md-12">
+                    <h4 class="zigzag-lead">
+                        Epidural Enjeksiyonlar:
+                    </h4><br />
+                    Omuriliğin geçtiği kanalda daralma ve orta hat bel-boyun fıtıklarının oluşturduğu ağrılarına yönelik medikal tedavi, istirahat ve fizik tedavinin fayda sağlamadığı durumlarda cerrahi girişim düşünülmeyen hastalara uygulanır.
+
+                </div>
+
+            </div>
+        </div>
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+
+                <div class="col-md-12">
+                    <h4 class="zigzag-lead">
+                        Transforaminal Enjeksiyonlar:
+                    </h4><br />
+                    Omurilikten ayrılan sinir köklerinin geçtiği kanallarda sinirin ezilmesine ya da sıkışmasına neden olacak fıtıklarda veya kireçlenmelerin neden olduğu darlıklarda uygulanır. Özellikle ayağa yansıyan ağrıların medikal ve konservatif tedavilerine yanıt vermediği ve cerrahi gereksinimin olmadığı durumlarda fayda sağlayabilir.
+
+                </div>
+
+            </div>
+        </div>
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+
+                <div class="col-md-12">
+                    <h4 class="zigzag-lead">
+                        Radyofrekans Termokoagülasyon:
+                    </h4><br />
+                    Ayarlanabilir bir şekilde vücuda verilen elektriğin oluşturduğu ısının ağrıyı ileten sinir üzerinde bloklama yapması sonucu ağrı iletisinin kesilmesi ile etki eder. Özellikle faset ağrılarında uygulanır. Aynı zamanda cerrahi gereksinimi olmayan foraminal disklerin oluşturduğu ağrılara yönelikte uygulama yapılabilir.
+
+                </div>
+
+            </div>
+        </div>
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+
+                <div class="col-md-12">
+                    <h4 class="zigzag-lead">
+                        Spinal Kord Stimülatörü (Ağrı Pili):
+                    </h4><br />
+                    Vücuda yerleştirilecek bir pil yardımı ile üretilen ayarlanabilir elektriğin omurilik üzerinde ağrı iletisini kesmesi ile etki eder. Herhangi bir ilaç ağrı pilinde bulunmaz. Özellikle başarısız bel cerrahilerinden sonra geçmeyen ağrılarda, periferik damar hastalıklarının oluşturduğu ağrılarda, şeker hastalığı sonrası oluşan nöropatik ağrılarda ve kanser sonrası oluşan ağrılarda uygulanır.
+
+                </div>
+
+            </div>
+        </div>
+        <div class="zigzag" id="">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+
+                <div class="col-md-12">
+                    <h4 class="zigzag-lead">
+                        Ağrı Pompası:
+                    </h4><br />
+                    Özellikle kanser hastalarının şiddetli ağrılarında morfin uygulamasının yapılabilmesi amaçlı kullanılır.
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Features Section -->
+        <!--<div class="zigzag">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row has-margin-bottom-sm">
+                        <div class="col-sm-4">
+                            <div class="icon-wrap"> <img src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/images/icon_1.png" alt="img" class="img-responsive center-block"></div>
+                        </div>
+                        <div class="col-sm-8">
+                            <h4 class="zigzag-lead">Airport Transfer</h4>
+                            <p>We offer our patients transportation service between the airport, hotel and the hospital.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row has-margin-bottom-sm">
+                        <div class="col-sm-4">
+                            <div class="icon-wrap"><img src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/images/icon_2.png" alt="img" class="img-responsive center-block"></div>
+                        </div>
+                        <div class="col-sm-8">
+                            <h4 class="zigzag-lead">Translator</h4>
+                            <p>Our professional interpreters will be with you once you come to Memorial Hospitals until you turn back to your country.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+        <!--Second row-->
+        <!--<div class="row has-margin-top">
+                <div class="col-md-6">
+                    <div class="row has-margin-bottom-sm">
+                        <div class="col-sm-4">
+                            <div class="icon-wrap"> <img src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/images/icon_3.png" alt="img" class="img-responsive center-block"></div>
+                        </div>
+                        <div class="col-sm-8">
+                            <h4 class="zigzag-lead">Accomodation</h4>
+                            <p>Our packages include accommodation in 3 stars, 4 stars and 5 stars hotels.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="icon-wrap"><img src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/images/icon_4.png" alt="img" class="img-responsive center-block"></div>
+                        </div>
+                        <div class="col-sm-8">
+                            <h4 class="zigzag-lead">Certifications</h4>
+                            <p>At MEMORIAL, we are particularly proud of being a Joint Commission International (JCI) certified institution. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
+
+    </div>
+    <!-- // Container Ends -->
+    <!-- Parallax Footer Starts -->
+    <!--<main class="footercta" role="main" id="footerctaresim">
+        <div class="container">-->
+    <!-- Footer Title -->
+    <!--<div class="row" style="flex-direction:row">
+                <div class="col-lg-9" style="padding-top:100px;font-size:18px;line-height:1.5"><strong>As the Memorial Health Group, we have taken many measures since the first day of the disease to protect our patients, patient relatives and employees against the COVID-19 (Coronavirus) epidemic that threatens the whole world and our country, and in this process called the "New Normal", we continue to serve our guests with "Our High Hygiene Standards".</strong></div>
+                <div class="col-lg-3"><img src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/images/hijyenen.jpg" style="margin-top:20px" alt="img" class="img-responsive center-block"></div>
+            </div>
+        </div>
+    </main>-->
+    <!-- // Parallax Footer Ends -->
+    <!-- Container -->
+    <!--<div class="container" id="doctors">-->
+    <!-- Hero Image -->
+    <!--<div class="section-title" style="margin-top:30px">
+        <h2>Doctors</h2>
+
+    </div>
+    <div class="zigzag">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/images/adnansayar.png" alt="img" style="padding-top:0px" class="img-responsive center-block beforeafterimg">
+                <div class="section-title" style="margin-top:30px">
+                    <h4 style="text-decoration:none;color:#bf0311">Prof. Adnan SAYAR</h4><br />
+                    <h5>FETCS Thoracic and Lung Transplant Surgeon</h5>
+                    <h4>Bahçelievler Hospital</h4>
+                    <span id="btnCv" onclick="cvFunction()" role="button" class="btn btn-warning" style="margin-top:20px">CV</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="row" id="cvdetail" style="display:none">
+            <div class="col-md-6">
+                <h4>BIRTH PLACE / DATE</h4>
+                <h6 style="text-decoration:none;color:#bf0311;margin-bottom:10px">Burdur / Turkey /1962</h6>
+                <h4>FOREIGN LANGUAGE</h4>
+                <h6 style="text-decoration:none;color:#bf0311;margin-bottom:10px">French, English</h6>
+                <h4>E MAIL ADDRESS</h4>
+                <h6 style="text-decoration:none;color:#bf0311;margin-bottom:10px">adnan.sayar@memorial.com.tr</h6>
+                <br /><br />
+
+                <h4><strong>EDUCATION</strong></h4>
+                <br />
+                <h6 style="text-decoration:none;color:#bf0311">2013 - 2013, İstanbul/Turkey</h6>
+                <h5 style="margin-bottom:10px">PROFESSOR</h5>
+                <h6 style="text-decoration:none;color:#bf0311">
+                    2008 - 2008, İstanbul/Turkey
+                </h6>
+                <h5 style="margin-bottom:10px">ASSOCİATE PROFESSOR</h5>
+                <h6 style="text-decoration:none;color:#bf0311">
+                    1991 - 1995, İstanbul/Turkey
+                </h6>
+                <h5>YEDİKULE CHEST DİSEASES AND THORACİC SURGERY TRAİNİNG AND RESEARCH HOSPİTAL</h5>
+                <p style="color:#888;margin-bottom:10px">Thoracic Surgery Residency</p>
+
+                <h6 style="text-decoration:none;color:#bf0311">
+                    1981 - 1987, İstanbul/Turkey
+                </h6>
+                <h5>İSTANBUL UNİVERSİTY İSTANBUL MEDİCAL FACULTY</h5>
+                <small style="color:#888">Medical Education</small>
+            </div>
+            <div class="col-md-6">
+                <h4><strong>EXPERIENCE</strong> </h4>
+                <br />
+                <h6 style="text-decoration:none;color:#bf0311">2015 - Currently, İstanbul/Turkey</h6>
+                <h5>MEMORİAL ŞİŞLİ HOSPİTAL</h5>
+                <p style="color:#888;margin-bottom:10px">Thoracic Surgeon</p>
+                <h6 style="text-decoration:none;color:#bf0311">2015 - Currently, İstanbul/Turkey</h6>
+                <h5>MEMORİAL BAHÇELİEVLER HOSPİTAL</h5>
+                <p style="color:#888;margin-bottom:10px">Thoracic Surgeon</p>
+                <h6 style="text-decoration:none;color:#bf0311">2013 - 2015, Erzincan/Turkey</h6>
+                <h5>ERZİNCAN UNİVERSİTY MEDİCAL FACULTY</h5>
+                <p style="color:#888;margin-bottom:10px">Thoracic Surgery Department Faculty Member</p>
+                <h6 style="text-decoration:none;color:#bf0311">
+                    2011 - 2015, İstanbul/Turkey
+                </h6>
+                <h5>
+                    YEDİKULE CHEST DİSEASES AND THORACİC SURGERY TRAİNİNG AND RESEARCH HOSPİTAL
+                </h5>
+                <p style="color:#888;margin-bottom:10px">
+                    Lung Transplantation Center Responsible Specialist
+                </p>
+                <h6 style="text-decoration:none;color:#bf0311">
+                    2010 - 2015, İstanbul/Turkey
+                </h6>
+                <h5>YEDİKULE CHEST DİSEASES AND THORACİC SURGERY TRAİNİNG AND RESEARCH HOSPİTAL</h5>
+                <p style="color:#888;margin-bottom:10px">
+                    4th Thoracic Surgery Clinic Supervisor
+                </p>
+                <h6 style="text-decoration:none;color:#bf0311">
+                    2008 - 2010, /Switzerland
+                </h6>
+                <h5>ZURİCH UNİVERSİTY MEDİCAL FACULTY THORACİC SURGERY-LUNG TRANSPLANTATİON DEPARTMENT</h5>
+                <p style="color:#888;margin-bottom:10px">
+                    Thoracic Surgeon
+                </p>
+                <h6 style="text-decoration:none;color:#bf0311">
+                    1995 - 2008, İstanbul/Turkey
+                </h6>
+                <h5>
+                    YEDİKULE CHEST DİSEASES AND THORACİC SURGERY TRAİNİNG AND RESEARCH HOSPİTAL
+                </h5>
+                <p style="color:#888;margin-bottom:10px">Thoracic Surgeon</p>
+            </div>
+            <div class="col-md-12">
+                <h4><strong>SCIENTIFIC PUBLICATIONS</strong></h4>
+                <br />
+                <ul><li>38 international scientific publications and multiple national scientific publications and participations in congresses.</li></ul>
+                <h4><strong>PROFESSIONAL MEMBERSHIPS</strong></h4>
+
+                <ul>
+                    <li>Donation to Life Association</li>
+                    <li>Turkish Society of Thoracic Surgery</li>
+                    <li>Turkish Thoracic Society</li>
+                    <li>Turkish Respiratory Society</li>
+                    <li>European Society of Thoracic Surgery ESTS</li>
+                    <li>Ministry of Health Lung Transplantation Science Board Membership</li>
+                </ul>
+                <h4><strong>Professional Awards, Degrees and Experiences</strong></h4>
+                <ul>
+                    <li>2014-Doctor of the Year Award</li>
+                    <li>2011-European Society of Thoracic Surgeons (ESTS-FSTCVS) Travel Grant</li>
+
+                </ul>
+                <h4><strong>Vocational Trainings, Courses and Conferences Attended</strong></h4>
+                <ul>
+                    <li>Sweden Lund University Ex-Vivo Lung Perfusion (EVLP) Training, 2014, Sweden</li>
+                    <li>Japan Kyoto University Thoracic Surgery Department, Lung Transplantation from a Living Donor Training, 2012, Japan</li>
+                    <li>Switzerland Zurich University Medical Faculty Thoracic Surgery Department, Lung Transplantation Training, 2008, Switzerland</li>
+                </ul>-->
+    <!--<span id="btnclose" onclick="cvFunction()" role="button" class="btn btn-warning text-center" style="margin-top:20px">Close</span>-->
+    <!--</div>
+            </div>
+        </div>
+
+    </div>-->
+    <!-- // Container Ends -->
+    <!-- Parallax Footer Starts -->
+    <main class="footercta" role="main">
+        <div class="container">
+            <!-- Footer Title -->
+            <div class="section-title">
+                <h2>Değerlendirin ve Randevu Alın</h2><br />
+                <h4>Daha fazla ayrıntı için lütfen bizimle iletişime geçin.</h4>
+                <h4 style="word-wrap:break-word"><br /><br />internationalpatients@memorial.com.tr</h4>
+
+            </div>
+            <!--<div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-md-6 text-center"> <a href="#form" class="btn btn-warning btn-lg gototop">CONTACT US</a>  </div>
+
+                <div class="col-sm-3"></div>
+            </div>-->
+
+            <h3 class="sub-title" style="color: #A91022">
+                Bize Ulaşın
+            </h3>
+            <!-- Mailchimp Subscribe form -->
+            <div class="row" id="form">
+                <div class="col-md-12">
+                    <div class="subscribe-block">
+                        <div class="row">
+                            <form class="form-horizontal" role="form" action="/memorial-evinizde-form/" id="askprice_form" method="POST">
+                                <input id="geturl" name="url" type="hidden" value="" />
+                                <input id="campaign" name="campaign" type="hidden" value="33221148" />
+                                <input type="hidden" value="Memorial lung Transplantation" name="mailTitle" id="mailTitle" />
+                                <script>
+                                    document.getElementById("geturl").value = location.href;
+                                </script>
+                                <input name="crmMailId" type="hidden" value="28" />
+
+                                <input id="geturl" name="url" type="hidden" value="" />
+
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6">
+                                        <input class="form-control input-lg" name="fullname" id="fullname" type="text" placeholder="Adınız Soyadınız" required>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-6">
+
+                                        <input class="form-control input-lg" name="email2" id="email2" aria-describedby="emailHelp" type="email" placeholder="Email" required>
+
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6" style="margin-top:20px;border-radius:6px;height:46px ">
+                                        <div class="input-phone"></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row" style="margin-top:20px">
+                                    <div class="col-md-12 col-sm-12">
+                                        <input class="form-control input-lg" cols="30" rows="4" name="message" id="message" type="text" placeholder="Mesaj" required>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top:20px">
+                                    <div class="col-md-12 col-sm-12">
+                                        <label for="askprice_permission" class="help-block" style="display: inline; font-weight: 500; font-size:16px;color:#A91022">
+                                            <label class="container3">
+                                                <input id="askprice_permission" style="width:18px;height:18px;" name="askprice_permission" type="checkbox">
+                                                <span class="checkmark3"></span>
+                                            </label> Kişisel Verilerin Korunması Kanunu uyarınca ilgili <a class="link" href="https://www.memorial.com.tr/kurumsal/kisisel-verilerin-korunmasi" target='_blank' style="color: #A11022 !important;"><strong>Bilgilendirme</strong></a>'yi okudum. Kişisel verilerimin belirtilen kapsamda işlenmesini ve sağlık hizmet sunumu amacıyla tarafımla iletişime geçilmesini kabul ediyorum.
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="row" style="margin-top:20px">
+                                    <div class="col-md-12 col-sm-12">
+                                        <center>
+                                            <button type="submit" id="askprice_permission_button_send" style="display: block; width:-webkit-fill-available; font-size:2rem; height:auto"
+                                                    class="btn btn-warning btn-block btn-lg" disabled>
+                                                Gönder
+                                            </button>
+                                            <span id="spErr" style="margin-top:20px"></span>
+                                        </center>
+                                    </div>
+                                </div>
+                                <div class="field" style="text-align: center;">
+
+                                </div>
+
+                            </form>
+                        </div>
+                        <span id="result" class="loading"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- // Mailchimp Subscribe form Ends -->
+
+        </div>
+    </main>
+    <!-- // Parallax Footer Ends -->
+    <!-- // Container Ends -->
+
+
+
+
+
+
+    <div class="clickToCall">
+        <a href="tel:+442039883544"
+           onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Lung-Transplantation', eventLabel: 'Mobile Button'});">
+            <p class="call-button">
+                <img caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/images/clickToCall.png"
+                     style="width:60px; height:60px;" />
+            </p>
+        </a>
+    </div>
+    <!-- Container -->
+    <div class="container">
+        <section class="row breath footercontent">
+            <div class="col-sm-3"> </div>
+            <div class="col-sm-6 madeby">
+                <p style="color:black">Copyright © 2021 MEMORIAL | All Rights Reserved | www.memorial.com.tr | internationalpatients@memorial.com.tr</p>
+            </div>
+            <div class="col-sm-3 copyinfo">
+
+            </div>
+        </section>
+        <!-- // End Client Logos -->
+
+    </div>
+    <!-- // Container Ends -->
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+
+    <style>
+        @media screen and (min-width:768px) {
+
+            #clickToCall {
+                display: none !important;
+            }
+
+            #footerctaresim {
+                background-image: url('{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/images/header_bg222_mobile-1.png');
+            }
+        }
+
+        @media screen and (max-width:767px) {
+            .video-responsive {
+                width: 100%;
+                height: auto;
+            }
+
+            #clickToCall {
+                display: block !important;
+            }
+
+            .section-title h4 {
+                font-size: 16px;
+            }
+        }
+
+        #footerctaresim {
+            background-image: url('{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/images/header_bg222-1.png');
+        }
+
+
+        #myBtnS {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 156px;
+            height: 60px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #A91022;
+            color: white;
+            cursor: pointer;
+            /* padding: 15px; */
+            border-radius: 4px;
+            display: none;
+        }
+
+            #myBtnS:hover {
+                background-color: #555;
+            }
+    </style>
+
+
+    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+        <a id="myBtnS" class="btn btn_cta scroll" href="#form" style="margin-bottom: 0px !important;display: none;"><span style="top: 10px;position: relative;">Bize Ulaşın</span></a>
+    </div>
+
+    <script>
+
+
+        var mycvdetail = document.getElementById("cvdetail");
+        function cvFunction() {
+            if (mycvdetail.style.display == "none") {
+                mycvdetail.style.display = "block";
+            } else {
+                mycvdetail.style.display = "none";
+            }
+        }
+
+
+        //Get the button
+        var mybutton = document.getElementById("myBtnS");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/js/jquery.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/js/bootstrap.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/js/easing.js"></script>
+
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/js/ketchup.all.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/js/intlInputPhone2.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/js/intlInputPhone2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}Omurga-cerrahisi/js/bootstrap-formhelpers.js?v=2"></script>
+
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}js/utmLinkSaver.js?v=3"></script>
+    <script>saveUtmLink(10);</script>
+
+    <script type="text/javascript">
+        window.onload = function () {
+
+            var captcha_badge = document.getElementsByClassName("grecaptcha-badge");
+            for (var i = 0; i < captcha_badge.length; i += 1) {
+                captcha_badge[i].setAttribute("data-badge", "inline");
+                captcha_badge[i].style.display = 'none';
+            }
+        };
+
+        function onSubmitRe(token) {
+            document.getElementById("ajax-contact-2").submit();
+        }
+
+        function validateEmail(email) {
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(email);
+        }
+
+        function validate(event) {
+            event.preventDefault();
+            if (!document.getElementById('fullname').value) {
+                alert("Write your name.");
+
+            } else if (!document.getElementById('phone2').value) {
+                alert("Write down your phone number.");
+
+
+            } else {
+                grecaptcha.execute();
+            }
+
+        }
+    </script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+            window.location.href = window.location.href.replace(window.location.search, "");
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                window.location.href = window.location.href.replace(window.location.search, "");
+            }
+        }
+    </script>
+
+
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TGPGSC9');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGPGSC9"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- cookie policy -->
+    <!--<link rel="stylesheet" type="text/css" href="./static/css/cookieconsent.css" />
+    <script src="./static/js/cookieconsent.js"></script>
+
+    <script type="text/javascript">
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#f1f3f9",
+                        "text": "#28252c",
+                    },
+                    "button": {
+                        "background": "transparent",
+                        "text": "#28252c",
+                        "border": "#28252c"
+                    }
+                },
+                "content": {
+                    "message": "We use cookies so that you can get the most out of our services.By using memorial.com.tr you allow cookies.",
+                    "dismiss": "Okey",
+                    "link": "Click for details.",
+                    "href": "https://www.memorial.com.tr/kurumsal/cerezler-cookies-politikasi/"
+                }
+            })
+        });
+    </script>-->
+    <!-- cookie policy -->
+
+    <script type="text/javascript">
+        window.onload = function () {
+
+            var captcha_badge = document.getElementsByClassName("grecaptcha-badge");
+            for (var i = 0; i < captcha_badge.length; i += 1) {
+                captcha_badge[i].setAttribute("data-badge", "inline");
+                captcha_badge[i].style.display = 'none';
+            }
+        };
+
+        function onSubmitRe(token) {
+            document.getElementById("ajax-contact-2").submit();
+        }
+
+        function validateEmail(email) {
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(email);
+        }
+
+        //{#var elementcaptcha = document.getElementById('recaptchabutton');#}
+        //{#elementcaptcha.onclick = validate;#}
+
+        function validate(event) {
+            event.preventDefault();
+            if (!document.getElementById('fullname').value) {
+                alert("Write your name.");
+
+            } else if (!document.getElementById('phone2').value) {
+                alert("Write down your phone number.");
+
+
+            } else {
+                grecaptcha.execute();
+            }
+
+        }
+    </script>
+    <!-- ========= Scroll to Explore ========= -->
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+
+
+            var urlParams = new URLSearchParams(window.location.search);
+            var pageData = urlParams.get('page');
+
+
+            if (pageData == "success") {
+                var modal = document.getElementById("myModal");
+                modal.style.display = "block";
+            }
+
+            $('.input-phone').intlInputPhone();
+
+            var isFilterOn = false;
+            $(document).on("input", "#phone2", function () {
+                if (isFilterOn)
+                    this.value = this.value.replace(/\D/g, '');
+            });
+
+            $('#phone2').mask('(500) 000-00-00', { placeholder: "(5__) ___-__-__" });
+
+            $('body').on('DOMSubtreeModified', '.btn-cc', function () {
+                if ($(".btn-cc").html().replace(/&nbsp;/g, '') != "+90") {
+                    $('#phone2').unmask();
+                    $('#phone2').attr("maxlength", "15");
+                    isFilterOn = true;
+                    isButtonValid();
+                }
+                else {
+                    $('#phone2').mask('(500) 000-00-00', { placeholder: "(5__) ___-__-__" });
+                    isFilterOn = false;
+                    isButtonValid();
+                }
+            });
+
+            $('#askprice_permission').click(function () {
+                isButtonValid();
+            });
+
+            $("#askprice_permission_button_send").click(function () {
+                if ($("#countries_phone2").val() == "") {
+                    $("#ask_price_errorID").show();
+                    $("#ask_price_error_textID").html('Please select country code');
+                    return false;
+                }
+
+                if ($("#fullname").val() == "") {
+                    $("#").show();
+                    $("#spErr").html('<span style=\'color:#b9194b;\'>Please enter your first and last name.</span>');
+                    return false;
+                }
+                if ($("#fullname").val().length < 5) {
+                    $("#").show();
+                    $("#spErr").html('<span style=\'color:#b9194b;\'>Please enter a first and last name longer than 4 characters in total.</span>');
+                    return false;
+                }
+                if ($("#fullname").val().length > 30) {
+                    $("#").show();
+                    $("#spErr").html('<span style=\'color:#b9194b;\'>Please enter a short first and last name with a total of 30 characters.</span>');
+                    return false;
+                }
+
+                if ($("#phone2").val().length < 6) {
+                    $("#spErr").html("<span style='color:#b9194b;'>Phone number cannot be less than 6 digits.</span>");
+                    return false;
+                }
+
+                $("#askprice_permission_button_send").attr("disabled", "disabled");
+                $('#askprice_permission_button_send').html('Gönderiliyor...');
+
+                tel = $(".btn-cc").html().replace(/&nbsp;/g, '') + " " + $("#phone2").val().replace(/[^0-9]+/g, "");
+                //{#console.log($(".btn-cc").html().replace(/&nbsp;/g, '')+"  ||  "+tel);#}
+                $('#phone').val(tel);
+
+                send_promotion();
+            });
+
+            $("#fullname").on('input', function () { isButtonValid(); })
+            $("#phone2").on('input', function () { isButtonValid(); })
+            $("#Message").on('input', function () { isButtonValid(); })
+
+            function isButtonValid() {
+
+                if ($("#fullname").val() != "" && $("#phone2").val() != "" && $('#askprice_permission').is(':checked') && $("#Message option:selected").val() != "0") {
+                    $('#askprice_permission_button_send').prop('disabled', false);
+                } else {
+                    $('#askprice_permission_button_send').prop('disabled', true);
+                }
+            }
+
+        });
+
+
+        function reactivateForm() {
+            document.getElementById("askprice_form").reset();
+            $("#askprice_form").show();
+            $(".alert-success").hide();
+        }
+
+
+
+
+
+        function send_promotion() {
+            $(".alert-success").hide();
+            $(".alert-warning").hide();
+            $("#phoneNumber").val($("#phone").val());
+
+            var serializedData = $("#askprice_form").serialize();
+
+
+            $.ajax({
+                type: "POST",
+                url: '/landingAskPricePost?lang=tr',
+                async: true,
+                data: serializedData,
+                cache: false,
+                beforeSend: function () {
+                    $('#askprice_permission_button_send').prop('disabled', true);
+                    $('#askprice_permission_button_send').html('Gönderiliyor...');
+                },
+                success: function (b) {
+                    if (b == "1" || (typeof b.status !== 'undefined' && b.status == "1")) {
+                        $("#fullname").val("");
+                        $("#phone2").val("");
+                        $("#message").val("");
+                        $("#email2").val("");
+                        $('#askprice_permission_button_send').prop('disabled', false);
+                        $('#askprice_permission_button_send').html('Gönder');
+                        if (typeof b.hashedPhoneNumber !== 'undefined') {
+
+                            dataLayer.push({
+                                'event': 'create_lead_user',
+                                'userID': b.hashedPhoneNumber
+                            });
+                        }
+
+                        dataLayer.push({
+                            'event': 'landing_finishForm',
+                            'formName': window.gtmFormName,
+                            'pageCategory': 'Landing Page'
+                        });
+
+                        window.location.href += '?page=success';
+                        $("#spErr").html("<span style='margin: 20px 0; display: block; color: #25a517;'>Your form has been successfully submitted.</span>");
+
+                    } else {
+                        $(".alert-warning").fadeIn();
+                        $('#askprice_permission_button_send').html('Gönder');
+                        $("#spErr").html("<span style='margin: 20px 0; display: block; color: #ca2020;'>A technical problem has occurred.Please try again later.</span>");
+                    }
+                    $('#askprice_permission_button_send').prop('disabled', false);
+                },
+                error: function (b) {
+                    $(".alert-warning").fadeIn();
+                    $('#askprice_permission_button_send').html('Gönder');
+                    $('#askprice_permission_button_send').prop('disabled', false);
+                }
+            });
+        }
+
+    </script>
+
+
+
+
+</body>
+</html>

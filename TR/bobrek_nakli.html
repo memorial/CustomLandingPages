@@ -1,0 +1,167 @@
+{% extends "column_4_8.html" %}
+{% load i18n %}
+{% block title %}Böbrek Nakli - Memorial Organ Nakli Merkezleri{% endblock %}
+{% block datalayer %}
+    <script>
+        window.dataLayer = window.dataLayer||[];
+        window.dataLayer.push({
+            'event': 'pageDetails',
+            'page': {
+                type: 'Böbrek Nakli',
+                tag: 'Böbrek Nakli',
+                category: '{% trans "10006" %}',
+                expertise: '',
+                keyElement: ''
+            }
+        });
+    </script>
+{% endblock %}
+
+
+
+
+
+{% block breadcrumb %}
+<li><a href="/bobrek-nakli/">Böbrek Nakli</a></li>
+{% endblock %}
+{% block breadcrumbmobile %}
+<li><a href="/bobrek-nakli/">Böbrek Nakli</a></li>
+{% endblock %}
+{% block column_4 %}
+<div class="leftMenu">
+   <!--organ-nakli menu-->
+   <h3>Organ Nakli Bölümleri</h3>
+   <ul class="sidebar-nav">
+      <li><a href="/bolumler/organ-nakli/">Organ Nakli Merkezi</a></li>
+      <li><a href="/bolumler/organ-nakli/?hastane=sisli">Memorial Şişli Hastanesi Organ Nakli Merkezi</a></li>
+      <li><a href="/bolumler/organ-nakli/?hastane=atasehir">Memorial Ataşehir Hastanesi Organ Nakli Merkezi</a></li>      
+      <!--<li><a href="/bobreknakli-bobrekyetmezligi/">Böbrek Nakli</a></li>
+      <li><a href="#">Pankreas Nakli</a></li>
+         <li><a href="#">Çocuklarda Organ Nakli</a></li>
+         <li><a href="#">Organ Bağışı</a></li>-->
+   </ul>
+   <!--organ-nakli menu-->
+   <!--organ-nakli sağlık-rehberi-->
+   <h3>Sağlık Rehberi'nde Organ Nakli Bölümü</h3>
+   <ul class="strelka" style="margin-bottom: 0;">
+      <li><a href="/saglik-rehberleri/organ-bekleme-listelerinde-yitip-giden-hayatlara-seyirci-kalmayalim/">Organ Bekleme Listelerinde Yitip Giden Hayatlara Seyirci Kalmayalım</a></li>
+      <li><a href="/saglik-rehberleri/organ-nakli-hakkinda-merak-edilenler/">Organ Nakli Hakkında En Çok Merak Edilenler</a></li>
+      <li><a href="/saglik-rehberleri/kansiz-karaciger-nakli-riskleri-azaltiyor/">Kansız Karaciğer Nakli Riskleri Azaltıyor</a></li>
+      <li><a href="/saglik-rehberleri/nakil-cocuklarin-geleceklerini-de-kurtariyor/">Nakil Çocukların Geleceklerini de Kurtarıyor</a></li>
+      <li><a href="/saglik-rehberleri/yanlis-inanislar-organ-bagisina-engel-oluyor/">Yanlış İnanışlar Organ Bağışına Engel Oluyor</a></li>
+      <li><a href="/saglik-rehberleri/sadece-sevdiklerinizin-degil-tanimadiginiz-kisilerin-de-hayatini-kurtarabilirsiniz/">Sadece Sevdiklerinizin Değil Tanımadığınız Kişilerin de Hayatını Kurtarabilirsiniz</a></li>
+      <li><a href="/saglik-rehberleri/canli-vericiden-bobrek-nakli-artik-cok-daha-kolay/">Canlı Vericiden Böbrek Nakli Artık Çok Daha Kolay</a></li>
+   </ul>
+   <a class=" btn btn-memorial" href="/saglik-rehberleri/?bolum=organ-nakli">Tümünü Gör</a>
+   <!--organ-nakli sağlık-rehberi-->
+   <!-- todo videoların açılması -->
+   <!-- Böbrek-nakli videolar -->
+<!--    <h2 style="margin-top: 10px;">Böbrek Nakli Videoları</h2>
+   <style type="text/css">.formvideo {margin: 2px 7px; display: inline-block;} .formvideotext {vertical-align: top; margin-top: 7px; display: inline-block;}</style>
+   <a class="iframe" href="http://www.youtube.com/embed/Fq4X7ichBDE?autoplay=1" style="display: block; font-size: 16px;">
+      <img src="http://img.youtube.com/vi/Fq4X7ichBDE/0.jpg" width="60" height="45" class="img-polaroid formvideo">
+      <span class="formvideotext">Böbrek nakli sonrası nelere <br>dikkat edilmelidir?<br><i style="color: #2A87DB;">Doç. Dr. Burak Koçak</i></span>
+   </a>
+   <a class="iframe" href="http://www.youtube.com/embed/UgfbyWpZR7I?autoplay=1" style="display: block; font-size: 16px;">
+      <img src="http://img.youtube.com/vi/UgfbyWpZR7I/0.jpg" width="60" height="45" class="img-polaroid formvideo">
+      <span class="formvideotext">Böbrek yetmezliği tedavisi nasıldır?<br><i style="color: #2A87DB;">Doç. Dr. Burak Koçak</i></span>
+   </a>
+   <a class="iframe" href="http://www.youtube.com/embed/Q-5e_cGu2CM?autoplay=1" style="display: block; font-size: 16px;">
+      <img src="http://img.youtube.com/vi/Q-5e_cGu2CM/0.jpg" width="60" height="45" class="img-polaroid formvideo">
+      <span class="formvideotext">Organ Nakli<br><i style="color: #2A87DB;">Doç. Dr. Burak Koçak</i></span>
+   </a>
+   <a class="iframe" href="http://www.youtube.com/embed/ndokm1Jyp3E?autoplay=1" style="display: block; font-size: 16px;">
+      <img src="http://img.youtube.com/vi/ndokm1Jyp3E/0.jpg" width="60" height="45" class="img-polaroid formvideo">
+      <span class="formvideotext">Karaciğer ve Böbrek Nakli<br><i style="color: #2A87DB;">Prof. Dr. Münci Kalayoğlu</i></span>
+   </a> -->
+   <!-- Böbrek-nakli videolar -->
+   <!-- sideform -->
+   <style type="text/css">#sideformcontainer { display: block; }</style>
+   <script>
+      function onSubmit(token) {
+         document.getElementById("form").submit();
+      }
+   </script>
+   <div id="sideformcontainer">
+      <h3 style="margin-top: 7px;">Ayrıntılı Bilgi İçin Form Doldurun</h3>
+      <form class="campainForm" action="." method="post" id="form">
+         {% csrf_token %}
+         <div class="form-group">
+            <input class="form-control" type="text" placeholder="Adı Soyadı" name="fullname" id="id_fullname" value="{% if form.fullname.value %}{{ form.fullname.value }}{% endif %}"/>
+         </div>
+         <div class="form-group">
+            <input class="form-control" type="text" placeholder="E-Posta" name="email" id="id_email" value="{% if form.email.value %}{{ form.email.value }}{% endif %}"/>
+         </div>
+        <div class="form-group">
+          <select id="countries_phone_bobrek" class="form-control bfh-countries" data-country="TR"></select>
+        </div>
+         <div class="form-group">
+             <input class="form-control bfh-phone" type="tel" placeholder="{% trans '10167' %}"
+                    name="phone" id="id_phone" data-country="countries_phone_bobrek"/>
+         </div>
+         {% ifequal msg 1 %}
+            <div class="alert alert-success" role="alert" style="display: block!important;">{% trans "10092" %}</div>
+         {% endifequal %}
+         {% ifequal msg 2 %}
+            <div class="alert alert-warning" role="alert" style="display: block!important;">{% trans "10042" %}</div>
+         {% endifequal %}
+         {% ifequal msg 3 %}
+            <div class="alert alert-warning" role="alert" style="display: block!important;">{% trans "10042" %}</div>
+         {% endifequal %}  
+         <button type="submit" class="btn btn-memorial pull-right g-recaptcha" data-sitekey="6Ld6hSEUAAAAAN0SsdRRgbh-V90ONj8sabLs1UtT" data-callback='onSubmit' id="sideformbutton">Gönder</button>				
+      </form>
+   </div>
+   <!-- sideform -->
+</div>
+{% endblock %}
+{% block column_8 %}
+<div class="relatedNews kurumsal-kimlik clearfix">
+<img src="https://www.memorial.com.tr/upload/2016/12/711cd582-1eb5-426d-a799-fa0209dd9218.jpg" width="100%" alt="Böbrek Nakli" style="border: none; padding: 0;">
+<h1>Böbrek Nakli</h1>
+<p>Böbreklerimiz hayati organlardır. Kronik böbrek yetmezliği ise böbreklerin işlevlerinin kalıcı olarak bozulması anlamına gelir. Günümüzde kronik böbrek yetmezliğinin bilinen tek tedavisi en sık yapılan organ nakli olan böbrek naklidir. Ancak kronik böbrek yetmezliği hastalarının bir kısmı diyaliz seçeneğini kullanmaktadırlar. Diyaliz, böbrek fonksiyonlarının sadece bir kısmını (kısmen) yerine getirebildiği için böbrek nakline alternatif olarak düşünülmemelidir. Üstelik diyalizdeki hastalar için katı diyetler, su kısıtlaması, seyahat engeli, sosyal hayattan soyutlanma, iş veya eğitimden geri kalma, çocuk hastalarda gelişme geriliği gibi birçok olumsuzluk söz konusudur. Diyalizdeki hastalar böbreklerin yerine getirdiği görevlerin çoğundan yoksun olduklarından yoğun olarak ilaç kullanmak zorundadırlar. (tansiyon, kan yapımı ilaçları vs.) Bu nedenlerden dolayı da böbrek nakli olan hastaların, diyalizdeki hastalara oranla yaşam kaliteleri ve süreleri çok daha iyidir. Hastalar, başarılı bir böbrek nakli ve ameliyat sonrası takip ile sağlıklı bireyler olarak hayatlarını sürdürebilmektedir.</p>
+<h2>Böbrek Yetmezliğinin Belirtileri Nelerdir?</h2>
+<p>Çağımızın en sinsi hastalıklarından olan ve hiçbir belirti vermeden ortaya çıkabilen böbrek yetmezliği her geçen gün hızla yayılıyor. Dünya genelinde 2 milyon, ülkemizde ise 60 binin üzerinde hasta diyalize bağlı yaşıyor ve nakil için sıra bekliyor. Kronik böbrek yetmezliklerinin en önemli sebepleri diyabet, yüksek tansiyon ve böbrek iltihabı(nefrit) olarak sıralanmaktadır. Hiçbir belirti vermeden ilerleyen hastalık böbreklerin 85-100’lerde olması gereken süzme fonksiyonunun 30’un altına düşmesi ile belirti vermeye başlar.. Sabah uyandığı zaman göz kapaklarının altında şişme, ellerde ve ayaklarda hafif ödem, halsizlik ve idrar yaparken meydana gelen aşırı miktardaki köpürme belirtilerin en önemlisidir. Kişinin idrarında önemli  miktarda protein bulunması köpüklü idrar oluşmasına neden olur. İdrarda az miktarda protein bulunabilir (günlük 1- 14 mg/dl) Fakat idrarda büyük miktarda protein bulunması anormal bir durumdur ve bu durum proteinüri ya da mikroalbuminüri olarak bilinir. İdrardaki köpürme böbrek hastalığının başladığını hatta hastalığın ilerlediğini gösterir.</p>
+<h2>Böbrek Nakli İçin Gerekli Şartlar Nelerdir?</h2>
+<p>Gerekli önlemler alınmadığı için hızla ilerleyen hastalık, 10-20 sene düzgün çalışabilecek böbreğin işlevini 2-3 senede içinde bozabilir. Süzme fonksiyon hızı 10’nun altına düştüğünde kronik böbrek yetmezliği hastalarının bir destek tedavisi olmadan yaşama tutunmalarını şanslarını zorlaştırır. Diyaliz ve nakilden başka hiçbir tedavi imkânı kalmayan hastalara yaşam kalitesini artırması ve kısa sürede kalıcı iyileşme sağlaması için genel olarak böbrek nakil tavsiye edilir. İlerleyen tıbbi imkanlar, hekim tecrübeleri artık 5 yaşın altındaki çocuklara ve 65 yaş üstü insanlara da nakil yapılabildiğini göstermiştir. Bu nedenle imkanı olan 7’den 70’e her hastaya böbrek nakli olması gerekmektedir. Amerika’da 86, Türkiye’de  ise 82 yaşındaki hastaya nakil yapılarak hayatlarına sağlıklı bir şekilde devam ettikleri görülmüştür.</p>
+<!-- <iframe src="https://www.youtube.com/embed/lbvyecTfM4I?rel=0&amp;autoplay=0" frameborder="0" allowfullscreen="" width="100%" height="400px"></iframe> -->
+<h2>Canlı Vericiden Böbrek Nakli Artık Çok Daha Kolay</h2>
+<p>Tüm dünyada gösterilen bütün çabalara rağmen beyin ölümü gerçekleşmiş kişilerden yapılan kadavra nakilleri belli bir sayıya ulaşmıştır ve bu rakamlar yıllar içerisinde çok yavaş bir biçimde artmaktadır. Organ yetersizliğine bir çözüm olarak canlı vericilerden yapılan böbrek nakilleri gündeme gelmiştir. Canlı böbrek vericilerinin sağlığı ve ameliyat sonrası konforu düşünüldüğünde kapalı yöntemle böbreğin alınması (laparoskopik metod) günümüzde altın standarttır. Kapalı yöntemle ameliyat, hastanın vücudunda büyük bir ameliyat kesisi açılması yerine, hastanın karnına açılan küçük deliklerden yapılmaktadır. Bu teknik tüm dünyada son 10 yılda yaygınlaşmış, eskiden açık şekilde yapılan birçok cerrahi, laparoskopik yöntemle uygulanmaya başlanmıştır. Kapalı yöntemle böbrek alınması operasyonu dünyada ilk kez 1995 yılında ABD’de uygulanmış ve yaygınlaşarak tüm dünyada standart tedavi yaklaşımı olmuştur. Merkezimizde kapalı yöntemle böbrek çıkartılmasının her tekniği başarıyla uygulanabilmektedir ve bugüne kadar gerçekleşen tüm verici ameliyatları kapalı yöntemle yapılmıştır.</p>
+<h2>Böbrek Nakli Ameliyatının Ertesi Günü Hasta Taburcu Edilebiliyor</h2>
+<p>Kapalı yöntemle böbrek ameliyatı hastanın karnına açılan 0.5-1cm’lik iki delikten yapılmakta ve ameliyat sonunda böbrek, hastanın kasık bölgesine yapılan 6cm’lik bir kesiden çıkarılmaktadır. Açık ameliyata oranla hastalar operasyon sonrası çok daha az ağrı sorunu yaşamakta, hastanede daha kısa kalmakta, normal yaşamlarına ve işlerine daha hızlı dönmektedir. Eskiden kullanılan açık yöntemde hastalarda ameliyat sonrası görülen ameliyat yerinde fıtıklaşma, hissizlik, yara enfeksiyonu, akciğerlerde hava birikmesi gibi istenmeyen yan etkiler bu teknikte neredeyse hiç görülmemektedir. Sadece vücuda açılan iki delik ve böbreği çıkarmak için yapılan küçük bir kesiden gerçekleştirilen bu operasyon, kozmetik açıdan da açık cerrahiye oranla başarılı sonuçlar sağlamaktadır. Ameliyat akşamı gezmeye, su içmeye başlayan vericiler, ertesi sabah yemek yiyebilmekte ve duş alabilmektedirler. Bu ameliyat sonrası hastalar ameliyatın ertesi günü taburcu olabilmektedir. Ameliyat sırasında vücuda “dren” denilen küçük borular yerleştirilmesine gerek yoktur. Dikişler gizli ve estetik dikişler olmakta ve ameliyat sonrası bu dikişlerin alınması gerekmemektedir.</p>
+<!-- <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FMemorialSaglik%2Fvideos%2F1436193573059215%2F&show_text=0&width=400" width="400" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe> -->
+<h2>“Tek- Port Cerrahisi” İle Böbrek Nakli Ameliyatından İzinden Eser Yok</h2>
+<p>Günümüzde nakledilen böbreklerin ömrü 10- 15 yıl arasında değişmektedir. Bu rakamlar geçtiğimiz yıllara göre çok daha iyi bir seviyedeyken önümüzdeki yıllarda gelişen teknoloji ve ilaçlarla hastaların nakledilen bir böbrek ile hayatlarının sonuna kadar yaşamalarının sağlanması amaçlanmaktadır. Canlı vericilerden yapılan nakillerin arttırılması için “Laparoskopik donör nefrektomi” yöntemi kullanılmaktadır. Vericinin vücuduna yapılan açık bir kesi yerine, hastanın karnına açılan küçük deliklerden yapılıyor. Böylece verici nakilden bir gün sonra taburcu olarak normal işlerine başlaması sağlanmaktadır.</p>
+<p>Bu ameliyat için; göbek deliğinin içine dışarıdan görünmeyen, 2 cm’lik bir kesi yapılıyor ve tüm laparoskopik aletlerin içinden geçirilebildiği tek bir port göbek deliğine yerleştiriliyor. Daha sonra kamera ve özel cerrahi aletler, bu tek porttan geçirilerek ameliyat gerçekleştiriliyor. HD (yüksek çözünürlüklü) kamera sistemi, görüntüyü yine HD bir ekrana aktarıyor ve cerrahi ekip bu ekrandan en küçük ayrıntıları bile görerek ameliyatı gerçekleştiriyor. Bu ameliyatlar için standart laparoskopik ameliyatlarda kullanılan cerrahi aletlerden daha farklı olan ve uç kısmı her yöne hareket edebilen özel laparoskopik aletlerin kullanılması gerekiyor. Aynı zamanda son yıllarda üretilen ve uç kısmı bükülerek değişik açılardan görüntü veren özel kamera sistemleri, bu ameliyat tekniğini kolaylaştırılıyor. Böbrek nakli ameliyatlarının büyük bir kısmı “Göbek Deliğinden Tek-port Cerrahisi” denilen bu teknikle yapılabiliyor. Örneğin, çalışmayan ve içi iltihapla dolu böbrekler bu ameliyatla çıkarılabiliyor. Böbrek ne kadar büyük olursa olsun, ameliyatın bitiminde özel bir torbanın içine yerleştiriliyor ve göbek deliğinden “morselatör” denilen bir aletle parçalanarak vücut dışına alınıyor. Böylece böbreğin uzunluğu 15 cm olsa bile, göbek deliğindeki 2cm’lik kesiden dışarı çıkarılması mümkün hale geliyor. Böbrek kanserlerinin bir kısmı ve böbreğin toplayıcı sistemine yerleşmiş büyük taşlar da bu metodla tedavi edilebiliyor. Aynı zamanda böbreküstü bezinde yerleşmiş kitleler de bu ameliyat tekniğiyle iyileştirilebiliyor. Böbrekten mesaneye uzanan ve “üreter” denilen idrar kanalında oluşacak hastalıklar da bu ameliyat tekniğiyle tedavi edilebiliyor.</p>
+<h2>Çapraz Böbrek Naklinde “hibrit yöntem” Başarıyı Artırıyor</h2>
+<img src="https://www.memorial.com.tr/upload/2016/12/f67adda7-8b40-450b-bcdb-cfa4984bd3dd.jpg" width="100%" alt="Böbrek Nakli" style="border: none; padding: 0;">
+<p>Geçmiş yıllarda sadece kan uyumsuzluğu olan çiftlere çapraz böbrek nakil yapılması düşüncesi bulunmaktayken, gelişen teknoloji sayesinde günümüz şartlarında olaya daha farklı bir pencereden yaklaşılmaktadır. Yapılan tetkiklerde hastanın kanında vericisinin böbreğine karşı antikor maddeler belirleniyor. Bu şekilde yapılan böbrek naklinin başarısız olma ihtimali yüksektir. Bu hastalara belli bir ilaç tedavisi verilip antikor düzeyleri düşürülerek de nakil işlemi yapılabilir. Ancak bu antikorlar belli bir düzeyin üstündeyse nakil yine başarılı olmaz ya da bir süre sonra vücut yine de böbreği reddedebilir. Bu nedenle Hibrit yöntem uygulanmaktadır. Yine bu şekilde olan bir çift bulunmakta ve iki uygun çift birbirleri ile çaprazlanmaktadır. Bu kişilerin kanlarındaki antikor düzeyleri daha tedavi edilebilir noktalara getirilmektedir. Daha sonra da uygulanan ilaç tedavisi ile antikor düzeyleri tamamıyla ameliyat için güvenli bir noktaya getirildiğinde nakli başarılı bir şekilde yapılmaktadır. Hibrit yöntem ile birbirlerine uygun olan hastalara yapılan böbrek nakilleri bu sayede daha risksiz daha başarılı ve uzun ömürlü olmaktadır.</p>
+<h2>Yapay Mesane Artık Böbrek Nakline Engel Değil</h2>
+<p>Mesanedeki sorun nedeniyle oluşan böbrek yetmezliği, yıllarca sinsi bir şekilde ilerleyebilir. Ancak mesanenin hastalıklı oluşu, erken dönemde fark edilmemektedir. Sorunlu mesanenin tedavi sürecinde öncelikle mesaneye ince bağırsaktan yama yapılarak büyütme ameliyatı uygulanarak, yama yapılmış mesane, böbreklere bağlanabilmektedir. Bu hastalara uygulanan böbrek nakli, diğer nakilli hastalarla aynı başarı oranına sahiptir. Daha önce sorunlu mesane dolayısıyla kronik böbrek rahatsızlığı çeken hastaların tedavisi iki seansta gerçekleştirilmekteydi. İlk seansta, mesaneye yama operasyonu yapılmakta ve böbrek tedavisi için de 6-8 hafta beklenmekteydi. Ayrıca bu operasyon sonunda, hastada sık sık tekrarlayan idrar yolu enfeksiyonları görülebilmekte ve buna bağlı olarak da çeşitli komplikasyonlar ortaya çıkabilmekteydi. Ancak yeni gelişen ameliyat tekniklerinin gelişmesiyle birlikte idrar yolu enfeksiyonları düzenli takip ve kontrollerle erken teşhis edilebilmekte, tedavisi zamanında uygulanabilmektedir. Ayrıca, artık sorunlu mesane operasyonu ve böbrek nakli ameliyatı tek seansta uygulanabilmektedir.</p>
+<!-- <iframe src="http://www.youtube.com/embed/qEdzIyVdN2M?rel=0&amp;autoplay=0" frameborder="0" allowfullscreen="" width="100%" height="400px"></iframe> -->
+<h2>Böbrek Nakli Bebek Sahibi Olma Şansını Artırıyor</h2>
+<p>Böbrek yetmezliği nedeniyle diyaliz tedavisi gören erkek hastalarda ürenin yarattığı etkilerden dolayı sperm sayılarında düşüklük gözlenebilir. Bu nedenle üreme kabiliyetlerinde azalma meydana gelebilir. Başarılı böbrek nakli sayesinde, böbrek yetmezliği nedeniyle bebek sahibi olamayan hastaların bu şansı artmaktadır. Nakil sonrası ürenin vücutta meydana getirdiği etkiler ortadan kalkınca bu hastaların üreme kabiliyetleri artmakta ve sperm parametreleri normal seviyeye gelmektedir. Bunun dışında sevdiklerine böbreklerini bağışlamak isteyen genç vericiler ileride hamile kalıp çocuk doğuramama endişesi yaşamaktadır. Kadın hastalar tek böbrekle de rahatlıkla gebe kalarak çok sağlıklı bir şekilde bebek sahibi olabilmektedir. Çünkü tek böbrekle yaşayan kadınların gebelikleri diğer gebelerden farklı değildir.</p>
+<h2>İleri Yaş ve Kronik Hastalıklar Böbrek Nakline Engel Değil</h2>
+<p>Böbrek yetmezliği hastalarının çok önemli bir sağlık sorunu bulunmuyorsa nakil olmaları gerekir. Yaşlı hastalarda diyalizin olumsuz etkileri vücutlarının çok daha kısa zamanda yıpranmasına neden olduğu için nakil şansları az gibi görünse de nakilden çok yarar gören hasta grubunun yaşlılar olduğu dikkate alınarak, bu hastalar nakil kapsamında değerlendirilmelidir. Avrupa Transplant Merkezi’nin bu gruba özgü olan programında, yaşlıdan alınan böbreklerin yaşlıya nakli uygulanmaktadır. 80 ya da daha ileri bir yaştaki hastanın de eğer böbrek fonksiyonlarında bir sorun yoksa yine ileri yaşta bir hastaya nakledildiğinde çok başarılı sonuçlar vermektedir. İleri derecede kalp hastalığı olan bir kişinin dahi gerekli tetkikler ve tedaviler yapıldıktan sonra böbrek nakli olmasında herhangi bir sakınca bulunmamaktadır. Önemli olan hastanın kalp muayenesinin ardından gerekli tedavinin ya da operasyonun uygulanarak kişinin sağlıklı bir kalbe kavuşmasının sağlanmasıdır. Ardından böbrek nakli çok sağlıklı bir şekilde yapılabilmektedir. Örneğin; bypass olmuş bir kişiye nakil yapılmasında herhangi bir sakınca yoktur. Kalp ameliyatı yapıldıktan aylar sonra nakil yapılabilir.</p>
+<h2>Böbrek Nakli Merkezi Çok Önemli </h2>
+<p>Böbrek nakli sadece ameliyatla ilgili bir işlem değildir. Böbrek nakline hazırlık ve nakil sonrası takip süreci için merkezin; ameliyathaneden laboratuvarına, görüntüleme ünitelerinden yoğun bakımına, yatan hasta katlarından diğer branşlara kadar bölümün üst düzey kalitede olması ve ortak çalışması çok önemlidir. Bu nedenle en iyi böbrek nakli yapan hastanelerden birini tercih etmeniz doğru olacaktır. Böbrek nakli için nereye başvurulur sorusuna ise tam donanımlı bir hastanenin organ nakli merkezi diye yanıt verilebilir. </p>
+<h2>Çocuklarda Böbrek Nakli</h2>
+<p>Çocukluk dönemindeki böbrek yetmezlikleri genellikle doğumsal nedenlerden kaynaklanır.  Çocuklarda böbrek yetmezliği 1 milyonluk nüfusta 10-15 kişi civarındadır. Bu nedenle doğum sonrasında diyalize ve nakle ihtiyaç duyan ciddi bir çocuk hasta grubu bulunmaktadır. Böbrek yetersizliği hastası olan çocuklar gelişme geriliği nedeniyle yaşıtlarına göre beden gelişimini tamamlayamıyor, düşük kilo ve kısa boy sorunları nedeniyle hayatı olumsuz etkilenmektedir. Bu nedenle özellikle de 5 yaşın altındaki kronik böbrek yetmezliği çocuklara mutlaka nakil yapılması gerekmektedir. Geçmişte çocukların düşük kilosu, kısa boyu böbrek nakline engel teşkil ederken, gelişen teknoloji, alternatif ilaçların üretimi ve cerrahi tecrübeler sayesinde artık 6-7 kilo olan çocuklara da böbrek nakli yapılmasının yolu açılmıştır. Hastalığı sırasında gelişim sorunu yaşayan çocuklar için nakil sonrası ilk yıl çok önemlidir. Nakilden sonraki bir yılını sağlıklı bir şekilde geçiren çocuklar, yaşıtları gibi büyümeğe başlıyor, okuluna, sporuna devam edebilmektedir. </p>
+<h2>Böbrek Nakli Sonrası Hamilelik Mümkün!</h2>
+<p>Böbrek nakli sonrası eskiden hastanın yaşamını kısıtlayıcı engeller konulmaktaydı. Hastaların evinden dışarı çıkmaması, sürekli maske ile dolaşması sosyal yaşamdan uzak durması önerilirdi. Modern yöntemlerin kullanılması, tıbbi tecrübenin artması ile artık bunların hiçbirine gerek olmadığı ortayı çıktı.  Artık hastalara nakilden önce nasıl yaşıyorsa nakilden sonra da aynı şekilde yaşamaları gerektiği belirtilerek hiçbir kısıtlayıcı önlem getirilmemektedir. Maske takmadan toplu ulaşım araçlarını kullanabilecekleri, işlerine, eğitimlerine ve günlük tüm aktivitelerini rahatlıkla yerine getirebilmektedirler. Evli çiftler doğru zamanda çocuk yapabilmekte, anneler çocuklarını emzirebilmektedir. Hastalığı sırasında sperm kalitesi düşerek üreme fonksiyonları azalan erkek hastaların nakil sonra sperm parametrelerinde düzelmeler meydana gelmektedir. Kadınların üreme fonksiyonları normale döndüğü için nakilden 1-2 yıl sonra rahatlıkla hamile kalarak çocuk sahibi olabilmektedir.</p>
+<h2>Böbrek Nakli Sonrası Yaşam</h2>
+<p>Hastaya nakledilen bir böbrek ile hayatı boyunca sağlıklı yaşaması ana hedef haline gelmiştir. Nakledilen böbreğin ömrü geçtiğimiz yıllara göre çok daha iyi bir seviyededir. Önümüzdeki yıllarda gelişecek teknoloji ve ilaçlarla hastaların nakledilen tek böbrek ile yaşam kalitesi ve süresinin daha da artmasının sağlanması amaçlanmaktadır. Nakil sonrası hastalara kullanacakları ilaçların dışında hiçbir kısıtlama yapılmamaktadır. Ayrıca bir yakına böbreklerinden birisini vererek tek böbreği kalan kişiler de nakilden sonra hiçbir sıkıntı yaşanmamaktadır. Hiçbir ilaç ve diyet uygulamadan tek böbrek ile hayatının geri kalanını kaldığı yerden sağlıklı bir şekilde geçirmektedir.</p> 
+<h2>Böbrek Nakli Sonrası Nelere Dikkat Edilmeli?</h2>
+<ul>
+   <li>Az tuzlu beslenerek tansiyon takibi yaptırmalı</li>
+   <li>Karbonhidrat ve yağlı besinlerden uzak durarak beslenmeli</li>
+   <li>Nakil sonrası kullandığı ilaçların mide emilimine zarar vermemesi için greyfurt tüketmemeli </li>
+   <li>Düzenli egzersiz yapmalı, yürüyüş programları hazırlamalı</li>
+   <li>Şeker hastaları kan şekerini kontrol altında tutmalı</li>
+   <li>Evcil hayvan besleyebilir</li>
+   <li>Kadın hastalar çocuk doğurabilir, emzirebilir</li>
+   <li>Nakil olduktan bir ay sonra araç kullanabilir</li>
+   <li>Ağır işler dışında her iş kolunda çalışabilir</li>
+</ul>
+<!-- <iframe src="http://www.youtube.com/embed/L2HQWhbgJcY?rel=0&amp;autoplay=0" frameborder="0" allowfullscreen="" width="100%" height="400px"></iframe> -->
+</div>
+{% endblock %}

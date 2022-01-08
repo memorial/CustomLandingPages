@@ -1,0 +1,1134 @@
+﻿<!DOCTYPE html>
+<html dir="rtl" lang="AR">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Startup Responsive Landing page Template for startup, web services, newsletter signup, lead generation etc..">
+    <title>مركز ميموريال لزراعة الأعضاء</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/css/responsive33.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/css/style.css" rel="stylesheet">
+    <link href="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/css/carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/css/intlInputPhone.css">
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/css/intlInputPhone.min.css">
+    <!-- Custom Google Font : Open Sans -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/js/html5shiv.js"></script>
+      <script src="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/js/respond.min.js"></script>
+    <![endif]-->
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/images/favicon.png">
+    <!-- Subtle Loading bar -->
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/js/pace.js"></script>
+	<!-- Hotjar Tracking Code for https://www.memorial.com.tr/ar/organtransplantation -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2645257,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+    <style>
+
+
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 99; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+            .close:hover,
+            .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+    </style>
+</head>
+<body class="web-app">
+    <!--<div class="preloader"></div>-->
+    <!-- Parallax Header Starts -->
+    <div class="modal bd-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-image: url('{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/images/header_bg.jpg'); ">
+                <button type="button" id="close" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <!-- Logo -->
+                <div class="logo"> <a href="#"><img src="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/images/memorial_logo.png" class="image" alt="readymade-logo"></a> </div>
+                <!-- Hero Title -->
+                <!--<h4 class="main-title text-center" style="color: black">شكرًا لك ، سنتواصل معك قريبًا!</h4>-->
+                <!-- Web app banner -->
+                <div class="row">
+                    <div class="col-md-12 text-center tick">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/images/tick2.png" alt="Web App Banner" style="width:300px;height:auto" class="img-responsive center-block">
+                    </div>
+                </div>
+                <!-- // Web app banner Ends -->
+            </div>
+
+        </div>
+    </div>
+    <main id="top" role="main">
+        <div>
+            <div class="masthead" style="background-image: url('{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/images/banner5.jpg');height:400px">
+
+                <!-- Logo -->
+                <div class="logo"> <a href="#"><img src="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/images/memorial_logo.png" alt="readymade-logo"></a> <h1 class="main-title" style="color:#A91022;"><strong>مركز ميموريال لزراعة الأعضاء</strong></h1></div>
+
+            </div>
+            <!--<div class="container"  style="margin-top:-100px">
+
+                <div class="row has-margin-top-lg">
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-lg-offset-2 col-md-offset-2">
+                        <div class="relative-block signup-space">
+                            <div class="signup-block">
+                                <h2 class="form-title has-margin-bottom-sm text-center">مركز زراعة الأعضاء</h2>
+                                <p dir="rtl">
+                                    في قسم جراحة الصدر والقلب والأوعية الدموية في مستشفى ميموريال، يتم إجراء جراحات القلب للبالغين و خاصة جراحات الشريان التاجي. من بين ما يقرب من 1000 عملية جراحية للقلب يتم إجراؤها سنويًا 78٪ منها للشريان التاجي و 22٪ للصمامات و التشوهات الخلقية بالقلب
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+
+
+    </main>
+    <!-- // Parallax Header Ends -->
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Features Section -->
+
+        <div class="zigzag">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row has-margin-bottom-sm">
+
+                        <div class="col-sm-8">
+                            <h4 class="zigzag-lead">خدمات التنقلات</h4>
+                            <p>نقدم خدمات التنقلات لمرضانا ما بين المطار و الفندق و المستشفى</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="icon-wrap"> <img src="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/images/icon_1.png" alt="img" class="img-responsive center-block"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row has-margin-bottom-sm">
+
+                        <div class="col-sm-8">
+                            <h4 class="zigzag-lead">خدمات الترجمة</h4>
+                            <p>سيكون مترجمونا بجانبكم منذ وصولكم إلى مستشفياتنا حتى العودة إلى بلادكم</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="icon-wrap"><img src="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/images/icon_2.png" alt="img" class="img-responsive center-block"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Second row-->
+            <div class="row has-margin-top">
+                <div class="col-md-6">
+                    <div class="row has-margin-bottom-sm">
+
+                        <div class="col-sm-8">
+                            <h4 class="zigzag-lead">خدمات الإقامة</h4>
+                            <p>تشمل باقاتنا الإقامة في فنادق متعددة المستويات</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="icon-wrap"> <img src="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/images/icon_3.png" alt="img" class="img-responsive center-block"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+
+                        <div class="col-sm-8">
+                            <h4 class="zigzag-lead">شهادات الاعتماد</h4>
+                            <p>في ميموريال، نحن فخورون بكوننا مؤسسة معتمدة من اللجنة المشتركة الدولية </p>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="icon-wrap"><img src="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/images/icon_4.png" alt="img" class="img-responsive center-block"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- // Container Ends -->
+    <!-- Container -->
+    <div class="container" id="exploreBobrek">
+
+        <!-- Zig Zag Content -->
+        <div class="section-title">
+            <!--<h2>انحناء العمود الفقري</h2>-->
+        </div>
+        <div class="zigzag">
+            <div class="row">
+
+                <div class="col-md-8">
+                    <h4 class="zigzag-lead">ما هي زراعة الكلى؟</h4>
+                    <p style="font-size:18px">
+                        زراعة الكلى هي عملية استبدال الكلية المصابة بفشل متقدم، بكلية من متبرع حي أو متوفي و ضمان استمرار وظائف الكلى لدى المريض
+                        الكلى هي أعضاء حيوية. الفشل الكلوي المزمن يعني ضعف دائم في وظائف الكلى. حاليا، العلاج الوحيد المعروف للفشل الكلوي المزمن هو زراعة الكلى، و هي أكثر عمليات زراعة الأعضاء شيوعًا. يمكن أيضًا إجراء زراعة الكلى في حالات الطوارئ، والتي تسمى الفشل الكلوي الحاد. تسمح زراعة الكلى للمريض باستعادة صحته عن طريق إجراء عملية جراحية. لا ينبغي اعتبار غسيل الكلى بديلاً لزراعة الكلى، لأنه يساعد فقط في استعادة جزء من وظائف الكلى. علاوة على ذلك، بالنسبة للمرضى الذين يخضعون لغسيل الكلى، قد تكون هناك العديد من السلبيات مثل الأنظمة الغذائية الصارمة، و القيود المفروضة على المياه، و صعوبة السفر، و العزلة عن الحياة الاجتماعية، و الانسحاب من العمل أو التعليم ، و التأخر في النمو لدى مرضى الأطفال. يجب على مرضى غسيل الكلى استخدام الأدوية بشكل مكثف، حيث انهم يفتقرون إلى معظم وظائف الكلى. لهذه الأسباب ، من المعروف أن جودة المعيشة لدي مرضى زراعة الكلى أفضل من مرضى غسيل الكلى. يمكن للمرضى مواصلة حياتهم كأفراد أصحاء من خلال عملية زراعة الكلى الناجحة والمتابعة بعد الجراحة
+
+                    </p>
+                </div>
+                <div class="col-md-4"> <img src="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/images/image_1.jpg" alt="img" class="img-responsive center-block"> </div>
+            </div>
+        </div>
+        <div class="zigzag">
+            <div class="row">
+
+                <div class="col-md-12 ">
+                    <h4 class="zigzag-lead">كيف يتم إجراء زراعة الكلى؟</h4>
+                    <p style="font-size:18px">
+                        على الرغم من كل الجهود المبذولة في جميع أنحاء العالم، لم تصل عمليات الزراعة من متبرع متوفي إلى مستوى كافٍ وكانت هذه الأرقام تتزايد ببطء شديد على مر السنين. كواحد من حلول لفشل الأعضاء، برزت عمليات زرع الكلى من المتبرعين الأحياء
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="zigzag">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div class="section-title" style="margin-top:0px">
+                                <h3 style="color: #A91022;">
+                                    <strong>عملية المتبرع</strong>
+                                </h3>
+
+                            </div>
+                            <p style="font-size:18px">
+                                بالنظر إلى صحة و راحة المتبرعين بعد الجراحة، فإن إستخراج الكلى بالطريقة المغلقة (المنظار) أمر شائع جدًا. بالطريقة المغلقة تتم الجراحة من خلال فتحات صغيرة تفتح في بطن المتبرع بدلاً من شق جراحي كبير. بالطريقة المغلقة ، يتم إجراء جراحة الكلى من خلال 3 ثقوب بطول 0.5-1 سم في بطن المتبرع وفي نهاية الجراحة يتم إستخراج الكلى من خلال شق بطول 5-6 سم يتم إجراؤه في منطقة اعلي الفخذ. بالمقارنة مع الجراحة المفتوحة، يشعر المتبرعون بألم أقل بكثير بعد العملية، ويقضون وقت أقصر في المستشفى، ويعودون إلى حياتهم الطبيعية ويعملون بشكل أسرع. في الطريقة المفتوحة المستخدمة في الماضي ، فإن الآثار الجانبية غير المرغوب فيها مع الطريقة المفتوحة مثل الانفتاق في مكان العملية، التنميل و التهاب الجرح، والتي شوهدت بعد الجراحة، لم تُلاحظ أبدًا في هذه التقنية. هذه العملية التي يتم إجراؤها من خلال 3 ثقوب فقط يتم فتحها في الجسم وفتح شق صغير لاستخراج الكلى، تحقق نتائج ناجحة من الناحية الجمالية ايضا مقارنة بالجراحة المفتوحة. يبدأ المتبرعون في المشي وشرب الماء وتناول الطعام في ليلة الجراحة، و يمكن إخراجهم من المستشفى بعد يومين من العملية. تكون الغرز تجميلية ولا تحتاج إلى إزالة بعد الجراحة
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+
+                        <div class="col-md-12">
+
+                            <div class="section-title" style="margin-top:0px">
+                                <h3 style="color: #A91022;">
+                                    <strong>عملية المريض</strong>
+                                </h3>
+
+                            </div>
+                            <p style="font-size:18px">
+                                زراعة الكلى هي عملية يتم إجراؤها خارج الصفاق (غشاء المعدة) عن طريق الوصول إلى الأوعية الأربية. يتم وضع الكلية المزروعة في منطقة اعلي الفخذ اليمنى أو اليسرى وليس في مكانها الأصلي. يتم رتبط أوردة كلية المتبرع بالأوردة الأربية للمتلقي، والمسالك البولية لكلية المتبرع متصلة بمثانة المتلقي بمساعدة الغرز. في الغالب لا يتم استئصال الكليتين المتعطلتين إلا في حالات نادرة
+
+
+                            </p>
+                            <p style="font-size:18px">
+                                تكون عملية الشفاء سريعة جدًا بعد زراعة الكلى. نظرًا لعدم وجود اتصال مع الأمعاء أثناء الجراحة، يبدأ المريض في تناول الطعام بسرعة كبيرة بعد العملية. يتم إخراج البول باستخدام قسطرة بولية في الأيام الأربعة الأولى، تتم إزالة القسطرة في اليوم الرابع بعد الجراحة
+                            </p>
+                            <p style="font-size:18px">
+                                إذا تم إجراء عملية زراعة الكلى من متبرع حي، فعادة ما يتم إخراج المريض في اليوم الخامس حيث تعمل وظائف الكلى على الفور. اما إذا تم إجراء عملية زراعة الكلى من متبرع متوفي، فقد يكون من الضروري البقاء في المستشفى لفترة أطول من الوقت حيث ستبدأ الكلية في العمل في غضون أيام أو أسابيع قليلة
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="zigzag">
+            <div class="row">
+
+                <div class="col-md-8 col-md-push-4">
+                    <h4 class="zigzag-lead">زرع الكلى الروبوتي</h4>
+                    <p style="font-size:18px">
+                        اليوم، مع واحدة من اكثر طرق زراعة الكلى تقدمًا، تتم زراعة الكلى عن طريق جراحة دافنشي الروبوتية. زراعة الكلى الروبوتية لها مزايا مهمة، خاصة مع المرضى الذين يعانون من زيادة الوزن
+                    </p>
+
+                </div>
+                <div class="col-md-4 col-md-pull-8"> <img src="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/images/image_2.jpg" alt="img" class="img-responsive center-block"> </div>
+            </div>
+        </div>
+        <!-- // Zig Zag Content Ends -->
+
+
+        <section class="faqs" id="sssbobrek">
+            <div class="container" style="margin-top:50px!important">
+                <div class="sectio-title-2">
+                    <h2>الأسئلة المتكررة حول زراعة الكلى</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel-group" id="accordionBobrek" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOnebobrek">
+                                    <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordionBobrek" href="#collapseOnebobrek" aria-expanded="true" aria-controls="collapseOnebobrek"><strong>كيف تتم عملية تقييم زراعة الكلى؟</strong></a> </h4>
+                                </div>
+                                <div id="collapseOnebobrek" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOnebobrek">
+                                    <div class="panel-body" style="color:black;">
+                                        <table>
+                                            <tr><td>تبدأ عملية تقييم زراعة الكلى بتحديد فصائل الدم وأنواع الأنسجة لكل من المتبرع و المريض.</td></tr>
+                                            <tr><td>فحص فصيلة الدم</td></tr>
+                                            <tr><td>هناك أربع فصائل دم (إيه، بي، إيه بي و او) كل شخص يناسب إحدى هذه المجموعات الوراثية. توضح القائمة أدناه مجموعات الدم المتوافقة</td></tr>
+                                            <tr><td>إذا كانت فصيلة دم المريض إيه فيجب أن تكون فصيلة دم المتبرع إيه أو او</td></tr>
+                                            <tr><td>إذا كانت فصيلة دم المريض بي فيجب أن تكون فصيلة دم المتبرع بي أو او</td></tr>
+                                            <tr><td>إذا كانت فصيلة دم المريض او فيجب أن تكون فصيلة دم المتبرع او</td></tr>
+                                            <tr><td>إذا كانت فصيلة دم المريض إيه بي فيمكن أن تكون فصيلة دم المتبرع إيه، بي، إيه بي أو او</td></tr>
+                                            <tr><td>فصيلة الدم إيه بي هي الأسهل في المطابقة، لأن الشخص الحامل لفصيلة الدم إيه بي يقبل جميع فصائل الدم الأخرى</td></tr>
+
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingNinebobrek">
+                                    <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionBobrek" href="#collapseNinebobrek" aria-expanded="false" aria-controls="collapseNinebobrek"><strong>ما هي مدة الشفاء بعد زراعة الكلى؟</strong> </a> </h4>
+                                </div>
+                                <div id="collapseNinebobrek" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNinebobrek">
+                                    <div class="panel-body" style="color:black;">
+                                        بعد أسبوعين من زراعة الكلى ستبدأ في الشعور بتحسن كبير. ومع ذلك، بعد الزراعة يجب عليك استخدام الأدوية المضادة للرفض بانتظام
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwobobrek">
+                                    <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionBobrek" href="#collapseTwobobrek" aria-expanded="false" aria-controls="collapseTwobobrek"><strong>هل يمكن لأي شخص أن يكون متبرعا حيا؟</strong></a> </h4>
+                                </div>
+                                <div id="collapseTwobobrek" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwobobrek">
+                                    <div class="panel-body" style="color:black;">
+                                        في ظل ظروف طبية و قانونية مناسبة، يمكن لأي شخص أن يكون متبرعًا حيًا
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- Parallax Footer Starts -->
+    <main class="footercta" role="main">
+        <div class="container">
+
+            <!-- Footer Title -->
+            <div class="section-title">
+                <h2>
+                    حدد موعدًا بقسم زراعة الأعضاء
+
+                </h2>
+                <h4>
+                    من فضلك لا تتردد في الاتصال بنا للحصول على مزيد من التفاصيل
+                </h4>
+                <h4 style="word-wrap:break-word"><br /><a dir="ltr" href="tel://+905498339716">+90 549 833 97 16</a><br /> internationalpatients@memorial.com.tr</h4>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center"> <a href="#form" class="btn btn-warning btn-lg gototop">اتصل بنا</a>  </div>
+
+            </div>
+        </div>
+    </main>
+    <!-- // Parallax Footer Ends -->
+    <!-- // Container Ends -->
+
+    <div class="container" id="explore">
+
+        <!-- Zig Zag Content -->
+        <div class="section-title">
+            <!--<h2>انحناء العمود الفقري</h2>-->
+        </div>
+        <div class="zigzag">
+            <div class="row">
+
+                <div class="col-md-8 col-md-push-4">
+                    <h4 class="zigzag-lead">ما هي زراعة الكبد؟</h4>
+
+                    <p style="font-size:18px">زراعة الكبد هي العلاج الوحيد لفشل الكبد المزمن. و نعني بذلك استبدال الكبد المريض بكبد سليم. يشكل تليف الكبد أكثر الأمراض المتسببة في زراعة الكبد في العالم. يتبع ذلك بعض الأمراض الخلقية وبعض أورام الكبد</p>
+                    <p style="font-size:18px">يجب أن يتم إجراء زراعة الكبد من قبل فريق من ذوي الخبرة في مستشفى مجهز بالكامل. زراعة الكبد ليست مجرد إجراء جراحي. من أجل التحضير وعملية المتابعة بعد الزراعة، من المهم جدًا أن يكون المركز متعاون و ذا جودة عالية، من غرفة العمليات إلى المختبر، من وحدات التصوير إلى العناية المركزة، و من طوابق المرضى الداخليين إلى الفروع الأخرى</p>
+
+                </div>
+                <div class="col-md-4 col-md-pull-8"> <img src="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/images/image_4.jpg" alt="img" class="img-responsive center-block"> </div>
+            </div>
+        </div>
+        <div class="zigzag">
+            <div class="row">
+
+                <div class="col-md-8">
+                    <h4 class="zigzag-lead">كيف يتم تنفيذ زراعة الكبد؟</h4>
+
+                    <p style="font-size:18px">
+                        تتطلب زراعة الأعضاء توفر العضو المناسب، ومصدر الأعضاء هو الإنسان. يمكن استخراج العضو المناسب للزراعة من متبرع متوفي أو من متبرع حي من أقارب المريض. إذا اتخذ أقارب الأشخاص الذين فقدوا حياتهم (بسبب الموت الدماغي مثلا) بالعناية المركزة قرارًا بالتبرع بالأعضاء، يتم إنقاذ حياة العديد من المرضى عن طريق تلك الأعضاء. نظرًا لعدم كفاية عدد المتبرعين بالأعضاء، يفقد معظم المرضى حياتهم أثناء انتظار كبد مناسب. كواحد من الحلول، يمكن إنقاذ حياة المريض بأخذ جزء من الكبد من متبرع حي (قد يكون أحد أقارب المريض) لهذا الغرض، يتطوع أحد أقارب المريض ذو نفس فصيلة الدم لإجراء هذه العملية. يخضع الشخص المرشح للتبرع لفحوصات وتقييمات مكثفة. إذا لم يكن هناك عائق أمام التبرع بالكبد؛ يتم أخذ جزء من الكبد (الأيمن أو الأيسر) المناسب لوزن المريض واستبداله بكبد المريض
+                    </p>
+
+                    <p style="font-size:18px">
+                        الغرض من زراعة الكبد هو إعادة المريض إلى حياة طبيعية ونشطة ومنتجة. تهدف العملية الي عودة كل من المريض والمتبرع إلى أدائهم الطبيعي قبل الجراحة. وصلت معدلات نجاح زراعة الكبد التي يتم إجراؤها في مركزنا إلى أرقام أعلى من المعدلات المعروفة في العالم
+                    </p>
+                </div>
+                <div class="col-md-4"> <img src="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/images/image_3.jpg" alt="img" class="img-responsive center-block"> </div>
+            </div>
+        </div>
+
+
+        <!-- // Zig Zag Content Ends -->
+
+
+
+    </div>
+
+
+    <section class="faqs" id="sss">
+        <div class="container" style="margin-top:50px!important">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                        <div class="sectio-title-2">
+                            <h2>الأسئلة المتكررة حول زراعة الكبد</h2>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOnee">
+                                <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOnee" aria-expanded="true" aria-controls="collapseOnee"><strong>هل يمكن زراعة أي كبد لأي شخص؟</strong></a> </h4>
+                            </div>
+                            <div id="collapseOnee" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOnee">
+                                <div class="panel-body" style="color:black;">
+                                    <p>
+                                        في زراعة الكبد، يجب أن تكون فصائل دم المريض والمتبرع متوافقة أولاً. بعد ذلك تبدأ فحوصات المتبرع. هذه العملية تتكون من تقييمات اجتماعية و نفسية و طبية. التقييمات الطبية يمكن تصنيفها كاختبارات الدم والبول، والتحقق من الأمراض المعدية، والفحوصات الإشعاعية، والأخذ بآراء الأقسام الطبية الأخرى (أمراض القلب و الصدر و ما إلى ذلك) تلعب العديد من العوامل مثل مقدار الكبد الذي يحتاجه المريض، الصحة العامة للمتبرع و ما إذا كان يمكن تقسيم الكبد بشكل صحيح و ايضا بنية القنوات الصفراوية، دورًا في نجاح العملية
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingNinee">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNinee" aria-expanded="false" aria-controls="collapseNinee"><strong>ما معني رفض الأنسجة؟</strong> </a> </h4>
+                            </div>
+                            <div id="collapseNinee" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNinee">
+                                <div class="panel-body" style="color:black;">
+                                    <p>
+                                        يتعرف جهاز المناعة في أجسامنا على خلاياه ولا يتفاعل معها سلبيا. و لكن عندما تدخل خلايا تابعة لشخص آخر (دم ، عضو ...) إلى الجسم، يدرك على الفور أن هذه الخلايا غريبة ويبحث عن طرق لطرد هذا الجسم الغريب من الجسم. يتم التعامل مع الميكروبات التي تهاجم الجسم بالمثل. يسمى رد فعل الجسم الذي يلحق الضرر بالعضو المزروع (رفض الأنسجة)  هو رد فعل يمكن رؤيته في أي من عمليات زراع الأعضاء والأنسجة ويؤدي إلى أن يصبح النسيج أو العضو المزروع عديم الفائدة إذا لم يتم اكتشافه مبكرًا ولم يتم اتخاذ الاحتياطات. من أجل منع رفض الأنسجة، يستخدم مرضى زرع الأعضاء الأدوية لتقليل تأثير الجهاز المناعي مدى الحياة. وهذا ما يسمى ضغط المناعة. يتطور رفض الأنسجة أحيانًا على الرغم من هذه الأدوية. من الممكن التاكد من ذلك من خلال تدهور وظائف الكبد المُدخل حديثًا واكتشاف علامات رفض الأنسجة عن طريق خزعة الكبد. عادة ما يتم علاج هذا النوع من التطورات دون مشاكل ويعود كل شيء إلى طبيعته
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwoTwo">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwoTwo" aria-expanded="false" aria-controls="collapseTwoTwo"><strong>هل يجب على مرضى زراعة الكبد استخدام الأدوية مدى الحياة؟</strong></a> </h4>
+                            </div>
+                            <div id="collapseTwoTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwoTwo">
+                                <div class="panel-body" style="color:black;">
+                                    كما هو الحال مع مرضى زراعة الكلى وزراعة الأعضاء بالكامل، يستخدم مرضى زراعة الكبد الأدوية لضغط جهاز المناعة مدى الحياة. هذا هو الشرط الرئيسي لنجاح العلاج. إذا لم يتم استخدام الدواء أو كان الاستخدام غير منتظم، يبدأ جهاز المناعة على الفور في حرب ضد هذا العضو الغريب، وقد تنتهي هذه الحالة بفقدان العضو أو ربما الحياة
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Parallax Footer Starts -->
+    <main class="footercta" role="main">
+        <div class="container">
+
+            <!-- Footer Title -->
+            <div class="section-title">
+                <h2>
+                    حدد موعدًا بقسم زراعة الأعضاء
+
+                </h2>
+                <h4>
+                    من فضلك لا تتردد في الاتصال بنا للحصول على مزيد من التفاصيل
+                </h4>
+                <h4 style="word-wrap:break-word"><br /><a dir="ltr" href="tel://+905498339716">+90 549 833 97 16</a><br /> internationalpatients@memorial.com.tr</h4>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center"> <a href="#form" class="btn btn-warning btn-lg gototop">اتصل بنا</a>  </div>
+
+            </div>
+        </div>
+    </main>
+    <!-- // Parallax Footer Ends -->
+
+    <div class="container" id="exploreKemik">
+
+        <!-- Zig Zag Content -->
+        <div class="section-title">
+            <!--<h2>انحناء العمود الفقري</h2>-->
+        </div>
+        <div class="zigzag">
+            <div class="row">
+
+                <div class="col-md-8 col-md-push-4">
+                    <h4 class="zigzag-lead">ما هي زراعة نخاع العظام (الخلايا الجذعية)</h4>
+
+                    <p style="font-size:18px">
+                        يقوم نخاع العظام بانتاج خلايا الدم. الخلايا الجذعية هي خلايا غير ناضجة توجد في نخاع العظام والتي تشكل جميع خلايا الدم المختلفة. توفر الخلايا الجذعية - وهي أصل جميع الاجهزة في جسم الإنسان ولها خاصية التجدد الذاتي - الأمل في علاج العديد من الأمراض، بما في ذلك بعض أنواع السرطان. يوفر زرع نخاع العظام، المعروف أيضًا باسم زرع الخلايا الجذعية، نتائج ناجحة جدًا في علاج سرطان الغدد الليمفاوية، وسرطانات الدم مثل اللوكيميا، و الاضطرابات الوراثية المختلفة، و اضطرابات الدم الوراثية، و انتكاسة أورام الأعضاء الصلبة، و أمراض الجهاز المناعي و أمراض المناعة الذاتية مثل التصلب المتعدد
+                    </p>
+
+                </div>
+                <div class="col-md-4 col-md-pull-8"> <img src="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/images/image_6.jpg" alt="img" class="img-responsive center-block"> </div>
+            </div>
+        </div>
+        <div class="zigzag">
+            <div class="row">
+
+                <div class="col-md-8">
+                    <h4 class="zigzag-lead">ما الذي يتم قبل زراعة نخاع العظم؟</h4>
+
+                    <p style="font-size:18px">
+                        ستخضع لسلسلة من الاختبارات و الإجراءات لتقييم حالتك و صحتك العامة و للتأكد من أنك جاهز جسديًا لعملية الزرع. قد يستغرق التقييم بضعة أيام أو أكثر. بالإضافة إلى ذلك، يقوم الجراح أو أخصائي الأشعة بإدخال أنبوب رفيع طويل في وريد كبير في صدرك أو رقبتك (قسطرة في الوريد) تظل القسطرة - التي يشار إليها غالبًا باسم الخط المركزي - في مكانها طوال مدة العلاج في معظم الحالات. سيستخدم فريق الزراعة الخاص بك الخط المركزي لضخ الخلايا الجذعية المزروعة و الأدوية و منتجات الدم في جسمك
+                    </p>
+                </div>
+                <div class="col-md-4"> <img src="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/images/image_5.jpg" alt="img" class="img-responsive center-block"> </div>
+            </div>
+        </div>
+
+
+        <!-- // Zig Zag Content Ends -->
+
+
+
+    </div>
+
+    <section class="faqs" id="sssKemik">
+        <div class="container" style="margin-top:50px!important">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-group" id="accordionKemik" role="tablist" aria-multiselectable="true">
+
+                        <div class="sectio-title-2">
+                            <h2>الأسئلة المتداولة حول زراعة نخاع العظام (الخلايا الجذعية)</h2>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOneeKemik">
+                                <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordionKemik" href="#collapseOneeKemik" aria-expanded="true" aria-controls="collapseOneeKemik"><strong>هل هناك أي مخاطر على صحة المتبرع بنخاع العظم؟</strong></a> </h4>
+                            </div>
+                            <div id="collapseOneeKemik" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOneeKemik">
+                                <div class="panel-body" style="color:black;">
+                                    <p>
+                                        التبرع بالخلايا الجذعية لا يضر بصحة المتبرع بأي شكل من الأشكال. يُعطى المتبرع دواءً محددًا لمدة 5 أيام للسماح للخلايا الجذعية بدخول مجرى الدم. عندما يصل عدد الخلايا الجذعية في الدم إلى المستوى المطلوب، يتم أخذ عينة دم من وريد بالذراع
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingNineeKemik">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionKemik" href="#collapseNineeKemik" aria-expanded="false" aria-controls="collapseNineeKemik"><strong>هل هناك حدود عمرية للمتبرع بنخاع العظام؟</strong> </a> </h4>
+                            </div>
+                            <div id="collapseNineeKemik" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNineeKemik">
+                                <div class="panel-body" style="color:black;">
+                                    <p>
+                                        إذا كان المتبرع بالخلايا الجذعية من أقارب المريض، فلن يتم أخذ أي فئة عمرية بعين الاعتبار. ومع ذلك، يجب أن يكون الأشخاص الذين يرغبون في التبرع بالخلايا الجذعية لبنك الأنسجة في الفئة العمرية ما بين 18-55 عامًا
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwoTwoKemik">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionKemik" href="#collapseTwoTwoKemik" aria-expanded="false" aria-controls="collapseTwoTwoKemik"><strong>هل يمكن تطبيق العلاج بالخلايا الجذعية على آلام المفاصل؟</strong></a> </h4>
+                            </div>
+                            <div id="collapseTwoTwoKemik" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwoTwoKemik">
+                                <div class="panel-body" style="color:black;">
+                                    يستخدم العلاج بالخلايا الجذعية بشكل مختلف في جراحة العظام. يمكن تطبيقه على المفاصل مثل الكتفين و الوركين و الركبتين المعرضين لإصابات الغضاريف في المرضى الذين يعانون من تلف الغضروف و آلام المفاصل و لكنهم في غير الحاجة بعد للتدخل الجراحي أو الذين لا يرغبون في الخضوع لعملية جراحية. و مع ذلك، لا يتم استخدام العلاج بالخلايا الجذعية كخيار علاجي لفقدان كل سعة غضروف المفصل تقريبًا
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Parallax Footer Starts -->
+    <main class="footercta" role="main">
+        <div class="container">
+
+            <!-- Footer Title -->
+            <div class="section-title">
+                <h2>حدد موعدًا بقسم زراعة الأعضاء</h2>
+                <h4>يرجى ملء النموذج أدناه حتى نتمكن من الاتصال بك.</h4>
+            </div>
+
+            <!-- Mailchimp Subscribe form -->
+            <div class="row" id="form">
+                <div class="col-md-6">
+                    <div class="subscribe-block">
+                        <div class="row">
+                            <form class="form-horizontal" role="form" action="/memorial-evinizde-form/" id="askprice_form" method="POST">
+                                <input id="geturl" name="url" type="hidden" value="" />
+                                <input id="campaign" name="campaign" type="hidden" value="33221152" />
+                                <input type="hidden" value="Memorial Organ Transplantation AR" name="mailTitle" id="mailTitle" />
+                                <script>
+                                    document.getElementById("geturl").value = location.href;
+                                </script>
+                                <input name="crmMailId" type="hidden" value="28" />
+
+                                <input id="geturl" name="url" type="hidden" value="" />
+
+                                <div class="row" style="margin-bottom:20px">
+                                    <div class="col-md-12 col-sm-12">
+                                        <input class="form-control input-lg" name="fullname" id="fullname" type="text" placeholder="الإسم الكامل" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12">
+
+                                        <input class="form-control input-lg" name="email2" id="email2" aria-describedby="emailHelp" type="email" placeholder="بريدكم الالكتروني" required>
+
+                                    </div>
+
+                                </div>
+                                <div class="row" dir="ltr">
+                                    <div class="col-md-12 col-sm-12" style="margin-top:20px;border-radius:6px;height:46px ">
+                                        <div class="input-phone"></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row" style="margin-top:20px">
+                                    <div class="col-md-12 col-sm-12">
+                                        <input class="form-control input-lg" cols="30" rows="4" name="message" id="message" type="text" placeholder="رسالتك" required>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-left:0px;margin-top:20px">
+                                    <div class="col-md-12 col-sm-12">
+                                        <label for="askprice_permission" class="help-block" style="display: inline; font-weight: 500; font-size:16px;color:#A91022">
+                                            <label class="container3">
+                                                <input id="askprice_permission" style="width:22px;height:22px;" name="askprice_permission" type="checkbox">
+                                                <span class="checkmark3"></span>
+                                            </label>  لقد قرأت  <a class="link" href="https://www.memorial.com.tr/kurumsal/kisisel-verilerin-korunmasi" target='_blank' style="color: #A11022 !important;"><strong>المعلومات</strong></a>  الواردة في <strong>قانون حماية البيانات الشخصية</strong> .<strong> أنا أوافق </strong> على معالجة بياناتي الشخصية ضمن النطاق المحدد والاتصال بي لتقديم الخدمة الصحية.
+
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="row" style="margin-top:20px">
+                                    <div class="col-md-12 col-sm-12">
+                                        <center>
+                                            <button type="submit" id="askprice_permission_button_send" style="display: block; width:-webkit-fill-available; font-size:2rem; height:auto"
+                                                    class="btn btn-warning btn-block btn-lg" disabled>
+                                                إرسال
+                                            </button>
+                                            <span id="spErr" style="margin-top:20px"></span>
+                                        </center>
+                                    </div>
+                                </div>
+                                <div class="field" style="text-align: center;">
+
+                                </div>
+
+                            </form>
+                        </div>
+                        <span id="result" class="loading"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/images/iphoneMemorial.png" alt="img" class="img-responsive center-block">
+                </div>
+            </div>
+            <!-- // Mailchimp Subscribe form Ends -->
+        </div>
+    </main>
+    <!-- // Parallax Footer Ends -->
+
+
+
+    <div class="clickToCall">
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=+905498339716"
+           onclick="ga('يرسل', 'event', { eventCategory: 'Contact', eventAction: 'مركز ميموريال لزراعة الأعضاء', eventLabel: 'Mobile Button'});">
+            <span class="call-button" style="margin-bottom:30px">
+                <img caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/images/whatsapp-icon-seeklogo.com.svg"
+                     style="width:70px; height:70px; color:forestgreen" />
+            </span>
+        </a>
+    </div>
+    <!-- Container -->
+    <div class="container">
+        <section class="row breath footercontent">
+            <div class="col-sm-3"> </div>
+            <div class="col-sm-6 madeby">
+                <p style="color:black">© 2021 مجموعة مستشفيات ميموريال | www.memorial.com.tr | internationalpatients@memorial.com.tr</p>
+            </div>
+            <div class="col-sm-3 copyinfo">
+
+            </div>
+        </section>
+        <!-- // End Client Logos -->
+
+    </div>
+    <!-- // Container Ends -->
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+
+    <style>
+        @media screen and (max-width:760px) {
+            .video-responsive {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+
+        #myBtnS {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 156px;
+            height: 60px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #A91022;
+            color: white;
+            cursor: pointer;
+            /* padding: 15px; */
+            border-radius: 4px;
+            display: none;
+        }
+
+            #myBtnS:hover {
+                background-color: #555;
+            }
+    </style>
+
+
+    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+        <a id="myBtnS" class="btn btn_cta scroll" href="#form" style="margin-bottom: 0px !important;display: none;"><span style="top: 10px;position: relative;">اتصل بنا</span></a>
+    </div>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtnS");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TGPGSC9');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGPGSC9"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/js/jquery.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/js/bootstrap.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/js/easing.js"></script>
+    <!--<script src="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/js/nicescroll.js"></script>-->
+    <!--<script src="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/js/carousel.js"></script>-->
+
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/js/ketchup.all.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/js/intlInputPhone2.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/js/intlInputPhone2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <!--<script src="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/js/plugins/validation/localization/messages_tr.min.js"></script>-->
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}OrganTransplantation-Ar/js/bootstrap-formhelpers.js?v=2"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+
+            var captcha_badge = document.getElementsByClassName("grecaptcha-badge");
+            for (var i = 0; i < captcha_badge.length; i += 1) {
+                captcha_badge[i].setAttribute("data-badge", "inline");
+                captcha_badge[i].style.display = 'none';
+            }
+        };
+
+        function onSubmitRe(token) {
+            document.getElementById("ajax-contact-2").submit();
+        }
+
+        function validateEmail(email) {
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(email);
+        }
+
+        //{#var elementcaptcha = document.getElementById('recaptchabutton');#}
+        //{#elementcaptcha.onclick = validate;#}
+
+        function validate(event) {
+            event.preventDefault();
+            if (!document.getElementById('fullname').value) {
+                alert("اكتب اسمك.");
+
+            } else if (!document.getElementById('phone2').value) {
+                alert("اكتب رقم هاتفك.");
+
+
+            } else {
+                grecaptcha.execute();
+            }
+
+        }
+    </script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+            window.location.href = window.location.href.replace(window.location.search, "");
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                window.location.href = window.location.href.replace(window.location.search, "");
+            }
+        }
+    </script>
+
+    <!-- Hotjar Tracking Code for https://www.memorial.com.tr/en/hair-transplant-turkey -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 2524708, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TGPGSC9');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGPGSC9"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- cookie policy -->
+    <!--<link rel="stylesheet" type="text/css" href="./static/css/cookieconsent.css" />
+    <script src="./static/js/cookieconsent.js"></script>
+
+    <script type="text/javascript">
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#f1f3f9",
+                        "text": "#28252c",
+                    },
+                    "button": {
+                        "background": "transparent",
+                        "text": "#28252c",
+                        "border": "#28252c"
+                    }
+                },
+                "content": {
+                    "message": "We use cookies so that you can get the most out of our services.By using memorial.com.tr you allow cookies.",
+                    "dismiss": "Okey",
+                    "link": "Click for details.",
+                    "href": "https://www.memorial.com.tr/kurumsal/cerezler-cookies-politikasi/"
+                }
+            })
+        });
+    </script>-->
+    <!-- cookie policy -->
+
+    <script type="text/javascript">
+        window.onload = function () {
+
+            var captcha_badge = document.getElementsByClassName("grecaptcha-badge");
+            for (var i = 0; i < captcha_badge.length; i += 1) {
+                captcha_badge[i].setAttribute("data-badge", "inline");
+                captcha_badge[i].style.display = 'none';
+            }
+        };
+
+        function onSubmitRe(token) {
+            document.getElementById("ajax-contact-2").submit();
+        }
+
+        function validateEmail(email) {
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(email);
+        }
+
+        //{#var elementcaptcha = document.getElementById('recaptchabutton');#}
+        //{#elementcaptcha.onclick = validate;#}
+
+        function validate(event) {
+            event.preventDefault();
+            if (!document.getElementById('fullname').value) {
+                alert("اكتب اسمك.");
+
+            } else if (!document.getElementById('phone2').value) {
+                alert("اكتب رقم هاتفك.");
+
+
+            } else {
+                grecaptcha.execute();
+            }
+
+        }
+    </script>
+    <!-- ========= Scroll to Explore ========= -->
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            var urlParams = new URLSearchParams(window.location.search);
+            var pageData = urlParams.get('page');
+            console.log(pageData);
+
+            if (pageData == "success") {
+                var modal = document.getElementById("myModal");
+                modal.style.display = "block";
+            }
+
+            $('.input-phone').intlInputPhone();
+
+            var isFilterOn = false;
+            $(document).on("input", "#phone2", function () {
+                if (isFilterOn)
+                    this.value = this.value.replace(/\D/g, '');
+            });
+
+            $('#phone2').mask('(500) 000-00-00', { placeholder: "(5__) ___-__-__" });
+
+            $('body').on('DOMSubtreeModified', '.btn-cc', function () {
+                if ($(".btn-cc").html().replace(/&nbsp;/g, '') != "+90") {
+                    $('#phone2').unmask();
+                    $('#phone2').attr("maxlength", "15");
+                    isFilterOn = true;
+                    isButtonValid();
+                }
+                else {
+                    $('#phone2').mask('(500) 000-00-00', { placeholder: "(5__) ___-__-__" });
+                    isFilterOn = false;
+                    isButtonValid();
+                }
+            });
+
+            $('#askprice_permission').click(function () {
+                isButtonValid();
+            });
+
+            $("#askprice_permission_button_send").click(function () {
+                if ($("#countries_phone2").val() == "") {
+                    $("#ask_price_errorID").show();
+                    $("#ask_price_error_textID").html('الرجاء تحديد رمز الدولة');
+                    return false;
+                }
+
+                if ($("#fullname").val() == "") {
+                    $("#").show();
+                    $("#spErr").html('<span style=\'color:#b9194b;\'>الرجاء إدخال الاسم الأول والأخير.</span>');
+                    return false;
+                }
+                if ($("#fullname").val().length < 5) {
+                    $("#").show();
+                    $("#spErr").html('<span style=\'color:#b9194b;\'>الرجاء إدخال الاسم الأول والأخير الذي يزيد إجمالي عدد أحرفه عن 4 أحرف.</span>');
+                    return false;
+                }
+                if ($("#fullname").val().length > 30) {
+                    $("#").show();
+                    $("#spErr").html('<span style=\'color:#b9194b;\'>الرجاء إدخال اسم قصير أول واسم عائلة بإجمالي 30 حرفًا.</span>');
+                    return false;
+                }
+
+                if ($("#phone2").val().length < 6) {
+                    $("#spErr").html("<span style='color:#b9194b;'> لا يمكن أن يكون رقم الهاتف أقل من 6 أرقام.</span > ");
+                    return false;
+                }
+
+                $("#askprice_permission_button_send").attr("disabled", "disabled");
+                $('#askprice_permission_button_send').html('إرسال...');
+
+                tel = $(".btn-cc").html().replace(/&nbsp;/g, '') + " " + $("#phone2").val().replace(/[^0-9]+/g, "");
+                //{#console.log($(".btn-cc").html().replace(/&nbsp;/g, '')+"  ||  "+tel);#}
+                $('#phone').val(tel);
+
+                send_promotion();
+            });
+
+            $("#fullname").on('input', function () { isButtonValid(); })
+            $("#phone2").on('input', function () { isButtonValid(); })
+            $("#Message").on('input', function () { isButtonValid(); })
+
+            function isButtonValid() {
+
+                if ($("#fullname").val() != "" && $("#phone2").val() != "" && $('#askprice_permission').is(':checked') && $("#Message option:selected").val() != "0") {
+                    $('#askprice_permission_button_send').prop('disabled', false);
+                } else {
+                    $('#askprice_permission_button_send').prop('disabled', true);
+                }
+            }
+
+        });
+
+
+        function reactivateForm() {
+            document.getElementById("askprice_form").reset();
+            $("#askprice_form").show();
+            $(".alert-success").hide();
+        }
+
+
+
+
+
+
+        function send_promotion() {
+            $(".alert-success").hide();
+            $(".alert-warning").hide();
+            $("#phoneNumber").val($("#phone").val());
+
+            var serializedData = $("#askprice_form").serialize();
+
+
+            $.ajax({
+                type: "POST",
+                url: '/landingAskPricePost?lang=tr',
+                async: true,
+                data: serializedData,
+                cache: false,
+                beforeSend: function () {
+                    $('#askprice_permission_button_send').prop('disabled', true);
+                    $('#askprice_permission_button_send').html('إرسال...');
+                },
+                success: function (b) {
+                    if (b == "1" || (typeof b.status !== 'undefined' && b.status == "1")) {
+                        $("#fullname").val("");
+                        $("#phone2").val("");
+                        $("#message").val("");
+                        $("#email2").val("");
+                        $('#askprice_permission_button_send').prop('disabled', false);
+                        $('#askprice_permission_button_send').html('يرسل');
+                        window.location.href += '?page=success';
+                        $("#spErr").html("<span style='margin: 20px 0; display: block; color: #25a517;'>تم تقديم النموذج الخاص بك بنجاح.</span>");
+
+                    } else {
+                        $(".alert-warning").fadeIn();
+                        $('#askprice_permission_button_send').html('يرسل');
+                        $("#spErr").html("<span style='margin: 20px 0; display: block; color: #ca2020;'>حدثت مشكلة فنية ، يرجى المحاولة مرة أخرى في وقت لاحق.</span>");
+                    }
+                    $('#askprice_permission_button_send').prop('disabled', false);
+                },
+                error: function (b) {
+                    $(".alert-warning").fadeIn();
+                    $('#askprice_permission_button_send').html('يرسل');
+                    $('#askprice_permission_button_send').prop('disabled', false);
+                }
+            });
+        }
+
+    </script>
+
+
+
+
+</body>
+</html>

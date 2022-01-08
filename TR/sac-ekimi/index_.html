@@ -1,0 +1,1579 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" dir="ltr" lang="TR">
+<!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TGPGSC9');</script>
+    <!-- End Google Tag Manager -->
+    <!-- META -->
+
+    <link rel="canonical" href="https://www.memorial.com.tr/memorial-sac-ekimi" />
+    <link rel="alternate" href="https://www.memorial.com.tr/memorial-sac-ekimi" hreflang="tr" />
+
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Memorial Saç Ekimi">
+    <meta itemprop="description" content="Memorial Saç Ekimi">
+    <meta itemprop="image" content="">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="Memorial Saç Ekimi">
+    <meta name="twitter:description" content="Memorial Saç Ekimi">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:image" content="">
+    <link href="/images/favicon.png" rel="shortcut icon" type="image/png" />
+    <!-- TITLE -->
+    <title>Memorial Saç Ekimi</title>
+    <meta name="description" content="Memorial Saç Ekimi" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css?v=20.05.2021 11:35:41">
+    <!-- JS-->
+    <script type="text/javascript" src="/js/vendor.min.js?v=20.05.2021 11:35:41"></script>
+    <script type="text/javascript" src="/js/main.min.js" defer></script>
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+    <script src="https://api.sorunapp.com/js/webChatPlugin.js?c=379"></script>
+
+    <script>window.gtmFormName = 'sac-ekimi-tr';</script>
+
+    <!-- tel interaction, whatsapp interaction,  -->
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}js/gtmSenderLP.js"></script>
+
+</head>
+<body class=" ltr custom-bg" lang="TR">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGPGSC9"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="page-ribbon" id="Position" style="display:none">
+        <div class="container">
+            <div class="wrapper">
+                <span class="pin"><em class="icon-pin"></em></span>
+                <p id="positionMessage">Size en yak&#x131;n hastanemizi g&#xF6;sterebilmemiz i&#xE7;in konum izni vermelisiniz.</p>
+                <a title="Kapat" class="close" onclick="getGeoLocation()"><em class="icon-close" onclick="positionClose()"></em></a>
+            </div>
+        </div>
+    </div>
+    <div class="preloader active"></div>
+    <div class="loader-section">
+        <div class="loader">
+            <span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span>
+        </div>
+    </div>
+
+    <header class="lp-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-6">
+                    <a title="" href="" class="header-logo">
+                        <img src="/images/logo-white.svg" alt="" />
+                    </a>
+                </div>
+                <div class="col-lg-5 col-1"></div>
+                <div class="col-lg-3 col-5 lp-padding">
+                    <div class="header-call">
+                        <div class="call-logo">
+                            <img src="/images/call-white.svg" alt="" />
+                        </div>
+                        <div class="header-call-content">
+                            <p></p>
+                            <a href="tel:+4447888">4447888</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-5 lp-padding">
+
+                    <div class="landing-lang language dropdown dropdown-languages js-dropdown js-dropdown-language hidden-mobile">
+                        <div class="dropdown-button">
+
+
+                            <span class="international">TR</span>
+                            <span class="icon">
+                                <em class="icon-down"></em>
+                            </span>
+                        </div>
+                        <div class="dropdown-content">
+                            <nav class="language-list">
+
+                                <a title="en" href="/en/hair-transplant-turkey">
+                                    <span class="en">EN</span>
+                                </a>
+
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        $(document).ready(function () {
+
+            $('.header-call-content a').remove()
+            $('.lp-header .col-lg-3.col-5').html(`<a href="tel:4447888"><div class="header-call">
+                            <div class="call-logo">
+                                <img src="/images/call-white.svg" alt="">
+                            </div>
+                            <div class="header-call-content">
+                                <p>Bize Ula&#x15F;&#x131;n</p>
+
+                            </div>
+                        </div>
+</a>`)
+            var doctorsSlider = function () {
+
+                $('.js-doctors-slider-knee').slick({
+                    dots: false,
+                    arrows: true,
+                    prevArrow: "<button type='button' class='slick-prev'><em class='icon-left'></em></button>",
+                    nextArrow: "<button type='button' class='slick-next'><em class='icon-right'></em></button>",
+                    slidesToShow: 3.5,
+                    initialSlide: 0,
+
+                    variableWidth: false,
+                    centerMode: false,
+                    infinite: false,
+                    rtl: dirVariable,
+                    responsive: [
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 1
+                            }
+                        },
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1,
+                                dots: true,
+                                arrows: false
+                            }
+                        }
+                    ]
+                });
+            }
+            doctorsSlider();
+            $('.js-example-basic-single').select2();
+
+            var where = null;
+            var intlPhoneMask = function (whereParam) {
+                where = whereParam;
+                if (where === 'modal') {
+                    var inputIntlPhoneMask = $(".swal2-container").find('.intl-phone-mask');
+                    $(document).on('click', '.iti__flag-container', function () {
+                        if (where === 'modal') {
+                            $('.iti.iti--container').css('z-index', '999999999');
+                        }
+                    });
+                } else {
+                    var inputIntlPhoneMask = $(".intl-phone-mask");
+                }
+
+                if (inputIntlPhoneMask.length) {
+
+                    function generateIntl(className) {
+                        const thisInput = className;
+                        const thisInputCountryCode = $(thisInput).closest('form').find('.inputCountryCodeData');
+                        var iti = intlTelInput(thisInput, {
+                            initialCountry: "auto",
+                            preferredCountries: ["tr"],
+                            geoIpLookup: function (success, failure) {
+                                if ('tr' === 'tr') {
+                                    success("tr");
+
+                                }
+                                else {
+                                    success("tr");
+
+                                }
+
+                            },
+                            //utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.14/js/utils.js"
+                        });
+
+                        const countryData = iti.getSelectedCountryData();
+                        thisInputCountryCode.val(countryData.dialCode);
+                        if ($(thisInput).attr('value').length > 0) {
+                            var valuePhone = $(thisInput).attr('value');
+                            iti.setNumber(valuePhone);
+                            $(thisInput).val(valuePhone)
+                        }
+
+                        thisInput.addEventListener("countrychange", function () {
+                            var countryData = iti.getSelectedCountryData();
+                            $(thisInput).closest('form').find('.inputCountryCodeData').val(countryData.dialCode);
+                            $(thisInput).closest('form').find('.elementCountryCodeData').each(function () {
+                                $(this).html("+" + countryData.dialCode);
+                            })
+
+                            $(thisInput).inputmask('remove');
+                            setTimeout(function () {
+                                $(thisInput).val("");
+                            }, 1);
+
+                            $(thisInput).keypress(function (e) {
+                                if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+                                    return false;
+                                }
+                                if ($(this).val().length >= 12) {
+                                    return false;
+                                }
+                            });
+                        });
+                    }
+                }
+
+                inputIntlPhoneMask.each(function (i, e) {
+                    var intlClass = e.className;
+
+
+                    if (where === 'modal') {
+                        intlClass = $(".swal2-container").find('.' + intlClass);
+                    } else {
+                        intlClass = $('.' + intlClass);
+                    }
+
+                    generateIntl(intlClass[i]);
+                });
+            }
+            intlPhoneMask();
+        })
+    </script>
+
+    <section class="hair-header">
+        <h1 class="hair-title">MEMORIAL SA&#xC7; EK&#x130;M MERKEZ&#x130;</h1>
+        <div class="hair-header-content">
+            <div class="hair-contact">
+                <div class="contact-form-content">
+                    <h2 class="hero">SA&#xC7; EK&#x130;M&#x130;NDE MODERN Y&#xD6;NTEMLER</h2>
+                    <div class="desc">Plastik cerrahi uzman&#x131; taraf&#x131;ndan yap&#x131;lan sa&#xE7; ekimi uygulamas&#x131; ile do&#x11F;al, kal&#x131;c&#x131; ve g&#xFC;venilir sonu&#xE7;lar...</div>
+                    <form action="/landingContactPost" method="post" id="submit-contact" data-errorMessage="Captcha Do&#x11F;rulanmad&#x131;" data-bvalidator-validate>
+                        <input type="hidden" value="100000001" name="sourceCode" />
+                        <input type="hidden" value="100000003" name="subject" />
+
+                        <input type="hidden" value="776655" name="campaign" />
+                        <input type="hidden" value="Sa&#xE7; Ekimi Form - TR" name="mailTitle" />
+                        <input type="hidden" value="" name="utm_source" />
+                        <input type="hidden" value="" name="utm_medium" />
+                        <input type="hidden" value="" name="utm_campaign" />
+                        <input type="hidden" value="" name="utm_content" />
+                        <input type="hidden" value="" name="utm_Term" />
+                        <div class="row">
+                            <div class="col-md-12 col-12">
+                                <div class="field">
+                                    <label>
+                                        <div>Ad&#x131;n&#x131;z Soyad&#x131;n&#x131;z <span class="required" id="nameRequiredSpan">*</span></div>
+                                        <input type="text" maxlength="30" id="nameLastName" name="name" data-bvalidator="alpha,required" />
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-12">
+                                <div class="field field-intl-phone">
+                                    <label>
+                                        <div>Cep Telefonunuz <span class="required" id="phoneRequiredSpan">*</span></div>
+                                        <div class="form-intl">
+                                            <input type="hidden" class="inputCountryCodeData" name="PhoneCode" value="">
+                                            <div class="elementCountryCodeData" dir="ltr">+90</div>
+                                            <input value="" type="tel" name="phone" id="phone" class="intl-phone-mask" dir="ltr" data-bvalidator="required" autocomplete="nope" />
+                                        </div>
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="col-md-12 col-12">
+                                <div class="field">
+                                    <label>
+                                        <div>E-posta Adresiniz<span class="required" id="mailRequiredSpan">*</span></div>
+                                        <input type="text" maxlength="40" id="email" name="email" data-bvalidator="email,required" />
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-12">
+                                <div class="field">
+
+                                    <div class="g-recaptcha" data-sitekey="6LevAL0ZAAAAAJqwYMuOggSUMAJTIn-JMw1iMu2o" data-callback="enableBtn" data-expired-callback="disableBtn"></div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-12">
+                                <div class="field field-checkbox">
+                                    <div class="form-group">
+                                        <div class="checkbox">
+                                            <input type="checkbox" class="styled-checkbox js-must-checked" name="Check" value="true" id="kvkk" data-bvalidator="required" data-bvalidator-msg="Se&#xE7;im yapmadan devam edemezsiniz!" />
+                                            <label for="kvkk"><span></span><strong> Kişisel Verilerin Korunması Kanunu</strong> uyarınca ilgili <a href="#" data-url="/kisisel-verilerin-korunmasi-kanunu" class="modal-trigger" data-size="big" data-onopen="modalAppointment">Bilgilendirme</a>’yi okudum. Kişisel verilerimin belirtilen kapsamda işlenmesini ve sağlık hizmet sunumu amacıyla tarafımla iletişime geçilmesini <strong>kabul ediyorum.</strong></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12" id="formResult" style="display: none;">
+                                <div class="field"><div class="alert alert-success"><strong>Ba&#x15F;ar&#x131;l&#x131;!</strong> Form ba&#x15F;ar&#x131;yla g&#xF6;nderildi</div></div>
+                            </div>
+
+                            <div class="actions">
+                                <button class="button button-default js-condition-checked" disabled="disabled" type="submit" id="btnSubmit">G&#xF6;nder</button>
+                            </div>
+
+                            <div class="col-md-12" id="formResultError" style="display: none;">
+                                <div class="field"><div class="alert alert-error"><strong>Bir hata olu&#x15F;tu!</strong> L&#xFC;tfen tekrar deneyiniz.</div></div>
+                            </div>
+
+                            <div class="col-md-12" id="formResultErrorCaptcha" style="display: none;">
+                                <div class="field"><div class="alert alert-error"><strong>Bir hata olu&#x15F;tu!</strong>  Captcha Do&#x11F;rulanmad&#x131;</div></div>
+                            </div>
+
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="video-section hair-videos">
+                <div class="container">
+
+
+                    <div class="video-item">
+                        <a class="video-link" data-fancybox="" title="Sa&#xE7; ekimi nas&#x131;l yap&#x131;l&#x131;r?" href="https://youtu.be/YEh5jZCWjmU">
+                            <div class="image-cover mask">
+                                <img alt="Sa&#xE7; ekimi nas&#x131;l yap&#x131;l&#x131;r?" src="https://img.youtube.com/vi/YEh5jZCWjmU/0.jpg">
+                            </div>
+
+                            <span class="icon"><em class="bg-icon-play"></em></span>
+                        </a>
+                        <div class="content">
+                            <span class="medical-unit"> <font>Sa&#xE7; ekimi nas&#x131;l yap&#x131;l&#x131;r?</font> </span>
+                            <p class="video-text">Memorial Bah&#xE7;elievler Hastanesi Sa&#xE7; Ekimi Merkez&#x27;inden Dr. Mahmut Kaya&#x27;n&#x131;n uygulamas&#x131;yla ger&#xE7;ekle&#x15F;en sa&#xE7; ekimi ve sa&#xE7; ekimi yap&#x131;lan &#x130;ngiliz hasta Dean James Muir&#x27;in deneyimleri...</p>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-lg-6 col-6">
+                            <div class="video-item double left">
+                                <a class="video-link" data-fancybox="" title="Shan ve Alp anlat&#x131;yor (Sa&#xE7; ekimi yapt&#x131;ranlar) " href="https://youtu.be/L7M-8ap1S4Q">
+                                    <div class="image-cover mask">
+                                        <img alt="Shan ve Alp anlat&#x131;yor (Sa&#xE7; ekimi yapt&#x131;ranlar) " src="https://img.youtube.com/vi/L7M-8ap1S4Q/0.jpg">
+                                    </div>
+                                    <span class="icon"><em class="bg-icon-play"></em></span>
+                                </a>
+                                <div class="content">
+                                    <span class="medical-unit"><font>Shan ve Alp anlat&#x131;yor (Sa&#xE7; ekimi yapt&#x131;ranlar) </font> </span>
+                                    <p class="video-text">&#x130;sko&#xE7;ya&#x27;dan gelen Shan ve Alp uygulanan medikal prosed&#xFC;rler ve teknikler sonucu al&#x131;nan olumlu sonu&#xE7;lar nedeniyle sa&#xE7; ekimi i&#xE7;in T&#xFC;rkiye&#x27;yi tercih ediyor. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <div class="organ-transplant-content">
+        <div class="organ-content">
+            <div class="organ-transplant-info">
+                <h2>MEMORIAL SA&#xC7; EK&#x130;M MERKEZ&#x130;</h2>
+                <p>Sa&#xE7; ekimi y&#xF6;ntemleri</p>
+            </div>
+            <div class="organ-transplant-cards slick-standart-3" id="organ-transplant-cards">
+                <div class="organ-card">
+                    <div class="benefit-img">
+                        <img src="https://cdn.memorial.com.tr/files/Uploads/1/1167/ca039e384b7043e5998ab27c82d7d79ejpg317djpg_5171.jpg" />
+                    </div>
+                    <div class="benefit-text">
+                        <h4>CHOI (DHI) SA&#xC7; EK&#x130;M&#x130;</h4>
+                        <p>CHOI (DHI) sa&#xE7; ekiminde mikromotor yard&#x131;m&#x131;yla folik&#xFC;ller don&#xF6;r alan&#x131;ndan al&#x131;narak CHOI kalemlerine teker teker yerle&#x15F;tirilmektedir. Bu kalemler arac&#x131;l&#x131;&#x11F;&#x131;yla, hi&#xE7; kanal a&#xE7;&#x131;lmadan k&#xF6;kler direk sa&#xE7;l&#x131; deriye nakledilmektedir.</p>
+                    </div>
+                </div>
+                <div class="organ-card">
+                    <div class="benefit-img">
+                        <img src="https://cdn.memorial.com.tr/files/Uploads/1/1167/ca039e384b7043e5998ab27c82d7d79ejpg317djpg_5171.jpg" />
+                    </div>
+                    <div class="benefit-text">
+                        <h4>SAF&#x130;R SA&#xC7; EK&#x130;M&#x130;</h4>
+                        <p>FUE y&#xF6;ntemiyle k&#xF6;kler al&#x131;nd&#x131;ktan sonra de&#x11F;erli bir elmas olan safir u&#xE7;lu kalemler arac&#x131;&#x11F;&#x131;yla sa&#xE7;l&#x131; derinin bo&#x15F; alanlar&#x131;nda &#xFC;&#xE7; boyutlu kanallar a&#xE7;&#x131;lmaktad&#x131;r. Daha sonra al&#x131;nan k&#xF6;kler o kanallara yerle&#x15F;tirilir.</p>
+                    </div>
+                </div>
+                <div class="organ-card">
+                    <div class="benefit-img">
+                        <img src="https://cdn.memorial.com.tr/files/Uploads/1/1167/ca039e384b7043e5998ab27c82d7d79ejpg317djpg_5171.jpg" />
+                    </div>
+                    <div class="benefit-text">
+                        <h4>A&#x11E;RISIZ (&#x130;&#x11E;NES&#x130;Z) SA&#xC7; EK&#x130;M&#x130;</h4>
+                        <p>A&#x11F;r&#x131;s&#x131;z sa&#xE7; ekimi i&#x11F;nesiz, hava bas&#x131;nc&#x131;yla &#xE7;al&#x131;&#x15F;an bir anestezi cihaz&#x131;d&#x131;r. A&#x11F;r&#x131;s&#x131;z anestezi iki y&#xF6;ntemle yap&#x131;labilir. &#x130;lki bir gece &#xF6;nceden haz&#x131;rl&#x131;k yap&#x131;larak yeme i&#xE7;me kesilerek, hasta sedasyonla tamamen uyutularak yap&#x131;labilir. </p>
+                    </div>
+                </div>
+                <div class="organ-card">
+                    <div class="benefit-img">
+                        <img src="https://cdn.memorial.com.tr/files/Uploads/1/1167/ca039e384b7043e5998ab27c82d7d79ejpg317djpg_5171.jpg" />
+                    </div>
+                    <div class="benefit-text">
+                        <h4>TIRA&#x15E;SIZ SA&#xC7; EK&#x130;M&#x130;</h4>
+                        <p>T&#x131;ra&#x15F;s&#x131;z sa&#xE7; ekimi vakti k&#x131;s&#x131;tl&#x131; olan ve bir an &#xF6;nce g&#xFC;nl&#xFC;k hayat&#x131;na d&#xF6;nmek isteyen hastalar i&#xE7;in avantajl&#x131; bir y&#xF6;ntemdir. T&#x131;ra&#x15F;s&#x131;z sa&#xE7; ekiminde ekim yap&#x131;lacak alan t&#x131;ra&#x15F; edilmez. &#x130;htiya&#xE7; olan greft say&#x131;s&#x131;na g&#xF6;re don&#xF6;r alan&#x131;nda k&#xFC;&#xE7;&#xFC;k pencere a&#xE7;arak oradan k&#xF6;kler al&#x131;nmaktad&#x131;r. </p>
+                    </div>
+                </div>
+                <div class="organ-card">
+                    <div class="benefit-img">
+                        <img src="https://cdn.memorial.com.tr/files/Uploads/1/1167/ca039e384b7043e5998ab27c82d7d79ejpg317djpg_5171.jpg" />
+                    </div>
+                    <div class="benefit-text">
+                        <h4>KADINLARDA SA&#xC7; EK&#x130;M&#x130;</h4>
+                        <p>Kad&#x131;nlarda sa&#xE7; ekimi bilinenin aksine s&#x131;k yap&#x131;lan bir i&#x15F;lemdir. Sa&#xE7; ekiminin y&#xF6;ntem olarak erkeklerde yap&#x131;landan bir fark&#x131; yoktur. Kad&#x131;nlarda sa&#xE7; uzamas&#x131; zaman ald&#x131;&#x11F;&#x131; i&#xE7;in sa&#xE7; kesmek daha travmatize hale geldi&#x11F;inden t&#x131;ra&#x15F;s&#x131;z ekimler daha &#xE7;ok tercih edilmektedir.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <section class="about-component">
+        <div class="container"><h2 class="title hidden-desktop">Sa&#xE7; Ekimi Hakk&#x131;nda</h2></div>
+        <div class="mobile-bg">
+            <div class="container">
+                <div class="faq-area js-faq about-area">
+                    <h2 class="title hidden-mobile">Sa&#xE7; Ekimi Hakk&#x131;nda</h2>
+                    <div class="content">
+                        <div class="item">
+                            <div class="label">Sa&ccedil; Ekimi Nedir?</div>
+                            <div class="desc">
+                                Sa&ccedil; ekimi, sa&ccedil; d&ouml;k&uuml;lmesi sorunu ya da sa&ccedil; kaybı yaşayan kişilerde seyrelme ve kellik sorununa doğal ve kalıcı bir &ccedil;&ouml;z&uuml;m yoludur. Sa&ccedil; k&ouml;k&uuml;n&uuml;n artık aktif olmadığı, sa&ccedil;sızlığın oluştuğu alanlara sağlıklı sa&ccedil; k&ouml;klerinin mikro cerrahi y&ouml;ntemlerle nakledilmesi işlemine sa&ccedil; ekimi adı verilmektedir. Sa&ccedil; ekiminde d&ouml;k&uuml;len b&ouml;lgeye, hastanın kendi sağlıklı sa&ccedil;ları eklenmektedir. Sa&ccedil; ekimi tamamen kişiye &ouml;zel planlanır ve uygulanır. Sa&ccedil; ekimi operasyonuyla hastanın genellikle ense b&ouml;lgesindeki d&ouml;k&uuml;lmeye diren&ccedil;li sa&ccedil; k&ouml;kleri toplanır ve seyrelme olan ya da tamamen d&ouml;k&uuml;lm&uuml;ş olan kısımlarda a&ccedil;ılan kanallara ekilir. Ama&ccedil;; baş b&ouml;lgesinde ekim yapıldığı belli olmayacak doğallıkta, kalıcı bir şekilde sa&ccedil;lı g&ouml;r&uuml;n&uuml;m kazandırmaktır. Sa&ccedil; ekim işlemi aslında k&uuml;&ccedil;&uuml;k bir cerrahi operasyondur. Bu nedenle uzman ve bu konuda deneyimli doktorlar ve ekip tarafından hastane ortamında yapılması en g&uuml;venli yoldur. Sa&ccedil; ekimi uygulaması ile kişiye kendi sa&ccedil;ları hi&ccedil; d&ouml;k&uuml;lmemiş gibi kalıcı olarak kazandırılmaktadır. Sa&ccedil; ekiminde amacımız; kişiye modern tıbbi uygulamalarla konforlu bir şekilde doğal sa&ccedil;lı g&ouml;r&uuml;n&uuml;m&uuml; tekrar sağlamaktır.
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="label">Sa&ccedil; ekimi kimlere uygulanabilir?</div>
+                            <div class="desc">
+                                G&uuml;n&uuml;m&uuml;zde 50 yaş &uuml;zeri erkeklerin neredeyse y&uuml;zde 50&rsquo;si sa&ccedil; d&ouml;k&uuml;lme sorunuyla karşı karşıya kalmaktadır. Dolayısıyla sa&ccedil; ekimi erkekler i&ccedil;in en &ccedil;ok uygulanan kozmetik cerrahi olmaktadır. Sa&ccedil; kaybı, sadece erkeklere &ouml;zg&uuml; bir durum değildir. Bir&ccedil;ok kadın da sa&ccedil; kaybı ya da seyrekleşme sorunu yaşayabilmektedir.
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="label">Neden sa&ccedil; kaybı olur?</div>
+                            <div class="desc">
+                                Sa&ccedil; kaybının en &ouml;nemli nedenlerinden biri genetik kodlanma &ouml;zelliğidir; ancak ilerleyen yaş, travmatik yaralanmalar sonrası veya &ccedil;eşitli tıbbi rahatsızlıklar sonucunda da oluşabilmektedir. Doktor kontrol&uuml; ile teşhisi konulduktan sonra don&ouml;r saha da yeterli sa&ccedil; k&ouml;k&uuml; olan t&uuml;m kişilere sa&ccedil; ekimi başarılı bir şekilde uygulanmaktadır. Sadece kafa derisi değil kaş, bıyık ya da sakal gibi v&uuml;cutta kıl olan t&uuml;m b&ouml;lgelerdeki kayıplarda da ekim y&ouml;ntemi başarılı bir şekilde uygulanabilmektedir.
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="label">Sa&ccedil; ekimi nasıl yapılıyor?</div>
+                            <div class="desc">
+                                Uygulamada genellikle enseden alınan sa&ccedil; k&ouml;kleri, hedeflenmiş sa&ccedil;sız b&ouml;lgeye ekilmektedir. Alınan bu sa&ccedil; k&ouml;klerine greft denilmektedir. Seyrek olarak bazı durumlarda kişinin ensesinde ya da şakak b&ouml;lgesinde yeterli yoğunlukta sağlıklı sa&ccedil; bulunmamaktadır. Bu gibi durumlarda kişinin kolları ya da g&ouml;ğ&uuml;s duvarı gibi kıl i&ccedil;eren başka b&ouml;lgelerinden de sa&ccedil; k&ouml;k&uuml; alınabilmektedir. Uygulama, sa&ccedil; kaybının miktarına bağlı olarak bir ka&ccedil; saatte ger&ccedil;ekleşmektedir. Sa&ccedil;sız alan &ccedil;ok b&uuml;y&uuml;k ise tedavinin tamamlanması i&ccedil;in bir ka&ccedil; seans gerekebilmektedir. Genellikle m&uuml;dahale sedasyonla lokal anestezi altında yapılmaktadır. Sa&ccedil; ekiminden sonra baş kısmına &ouml;zel bir bandaj uygulanmaktadır. Kişi 1-2 saat sonra taburcu edilmektedir. &Ccedil;ok az g&ouml;r&uuml;lse de ağrı durumlarına karşı ağrı kesiciler ile kontrol sağlanmaktadır. Genellikle 3 g&uuml;nl&uuml;k ev istirahatı sonrası baş kapalı olacak şekilde iş hayatına d&ouml;n&uuml;lebilmektedir. İlk pansuman 5. g&uuml;n yapılmaktadır.
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="label">Sa&ccedil; ekimi i&ccedil;in hangi y&ouml;ntemler kullanılıyor?</div>
+                            <div class="desc">
+                                Sa&ccedil; ekimi işlemlerinde; iz bırakmayan FUE ya da ensede hafif bir iz bırakabilen y&ouml;ntemleri başarıyla uygulanmaktadır. FUE y&ouml;nteminde sa&ccedil; k&ouml;kleri tek tek alınarak eksik olan b&ouml;lgelere ekilirken, y&ouml;nteminde enseden sa&ccedil; i&ccedil;eren bir deri hattı &ccedil;ıkarılmaktadır. Sa&ccedil; ekimi yapılacak kişinin, verici alan olarak kullanılmak &uuml;zere başarkası ve yan taraflarında sağlıklı sa&ccedil;ları olmalıdır. Sa&ccedil; rengi, sertlik derecesi, dalgalı ve g&uuml;r olması gibi diğer fakt&ouml;rler de yapılacak işlemin sonucunu etkilemektedir. Hangi y&ouml;ntemin tercih edileceğine sa&ccedil; ve kafa deri analizi sonrası kişinin de &ouml;ncelikleri g&ouml;z &ouml;n&uuml;nde tutularak birlikte karar verilmektedir. &Ccedil;oğunlukla iz bırakmayan FUE y&ouml;ntemi tercih edilse de, bazı durumlarda y&ouml;nteminin de uygulanması gerekebilmektedir. Sa&ccedil; ekimi sadece kellik i&ccedil;in değil seyrelmiş b&ouml;lgelerde sa&ccedil; yoğunluğunu artırmak i&ccedil;in de uygulanabilir.
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="label">Sa&ccedil; ekimi i&ccedil;in en &ouml;nemli unsur nedir?</div>
+                            <div class="desc">
+                                Sa&ccedil; ekimi ciddi bir cerrahi uygulamadır. Sa&ccedil; ekimi risklerinin en aza indirilmesi i&ccedil;in hastane ortamında yapılmasında gerekir. Bu konuda iyi bir eğitim almış ve deneyimli plastik cerrahlar tarafınca ger&ccedil;ekleştirilmesi en iyi sonu&ccedil;ların alınması a&ccedil;ısında &ccedil;ok &ouml;nemlidir. Operasyonda sa&ccedil; ekiminin başarılı olabilmesi i&ccedil;in ekilen sa&ccedil; k&ouml;klerinin yerleştirildikleri b&ouml;lgede hızlı bir şekilde kanlanması yani &ldquo;tutması&rdquo; gerekmektedir. Doğru bir teknik uygulandığı takdirde sa&ccedil; ekiminin başarı oranı olduk&ccedil;a y&uuml;ksektir. Doğal bir g&ouml;r&uuml;n&uuml;m i&ccedil;in sa&ccedil;ların kel olan b&ouml;lgelere doğru mesafede, doğru a&ccedil;ıyla ve doğru yoğunlukta ekilmesi &ccedil;ok &ouml;nem taşımaktadır.
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="label">Sa&ccedil; ekimi sonrası ekilen sa&ccedil;lar d&ouml;k&uuml;l&uuml;r m&uuml;?</div>
+                            <div class="desc">
+                                Ekilen sa&ccedil;lar, ekim işlemini takip eden bir ka&ccedil; hafta i&ccedil;erisinde d&ouml;k&uuml;lmektedir; ancak bu normal bir durumdur. &Ccedil;&uuml;nk&uuml; d&ouml;k&uuml;len sa&ccedil;lar 3-4 ay sonra tekrar &ccedil;ıkacaktır. Bu ge&ccedil;ici d&ouml;k&uuml;lme d&uuml;zeldikten sonra ekilen sa&ccedil; k&ouml;kleri karakterlerini korur ve d&ouml;k&uuml;lmez. Fakat aynı b&ouml;lgedeki orijinal sa&ccedil;lar zaman i&ccedil;erisinde d&ouml;k&uuml;lmeye devam edebilir ve sa&ccedil; yoğunluğunun azalmasında bağlı olarak gelecekte yeni bir sa&ccedil; ekimi planlanabilir. Cerrahi sonrası sa&ccedil; kaybı ilerleyici olarak devam edebilir. &Ouml;zellikle de yeni sa&ccedil; &ccedil;izgisi b&ouml;lgesinde doğal olmayan bir g&ouml;r&uuml;n&uuml;m meydana gelirse ileri d&ouml;nemde yine artı bir cerrahi girişim gerekebilir.
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="label">Sa&ccedil; ekimi uygulamasının bilin&ccedil;siz yapılmasının ne t&uuml;r riskleri vardır?</div>
+                            <div class="desc">
+                                Her tıbbi girişim gibi sa&ccedil; ekimi de uygun koşullarda yapılmadığında bazı riskler taşıyabilmektedir. Ancak sa&ccedil; ekimi uygulaması, deneyimli bir plastik cerrah tarafından hastane ortamında ger&ccedil;ekleştirilirse komplikasyonlar &ccedil;ok nadir g&ouml;r&uuml;lmektedir. Sa&ccedil; ekimi uzun s&uuml;ren bir uygulamadır ve kelliğin derecesine bağlı olarak 1-2 yıllık bir s&uuml;re&ccedil;te birka&ccedil; ekim gerekebilir. &Ccedil;ok nadir olsa da istenilen enfeksiyon ve belirgin yara izi gibi komplikasyonlar g&ouml;r&uuml;lebilmektedir. Operasyon sonrası ağrı kesicilerle kontrol edilebilen ağrı, rahatsızlık hissi, bir miktar morarma ve şişme izlenebilir. Sa&ccedil; alınan ve ekilen b&ouml;lgelerde 2-3 ay i&ccedil;erisinde kendiliğinden d&uuml;zelen hissizlik oluşabilir.
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="label">Sa&ccedil; ekimi estetik bir işlem midir, tıbbi bir işlem midir?</div>
+                            <div class="desc">
+                                Sa&ccedil; ekimi tıbbi bir işlemdir fakat estetik yanı daha ağırlıktadır. Hastanın don&ouml;r sahası iyi değerlendirilip ekim yapılacak alanda &ouml;n sa&ccedil; &ccedil;izgisi nat&uuml;rel belirlendiği takdirde kişinin imajına uygun tarz oluşturulabilir. Bu yanı ile tam bir estetik işlemdir.
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="label">Sa&ccedil; ekimi kimlere uygulanabilir?</div>
+                            <div class="desc">
+                                Erkeklerde ve kadınlarda 19 -20&rsquo;li yaşlardan itibaren &ccedil;eşitli nedenlerle sa&ccedil; d&ouml;k&uuml;lme sorunu yaşamış sa&ccedil; ekimine engel fizyolojik hastalığı olmayan ve don&ouml;r alanında yeteri kadar folik&uuml;l&uuml; olan her yaştaki t&uuml;m bireylere sa&ccedil; ekim operasyonu yapılabilir.
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="label">Ekilen sa&ccedil;lar doğal g&ouml;r&uuml;n&uuml;r m&uuml;?</div>
+                            <div class="desc">
+                                Ekilen sa&ccedil;ların doğal g&ouml;r&uuml;nmesi i&ccedil;in operasyonun konusunda uzmanlaşmış doktorlar ve uzmanlar tarafından yapılması gerekir. Doğru sağlık kuruluşunda deneyimli uzmanlar tarafından yapılan sa&ccedil; ekim operasyonlarında ekim yapıldığı belli olmayacak d&uuml;zeyde doğallık sağlanabilir. Sa&ccedil; ekiminde uyguladığımız Safir ve DHI teknikleri ile sa&ccedil;larda maksimum sıklığı hedeflemekteyiz. Ortalama bir insanın 1 cm karede 100 tane sa&ccedil; teli olmaktadır. Yeni tekniklerle biz 1 cm kareye 80 folik&uuml;l yani sa&ccedil; teli sığdırabilmekteyiz. Hastanın hayalindeki g&ouml;r&uuml;n&uuml;me en yakın sonu&ccedil; elde edilmeye &ccedil;alışılmaktadır. Bunu yaparken en başta alın &ccedil;izgisi g&ouml;z &ouml;n&uuml;nde bulundurulmaktadır.
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="label">Sa&ccedil; ekimi i&ccedil;in uygun aday mıyım?</div>
+                            <div class="desc">
+                                Fiziki gelişiminizi tamamlamışsanız, Sa&ccedil; ekimine engel fizyolojik hastalığınız yoksa, Başınızdaki don&ouml;r sahada, yeterli sayıda ve uygun yapıda sa&ccedil; folik&uuml;l&uuml; varsa, Ekim yapılacak alanda sa&ccedil; k&ouml;k&uuml; nakledilecek uygun boşluk oluşmuşsa sa&ccedil; ekimi i&ccedil;in uygun adaysınız. Sa&ccedil; ekim operasyonu sadece erkek tipi sa&ccedil; d&ouml;k&uuml;lmelerde değil; &ccedil;eşitli hastalıklar sonunda oluşabilecek lokal boşluklara, yara izi, yanık izi, ameliyat dikiş izine de başarı ile yapılmakladır. Sa&ccedil; ekimi kadınlarda da başarı ile uygulanmaktadır. &Ouml;zellikle kadınlarda oluşan sa&ccedil;sız alanın b&uuml;y&uuml;kl&uuml;ğ&uuml; g&ouml;z &ouml;n&uuml;nde bulundurularak tıraşsız ekim de yapılmaktadır. En kısa s&uuml;rede doktorumuzla &ouml;n g&ouml;r&uuml;şme sağlayabilir ve sa&ccedil; analizi yaptırabilirsiniz. Sa&ccedil; ekim sonrası dikkat etmeniz gerekenler doktorunuz tarafından size anlatılacaktır.
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="label">Sa&ccedil; &ccedil;izgisi nasıl belirlenir?</div>
+                            <div class="desc">
+                                Sa&ccedil; &ccedil;izgisi kişiye &ouml;zel anatomik bir hattır. Alın dokusunun bitip sa&ccedil; dokusunun başladığı alandan doğal sa&ccedil; sınırına g&ouml;re belirlenir. Sa&ccedil; ekiminde en &ouml;nemli nokta alın kasına dikkat edilmesidir. Alın kasına inilmeden, mimik kaslarına zarar verilmeden sa&ccedil; &ccedil;izgisi istenildiği şekilde ayarlanabilmektedir. Geniş alınlı ya da sa&ccedil;larının iki yanı &ccedil;ok boş olan kişilerde de alın &ccedil;izgisine dokunulmadan sa&ccedil; hattı değiştirilebilmektedir. Hastanın y&uuml;z tipi, sa&ccedil; şekli, &ouml;nceki sa&ccedil;larının d&ouml;k&uuml;lme şekli ve alın kası, sa&ccedil;sız derinin durumuna g&ouml;re istenilen şekil yapılabilmektedir. Hasta kendisine uygun olmayan bir sa&ccedil; tipi konusunda istekte bulunduysa, tıbbi zorunluluklar, y&uuml;z&uuml;n&uuml;n anatomik yapısı ve olası sonu&ccedil;larla ilgili bilgilendirme yapılır ve kendisine en uygun &ouml;n hat ve sa&ccedil; şekli belirlenir.
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="label">Sa&ccedil; ekimi sonrası ekilen sa&ccedil;lar d&ouml;k&uuml;l&uuml;r m&uuml;?</div>
+                            <div class="desc">
+                                Ekilen sa&ccedil;lar, ekim işlemini takip eden bir ka&ccedil; hafta i&ccedil;erisinde d&ouml;k&uuml;lmektedir; ancak bu normal bir durumdur. &Ccedil;&uuml;nk&uuml; d&ouml;k&uuml;len sa&ccedil;lar 3-4 ay sonra tekrar &ccedil;ıkacaktır. Bu ge&ccedil;ici d&ouml;k&uuml;lme d&uuml;zeldikten sonra ekilen sa&ccedil; k&ouml;kleri karakterlerini korur ve d&ouml;k&uuml;lmez. Fakat aynı b&ouml;lgedeki orijinal sa&ccedil;lar zaman i&ccedil;erisinde d&ouml;k&uuml;lmeye devam edebilir ve sa&ccedil; yoğunluğunun azalmasında bağlı olarak gelecekte yeni bir sa&ccedil; ekimi planlanabilir. Cerrahi sonrası sa&ccedil; kaybı ilerleyici olarak devam edebilir. &Ouml;zellikle de yeni sa&ccedil; &ccedil;izgisi b&ouml;lgesinde doğal olmayan bir g&ouml;r&uuml;n&uuml;m meydana gelirse ileri d&ouml;nemde yine artı bir cerrahi girişim gerekebilir.
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="label">Sa&ccedil; ekim operasyonu nasıl yapılır?</div>
+                            <div class="desc">
+                                Sa&ccedil; ekimi konusunda uzman doktorun belirlediği operasyon tarzına g&ouml;re tıraşlı ya da tıraşsız ekim yapılabilir. &Ouml;ncelikle sa&ccedil;lı doku ve ekim yapılacak alan planlanır. Sa&ccedil;lı doku işlemin seyrine g&ouml;re planlanarak tıraş edilir. Lokal anestezi uygulanır ve sa&ccedil; k&ouml;kleri mikro cerrahi aletlerle tek tek toplanır. Sa&ccedil;lanması istenen alana sa&ccedil;ın &ccedil;ıkış y&ouml;n&uuml;, sa&ccedil;ın &ccedil;ıkış a&ccedil;ısı ve yoğunluğu g&ouml;z &ouml;n&uuml;nde bulundurularak kanallar a&ccedil;ılır. Alınan k&ouml;kler titiz ve hassas bir &ccedil;alışma ile bu kanallara tek tek yerleştirilir. T&uuml;m operasyon s&uuml;resince ama&ccedil;; operasyon sonrasında ekim yapıldığı belli olmayacak&nbsp;<strong>doğallıkta sağlıklı ve kalıcı sa&ccedil;</strong>&nbsp;g&ouml;r&uuml;n&uuml;m&uuml;n&uuml; sağlamaktır. Ortalama 6 ila 8 saatte operasyon tamamlanır.
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="label">FUE Y&ouml;ntemi nedir?</div>
+                            <div class="desc">
+                                &lsquo;&rsquo;Folicular Unite Extraction &lsquo;&rsquo; teriminin kısaca s&ouml;ylemidir. D&ouml;k&uuml;lmemeye kodlanmış (non androjenik) sa&ccedil; k&ouml;klerinin yoğun olduğu ense ve kulak &uuml;st&uuml; b&ouml;lgesinden kesme ve dikiş izi olmadan folliculer &uuml;nitelerin kişiye &ouml;zel micro cerrahi aletlerle tek tek &ccedil;ıkarıldığı ve sa&ccedil;sız alanlara aynı g&uuml;n nakledildiği y&ouml;ntemdir. Lokal anestezi ya da hastanın talebine g&ouml;re sedasyonla ( hi&ccedil;bir ağrı acı hissetmeden ) yapılabilir.&nbsp;G&uuml;n&uuml;m&uuml;zde FUE y&ouml;ntemi innovatif, modern yaklaşımlarla farklı tarzlarda uygulanabilmektedir; Saphire FUE ve DHI FUE
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="label">FUE Y&ouml;nteminin avantajları nedir?</div>
+                            <div class="desc">
+                                Kıl k&ouml;kleri tek tek ve kisiye &ouml;zel mikro cerrahi aletlerle alındığı i&ccedil;in operasyon sonrası 2-3 g&uuml;nde iyileşme tamamlanacak ve hi&ccedil;bir iz kalmayacaktır. Don&ouml;r sahanızdan ekim yapılacak alanın ihtiyacına g&ouml;re maksimum sac k&ouml;t&uuml; transfer edilebilir. Sa&ccedil; k&ouml;klerinin d&ouml;k&uuml;lmemeye kodlanmış (non androjenik) t&uuml;m alanı homojen ve orantılı k&ouml;k alınarak kullanılmaktadır. B&ouml;ylece gelecek yıllarda don&ouml;r sahanın tekrar kullanılması m&uuml;mk&uuml;n olur. Devam eden yıllar i&ccedil;erisinde kişinin ihtiyacı ve beklentisine g&ouml;re yine aynı y&ouml;ntemle ikinci veya &uuml;&ccedil;&uuml;nc&uuml; seans sac ekim operasyonları da yapılabilmektedir.
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="label">Sa&ccedil; ekiminde hangi y&ouml;ntemler kullanılıyor?</div>
+                            <div class="desc">
+                                Memorial Sa&ccedil; Ekimi Merkezlerinde Safir kalemi ve DHI kalemi olmak &uuml;zere iki y&ouml;ntem kullanılmaktadır. Bunlar ekme y&ouml;ntemleridir. Her ikisinde de k&ouml;k toplama y&ouml;ntemi FUE adı verilen y&ouml;ntemdir. Yani FUE başlı başına bir sa&ccedil; ekim y&ouml;ntemi değil, k&ouml;k toplama y&ouml;ntemidir. FUE y&ouml;nteminde k&ouml;kler mikromotorlar aracılığıyla don&ouml;r alanından teker teker alınmaktadır. Sa&ccedil; ekimi y&ouml;ntemleri olarak ise Safir ve DHI kullanılmaktadır. K&ouml;kler alındıktan sonra DHI y&ouml;ntemi tercih edilecekse DHI kalemleriyle sa&ccedil;lar deriye nakledilmektedir. Safir kullanacak ise &ouml;nce safir kalemleriyle k&ouml;klerin yerleştirileceği yerlere kanallar a&ccedil;ılmakta, sonra alınan k&ouml;kler kanallara yerleştirilmektedir. FUE bir k&ouml;k alım y&ouml;ntemidir. Ekim y&ouml;ntemi olarak ise DHI ve safir kullanılmaktadır.
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="label">FUE y&ouml;nteminin avantajları nelerdir?</div>
+                            <div class="desc">
+                                FUE y&ouml;nteminde k&ouml;kler teker teker alınır. Don&ouml;r alanı minimum travmatize edilmektedir. Yara izi kalmaz. Sosyal hayata d&ouml;n&uuml;ş kısadır. G&uuml;venli bir y&ouml;ntemdir. Gerekli koşulları sağlayan kadın erkek her hastada uygulanabilmektedir. K&uuml;&ccedil;&uuml;k yaşta oluşan yara izi, yanık gibi b&ouml;lgelere rahatlıkla uygulanabilir. Herhangi bir yaş sınırı yoktur ancak kalp rahatsızlıkları gibi bazı kronik hastalıkların varlığında hastanın doktorundan sa&ccedil; ekimi izni alması gerekmektedir.
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="label">FUE y&ouml;nteminin riskleri nelerdir?</div>
+                            <div class="desc">
+                                FUE y&ouml;ntemi min&ouml;r bir cerrahi işlem olduğu i&ccedil;in basit bir diş tedavisi işlemiyle aynı riskleri barındırmaktadır. Enfeksiyon gibi, nekroz gibi riskler nedeniyle steril hastane ortamında yapılması &ouml;nemlidir.
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="label">FUE y&ouml;nteminde g&uuml;nl&uuml;k yaşama d&ouml;n&uuml;ş adımları nelerdir? Ka&ccedil; g&uuml;nde iyileşilir?</div>
+                            <div class="desc">
+                                İşlemin ardından 2 g&uuml;n sonra hastalar ilk yıkama ve pansuman i&ccedil;in merkeze gelmektedir. İşlemden sonra ilk 2 g&uuml;n dinlenmeleri &ouml;nerilir. 2. g&uuml;n bandajlar &ccedil;ıkarılır ve ilk yıkama yapılır. Bunun ardından g&uuml;nl&uuml;k yaşama d&ouml;n&uuml;lebilmektedir. İlk yıkamadan son yıkmaya kadar yani 7-10 g&uuml;nl&uuml;k bir s&uuml;re&ccedil;te sa&ccedil;larda ekim yapıldığı belli olmaktadır. Kabuklanmalar g&ouml;r&uuml;lmektedir. Son yıkamanın ardından ekim belirtileri tamamen ortadan kalkmış olur. Ardından sa&ccedil;ların uzaması beklenir.
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info-icon">
+            <img src="https://cdn.memorial.com.tr/files/images/info-big-gray.svg" alt="" />
+        </div>
+    </section>
+
+
+
+    <section class="doctors-section aesthetic hospital">
+        <div class="container">
+            <div class="section-hero">
+                B&#xF6;l&#xFC;m&#xFC;n Yer Ald&#x131;&#x11F;&#x131; Hastaneler
+            </div>
+            <div class="doctors-section">
+                <div class="doctors">
+                    <ul class="js-doctors-slider js-page-slider">
+
+                        <li class="">
+                            <div class="item">
+                                <div class="content">
+
+                                    <div class="image-cover">
+                                        <a href=""><img class="img lazyload" alt="" data-src="https://cdn.memorial.com.tr/files/Uploads/1/2/ekranresmi20200520002137png9f8bminjpg_f8ee.jpg"></a>
+                                    </div>
+                                    <div class="text-wrap">
+                                        <a class="doctor-name" href="" title=""> <h3 class="name">Bah&#xE7;elievler Hastanesi</h3></a>
+                                        <p class="hospital-adress">
+                                            Bah&#xE7;elievler Mh. Adnan Kahveci Blv. No:227 Bah&#xE7;elievler/&#x130;stanbul
+                                        </p>
+                                        <p>(0212) 408 45 45</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="see-all"> <a href="/hastaneler-ve-tip-merkezleri" class="hospital-see-all">T&#xFC;m&#xFC;n&#xFC; G&#xF6;r</a></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="doctors-section aesthetic">
+        <div class="container">
+            <div class="section-hero">
+                Doktorlar&#x131;m&#x131;z
+            </div>
+            <div class="doctors-section">
+                <div class="doctors">
+                    <ul class="js-doctors-slider-knee js-page-slider">
+                        <li class="">
+                            <div class="item">
+                                <div class="content">
+                                    <div class="image-cover">
+                                        <a href=""><img class="img lazyload" alt="" data-src="https://cdn.memorial.com.tr/files/2018/2/6d992139-b8c1-403f-a184-b4ccb3591bf8.jpg"></a>
+                                    </div>
+                                    <div class="text-wrap">
+                                        <a class="doctor-name" href="/doktorlar/atilla-adnan-eyuboglu" title="Op. Dr. Atilla Adnan EY&#xDC;BO&#x11E;LU"> <h3 class="name">Op. Dr. Atilla Adnan EY&#xDC;BO&#x11E;LU</h3></a>
+                                        <div class="hospital-name">
+                                            <a style="color:inherit" href="/hastaneler-ve-tip-merkezleri/memorial-bahcelievler-hastanesi" title="Bah&#xE7;elievler Hastanesi">Bah&#xE7;elievler Hastanesi</a>
+                                        </div>
+                                        <div class="label-wrap">
+                                            <a title="Estetik, Plastik ve Rekonstr&#xFC;ktif Cerrahi" href="/tibbi-birimlerimiz/estetik-plastik-ve-rekonstruktif-cerrahi" class="label" id="medicalUnit">Estetik, Plastik ve Rekonstr&#xFC;ktif Cerrahi</a>
+                                        </div>
+                                        <div class="patient-thanks-link-wrap">
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <a class="button" href="/doktorlar/atilla-adnan-eyuboglu" title="Kolay Randevu Al"><em class="icon-zap"></em>Kolay Randevu Al</a>
+                            </div>
+                        </li>
+                        <li class="">
+                            <div class="item">
+                                <div class="content">
+                                    <div class="image-cover">
+                                        <a href=""><img class="img lazyload" alt="" data-src="https://cdn.memorial.com.tr/files/2019/4/69bb66f8-bfca-4fd1-a723-f298de6d55b1.jpg"></a>
+                                    </div>
+                                    <div class="text-wrap">
+                                        <a class="doctor-name" href="/doktorlar/mahmut-alan-kaya" title="Dr. Mahmut ALAN KAYA"> <h3 class="name">Dr. Mahmut ALAN KAYA</h3></a>
+                                        <div class="hospital-name">
+                                            <a style="color:inherit" href="/hastaneler-ve-tip-merkezleri/memorial-bahcelievler-hastanesi" title="Bah&#xE7;elievler Hastanesi">Bah&#xE7;elievler Hastanesi</a>
+                                        </div>
+                                        <div class="label-wrap">
+                                            <a title="Sa&#xE7; Ekimi" href="/tibbi-birimlerimiz/sac-ekimi" class="label" id="medicalUnit">Sa&#xE7; Ekimi</a>
+                                        </div>
+                                        <div class="patient-thanks-link-wrap">
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <a class="button" href="/doktorlar/mahmut-alan-kaya" title="Kolay Randevu Al"><em class="icon-zap"></em>Kolay Randevu Al</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="contact-map lp-map">
+        <div class="container">
+            <h3 class="hero">
+                Ula&#x15F;&#x131;m
+            </h3>
+            <div class="desc">
+                Konumunu g&#xF6;r&#xFC;nt&#xFC;lemek istedi&#x11F;iniz hastaneyi se&#xE7;iniz.
+            </div>
+
+            <select lang='tr' class="select2-basic select2-shadow js-select2-basic" id="hospitalChanged" onchange="contact()" name="value">
+
+                <option value="17">Bah&#xE7;elievler Hastanesi</option>
+
+
+            </select>
+
+            <div class="contact-map-iframe">
+                <div id="mapping">
+
+                </div>
+                <div class="show-in-map">
+                    <a href="#" target="_blank" id="showMaps" title="Haritada G&#xF6;r" class="button button-outline-dark button-show-in-map">Haritada G&#xF6;r</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+
+
+        .lp-header {
+            height: 80px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        .lp-hero {
+            margin-top: 80px;
+        }
+
+
+
+
+
+
+        .faq-section .faq-area .content .item {
+            margin: 0;
+            margin-bottom: 10px;
+        }
+
+            .faq-section .faq-area .content .item .label {
+                padding: 0;
+                padding-left: 15px;
+            }
+
+        .doctors-section .doctors-section .doctors .item {
+            min-height: auto;
+        }
+
+        #submit-contact .field label {
+            font-weight: bold;
+        }
+
+        #submit-contact .field input {
+            font-weight: bold;
+        }
+
+        #submit-contact .field .checkbox label {
+            font-weight: normal;
+        }
+
+        .description .content {
+            padding: 50px 40px;
+            background-color: #fff;
+            border: solid 1px #d4d7dd;
+            margin: 40px 0;
+            border-radius: 4px;
+        }
+    </style>
+
+    <script>
+
+        function checkWidth() {
+            if ($(window).width() < 768) {
+                $('#organ-transplant-cards').addClass('mobile-slick-standart');
+            } else {
+                $('#organ-transplant-cards').removeClass('mobile-slick-standart');
+            }
+        }
+
+        $(window).resize(checkWidth);
+
+    </script>
+
+
+    <footer class="page-footer lp-footer">
+        <div class="content">
+            <div class="container">
+                <div class="mobile-show">
+                    <span class="logo"><em class="icon-logo"></em></span>
+                </div>
+                <div class="row js-mobile-footer-menu">
+                    <div class="col-lg-4 col-md-4 col-12 mobile-footer-menu-item">
+                        <span class="sub-title">Memorial Hakk&#x131;nda</span>
+                        <div class="mobile-area">
+                            <p class="about-text">
+                                Memorial uzman doktorlar&#x131;, bilgi ve birikimlerini yak&#x131;n ilgi ile birle&#x15F;tiren sa&#x11F;l&#x131;k personeli, hasta odakl&#x131; hizmet anlay&#x131;&#x15F;&#x131;, kalite politikas&#x131;, ileri t&#x131;p teknolojisi ile donat&#x131;lan tan&#x131;-tedavi &#xFC;niteleri, modern mekanlar&#x131; ve konforlu hasta odalar&#x131; ile sa&#x11F;l&#x131;kta g&#xFC;venin adresidir.  Memorial &#x130;stanbul, Ankara, Kayseri, Antalya ve Diyarbak&#x131;r&#x2019;da bulunan 11 hastane, 1 t&#x131;p merkezi, 1 wellness merkezi ile sa&#x11F;l&#x131;&#x11F;&#x131;n&#x131;z i&#xE7;in daima yan&#x131;n&#x131;zda...
+                            </p>
+
+                            <div class="language dropdown dropdown-languages js-dropdown js-dropdown-language footer-language">
+                                <div class="dropdown-button">
+                                    <img alt="tr" class="flag" src="https://cdn.memorial.com.tr/files/Uploads/1/static/turkey-flag.png">
+                                    <span class="country">TR</span>
+
+
+
+                                    <span class="icon">
+                                        <em class="icon-down"></em>
+                                    </span>
+                                </div>
+                                <div class="dropdown-content">
+                                    <nav class="language-list">
+                                        <a title="T&#xFC;rk&#xE7;e" href="/">
+                                            <img alt="T&#xFC;rk&#xE7;e" class="flag" src="https://cdn.memorial.com.tr/files/Uploads/1/static/turkey-flag.png">
+                                            <span class="country">T&#xFC;rk&#xE7;e</span>
+                                        </a>         <a title="English" href="/en">
+                                            <img alt="English" class="flag" src="https://cdn.memorial.com.tr/files/Uploads/1/static/english-flag.png">
+                                            <span class="country">English</span>
+                                        </a>        <a title="Az&#x259;rbaycanca" href="/az">
+                                            <img alt="Az&#x259;rbaycanca" class="flag" src="https://cdn.memorial.com.tr/files/Uploads/1/static/azerbaycan.jpg">
+                                            <span class="country">Az&#x259;rbaycanca</span>
+                                        </a>        <a title="&#x420;&#x443;&#x441;&#x441;&#x43A;&#x438;&#x439;" href="/ru">
+                                            <img alt="&#x420;&#x443;&#x441;&#x441;&#x43A;&#x438;&#x439;" class="flag" src="https://cdn.memorial.com.tr/files/Uploads/1/static/rs.jpg">
+                                            <span class="country">&#x420;&#x443;&#x441;&#x441;&#x43A;&#x438;&#x439;</span>
+                                        </a>        <a title="Shqip" href="/sq">
+                                            <img alt="Shqip" class="flag" src="https://cdn.memorial.com.tr/files/Uploads/1/static/alb-flag.png">
+                                            <span class="country">Shqip</span>
+                                        </a>        <a title="&#x627;&#x644;&#x639;&#x631;&#x628;&#x64A;&#x629;" href="/ar">
+                                            <img alt="&#x627;&#x644;&#x639;&#x631;&#x628;&#x64A;&#x629;" class="flag" src="https://cdn.memorial.com.tr/files/Uploads/1/static/ae.png">
+                                            <span class="country">&#x627;&#x644;&#x639;&#x631;&#x628;&#x64A;&#x629;</span>
+                                        </a>        <a title="Bosanski" href="/ba">
+                                            <img alt="Bosanski" class="flag" src="https://cdn.memorial.com.tr/files/Uploads/1/static/ba-flag.png">
+                                            <span class="country">Bosanski</span>
+                                        </a>        <a title="Fran&#xE7;ais" href="/fr">
+                                            <img alt="Fran&#xE7;ais" class="flag" src="https://cdn.memorial.com.tr/files/Uploads/1/static/fr-flag.png">
+                                            <span class="country">Fran&#xE7;ais</span>
+                                        </a>        <a title="Rom&#xE2;n&#x103;" href="/ro">
+                                            <img alt="Rom&#xE2;n&#x103;" class="flag" src="https://cdn.memorial.com.tr/files/Uploads/1/static/ro-flag.png">
+                                            <span class="country">Rom&#xE2;n&#x103;</span>
+                                        </a>        <a title="&#x411;&#x44A;&#x43B;&#x433;&#x430;&#x440;&#x441;&#x43A;&#x438;" href="/bg">
+                                            <img alt="&#x411;&#x44A;&#x43B;&#x433;&#x430;&#x440;&#x441;&#x43A;&#x438;" class="flag" src="https://cdn.memorial.com.tr/files/Uploads/1/static/bg-flag.png">
+                                            <span class="country">&#x411;&#x44A;&#x43B;&#x433;&#x430;&#x440;&#x441;&#x43A;&#x438;</span>
+                                        </a>        <a title="Makedonca" href="/mk">
+                                            <img alt="Makedonca" class="flag" src="https://cdn.memorial.com.tr/files/Uploads/1/static/mk.png">
+                                            <span class="country">Makedonca</span>
+                                        </a>        <a title="Deutsch" href="/de">
+                                            <img alt="Deutsch" class="flag" src="https://cdn.memorial.com.tr/files/Uploads/1/static/de.png">
+                                            <span class="country">Deutsch</span>
+                                        </a>        <a title="Urduca" href="/ur">
+                                            <img alt="Urduca" class="flag" src="https://cdn.memorial.com.tr/files/Uploads/1/static/ur.png">
+                                            <span class="country">Urduca</span>
+                                        </a>        <a title="&#x641;&#x627;&#x631;&#x633;&#x6CC;" href="/ir">
+                                            <img alt="&#x641;&#x627;&#x631;&#x633;&#x6CC;" class="flag" src="https://cdn.memorial.com.tr/files/Uploads/1/static/iranflagpng_b1e1.png">
+                                            <span class="country">&#x641;&#x627;&#x631;&#x633;&#x6CC;</span>
+                                        </a>        <a title="&#x10E5;&#x10D0;&#x10E0;&#x10D7;&#x10E3;&#x10DA;&#x10D8;" href="/ka">
+                                            <img alt="&#x10E5;&#x10D0;&#x10E0;&#x10D7;&#x10E3;&#x10DA;&#x10D8;" class="flag" src="https://cdn.memorial.com.tr/files/Uploads/1/static/flagofgeorgiasvg_e407.svg">
+                                            <span class="country">&#x10E5;&#x10D0;&#x10E0;&#x10D7;&#x10E3;&#x10DA;&#x10D8;</span>
+                                        </a>        <a title="&#x423;&#x43A;&#x440;&#x430;&#x457;&#x43D;&#x441;&#x44C;&#x43A;&#x438;&#x439;" href="/ua">
+                                            <img alt="&#x423;&#x43A;&#x440;&#x430;&#x457;&#x43D;&#x441;&#x44C;&#x43A;&#x438;&#x439;" class="flag" src="https://cdn.memorial.com.tr/files/Uploads/1/static/flagofukrainenationalflagworldflagflagjpg_68dd.jpg">
+                                            <span class="country">&#x423;&#x43A;&#x440;&#x430;&#x457;&#x43D;&#x441;&#x44C;&#x43A;&#x438;&#x439;</span>
+                                        </a>
+
+                                    </nav>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 mobile-footer-menu-item">
+                        <span class="sub-title">Memorial &#x130;leti&#x15F;im</span>
+                        <div class="mobile-area">
+                            <div class="contact-info">
+                                <div class="contact-info-item">
+                                    <img src="https://cdn.memorial.com.tr/files/images/np-mail.svg" alt="" />
+                                    <p>info@memorial.com.tr</p>
+                                </div>                                                    <div class="contact-info-item">
+                                    <img src="https://cdn.memorial.com.tr/files/images/np-call.svg" alt="" />
+                                    <p><a href="tel:4447888">4447888</a></p>
+                                </div>
+                            </div>
+                            <div class="mobile-app hidden-mobile">
+                                <span class="sub-title">Mobil Uygulamam&#x131;z</span>
+                                <div>
+                                    <span class="app-logo">
+                                        <a href="https://apps.apple.com/us/app/memorial/id1238343054" target="_blank">
+                                            <div class="store icon-sprite-download-appstore"></div>
+                                        </a>
+                                    </span>
+                                    <span class="app-logo">
+                                        <a href="https://play.google.com/store/apps/details?id=com.memorial.memorialapp " target="_blank">
+                                            <div class="store icon-sprite-download-googleplay"></div>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-12 mobile-footer-menu-item">
+                        <div class="footer-contact-form">
+                            <form action="/landingContactPost" method="post" id="lp-submit-contact" data-errorMessage="Captcha Do&#x11F;rulanmad&#x131;" data-bvalidator-validate>
+                                <input type="hidden" value="" name="utm_source" />
+                                <input type="hidden" value="" name="utm_medium" />
+                                <input type="hidden" value="" name="utm_campaign" />
+                                <input type="hidden" value="" name="utm_content" />
+                                <input type="hidden" value="" name="utm_Term" />
+                                <input type="hidden" value="9" name="type" />
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
+                                        <div class="field">
+                                            <label>
+                                                <div>Ad&#x131;n&#x131;z Soyad&#x131;n&#x131;z <span class="required" id="lp-nameRequiredSpan">*</span></div>
+                                                <input type="text" id="lp-nameLastName" name="name" data-bvalidator="alpha,required" />
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-12">
+                                        <div class="field field-intl-phone">
+                                            <label>
+                                                <div>Cep Telefonunuz <span class="required" id="lp-phoneRequiredSpan">*</span></div>
+                                                <div class="form-intl">
+                                                    <input type="hidden" class="inputCountryCodeData" name="PhoneCode" value="">
+                                                    <div class="elementCountryCodeData" dir="ltr">+90</div>
+                                                    <input value="" type="tel" name="Phone" id="lp-phone" class="intl-phone-mask" dir="ltr" data-bvalidator="required" autocomplete="nope" />
+                                                </div>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-12 col-12">
+                                        <div class="field">
+                                            <label>
+                                                <div>E-posta Adresiniz<span class="required" id="lp-mailRequiredSpan">*</span></div>
+                                                <input type="text" id="lp-email" name="Mail" data-bvalidator="email,required" />
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-12">
+                                        <div class="field">
+                                            <label>
+                                                <div>Mesaj&#x131;n&#x131;z</div>
+                                                <input type="textarea" maxlength="200" id="message" name="message" style="height: 150px !important;"
+                                                       placeholder="Mesaj&#x131;n&#x131;z">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-12">
+                                        <div class="field">
+
+                                            <div class="g-recaptcha" data-sitekey="6LevAL0ZAAAAAJqwYMuOggSUMAJTIn-JMw1iMu2o" data-callback="enableBtn" data-expired-callback="disableBtn"></div>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="actions">
+                                        <button class="button button-default" type="submit" id="lp-btnSubmit">G&#xF6;nder</button>
+                                    </div>
+                                    <div class="col-md-12" id="lp-formResult" style="display: none;">
+                                        <div class="field"><div class="alert alert-success"><strong>Ba&#x15F;ar&#x131;l&#x131;!</strong> Form ba&#x15F;ar&#x131;yla g&#xF6;nderildi</div></div>
+                                    </div>
+                                    <div class="col-md-12" id="lp-formResultError" style="display: none;">
+                                        <div class="field"><div class="alert alert-error"><strong>Bir hata olu&#x15F;tu!</strong> L&#xFC;tfen tekrar deneyiniz.</div></div>
+                                    </div>
+
+                                    <div class="col-md-12" id="lp-formResultErrorCaptcha" style="display: none;">
+                                        <div class="field"><div class="alert alert-error"><strong>Bir hata olu&#x15F;tu!</strong>  Captcha Do&#x11F;rulanmad&#x131;</div></div>
+                                    </div>
+
+
+                                </div>
+                            </form>
+                        </div>                        <div class="mobile-app hidden-desktop">
+                            <span class="sub-title">Mobil Uygulamam&#x131;z</span>
+                            <div>
+                                <span class="app-logo">
+                                    <a href="https://apps.apple.com/us/app/memorial/id1238343054" target="_blank">
+                                        <div class="store icon-sprite-download-appstore"></div>
+                                    </a>
+                                </span>
+                                <span class="app-logo">
+                                    <a href="https://play.google.com/store/apps/details?id=com.memorial.memorialapp " target="_blank">
+                                        <div class="store icon-sprite-download-appstore"></div>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container">
+                <div class="row align-center">
+                    <div class="col-4 hide-mobile">
+                        <span class="logo"><em class="icon-logo"></em></span>
+                    </div>
+                    <div class="col-4">
+                        <span class="copyright">© 2021 Memorial Sa&#x11F;l&#x131;k Grubu</span>
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="sticky-buttons lp-sticky-buttons">
+        <div class="buttons">
+            <a class="link green" href="https://api.whatsapp.com/send?phone=&#x2B;905493146666 ">
+                <em class="icon-whatsapp"></em>
+                <span class="text">whatsapp</span>
+            </a>                    <a class="link gray right" id="" href="tel:4447888">
+                <em class="icon-phone"></em>
+                <span class="text" id="callyou-text">Bizi Aray&#x131;n </span>
+            </a>
+
+
+        </div>
+    </div>
+
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}js/utmLinkSaver.js?v=3"></script>
+    <script>saveUtmLink(10);</script>
+
+</body>
+</html>
+<style>
+    #_sorun_icon {
+        margin-right: -1000px;
+    }
+</style>
+
+
+<script type="text/javascript">
+
+    function separatorSlide(separatorLeft,time) {
+        var separator = $('.js-separator');
+        separator.stop().animate({
+            left: separatorLeft + '%'
+        }, time);
+    }
+
+    var calcFatIndex = function (result) {
+        var separatorIndex;
+        var resultValue = result;
+        var forIndex = 0;
+        var steps = $('.js-icons span');
+        var time = 500;
+        var resultInfoContent = $('.js-info-content p');
+        var resultTitle = $('.js-result-title');
+        var resultNumber = $('.js-result-number');
+
+        if (resultValue <= 18.5) {
+            forIndex = 1;
+            separatorIndex = 10;
+            separatorSlide(separatorIndex);
+            resultInfoContent.text('Boyunuza göre zayıfsınız. Kişiye özel beslenme programları için diyetisyenlerimize danışabilirsiniz. ');
+            resultTitle.text('Zayıf - I. Sınıf');
+            resultNumber.text('20 kg/m2 üzeri');
+        } else if (resultValue > 18.5 && resultValue <= 24.9) {
+            forIndex = 2;
+            time = 1000;
+            separatorIndex = 30;
+            separatorSlide(separatorIndex, time);
+            resultTitle.text('Sağlıklı - I. Sınıf');
+            resultNumber.text('25 kg/m2 üzeri');
+            resultInfoContent.text('Boyunuza göre sağlıklı bir kilodasınız, dengeli beslenme ve düzenli egzersizlerle sağlıklı kilo aralığında kalmayı sürdürmelisiniz.');
+        } else if (resultValue > 25 && resultValue <= 29.9) {
+            forIndex = 3;
+            time = 1500;
+            separatorIndex = 50;
+            separatorSlide(separatorIndex, time);
+            resultTitle.text('Şişman - II. Sınıf');
+            resultNumber.text('30 kg/m2 üzeri');
+            resultInfoContent.text('Boyunuza göre kilolusunuz. Kilo vermenize yardımcı olacak seçenekler için doktorlarımıza ve diyetisyenlerimize danışabilirsiniz. ');
+        } else if (resultValue > 30 && resultValue <= 39.9) {
+            forIndex = 4;
+            time = 2000;
+            separatorIndex = 70;
+            separatorSlide(separatorIndex, time);
+            resultTitle.text('Obez - II. Sınıf');
+            resultNumber.text('35 kg/m2 üzeri');
+            resultInfoContent.text('Obezite tedavi edilmesi gereken bir hastalıktır. Kişiye özel obezite tedavisi için formu doldurun. ');
+        } else if (resultValue > 40) {
+            forIndex = 5;
+            time = 2500;
+            separatorIndex = 98;
+            separatorSlide(separatorIndex, time);
+            resultTitle.text('Aşırı obez - III. Sınıf');
+            resultNumber.text('40 kg/m2 üzeri');
+            resultInfoContent.text('Bu düzeydeki obezite hayati tehlikeye neden olmakta ve yaşam süresini kısaltmaktadır. Kişiye özel obezite tedavisi için formu doldurun.');
+        }
+
+        //separator.css('left', resultValue + '%');
+
+
+
+        for (let i = 0; i < forIndex; i++) {
+            (function (i) {
+                setTimeout(function () {
+                    steps.removeClass('active');
+                    steps.eq(i).addClass('active');
+                }, 500 * i)
+            })(i);
+        }
+    }
+
+
+    if ($('.calculator-component-wrapper').length > 0) {
+        $(document).on('click', '#calc-button', function (e) {
+            e.preventDefault();
+            var userWeight = parseInt($('#userWeight').val());
+            var userHeight = parseInt($('#userHeight').val());
+            var fatIndexResult = 1;
+            fatIndexResult = userWeight / ((userHeight / 100) * (userHeight / 100));
+            $('#calcIndex').text(fatIndexResult.toFixed(1));
+            calcFatIndex(fatIndexResult.toFixed(1));
+            $("#result-sub-info").show();
+        });
+    }
+
+    /* Map */
+
+    contact();
+    $("input[name=value]").trigger("change");
+    function contact() {
+        var hospitalId = $("#hospitalChanged").val();
+        $.ajax({
+            url: '/Contact/GetLocation',
+            data: { hid: hospitalId },
+            type: 'POST',
+            dataType: 'text',
+            success: function (data) {
+                var hospitalData = jQuery.parseJSON(data);
+                var link = "https://www.google.com/maps?q=" + hospitalData.latitude + "," + hospitalData.longtude + "&hl=tr&z=14&amp;output=embed";
+
+                var xx = '<iframe width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen="" src="' + link + '"> </iframe>';
+                $("#mapping").html(xx);
+                $("#showMaps").css("display", "block");
+                $("#showMaps").attr("href", hospitalData.seeMapLink)
+            }
+        })
+
+        $.get("/GetAddress/" + hospitalId).done(function (result) {
+            $("#address").html('');
+            $("#address").html(result);
+
+
+        }).fail(function () {
+        });
+
+    }
+
+    /* Map End */
+
+    var callyouTimeout = true;
+
+    function clickCallYouBtn() {
+        callyouTimeout = false;
+    }
+
+    function changeDate(servisId, birimId) {
+        var date = $("#datepick").val();
+        $.get("/get-slots/" + date + "/" + servisId + "/" + birimId).done(function (result) {
+            $("#slots").html('');
+            $("#slots").html(result);
+
+        }).fail(function () {
+        });
+    }
+    setTimeout(function () {
+        lazyload();
+    }, 1000);
+
+    function getStories(latlng = "", dataId=0, type=0) {
+        var data = { dataId: dataId, type: type};
+        if (latlng != "") {
+            data = { latlng: latlng, dataId: dataId, type:type }
+        }
+        $.getJSON("/GetStories", data).done(function (result) {
+            if (result != false) {
+                var storiesData = result.stories;
+
+                if (storiesData.length > 0) {
+                    $("#special-story").show();
+                    function storiesInıt() {
+                        var timestamp = function (VarDate) { var timeIndex = 0; var shifts = [35, 60, 60 * 3, 60 * 60 * 2, 60 * 60 * 25, 60 * 60 * 24 * 4, 60 * 60 * 24 * 10]; var now = new Date(VarDate); var shift = shifts[timeIndex++] || 0; var date = new Date(now - shift * 1000); return date.getTime() / 1000; };
+
+                        var changeSkin = function (skin) { location.href = location.href.split('#')[0].split('?')[0] + '?skin=' + skin; }; var getCurrentSkin = function () {
+                            var header = document.getElementById('header'); var skin = location.href.split('skin=')[1]; if (!skin) { skin = 'Snapgram'; }
+                            if (skin.indexOf('#') !== -1) { skin = skin.split('#')[0]; }
+                            var skins = { Snapgram: { avatars: true, list: false, autoFullScreen: false, cubeEffect: true, paginationArrows: false }, VemDeZAP: { avatars: false, list: true, autoFullScreen: false, cubeEffect: false, paginationArrows: true }, FaceSnap: { avatars: true, list: false, autoFullScreen: true, cubeEffect: false, paginationArrows: true }, Snapssenger: { avatars: false, list: false, autoFullScreen: false, cubeEffect: false, paginationArrows: false } }; var el = document.querySelectorAll('#skin option'); var total = el.length; for (var i = 0; i < total; i++) { var what = skin == el[i].value ? true : false; if (what) { el[i].setAttribute('selected', 'selected'); header.innerHTML = skin; header.className = skin; } else { el[i].removeAttribute('selected'); } }
+                            return { name: skin, params: skins[skin] };
+                        };
+
+
+                        var storyImagesData = result.storyImages;
+
+                        var StoriesDataArray = [];
+                        var StoryImagesDataArray = [];
+                        $.each(storiesData, function (index, item) {
+                            $.each(storyImagesData, function (indexImages, itemImage) {
+                                if (itemImage.storyId == item.id) {
+                                    StoryImagesDataArray.push(["story-" + itemImage.id, "photo", itemImage.time, itemImage.image, itemImage.image, itemImage.linkUrl, itemImage.linkTitle, false, timestamp(itemImage.createDate)]);
+                                }
+                            })
+
+
+                            StoriesDataArray.push(
+                                Zuck.buildTimelineItem(
+                                    item.title,
+                                    item.image,
+                                    item.title,
+                                    "",
+                                    timestamp(StoryImagesDataArray[0][8]),
+                                    StoryImagesDataArray
+                                )
+                            )
+
+                            StoryImagesDataArray = [];
+                        });
+
+                        var currentSkin = getCurrentSkin();
+                        window.stories = new Zuck('stories', {
+                            backButton: false,
+                            backNative: false,
+                            previousTap: true,
+                            skin: currentSkin['name'],
+                            autoFullScreen: currentSkin['params']['autoFullScreen'],
+                            avatars: currentSkin['params']['avatars'],
+                            paginationArrows: currentSkin['params']['paginationArrows'],
+                            list: currentSkin['params']['list'],
+                            cubeEffect: currentSkin['params']['cubeEffect'],
+                            localStorage: true,
+                            language: { // if you need to translate :)
+                                unmute: "Sesi A&#xE7;",
+                                keyboardTip: "Sonraki g&#xF6;rsel i&#xE7;in bo&#x15F;luk tu&#x15F;una bas",
+                                visitLink: "Linke git",
+                                time: {
+                                    ago: "&#xD6;nce",
+                                    hour: "Saat &#xF6;nce",
+                                    hours: "Saat &#xF6;nce",
+                                    minute: "Dakika &#xF6;nce",
+                                    minutes: "Dakika &#xF6;nce",
+                                    fromnow: "&#x15E;imdiden",
+                                    seconds: "Saniye &#xF6;nce",
+                                    yesterday: "D&#xFC;n",
+                                    tomorrow: "Yar&#x131;n",
+                                    days: "G&#xFC;n"
+                                }
+                            },
+                            stories: StoriesDataArray,
+                            callbacks: {
+                                onOpen(storyId, callback) {
+                                    callback();  // on open story viewer
+                                    $('body').css('overflow-y','hidden');
+                                },
+
+                                onClose(storyId, callback) {
+                                    callback();  // on close story viewer
+                                    $('body').removeAttr('style');
+                                },
+                            },
+
+
+                        });
+                    }
+                    storiesInıt();
+
+                    var storiesContainerWidth = $('.js-profile-stories').outerWidth();
+                    var storiesLength = $('.js-profile-stories .story').length;
+                    var storiesWidth = 0;
+
+                    $('.js-profile-stories .story').each(function (i) {
+                        storiesWidth += $(this).outerWidth() + 50;
+                        if (i+1 >= storiesLength) {
+                            if (storiesWidth > storiesContainerWidth && $(window).width() >= 768) {
+                                $('.js-profile-stories .next').css('display', 'block');
+                                $('.js-profile-stories .stories').css('width', storiesWidth);
+
+                                const ps = new PerfectScrollbar('.js-stories-scroll');
+                            }
+                            /*if ($(window).width() >= 768) {
+                                const ps = new PerfectScrollbar('.js-stories-scroll');
+                            }*/
+                        }
+                    });
+
+                    var container = document.querySelector('#zuck-modal');
+                    var listener = SwipeListener(container);
+                    container.addEventListener('swipe', function (e) {
+                        var directions = e.detail.directions;
+
+                        if (directions.bottom) {
+                            $('#zuck-modal .close').click();
+                        }
+                    });
+
+                    $(document).on('#zuck-modal .back', 'click' , function (e) {
+                        e.preventDefault();
+                        return false
+                    });
+                }
+                else {
+                    $("#special-story").hide();
+                }
+            }
+            else {
+                $("#special-story").hide();
+            }
+
+        });
+    }
+
+
+
+    $(document).ready(function () {
+
+            window._sorun_on_load = function () {
+                if (window._sorun_isOutOfOffice === true) {
+                    $("#live-chat-button").hide();
+                    $("#call-you-modal").show();
+                    setTimeout(function () {
+                        if (!($('body').hasClass('swal2-shown'))) {
+                            $("#call-you-modal-timeout").trigger("click");
+                        }
+
+                    }, 300000);
+
+                    var userData = '';
+
+                    if (userData !== '') {
+                        startChat('tr', '', '', '', '', location.href, false);
+                    }
+                }
+                else {
+                    if (_sorun_params["isOnline"] === false) {
+                        $("#live-chat-button").hide();
+                        $("#call-you-modal").show();
+
+                        setTimeout(function () {
+                            if (!($('body').hasClass('swal2-shown'))) {
+                                $("#call-you-modal-timeout").trigger("click");
+                            }
+
+                        }, 300000);
+
+                        var userData = '';
+
+
+                        if (userData !== '') {
+
+                            startChat('tr', '', '', '', '', location.href, false);
+
+                        }
+
+                    }
+                    else {
+                        if (_sorun_params["chatDisabled"] === true) {
+                            $("#live-chat-button").hide();
+                            $("#call-you-modal").show();
+
+
+                            setTimeout(function () {
+                                if (!($('body').hasClass('swal2-shown'))) {
+                                    $("#call-you-modal-timeout").trigger("click");
+                                }
+
+                            }, 300000);
+
+                            var userData = '';
+
+                            if (userData !== '') {
+                                startChat('tr', '', '', '', '', location.href, false);
+                            }
+
+                        }
+                        else {
+                            $("#call-you-modal").hide();
+                            var userData = '';
+
+                            var type = $("#srn-chat-type").attr("data-chat");
+
+                            if (type == undefined) {
+
+                                if (userData !== '' && window._sorun_isOutOfOffice === false) {
+
+                                    startChat('tr', '', '', '', '', location.href, false);
+
+                                }
+                            }
+                            else {
+                                setTimeout(function () {
+                                    if (userData !== '') {
+                                        startChat('tr', '', '', '', '', location.href, true);
+                                    }
+                                    else {
+                                        startChat('tr', '', '', '', '', location.href, true);
+                                    }
+                                }, 300000);
+
+                            }
+
+                        }
+
+
+                    }
+
+                }
+
+            };
+        var locationCookie = 'OK';
+
+        var dataId = $("#special-story").attr("data-id");
+        var type = $("#special-story").attr("data-type");
+
+            var specialStory = $("#special-story").attr("id");
+        if (specialStory) {
+
+            if (navigator.geolocation) {
+                if (locationCookie == "") {
+                    getLocation();
+                }
+                else {
+                    var latlng = "";
+                    if (dataId != undefined && type != undefined) {
+                        getStories(latlng, dataId, type);
+                    }
+                    else {
+                        getStories();
+                    }
+                }
+
+            } else {
+
+            }
+        }
+
+        function getLocation() {
+            navigator.geolocation.getCurrentPosition(function (position) {
+
+                var latlng = position.coords.latitude + "," + position.coords.longitude;
+                if (dataId != undefined && type != undefined) {
+                    getStories(latlng, dataId, type);
+                }
+                else {
+                    getStories(latlng);
+                }
+
+
+
+            }, function (e) {
+                $.ajax({
+                    url: '/location-add-cookie',
+                    type: "POST",
+                    dataType: 'json'
+                }).done(function (response) { //
+
+                    var latlng = "";
+                    if (dataId != undefined && type != undefined) {
+                        getStories(latlng, dataId, type);
+                    }
+                    else {
+                        getStories();
+                    }
+                });
+
+
+
+            }, {
+                enableHighAccuracy: true
+            });
+        }
+
+        $("#search").keydown(function (e) {
+            if (e.which == '13') {
+                var searchText = $("#search").val();
+                if (searchText.length > 2) {
+                    window.location.href = "/arama-sonuclari" + "?kelime=" + searchText;
+                }
+
+            }
+        });
+
+        function getGeoLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition, showbrowserError);
+            } else {
+
+            }
+        }
+        $('#positionMessage').on('click', function() {
+            getGeoLocation();
+        });
+
+
+    });
+
+    function showChatButton() {
+        dataLayer.push({
+            'event': 'chatActions',
+            'eventCategory': 'Chat',
+            'eventAction': 'İcon Tıklama'
+        });
+
+         var userData = '';
+        if (userData !== '') {
+            startChat('tr', '', '', '', '', location.href, true);
+        }
+        else {
+            $("#_sorun_icon").trigger("click");
+        }
+
+    }
+
+
+     window.dictionary = {
+        tamam: "Tamam",
+        devamimiOku: "Devamını Oku",
+        dahaFazla: "Daha Fazla",
+        aramaSonuclariUrl: "/arama-sonuclari",
+        gecerliTCNOGiriniz: "Lütfen geçerli bir T.C. Kimlik numarası giriniz!",
+        randevuTarihiSeciniz: "Randevu Tarihi Seçiniz",
+        cookieText: "Hizmetlerimizden en iyi şekilde faydalanabilmeniz için çerezler kullanıyoruz. memorial.com.tr'yi kullanarak çerezlere izin vermiş olursunuz.",
+        cookieLinkText: "Detaylar için tıklayınız.",
+        cookieLink: "/kurumsal/cerez-politikasi",
+    }
+
+    window.webSettings = {
+        datepickerAppointmentMaxDate: 60,
+    }
+
+    window.bValidatorDictionary = {
+        bValidator_default   : `L&#xFC;tfen bu de&#x11F;eri d&#xFC;zeltin.`,
+        bValidator_minlen    : `Uzunlu&#x11F;u en az {0} karakter olmal&#x131;d&#x131;r.`,
+        bValidator_maxlen    : `Uzunlu&#x11F;u en fazla {0} karakter olmal&#x131;d&#x131;r.`,
+        bValidator_rangelen  : `Uzunlu&#x11F;u {0} ve {1} aras&#x131;nda olmal&#x131;d&#x131;r.`,
+        bValidator_min       : `L&#xFC;tfen daha b&#xFC;y&#xFC;k veya {0} e&#x15F;it bir say&#x131; girin.`,
+        bValidator_max       : `L&#xFC;tfen daha az ya da {0} e&#x15F;it bir say&#x131; girin.`,
+        bValidator_between   : `L&#xFC;tfen {0} ile {1} aras&#x131;nda bir say&#x131; girin.`,
+        bValidator_required  : `Alan bo&#x15F; ge&#xE7;ilemez.`,
+        bValidator_alpha     : `Sadece alfabetik karakterler giriniz.`,
+        bValidator_alphanum: `Sadece alfasayısal karakterler giriniz.`,
+        bValidator_digit     : `Ondal&#x131;kl&#x131; say&#x131; girilebilir.`,
+        bValidator_number    : `L&#xFC;tfen rakam giriniz.`,
+    bValidator_email: `L&#xFC;tfen E-posta adresi giriniz.`,
+        bValidator_url       : "Lütfen geçerli bir URL girin.",
+        bValidator_ip4       : "Lütfen geçerli bir IPv4 adresi girin.",
+        bValidator_ip6       : "Lütfen geçerli bir IPv6 adresi girin.",
+        bValidator_date      : "{0} Bu formatta bir tarih girin.",
+        bValidator_equal     : "Aynı değeri girin.",
+        bValidator_differ    : "Lütfen farklı bir değer girin.",
+    };
+
+</script>

@@ -1,0 +1,943 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Memoria Organ IVF">
+    <title>Memorial IVF</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/css/responsive33.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/css/style.css" rel="stylesheet">
+    <link href="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/css/carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/css/intlInputPhone.css">
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/css/intlInputPhone.min.css">
+    <!-- Custom Google Font : Open Sans -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/js/html5shiv.js"></script>
+      <script src="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/js/respond.min.js"></script>
+    <![endif]-->
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/images/favicon.png">
+    <!-- Subtle Loading bar -->
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/js/pace.js"></script>
+    <style>
+
+
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 99; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+            .close:hover,
+            .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+    </style>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TGPGSC9');</script>
+    <!-- End Google Tag Manager -->
+	
+	<script>window.gtmFormName='ivf-ro';</script>
+	
+	<!-- tel interaction, whatsapp interaction,  -->
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}js/gtmSenderLP.js"></script>
+</head>
+<body class="web-app">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGPGSC9"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!--<div class="preloader"></div>-->
+    <!-- Parallax Header Starts -->
+
+    <div class="modal bd-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-image: url('{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/images/header_bg.jpg'); ">
+                <button type="button" id="close" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <!-- Logo -->
+                <div class="logo"> <a href="#"><img src="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/images/memorial_logo.png" class="image" alt="readymade-logo"></a> </div>
+                <!-- Hero Title -->
+                <h4 class="main-title text-center" style="color: #a91022">Mulțumim, vă vom contacta în cel mai scurt timp!</h4>
+
+
+                <!-- Web app banner -->
+                <div class="row">
+                    <div class="col-md-12 text-center tick">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/images/tick2.png" alt="Web App Banner" style="width:400px;height:auto" class="img-responsive center-block">
+                    </div>
+                </div>
+                <!-- // Web app banner Ends -->
+            </div>
+
+        </div>
+    </div>
+    <main id="top" class="masthead" role="main">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo"> <a href="#"><img src="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/images/memorial_logo.png" alt="readymade-logo"></a> </div>
+            <!-- Hero Title -->
+            <h1 class="main-title" style="color: #a91022">Cel mai performant Laborator de Fertilizare în Vitro din Europa</h1>
+            <!-- Sub Title -->
+            <h4 class="sub-title" style="color: #a91022">MEMORIAL aduce barza la tine!</h4>
+
+            <!-- Web app banner -->
+            <div class="row">
+                <div class="col-md-6">
+                    <iframe class="video-responsive" width="450" height="270" src="https://www.youtube.com/embed/q4td9SLoBhQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-6">
+                    <img src="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/images/web-app-banner.png" alt="Web App Banner" class="img-responsive center-block" style=" padding-top: 5px; max-width: 90%;">
+                </div>
+
+                <div class="col-md-12">
+                    <h4 style=" color: #104979;margin-top:10px">Completează formularul de mai jos și cere informații despre serviciile noastre medicale!</h4>
+                </div>
+            </div>
+            <!-- // Web app banner Ends -->
+            <!-- Mailchimp Subscribe form -->
+            <div class="row" id="form">
+                <div class="col-md-12">
+                    <div class="subscribe-block">
+                        <div class="row">
+                            <form class="form-horizontal" role="form" action="/memorial-evinizde-form/" id="askprice_form" method="POST">
+                                <input id="geturl" name="url" type="hidden" value="" />
+                                <input id="campaign" name="campaign" type="hidden" value="33221146" />
+                                <input type="hidden" value="Memorial IVF" name="mailTitle" id="mailTitle" />
+                                <script>
+                                    document.getElementById("geturl").value = location.href;
+                                </script>
+                                <input name="crmMailId" type="hidden" value="28" />
+
+                                <input id="geturl" name="url" type="hidden" value="" />
+
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6">
+                                        <input class="form-control input-lg" name="fullname" id="fullname" type="text" max="30" placeholder="Nume şi Prenume" required>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-6">
+
+                                        <input class="form-control input-lg" name="email2" id="email2" aria-describedby="emailHelp" maxlength="40" type="email" placeholder="Email" required>
+
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6" style="margin-top:20px;border-radius:6px;height:46px ">
+                                        <div class="input-phone"></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row" style="margin-top:20px">
+                                    <div class="col-md-12 col-sm-12">
+                                        <input class="form-control input-lg" cols="30" rows="4" name="message" maxlength="200" id="message" type="text" placeholder="Mesaj" required>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top:20px">
+                                    <div class="col-md-12 col-sm-12">
+                                        <label for="askprice_permission" class="help-block" style="display: inline; font-weight: 500; font-size:16px;color:#104979">
+                                            <label class="container3">
+                                                <input id="askprice_permission" style="width:18px;height:18px;" name="askprice_permission" type="checkbox">
+                                                <span class="checkmark3"></span>
+                                            </label>  Am luat la cunoștință <a class="link" href="https://www.memorial.com.tr/en/corporate/information-security-policy" target='_blank' style="color: #104979!important;"><strong>informațiile</strong></a> oferite de Protecția Generală a Datelor. Sunt de acord ca datele mele personale să fie procesate în scop medical și accept să fiu contactat/ă  pentru a primi informații în legătură cu serviciile medicale.
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="row" style="margin-top:20px">
+                                    <div class="col-md-12 col-sm-12">
+                                        <center>
+                                            <button type="submit" id="askprice_permission_button_send" style="display: block; width:-webkit-fill-available; font-size:2rem; height:auto"
+                                                    class="btn btn-warning btn-block btn-lg" disabled>
+                                                Trimite
+                                            </button>
+                                            <span id="spErr" style="margin-top:20px"></span>
+                                        </center>
+                                    </div>
+                                </div>
+                                <div class="field" style="text-align: center;">
+
+                                </div>
+
+                            </form>
+                        </div>
+                        <span id="result" class="loading"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- // Mailchimp Subscribe form Ends -->
+
+        </div>
+        <!--  Scroll to Explore -->
+        <a href="#explore" class="scrollto">
+            <p class="scrollto--arrow"><img src="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/images/mavidown_arrow.png" alt="scroll down arrow"></p>
+        </a>
+        <!-- // Scroll to Explore Ends -->
+    </main>
+    <!-- // Parallax Header Ends -->
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Features Section -->
+
+        <div class="zigzag">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row has-margin-bottom-sm">
+                        <div class="col-sm-4">
+                            <div class="icon-wrap"> <img src="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/images/maviicon_1.png" alt="img" class="img-responsive center-block"></div>
+                        </div>
+                        <div class="col-sm-8">
+                            <h4 class="zigzag-lead">Tranfer de la Aeroport</h4>
+                            <p>Pacienții noștrii au asigurate serviciile de transfer între aeroport, hotel şi spital, şi retur.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row has-margin-bottom-sm">
+                        <div class="col-sm-4">
+                            <div class="icon-wrap"><img src="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/images/maviicon_2.png" alt="img" class="img-responsive center-block"></div>
+                        </div>
+                        <div class="col-sm-8">
+                            <h4 class="zigzag-lead">Cazare</h4>
+                            <p>Le oferim pacienților listele noastre cu hotelurile partenere din care îşi pot alege varianta cea mai potrivită pentru ei. Listele noastre conțin hoteluri de 3,4 şi 5 stele.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Second row-->
+            <div class="row has-margin-top">
+                <div class="col-md-6">
+                    <div class="row has-margin-bottom-sm">
+                        <div class="col-sm-4">
+                            <div class="icon-wrap"> <img src="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/images/maviicon_3.png" alt="img" class="img-responsive center-block"></div>
+                        </div>
+                        <div class="col-sm-8">
+                            <h4 class="zigzag-lead">Translator</h4>
+                            <p>Pe toată perioada șederii la Memorial  pacienții vor fi însoțiți de un translator.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="icon-wrap"><img src="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/images/maviicon_4.png" alt="img" class="img-responsive center-block"></div>
+                        </div>
+                        <div class="col-sm-8">
+                            <h4 class="zigzag-lead">Acreditări</h4>
+                            <p>Memorial a obținut una dintre cele mai prestigioase acreditări, recunoscute la nivel mondial, pentru standardele înalte şi calitatea serviciilor sale.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- // Container Ends -->
+    <!-- Parallax Footer Starts -->
+    <main class="footercta" role="main" id="footerctaresim">
+        <div class="container">
+
+            <!-- Footer Title -->
+
+            <div class="row" style="flex-direction:row">
+                <div class="col-lg-9" style="padding-top:100px;font-size:18px;line-height:1.5"><strong>Încă din prima zi, Memorial Health Group şi-a protejat pacienții, rudele acestora şi angajații împotriva COVID-19 (Coronavirus) şi a asigurat cele mai înalte standarde de igienă. În acest context pandemic, Memorial face totul pentru a vă asigura un mediu sigur şi steril.</strong></div>
+                <div class="col-lg-3"><img src="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/images/hijyenromence.jpg" style="margin-top:20px" alt="img" class="img-responsive center-block"></div>
+            </div>
+        </div>
+    </main>
+    <!-- // Parallax Footer Ends -->
+    <!-- Container -->
+    <div class="container" id="explore">
+        <!-- Hero Image -->
+        <div class="zigzag">
+            <div class="row">
+                <!--<div class="col-md-5"> <img src="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/images/image_1.jpg" alt="img" class="img-responsive center-block"> </div>--><!--style="padding-top:0px; max-width:100%;"-->
+                <div class="col-md-12">
+                    <h2 class="zigzag-lead" style="text-align:center">Fertilizare în Vitro</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="zigzag">
+            <div class="row">
+                <div class="col-md-5 col-md-push-7"> <img src="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/images/image_1.jpg" alt="img" class="img-responsive center-block"> </div>
+                <div class="col-md-7 col-md-pull-5">
+                    <!--<h4 class="zigzag-lead">Fertilizare în Vitro</h4>-->
+                    <p style="font-size: 18px; margin-top:50px
+">
+                        Primul Laborator FIV din Turcia care a obținut Acreditarea ISO 15189 şi a cărui rezultate sunt recunoscute la nivel mondial. La Memorial peste 40.000 de copii au venit pe lume. Laboratorul nostru este definit de echipe de doctori şi cercetători, tehnici sigure și performante, siguranță, empatie şi sucess.
+
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="zigzag">
+            <div class="row">
+                <div class="col-md-5"> <img src="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/images/image_2.jpg" alt="img" class="img-responsive center-block"> </div>
+                <div class="col-md-7">
+                    <!--<h4 class="zigzag-lead">Radioterapia</h4>-->
+                    <p style="font-size:18px;margin-top:20px">
+
+                        <strong>
+                            Memorial vă pune la dispoziție un pachet care conține: stimulare ovariană controlată ecografic şi de laborator, follow-up, colectarea ovocitelor, prepararea spermei, microinjectia ICSI ( intra citoplasmatic sperm injection), embriocultura ( inclusiv cultura blastocitului până în ziua a cincea), embriotransferul şi evaluarea nivelului de HCG din sânge.<br /><br />
+                            Prețul pachetului: 2475 euro<br /><br />
+                            (Pachetul nu include cazarea şi medicația de stimulare ovariană! Costurile medicației pentru stimularea ovariană pot varia între 600-900 euro)
+                        </strong>
+                    </p>
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="zigzag">
+            <div class="row">
+                <div class="col-md-5 col-md-push-7"> <img src="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/images/image_3.jpg" alt="img" class="img-responsive center-block"> </div>
+                <div class="col-md-7 col-md-pull-5">
+                    <p style="font-size: 18px; margin-top:50px
+">
+                        <strong>SE RECOMANDĂ EVITAREA CONTACTELOR SEXUALE, EFORTURILOR FIZICE ȘI SPORTURILOR ÎNAINTE DE EFECTUAREA PRIMULUI TEST DE SARCINĂ!</strong>
+
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- // Container Ends -->
+    <!-- Parallax Footer Starts -->
+    <main class="footercta" role="main">
+        <div class="container">
+
+            <!-- Footer Title -->
+            <div class="section-title">
+                <h2>Contactați-ne</h2>
+                <h4 style="word-wrap:break-word"><br />Telefon : <a href="tel://+905494382739">(+9)0549 438 27 39</a><br /> E-mail : internationalpatients@memorial.com.tr</h4>
+
+            </div>
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-md-4 text-center"> <a href="#form" class="btn btn-warning btn-lg gototop">Contactați-ne</a>  </div>
+                <div class="col-sm-4"></div>
+            </div>
+        </div>
+    </main>
+    <!-- // Parallax Footer Ends -->
+    <section class="faqs" id="sss">
+        <div class="container" style="margin-top:50px!important">
+            <div class="sectio-title-2">
+                <h2>Întrebări frecvente</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><strong>Ce înseamnă Fertilizarea în vitro?</strong></a> </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body" style="color:black;">
+                                    Fertilizarea în Vitro (FIV)  este o procedură sigură şi eficientă de reproducere asistată. Procedura presupune recoltarea ovocitelor prin tehnica de aspirație din ovare şi combinarea acestora cu spermatozoizii recoltați delapartener. În cazurile încare unul dintre parteneri are infertilitate severă se acceptă material genetic de la donatori anonimi.  În urma aceastei proceduri se pot forma unul sau mai mulți embrioni care vor fi implantați ulterior în uter.<br /><br />
+                                    Procedura de FIV este recomandată atât în tratamentul infertilității cât şi în evitarea afecțiunilor genetice grave.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingNine">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine"><strong>Cum contribui la succesul procedurii FIV?</strong> </a> </h4>
+                            </div>
+                            <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+                                <div class="panel-body" style="color:black;">
+                                    Este necesar ca ambii părinți să adopte diete sănătoase şi echilibrate, renunțând la cofeină, fumat, alcool şi droguri. Medicul va prescrie o serie de minerale şi vitamine prenatale care vor pregăti corpul pentru sarcină.<br /><br />
+                                    De asemenea, stresul este un factor care întârzie succesul procedurii de FIV, prin urmare se recomandă ca părinții să participe la activități relaxante ( yoga, spa, vacanță în locuri liniștite şi sigure).<br /><br />
+                                    Este foarte important ca pe durata procedurii să nu va deplasați în locații unde există posibilitatea contactării anumitor boli sau virusuri.
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><strong>Pot avea o sarcină multiplă în urmă FIV?</strong></a> </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body" style="color:black;">
+                                    Da, dar este foarte riscant, motiv pentru care se implantează doar un singur embrion. Părinții care işi doresc o sarcină gemelară trebuie să ia în considerare faptul că implantarea tuturor embrionilor poate duce şi la sarcini cu tripleti sau cvadrupleti. Astfel de sarcini sunt foarte riscante şi necesită o monitorizare specială datorită riscurilor foarte mari de avort spontan sau naștere prematură.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><strong>La ce să mă aștept după recoltarea ovocitelor?</strong></a> </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body" style="color:black;">
+                                    Intensitatea durerilor sau a disconfortului abdominal variază de la o persoană la alta. Recomandăm că în ziua recoltării să va odihniți cât mai mult şi să nu întreprindeți activități fizice intense.<br /><br />
+                                    Este important să știți că până în momentul recoltării nu aveți voie să mâncați sau să beți.<br /><br />
+                                    Este recomandat să anunțați imediat clinica dacă aveți dureri intermitențe, sângerări sau stări de greață.
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><strong>Cum se produce transferul embrionilor?</strong></a> </h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body" style="color:black;">
+                                    Transferul embrioniilor este o procedură neinvazivă şi nedureroasă care nu necesită anestezie. Cu o durata de aproximativ 10 minute, embrionii sunt introduși în uter pe cale vaginală. Întreg procesul este ghidat ecografic.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--Grey Highlight Section-->
+    <div class="highlight" style="background:#f5f8fb; margin-top:0px">
+        <div class="container">
+            <div class="section-title" id="package">
+                <h2>Conturi Social Media</h2>
+            </div>
+            <div class="row" style="margin-bottom:50px">
+                <div class="col-sm-12">
+                    <div class="logos text-center">
+                        <img src="https://cdn.memorial.com.tr/files/Uploads/1/139/facebooksvg_db1a.svg" alt="logo">
+                        <img src="https://cdn.memorial.com.tr/files/Uploads/1/139/instagramsvg_3435.svg" alt="logo">
+                        <img src="https://cdn.memorial.com.tr/files/Uploads/1/139/twittersvg_9c65.svg" alt="logo">
+                        <img src="https://cdn.memorial.com.tr/files/Uploads/1/139/youtubesvg_8a88.svg" alt="logo">
+                        <img src="https://cdn.memorial.com.tr/files/Uploads/1/139/linkedlnsvg_f995.svg" alt="logo">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--// End Grey Highlight Section-->
+    <!--Grey Highlight Section-->
+    <!--<div class="highlight" style="margin-top: 0px; background: #d3d7da">
+        <div class="container">-->
+    <!--Pricing-->
+    <!--<div class="section-title" id="package">
+        <h2>Cele mai populare</h2>
+    </div>
+    <section class="row breath planpricing">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+            <ul>
+                <li>Ginecologie oncologică</li>
+                <li>Înlocuire de valvă mitrală</li>
+                <li>Stimulator cerebral (PARKINSON)</li>
+                <li>Intervenții cu robotul DAVINCI</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <ul>
+                <li>Chirurgie colorectală şi HIPEK</li>
+                <li>Metoda ILIZAROV</li>
+                <li>Sindromul ovarelor polichistice</li>
+                <li>Chirurgie metabolică (Diabet tip2)</li>
+            </ul>
+        </div>
+        <div class="col-md-2"></div>
+    </section>-->
+    <!--// End Pricing-->
+    <!--</div>
+    </div>-->
+    <!--// End Grey Highlight Section-->
+    <!-- // Container Ends -->
+
+
+
+
+
+
+    <div class="clickToCall" id="clickToCall" style="display:none">
+        <a href="tel:+905494382739"
+           onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Hair-Transplant', eventLabel: 'Mobile Button'});">
+            <p class="call-button">
+                <img caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/images/clickToCall.png"
+                     style="width:60px; height:60px;" />
+            </p>
+        </a>
+    </div>
+    <!-- Container -->
+    <div class="container">
+        <section class="row breath footercontent">
+            <div class="col-sm-3"> </div>
+            <div class="col-sm-6 madeby">
+                <p style="color:black">Copyright © 2021 MEMORIAL | All Rights Reserved | www.memorial.com.tr | internationalpatients@memorial.com.tr</p>
+            </div>
+            <div class="col-sm-3 copyinfo">
+
+            </div>
+        </section>
+        <!-- // End Client Logos -->
+
+    </div>
+    <!-- // Container Ends -->
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+
+    <style>
+        @media screen and (min-width:768px) {
+
+            #clickToCall {
+                display: none !important;
+            }
+
+            #footerctaresim {
+                background-image: url('{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/images/header_bg222_mobile.jpg');
+            }
+        }
+
+        @media screen and (max-width:767px) {
+            .video-responsive {
+                width: 100%;
+                height: auto;
+            }
+
+            #clickToCall {
+                display: block !important;
+            }
+
+            .section-title h4 {
+                font-size: 16px;
+            }
+        }
+
+        #footerctaresim {
+            background-image: url('{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/images/header_bg222.png');
+        }
+
+        #myBtnS {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 156px;
+            height: 60px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #104979;
+            color: white;
+            cursor: pointer;
+            /* padding: 15px; */
+            border-radius: 4px;
+            display: none;
+        }
+
+            #myBtnS:hover {
+                background-color: #555;
+            }
+    </style>
+
+
+    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+        <a id="myBtnS" class="btn btn_cta scroll" href="#form" style="margin-bottom: 0px !important;display: none;"><span style="top: 10px;position: relative;">Contactați-ne</span></a>
+    </div>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtnS");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/js/jquery.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/js/bootstrap.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/js/easing.js"></script>
+
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/js/ketchup.all.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/js/intlInputPhone2.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/js/intlInputPhone2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <!--<script src="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/js/plugins/validation/localization/messages_tr.min.js"></script>-->
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}IVF-Ro/js/bootstrap-formhelpers.js?v=2"></script>
+    <script type="text/javascript">
+
+        window.onload = function () {
+
+            var captcha_badge = document.getElementsByClassName("grecaptcha-badge");
+            for (var i = 0; i < captcha_badge.length; i += 1) {
+                captcha_badge[i].setAttribute("data-badge", "inline");
+                captcha_badge[i].style.display = 'none';
+            }
+        };
+
+        function onSubmitRe(token) {
+            document.getElementById("ajax-contact-2").submit();
+        }
+
+        function validateEmail(email) {
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(email);
+        }
+
+        //{#var elementcaptcha = document.getElementById('recaptchabutton');#}
+        //{#elementcaptcha.onclick = validate;#}
+
+
+        function validate(event) {
+            event.preventDefault();
+            if (!document.getElementById('fullname').value) {
+                alert("Scrie - ti numele.");
+
+            } else if (!document.getElementById('phone2').value) {
+                alert("Notează-ți numărul de telefon.");
+
+
+            } else {
+                grecaptcha.execute();
+            }
+
+        }
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+            window.location.href = window.location.href.replace(window.location.search, "");
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                window.location.href = window.location.href.replace(window.location.search, "");
+            }
+        }
+    </script>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TGPGSC9');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGPGSC9"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- cookie policy -->
+    <!--<link rel="stylesheet" type="text/css" href="./static/css/cookieconsent.css" />
+    <script src="./static/js/cookieconsent.js"></script>
+
+    <script type="text/javascript">
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#f1f3f9",
+                        "text": "#28252c",
+                    },
+                    "button": {
+                        "background": "transparent",
+                        "text": "#28252c",
+                        "border": "#28252c"
+                    }
+                },
+                "content": {
+                    "message": "We use cookies so that you can get the most out of our services.By using memorial.com.tr you allow cookies.",
+                    "dismiss": "Okey",
+                    "link": "Click for details.",
+                    "href": "https://www.memorial.com.tr/kurumsal/cerezler-cookies-politikasi/"
+                }
+            })
+        });
+    </script>-->
+    <!-- cookie policy -->
+
+    <script type="text/javascript">
+        window.onload = function () {
+
+            var captcha_badge = document.getElementsByClassName("grecaptcha-badge");
+            for (var i = 0; i < captcha_badge.length; i += 1) {
+                captcha_badge[i].setAttribute("data-badge", "inline");
+                captcha_badge[i].style.display = 'none';
+            }
+        };
+
+        function onSubmitRe(token) {
+            document.getElementById("ajax-contact-2").submit();
+        }
+
+        function validateEmail(email) {
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(email);
+        }
+
+        function validate(event) {
+            event.preventDefault();
+            if (!document.getElementById('fullname').value) {
+                alert("Scrie - ti numele.");
+
+            } else if (!document.getElementById('phone2').value) {
+                alert("Notează-ți numărul de telefon.");
+
+
+            } else {
+                grecaptcha.execute();
+            }
+
+        }
+    </script>
+    <!-- ========= Scroll to Explore ========= -->
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            var urlParams = new URLSearchParams(window.location.search);
+            var pageData = urlParams.get('page');
+            console.log(pageData);
+
+            if (pageData == "success") {
+                var modal = document.getElementById("myModal");
+                modal.style.display = "block";
+            }
+
+
+            $('.input-phone').intlInputPhone();
+
+            var isFilterOn = false;
+            $(document).on("input", "#phone2", function () {
+                if (isFilterOn)
+                    this.value = this.value.replace(/\D/g, '');
+            });
+
+            $('#phone2').mask('(500) 000-00-00', { placeholder: "(5__) ___-__-__" });
+
+            $('body').on('DOMSubtreeModified', '.btn-cc', function () {
+                if ($(".btn-cc").html().replace(/&nbsp;/g, '') != "+90") {
+                    $('#phone2').unmask();
+                    $('#phone2').attr("maxlength", "15");
+                    isFilterOn = true;
+                    isButtonValid();
+                }
+                else {
+                    $('#phone2').mask('(500) 000-00-00', { placeholder: "(5__) ___-__-__" });
+                    isFilterOn = false;
+                    isButtonValid();
+                }
+            });
+
+            $('#askprice_permission').click(function () {
+                isButtonValid();
+            });
+
+            $("#askprice_permission_button_send").click(function () {
+
+                if ($("#countries_phone2").val() == "") {
+                    $("#ask_price_errorID").show();
+                    $("#ask_price_error_textID").html('Vă rugăm să selectați codul țării');
+                    return false;
+                }
+
+                if ($("#fullname").val() == "") {
+                    $("#").show();
+                    $("#spErr").html('<span style=\'color:#b9194b;\'>Vă rugăm să introduceți numele și prenumele.</span>');
+                    return false;
+                }
+                if ($("#fullname").val().length < 5) {
+                    $("#").show();
+                    $("#spErr").html('<span style=\'color:#b9194b;\'>Vă rugăm să introduceți un nume și prenume mai lungi de 4 caractere în total.</span>');
+                    return false;
+                }
+                if ($("#fullname").val().length > 30) {
+                    $("#").show();
+                    $("#spErr").html('<span style=\'color:#b9194b;\'>Vă rugăm să introduceți un nume și prenume scurte cu un total de 30 de caractere.</span>');
+                    return false;
+                }
+
+                if ($("#phone2").val().length < 6) {
+                    $("#spErr").html("<span style='color:#b9194b;'>Numărul de telefon nu poate fi mai mic de 6 cifre.</span>");
+                    return false;
+                }
+
+                $("#askprice_permission_button_send").attr("disabled", "disabled");
+                $('#askprice_permission_button_send').html('Se trimite...');
+
+                tel = $(".btn-cc").html().replace(/&nbsp;/g, '') + " " + $("#phone2").val().replace(/[^0-9]+/g, "");
+                $('#phone').val(tel);
+                // Get the modal
+                window.location.href += '?page=success';
+                //send_promotion();
+            });
+
+            $("#fullname").on('input', function () { isButtonValid(); })
+            $("#phone2").on('input', function () { isButtonValid(); })
+            $("#Message").on('input', function () { isButtonValid(); })
+
+            function isButtonValid() {
+
+                if ($("#fullname").val() != "" && $("#phone2").val() != "" && $('#askprice_permission').is(':checked') && $("#Message option:selected").val() != "0") {
+                    $('#askprice_permission_button_send').prop('disabled', false);
+                } else {
+                    $('#askprice_permission_button_send').prop('disabled', true);
+                }
+            }
+
+        });
+
+
+        function reactivateForm() {
+            document.getElementById("askprice_form").reset();
+            $("#askprice_form").show();
+            $(".alert-success").hide();
+        }
+
+        function send_promotion() {
+            $(".alert-success").hide();
+            $(".alert-warning").hide();
+            $("#phoneNumber").val($("#phone").val());
+
+            var serializedData = $("#askprice_form").serialize();
+
+
+            $.ajax({
+                type: "POST",
+                url: '/landingAskPricePost?lang=tr',
+                async: true,
+                data: serializedData,
+                cache: false,
+                beforeSend: function () {
+                    $('#askprice_permission_button_send').prop('disabled', true);
+                    $('#askprice_permission_button_send').html('Se trimite ...');
+                },
+                success: function (b) {
+                    if (b == "1" || (typeof b.status !== 'undefined' && b.status == "1")) {
+                       
+                        $("#fullname").val("");
+                        $("#phone2").val("");
+                        $("#message").val("");
+                        $("#email2").val("");
+                        $('#askprice_permission_button_send').prop('disabled', false);
+                        $('#askprice_permission_button_send').html('Trimite');
+                        $("#spErr").html("<span style='margin: 20px 0; display: block; color: #25a517;'>Formularul dvs. a fost trimis cu succes.</span>");
+
+                        dataLayer.push({
+								'event': 'landing_finishForm',
+								'formName': window.gtmFormName, 
+								'pageCategory':'Landing Page'
+							});
+
+                    } else {
+                        $(".alert-warning").fadeIn();
+                        $('#askprice_permission_button_send').html('Trimite');
+                        $("#spErr").html("<span style='margin: 20px 0; display: block; color: #ca2020;'>A apărut o problemă tehnică.Încercați din nou mai târziu.</span>");
+                    }
+                    $('#askprice_permission_button_send').prop('disabled', false);
+                },
+                error: function (b) {
+                    $(".alert-warning").fadeIn();
+                    $('#askprice_permission_button_send').html('Trimite');
+                    $('#askprice_permission_button_send').prop('disabled', false);
+                }
+            });
+        }
+
+    </script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,1214 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Memoria Organ IVF">
+    <title>Memorial Scoliosis</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/css/responsive33.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/css/style.css" rel="stylesheet">
+    <link href="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/css/carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/css/intlInputPhone.css">
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/css/intlInputPhone.min.css">
+    <!-- Custom Google Font : Open Sans -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/js/html5shiv.js"></script>
+      <script src="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/js/respond.min.js"></script>
+    <![endif]-->
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/images/favicon.png">
+    <!-- Subtle Loading bar -->
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/js/pace.js"></script>
+    <!-- Hotjar Tracking Code for https://www.memorial.com.tr/ro/scoliosis -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 2645218, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TGPGSC9');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGPGSC9"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <style>
+
+
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 99; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+            .close:hover,
+            .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+    </style>
+
+    <script>window.gtmFormName = 'scoliosis-ro';</script>
+
+    <!-- tel interaction, whatsapp interaction,  -->
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}js/gtmSenderLP.js"></script>
+
+</head>
+<body class="web-app">
+    <!--<div class="preloader"></div>-->
+    <!-- Parallax Header Starts -->
+
+    <div class="modal bd-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-image: url('{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/images/header_bg.jpg'); ">
+                <button type="button" id="close" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <!-- Logo -->
+                <div class="logo"> <a href="#"><img src="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/images/memorial_logo.png" class="image" alt="readymade-logo"></a> </div>
+                <!-- Hero Title -->
+                <h4 class="main-title text-center" style="color: black">Mulțumim, vă vom contacta în cel mai scurt timp!</h4>
+
+
+                <!-- Web app banner -->
+                <div class="row">
+                    <div class="col-md-12 text-center tick">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/images/tick2.png" alt="Web App Banner" style="width:300px;height:auto" class="img-responsive center-block">
+                    </div>
+                </div>
+                <!-- // Web app banner Ends -->
+            </div>
+
+        </div>
+    </div>
+    <div class="modal bd-example-modal-lg" id="myModalcvdetail1" style="display: none;" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-image: url('{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/images/header_bg.jpg'); ">
+                <button type="button" id="close" class="close1" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <h6 style="text-decoration:none;color:#bf0311">2017 - Currently, / MEMORIAL ANKARA HOSPITAL</h6>
+                        <p style="color:#888;margin-bottom:10px">Orthopedics and Traumatology</p>
+                        <h6 style="text-decoration:none;color:#bf0311">2009 - 2017, / ANKARA SPINE CENTER</h6>
+                        <p style="color:#888;margin-bottom:10px">Orthopedics and Traumatology</p>
+                        <h6 style="text-decoration:none;color:#bf0311">2003 - 2004, / UNIVERSITY OF CALIFORNIA SAN FRANCISCO</h6>
+                        <p style="color:#888;margin-bottom:10px">Visiting Instructor</p>
+                        <h6 style="text-decoration:none;color:#bf0311">1991 - 2009, / HACETTEPE UNİVERSİTY</h6>
+                        <p style="color:#888;margin-bottom:10px">Orthopedics and Traumatology</p>
+
+                    </div>
+                    <div class="col-md-12">
+
+                        <h4 style="color:#384047"><strong>Educație</strong></h4>
+                        <br />
+                        <h6 style="text-decoration:none;color:#bf0311">
+                            1993 - 1994, New York/ USA COLUMBİA UNİVERSİTY
+                        </h6>
+                        <h5 style="margin-bottom:10px">Spinal Surgery Specialisation Training</h5>
+                        <h6 style="text-decoration:none;color:#bf0311">
+                            1986 - 1991, Ankara/Turkey HACETTEPE UNİVERSİTY
+                        </h6>
+                        <h5 style="margin-bottom:10px">Faculty of Medicine - Orthopedics and Traumatology Specialisation Training</h5>
+                        <h6 style="text-decoration:none;color:#bf0311">
+                            1980 - 1986, Ankara/Turkey
+                        </h6>
+                        <h5>HACETTEPE UNİVERSİTY</h5>
+                        <p style="color:#888;margin-bottom:10px">Faculty of Medicine - Medical Training</p>
+
+
+                    </div>
+
+                    <div class="col-md-12">
+                        <h4 style="color:#384047"><strong>Publicații științifice</strong> </h4>
+                        <br />
+
+                        <ul>
+                            <li>Capitole: 4</li>
+                            <li>Cărți: 1</li>
+                            <li>PubMed and/or Exp-SCI listed publication: 101</li>
+                        </ul>
+                        <h4 style="color:#384047"><strong>REFERINȚE</strong></h4>
+
+                        <ul>
+                            <li>Scopus 1712 references (Scopus h index = 21)</li>
+                            <li>Web of Science 1291 references (WoS h index = 19)</li>
+                            <li>Google Academic 2721 references (Google Scholar h index = 24)</li>
+                            <li>ORCID ID: 0000-0002-8163-2944</li>
+                        </ul>
+                        <h4 style="color:#384047"><strong>PREZENTĂRI</strong></h4>
+                        <ul>
+                            <li>Peste 300 de prezentări științifice naționale şi internaționale.</li>
+
+
+                        </ul>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="modal bd-example-modal-lg" id="myModalcvdetail2" style="display: none;" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-image: url('{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/images/header_bg.jpg'); ">
+                <button type="button" id="close" class="close2" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <h6 style="text-decoration:none;color:#bf0311">2018 - Present, İstanbul/Türkiye / MEMORIAL HİZMET HOSPITAL</h6>
+                        <p style="color:#888;margin-bottom:10px">Brain and Nerve Surgery Specialist - Spinal Surgery Specialist</p>
+                        <h6 style="text-decoration:none;color:#bf0311">2018 - Present, İstanbul/Türkiye / MEMORIAL BAHÇELİEVLER HOSPITAL</h6>
+                        <p style="color:#888;margin-bottom:10px">Brain and Nerve Surgery Specialist - Spinal Surgery Specialist</p>
+
+                        <h6 style="text-decoration:none;color:#bf0311">2014 - 2018, İstanbul/Türkiye / KOÇ UNIVERSITY HOSPITAL</h6>
+                        <p style="color:#888;margin-bottom:10px">Neurosurgery Specialist</p>
+
+                        <h6 style="text-decoration:none;color:#bf0311">2013 - 2014, Ankara/Türkiye /  ANKARA SPINE CENTER</h6>
+                        <p style="color:#888;margin-bottom:10px">Spine Surgery Fellow</p>
+
+                        <h6 style="text-decoration:none;color:#bf0311">2011 - 2013, İstanbul/Türkiye /  TEPECİK TRAINING AND RESEARCH HOSPITAL</h6>
+                        <p style="color:#888;margin-bottom:10px">Neurosurgery Specialist</p>
+
+                        <h6 style="text-decoration:none;color:#bf0311">2009 - 2009, Muş/Türkiye /  MUŞ PUBLIC HOSPITAL</h6>
+                        <p style="color:#888;margin-bottom:10px">Neurosurgery Specialist</p>
+
+                        <h6 style="text-decoration:none;color:#bf0311">2009 - 2011, Rize/Türkiye /  RIZE TRAINING AND RESEARCH HOSPITAL</h6>
+                        <p style="color:#888;margin-bottom:10px">Neurosurgery Specialist</p>
+
+
+                    </div>
+                    <div class="col-md-12">
+
+                        <h4 style="color:#384047"><strong>Educație</strong></h4>
+                        <br />
+                        <h6 style="text-decoration:none;color:#bf0311">
+                            2015 - Present / CELAL BAYAR UNIVERSITY MEDICAL FACULTY
+                        </h6>
+                        <h5 style="margin-bottom:10px">Associate Professor</h5>
+
+                        <h6 style="text-decoration:none;color:#bf0311">
+                            2003 - 2009 / EGE UNIVERSITY MEDICAL FACULTY
+                        </h6>
+                        <h5 style="margin-bottom:10px">Specialist Training</h5>
+                        <h6 style="text-decoration:none;color:#bf0311">
+                            1995 - 2001
+                        </h6>
+                        <p style="color:#888;margin-bottom:10px">Medical Vocational Training</p>
+
+
+                    </div>
+
+                    <div class="col-md-12">
+                        <h4 style="color:#384047"><strong>Publicații științifice</strong> </h4>
+                        <br />
+                        <ul>
+                            <li>Turkish Neurosurgery Foundation WFNS 2013 Travel Grant Program, 2013</li>
+                            <li>Turkish Neurosurgery Foundation PSSC Group Presentation of the Year (Locul I), 2014</li>
+                            <li>
+                                Turkish Neurosurgery Foundation PSSC Group Presentation of the Year (Locul II), 2015
+                            </li>
+                            <li>Turkish Neurosurgery Foundation PSSC Group Presentation of the Year (Locul II), 2015</li>
+                            <li>Turkish Neurosurgery Foundation PSSC Group Presentation of the Year (Locul III), 2015</li>
+                            <li>Turkish Neurosurgery Foundation - Hamit Ziya Gökalp Neurosurgery Award (Locul III), 2016</li>
+                            <li>2017 Turkish Neurosurgery Foundation PSSC Group Presentation of the Year (Locul II)</li>
+                            <li>71 de articole publicate național şi 6 articole publicate internațional  în jurnalele de specialitate</li>
+                            <li>27 de prezentări  internaționale, 26 de prezentări naționale</li>
+                            <li>2 cărți de specialitate editate, 26 de capitole scrise</li>
+                        </ul>
+                        <h4 style="color:#384047"><strong>Afilieri</strong></h4>
+                        <ul>
+                            <li>Turkish Neurosurgery Foundation</li>
+                            <li>Spinal and Peripheral Nerve Surgery Group - Turkish Neurosurgery Foundation</li>
+                            <li>Scoliosis Research and Treatment Foundation</li>
+                            <li>World Spinal Column Society</li>
+                            <li>Turkish Spine Surgery Society</li>
+                            <li>AO Spine</li>
+                            <li>EuroSpine</li>
+                            <li>Middle East Spine Society</li>
+                            <li>Scoliosis Research Society</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <main id="top" class="masthead" role="main">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo"> <a href="#"><img src="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/images/memorial_logo.png" alt="readymade-logo"></a> </div>
+            <!-- Hero Title -->
+            <h1 class="main-title" style="color: #a91022">Intervenții chirugicale de ultimă oră şi tratatamentul scoliozelor</h1>
+            <!-- Sub Title -->
+            <h4 class="sub-title" style="color: #a91022">Suntem lângă dumneavoastră la fiecare pas spre vindecare</h4>
+
+            <!-- Web app banner -->
+            <div class="row">
+                <div class="col-md-6">
+                    <iframe class="video-responsive" width="450" height="270" src="https://www.youtube.com/embed/q4td9SLoBhQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-6">
+                    <img src="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/images/web-app-banner.png" alt="Web App Banner" class="img-responsive center-block" style=" padding-top: 5px; max-width: 90%;">
+                </div>
+
+                <div class="col-md-12">
+                    <h4 style=" color: #104979;margin-top:10px">Completează formularul de mai jos și cere informații despre serviciile noastre medicale!</h4>
+                </div>
+            </div>
+            <!-- // Web app banner Ends -->
+            <!-- Mailchimp Subscribe form -->
+            <div class="row" id="form">
+                <div class="col-md-12">
+                    <div class="subscribe-block">
+                        <div class="row">
+                            <form class="form-horizontal" role="form" action="/memorial-evinizde-form/" id="askprice_form" method="POST">
+                                <input id="geturl" name="url" type="hidden" value="" />
+                                <input id="campaign" name="campaign" type="hidden" value="33221147" />
+                                <input type="hidden" value="Memorial IVF" name="mailTitle" id="mailTitle" />
+                                <script>
+                                    document.getElementById("geturl").value = location.href;
+                                </script>
+                                <input name="crmMailId" type="hidden" value="28" />
+
+                                <input id="geturl" name="url" type="hidden" value="" />
+
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6">
+                                        <input class="form-control input-lg" name="fullname" id="fullname" type="text" max="30" placeholder="Nume şi Prenume" required>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-6">
+
+                                        <input class="form-control input-lg" name="email2" id="email2" aria-describedby="emailHelp" maxlength="40" type="email" placeholder="Email" required>
+
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6" style="margin-top:20px;border-radius:6px;height:46px ">
+                                        <div class="input-phone"></div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12">
+                                        <label class="help-block" style="display: inline; font-weight: 500; font-size:16px;color:#104979">Vă rugăm să verificați dacă numărul introdus este corect! Pentru a ne asigura că putem intra în legătură cu dumneavoastră, va rugăm să vă introduceți adresa de email!</label>
+                                    </div>
+                                </div>
+
+                                <div class="row" style="margin-top:20px">
+                                    <div class="col-md-12 col-sm-12">
+                                        <input class="form-control input-lg" cols="30" rows="4" name="message" maxlength="200" id="message" type="text" placeholder="Mesaj" required>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top:20px">
+                                    <div class="col-md-12 col-sm-12">
+                                        <label for="askprice_permission" class="help-block" style="display: inline; font-weight: 500; font-size:16px;color:#104979">
+                                            <label class="container3">
+                                                <input id="askprice_permission" style="width:18px;height:18px;" name="askprice_permission" type="checkbox">
+                                                <span class="checkmark3"></span>
+                                            </label>  Am luat la cunoștință <a class="link" href="https://www.memorial.com.tr/en/corporate/information-security-policy" target='_blank' style="color: #104979!important;"><strong>informațiile</strong></a> oferite de Protecția Generală a Datelor. Sunt de acord ca datele mele personale să fie procesate în scop medical și accept să fiu contactat/ă  pentru a primi informații în legătură cu serviciile medicale.
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="row" style="margin-top:20px">
+                                    <div class="col-md-12 col-sm-12">
+                                        <center>
+                                            <button type="submit" id="askprice_permission_button_send" style="display: block; margin-bottom:20px; width:-webkit-fill-available; font-size:2rem; height:auto"
+                                                    class="btn btn-warning btn-block btn-lg" disabled>
+                                                Trimite
+                                            </button>
+                                            <span id="spErr"></span>
+                                        </center>
+                                    </div>
+                                </div>
+                                <div class="field" style="text-align: center;">
+
+                                </div>
+
+                            </form>
+                        </div>
+                        <span id="result" class="loading"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- // Mailchimp Subscribe form Ends -->
+
+        </div>
+        <!--  Scroll to Explore -->
+        <a href="#explore" class="scrollto">
+            <p class="scrollto--arrow"><img src="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/images/mavidown_arrow.png" alt="scroll down arrow"></p>
+        </a>
+        <!-- // Scroll to Explore Ends -->
+    </main>
+    <!-- // Parallax Header Ends -->
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Features Section -->
+
+        <div class="zigzag">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row has-margin-bottom-sm">
+                        <div class="col-sm-4">
+                            <div class="icon-wrap"> <img src="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/images/maviicon_1.png" alt="img" class="img-responsive center-block"></div>
+                        </div>
+                        <div class="col-sm-8">
+                            <h4 class="zigzag-lead">Tranfer de la Aeroport</h4>
+                            <p>Pacienții noștrii au asigurate serviciile de transfer între aeroport, hotel şi spital, şi retur.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row has-margin-bottom-sm">
+                        <div class="col-sm-4">
+                            <div class="icon-wrap"><img src="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/images/maviicon_2.png" alt="img" class="img-responsive center-block"></div>
+                        </div>
+                        <div class="col-sm-8">
+                            <h4 class="zigzag-lead">Cazare</h4>
+                            <p>Le oferim pacienților listele noastre cu hotelurile partenere din care îşi pot alege varianta cea mai potrivită pentru ei. Listele noastre conțin hoteluri de 3,4 şi 5 stele.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Second row-->
+            <div class="row has-margin-top">
+                <div class="col-md-6">
+                    <div class="row has-margin-bottom-sm">
+                        <div class="col-sm-4">
+                            <div class="icon-wrap"> <img src="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/images/maviicon_3.png" alt="img" class="img-responsive center-block"></div>
+                        </div>
+                        <div class="col-sm-8">
+                            <h4 class="zigzag-lead">Translator</h4>
+                            <p>Pe toată perioada șederii la Memorial  pacienții vor fi însoțiți de un translator.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="icon-wrap"><img src="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/images/maviicon_4.png" alt="img" class="img-responsive center-block"></div>
+                        </div>
+                        <div class="col-sm-8">
+                            <h4 class="zigzag-lead">Acreditări</h4>
+                            <p>Memorial a obținut una dintre cele mai prestigioase acreditări, recunoscute la nivel mondial, pentru standardele înalte şi calitatea serviciilor sale.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- // Container Ends -->
+    <!-- Parallax Footer Starts -->
+    <main class="footercta" role="main" id="footerctaresim">
+        <div class="container">
+
+            <!-- Footer Title -->
+
+            <div class="row" style="flex-direction:row">
+                <div class="col-lg-9" style="padding-top:100px;font-size:18px;line-height:1.5"><strong>Încă din prima zi, Memorial Health Group şi-a protejat pacienții, rudele acestora şi angajații împotriva COVID-19 (Coronavirus) şi a asigurat cele mai înalte standarde de igienă. În acest context pandemic, Memorial face totul pentru a vă asigura un mediu sigur şi steril.</strong></div>
+                <div class="col-lg-3"><img src="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/images/hijyenromence.jpg" style="margin-top:20px" alt="img" class="img-responsive center-block"></div>
+            </div>
+        </div>
+    </main>
+    <!-- // Parallax Footer Ends -->
+    <!-- Container -->
+    <div class="container" id="explore">
+        <!-- Hero Image -->
+        <div class="zigzag">
+            <div class="row">
+                <!--<div class="col-md-5"> <img src="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/images/image_1.jpg" alt="img" class="img-responsive center-block"> </div>--><!--style="padding-top:0px; max-width:100%;"-->
+                <!--<div class="col-md-12">
+                    <h2 class="zigzag-lead" style="text-align:center"></h2>
+                </div>-->
+            </div>
+        </div>
+
+        <div class="zigzag">
+            <div class="row">
+                <div class="col-md-5 col-md-push-7"> <img src="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/images/image_1.jpg" alt="img" class="img-responsive center-block"> </div>
+                <div class="col-md-7 col-md-pull-5">
+                    <h4 class="zigzag-lead">Ce este scolioza?</h4>
+                    <p style="font-size: 18px;">
+                        Scolioză este definită de apariția unor curburi anormale la nivelul cloanei vertebrale care netratate la timp pot să scadă semnificiativ calitatea vieții şi a sănătății. Gravitatea scoliozei se observă în funcție de gradele curburii. O curbură până în 20 de grade reprezintă o formă de scolioză ușoară în timp ce o curbură de peste 50 de grade reprezibta o formă foarte avansată care poate pune în pericol viață. <br /><br />
+                        Scolioză funcțională este cel mai întâlnit tip de scolioză şi apare fie în urmă unei posturi inadecvate fie  în urmă unor probleme deja existente ale organismului (membre ineferioare scurtate/amputate etc).<br /><br />
+
+                    </p>
+                </div>
+                <div class="col-md-12">
+                    <p style="font-size: 18px;">
+
+
+                        Scolioză neurofuncțională este definită de o dezvoltare deficitară a vertebrelor care de obicei apare încă din timpul dezvoltării fetale şi cu ea poate aduce multe complicații serioase precum paralizia sau distrofia musculară.<br /><br />
+                        Scolioză degenerativă este întâlnită la adulți şi apare ca rezultat al spondilozelor sau al osteoporozelor.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="zigzag">
+            <div class="row">
+                <div class="col-md-5"> <img src="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/images/image_2.jpg" alt="img" class="img-responsive center-block"> </div>
+                <div class="col-md-7">
+                    <h4 class="zigzag-lead">Metode de tratament:</h4>
+                    <p style="font-size:18px;margin-top:20px">
+
+                        İn funcție de istoricul medical, de vârstă şi de tipul de scolioză se pot propune mai multe tipuri de tratament precum fizioterapia, incorsetarea şi pentru stadiile cele mai avansate operația este imperios necesară.<br /><br />
+
+                    </p>
+                    <h4 class="zigzag-lead">De ce Memorial?</h4>
+                    <p style="font-size:18px;margin-top:20px">
+
+                        La Memorial, scolioza este de domeniul trecutului. Intervențiile chirurgicale se fac de către o echipă de chirurgi ale căror rezultate sunt recunoscte la nivel mondial. Tehnicile folosite fac că întreg procesul chirurgical să fie unul sigur şi extrem de precis. Recuperarea după intervenția de scolioză este atent monitorizată de o echipa multidisciplinară de doctori iar recuperarea este comfortabila, pacientul fiind capabil să-și reia imediat postura sănătoasă.  <br /><br />
+
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="zigzag" id="contraindications">
+            <!--Second row-->
+            <div class="row" style="margin-bottom:55px" id="why">
+                <div class="col-md-7">
+                    <h4 class="zigzag-lead">Intervențiile chirurgicale în cazurile pediatrice</h4><br />
+
+                    Deși scoliozele în faze incipiente sau cele cu unghi de sub 30 de grade pot fi tratate cu ajutorul corsetelor şi a practicării regulate a fizioterapiei, în cazurile avansate se recomandă operația imediată.  Operația de scolioză este recomandată înainte ca unghiul curburii să depășească 70 de grade. Cu cât se amână mai mult intervenția chirurgicală cu atât copilul este expus unor riscuri şi complicații serioase. Deformarea coloanei vertebrale nu doar afectează postura, capacitățile motorii şi viață socială, ea afectează în mod direct organele vitale, plămânii şi inima fiind primele afectate.<br /><br />
+                    O dată realizată operația, postura se îndreaptă imediat, recuperarea este ușoară iar copilul se va putea bucură de o viață normală.
+
+                </div>
+
+                <div class="col-md-5" style="margin-top:50px">
+                    <iframe class="video-responsive" width="450" height="270" src="https://www.youtube.com/embed/Fbpyf3dL8KI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+
+
+        </div>
+        <!--<div class="zigzag">
+            <div class="row">
+
+                <div class="col-md-12 ">
+                    <h4 h4 class="zigzag-lead">Cei mai buni neurochirurgi </h4>
+                    <p style="font-size: 18px; margin-top:50px">
+                        <strong> Memorial înseamnă excelență, profesionalism şi dedicare completă.O parte dintre cei mai buni profesori doctori din Europa, cu rezultate forbidale în operațiile de scolioză au readus împreună cu echipele lor multidisciplinare, normalitatea în viețile a mii de pacienți.</strong>
+
+                    </p>
+                </div>
+
+            </div>
+        </div>-->
+
+    </div>
+    <!-- // Container Ends -->
+    <!-- Parallax Footer Starts -->
+    <main class="footercta" role="main">
+        <div class="container">
+
+
+            <div class="row">
+                <div class="section-title">
+                    <h2>Cei mai buni neurochirurgi</h2>
+                    <h4 style="font-size: 18px;">
+                        <strong> Memorial înseamnă excelență, profesionalism şi dedicare completă.O parte dintre cei mai buni profesori doctori din Europa, cu rezultate forbidale în operațiile de scolioză au readus împreună cu echipele lor multidisciplinare, normalitatea în viețile a mii de pacienți.</strong>
+                    </h4>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img style="width:70%;" src="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/images/emre-acaroglu.jpg">
+                        </div>
+                        <div class="col-md-12 text-center" style="margin-top:15px">
+                            <div class="section-title">
+                                <h4>
+                                    <strong>Prof. Dr. Emre ACAROĞLU</strong> <br /><br />
+                                    Ortopedie şi Traumologie<br />
+                                    Spitalul Memorial Ankara<br />
+                                    <span id="btnCv1" onclick="cvFunction1()" role="button" class="btn btn-warning" style="margin-top:20px">CV</span>
+                                </h4>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img style="width:70%;" src="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/images/onur-yaman.jpg">
+                        </div>
+
+                        <div class="col-md-12 text-center" style="margin-top:15px">
+                            <div class="section-title">
+                                <h4>
+                                    <strong>Associated Prof. Onur YAMAN (K)</strong> <br /><br />
+                                    Neurochirurgie<br />
+                                    Spitalul Memorial Bahcelievler<br />
+                                    <span id="btnCv" onclick="cvFunction2()" role="button" class="btn btn-warning" style="margin-top:20px">CV</span>
+                                </h4>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- // Parallax Footer Ends -->
+    <!-- Parallax Footer Starts -->
+    <main class="footercta" role="main">
+        <div class="container">
+
+            <!-- Footer Title -->
+            <div class="section-title">
+                <h2>Contactați-ne</h2>
+                <h4 style="word-wrap:break-word"><br />Telefon : <a href="tel://+905493146783">(+90)5493146783 </a><br /> E-mail : internationalpatients@memorial.com.tr</h4>
+
+            </div>
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-md-4 text-center"> <a href="#form" class="btn btn-warning btn-lg gototop">Contactați-ne</a>  </div>
+                <div class="col-sm-4"></div>
+            </div>
+        </div>
+    </main>
+    <!-- // Parallax Footer Ends -->
+    <section class="faqs" id="sss">
+        <div class="container" style="margin-top:50px!important">
+            <div class="sectio-title-2">
+                <h2>Cele mai frecvente întrebări</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><strong>Ce tipuri de tratatment se realizează pentru scolioză?</strong></a> </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body" style="color:black;">
+                                    În funcție de gravitatea scoliozei, sunt disponibile mai multe tipuri de tratatament:<br />
+                                    Pentru cazurile de scolioză ușoară este recomandată fizioterapia care prin practică regulată ameliorează şi dezvoltă flexibilitatea coloanei şi întărește musculatura.<br /><br />
+                                    Tratamentul ortotic combinat cu fizioterapia pentru cazurile de scolioză medii
+                                    (curbură între 30 şi 50 de grade). În funcție de recomandarea medicului, corsetul se poate purta între 18 şi 22 de ore  pe zi.  Corsetul previne agravarea curburii dar nu o poate corecta!<br /><br />
+                                    Tratamentul chirurgical este indicat în cazul curburilor de peste 45 de grade. La Memorial, operația de scolioză se realizează de o echipa multidisciplinară de profesori chirurgi. Datorită tehnicilor folosite recuperarea este ușoară şi mai puțin dureroasă.<br />
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingNine">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine"><strong>Scolioza la copii cum se tratează?</strong> </a> </h4>
+                            </div>
+                            <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+                                <div class="panel-body" style="color:black;">
+                                    În funcție de tipul şi gravitatea acesteia, la copii se recomandă purtarea unui corset până la adolescență( până când se opresc din creștere), bineînțeles, combinat cu fizioterapie. Dacă cazurile sunt grave atunci este necesară operația imediată.  La Memorial, unul dintre cei mai buni medici neurochirurgi din Europa, Onur Yaman, realizează cu succes operațile de scolioză indiferent de vârstă şi de gravitatea acestora.
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><strong>Recuperarea după operația de scolioză?</strong></a> </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body" style="color:black;">
+                                    Recuperarea depinde de persoană, de vârstă acesteia, de afecțiunile deja existente. În ceea ce ne privește, recuperările după intervențiile pentru scolioză sunt mai ușoare şi mai confortabile pentru pacient, datorită tehniclor avansate şi apărăturilor de precizie maximă pe care le folosim.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--Grey Highlight Section-->
+    <div class="highlight" style="background:#f5f8fb; margin-top:0px">
+        <div class="container">
+            <div class="section-title" id="package">
+                <h2>Conturi Social Media</h2>
+            </div>
+            <div class="row" style="margin-bottom:50px">
+                <div class="col-sm-12">
+                    <div class="logos text-center">
+                        <a href="https://business.facebook.com/memorialhospitalsen/" target="_blank"><img src="https://cdn.memorial.com.tr/files/Uploads/1/139/facebooksvg_db1a.svg" alt="logo"></a>
+                        <a href="https://www.instagram.com/memorialhospitalsgroup/" target="_blank">
+                            <img src="https://cdn.memorial.com.tr/files/Uploads/1/139/instagramsvg_3435.svg" alt="logo">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCq3RsbEoCwcMaLjfeorH11Q" target="_blank">
+                            <img src="https://cdn.memorial.com.tr/files/Uploads/1/139/youtubesvg_8a88.svg" alt="logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--// End Grey Highlight Section-->
+    <!--Grey Highlight Section-->
+    <!--<div class="highlight" style="margin-top: 0px; background: #d3d7da">
+        <div class="container">-->
+    <!--Pricing-->
+    <!--<div class="section-title" id="package">
+        <h2>Cele mai populare</h2>
+    </div>
+    <section class="row breath planpricing">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+            <ul>
+                <li>Ginecologie oncologică</li>
+                <li>Înlocuire de valvă mitrală</li>
+                <li>Stimulator cerebral (PARKINSON)</li>
+                <li>Intervenții cu robotul DAVINCI</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <ul>
+                <li>Chirurgie colorectală şi HIPEK</li>
+                <li>Metoda ILIZAROV</li>
+                <li>Sindromul ovarelor polichistice</li>
+                <li>Chirurgie metabolică (Diabet tip2)</li>
+            </ul>
+        </div>
+        <div class="col-md-2"></div>
+    </section>-->
+    <!--// End Pricing-->
+    <!--</div>
+    </div>-->
+    <!--// End Grey Highlight Section-->
+    <!-- // Container Ends -->
+
+
+
+
+
+
+    <div class="clickToCall" id="clickToCall" style="display:none">
+        <a href="tel:+905493146783"
+           onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Scoliosis-Ro', eventLabel: 'Mobile Button'});">
+            <p class="call-button">
+                <img caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/images/clickToCall.png"
+                     style="width:60px; height:60px;" />
+            </p>
+        </a>
+    </div>
+    <!-- Container -->
+    <div class="container">
+        <section class="row breath footercontent">
+            <div class="col-sm-3"> </div>
+            <div class="col-sm-6 madeby">
+                <p style="color:black">Copyright © 2021 MEMORIAL | All Rights Reserved | www.memorial.com.tr | internationalpatients@memorial.com.tr</p>
+            </div>
+            <div class="col-sm-3 copyinfo">
+
+            </div>
+        </section>
+        <!-- // End Client Logos -->
+
+    </div>
+    <!-- // Container Ends -->
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+
+    <style>
+        @media screen and (min-width:768px) {
+
+            #clickToCall {
+                display: none !important;
+            }
+
+            #footerctaresim {
+                background-image: url('{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/images/header_bg222_mobile.jpg');
+            }
+        }
+
+        @media screen and (max-width:767px) {
+            .video-responsive {
+                width: 100%;
+                height: auto;
+            }
+
+            #clickToCall {
+                display: block !important;
+            }
+
+            .section-title h4 {
+                font-size: 16px;
+            }
+        }
+
+        #footerctaresim {
+            background-image: url('{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/images/header_bg222.png');
+        }
+
+        #myBtnS {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 156px;
+            height: 60px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #104979;
+            color: white;
+            cursor: pointer;
+            /* padding: 15px; */
+            border-radius: 4px;
+            display: none;
+        }
+
+            #myBtnS:hover {
+                background-color: #555;
+            }
+    </style>
+
+
+    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+        <a id="myBtnS" class="btn btn_cta scroll" href="#form" style="margin-bottom: 0px !important;display: none;"><span style="top: 10px;position: relative;">Contactați-ne</span></a>
+    </div>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtnS");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/js/jquery.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/js/bootstrap.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/js/easing.js"></script>
+
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/js/ketchup.all.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/js/intlInputPhone2.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/js/intlInputPhone2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <!--<script src="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/js/plugins/validation/localization/messages_tr.min.js"></script>-->
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}Scoliosis-Ro/js/bootstrap-formhelpers.js?v=2"></script>
+
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}js/utmLinkSaver.js?v=3"></script>
+    <script>saveUtmLink(10);</script>
+
+    <script type="text/javascript">
+
+
+        var mycvdetail1 = document.getElementById("myModalcvdetail1");
+        function cvFunction1() {
+            if (mycvdetail1.style.display == "none") {
+                mycvdetail1.style.display = "block";
+            } else {
+                mycvdetail1.style.display = "none";
+            }
+        }
+
+        var mycvdetail = document.getElementById("myModalcvdetail2");
+        function cvFunction2() {
+            if (mycvdetail.style.display == "none") {
+                mycvdetail.style.display = "block";
+            } else {
+                mycvdetail.style.display = "none";
+            }
+        }
+
+        window.onload = function () {
+
+            var captcha_badge = document.getElementsByClassName("grecaptcha-badge");
+            for (var i = 0; i < captcha_badge.length; i += 1) {
+                captcha_badge[i].setAttribute("data-badge", "inline");
+                captcha_badge[i].style.display = 'none';
+            }
+        };
+
+        function onSubmitRe(token) {
+            document.getElementById("ajax-contact-2").submit();
+        }
+
+        function validateEmail(email) {
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(email);
+        }
+
+        //{#var elementcaptcha = document.getElementById('recaptchabutton');#}
+        //{#elementcaptcha.onclick = validate;#}
+
+
+        function validate(event) {
+            event.preventDefault();
+            if (!document.getElementById('fullname').value) {
+                alert("Scrie - ti numele.");
+
+            } else if (!document.getElementById('phone2').value) {
+                alert("Notează-ți numărul de telefon.");
+
+
+            } else {
+                grecaptcha.execute();
+            }
+
+        }
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        var modal1 = document.getElementById("myModalcvdetail1");
+        var modal2 = document.getElementById("myModalcvdetail2");
+
+
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        var span1 = document.getElementsByClassName("close1")[0];
+        var span2 = document.getElementsByClassName("close2")[0];
+
+
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+            window.location.href = window.location.href.replace(window.location.search, "");
+        }
+        // When the user clicks on <span> (x), close the modal
+        span1.onclick = function () {
+            modal1.style.display = "none";
+
+        }
+        // When the user clicks on <span> (x), close the modal
+        span2.onclick = function () {
+            modal2.style.display = "none";
+
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                window.location.href = window.location.href.replace(window.location.search, "");
+            }
+        }
+    </script>
+
+    <!-- cookie policy -->
+    <!--<link rel="stylesheet" type="text/css" href="./static/css/cookieconsent.css" />
+    <script src="./static/js/cookieconsent.js"></script>
+
+    <script type="text/javascript">
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#f1f3f9",
+                        "text": "#28252c",
+                    },
+                    "button": {
+                        "background": "transparent",
+                        "text": "#28252c",
+                        "border": "#28252c"
+                    }
+                },
+                "content": {
+                    "message": "We use cookies so that you can get the most out of our services.By using memorial.com.tr you allow cookies.",
+                    "dismiss": "Okey",
+                    "link": "Click for details.",
+                    "href": "https://www.memorial.com.tr/kurumsal/cerezler-cookies-politikasi/"
+                }
+            })
+        });
+    </script>-->
+    <!-- cookie policy -->
+
+    <script type="text/javascript">
+        window.onload = function () {
+
+            var captcha_badge = document.getElementsByClassName("grecaptcha-badge");
+            for (var i = 0; i < captcha_badge.length; i += 1) {
+                captcha_badge[i].setAttribute("data-badge", "inline");
+                captcha_badge[i].style.display = 'none';
+            }
+        };
+
+        function onSubmitRe(token) {
+            document.getElementById("ajax-contact-2").submit();
+        }
+
+        function validateEmail(email) {
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(email);
+        }
+
+        function validate(event) {
+            event.preventDefault();
+            if (!document.getElementById('fullname').value) {
+                alert("Scrie - ti numele.");
+
+            } else if (!document.getElementById('phone2').value) {
+                alert("Notează-ți numărul de telefon.");
+
+
+            } else {
+                grecaptcha.execute();
+            }
+
+        }
+    </script>
+    <!-- ========= Scroll to Explore ========= -->
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            var urlParams = new URLSearchParams(window.location.search);
+            var pageData = urlParams.get('page');
+            console.log(pageData);
+
+            if (pageData == "success") {
+                var modal = document.getElementById("myModal");
+                modal.style.display = "block";
+            }
+
+
+            $('.input-phone').intlInputPhone();
+
+            var isFilterOn = false;
+            $(document).on("input", "#phone2", function () {
+                if (isFilterOn)
+                    this.value = this.value.replace(/\D/g, '');
+            });
+
+            $('#phone2').mask('(500) 000-00-00', { placeholder: "(5__) ___-__-__" });
+
+            $('body').on('DOMSubtreeModified', '.btn-cc', function () {
+                if ($(".btn-cc").html().replace(/&nbsp;/g, '') != "+90") {
+                    $('#phone2').unmask();
+                    $('#phone2').attr("maxlength", "15");
+                    isFilterOn = true;
+                    isButtonValid();
+                }
+                else {
+                    $('#phone2').mask('(500) 000-00-00', { placeholder: "(5__) ___-__-__" });
+                    isFilterOn = false;
+                    isButtonValid();
+                }
+            });
+
+            $('#askprice_permission').click(function () {
+                isButtonValid();
+            });
+
+            $("#askprice_permission_button_send").click(function () {
+
+                if ($("#countries_phone2").val() == "") {
+                    $("#ask_price_errorID").show();
+                    $("#ask_price_error_textID").html('Vă rugăm să selectați codul țării');
+                    return false;
+                }
+
+                if ($("#fullname").val() == "") {
+                    $("#").show();
+                    $("#spErr").html('<span style=\'color:#b9194b;\'>Vă rugăm să introduceți numele și prenumele.</span>');
+                    return false;
+                }
+                if ($("#fullname").val().length < 5) {
+                    $("#").show();
+                    $("#spErr").html('<span style=\'color:#b9194b;\'>Vă rugăm să introduceți un nume și prenume mai lungi de 4 caractere în total.</span>');
+                    return false;
+                }
+                if ($("#fullname").val().length > 30) {
+                    $("#").show();
+                    $("#spErr").html('<span style=\'color:#b9194b;\'>Vă rugăm să introduceți un nume și prenume scurte cu un total de 30 de caractere.</span>');
+                    return false;
+                }
+
+                if ($("#phone2").val().length < 6) {
+                    $("#spErr").html("<span style='color:#b9194b;'>Numărul de telefon nu poate fi mai mic de 6 cifre.</span>");
+                    return false;
+                }
+
+                $("#askprice_permission_button_send").attr("disabled", "disabled");
+                $('#askprice_permission_button_send').html('Se trimite...');
+
+                tel = $(".btn-cc").html().replace(/&nbsp;/g, '') + " " + $("#phone2").val().replace(/[^0-9]+/g, "");
+                $('#phone').val(tel);
+
+
+                send_promotion();
+            });
+
+            $("#fullname").on('input', function () { isButtonValid(); })
+            $("#phone2").on('input', function () { isButtonValid(); })
+            $("#Message").on('input', function () { isButtonValid(); })
+
+            function isButtonValid() {
+
+                if ($("#fullname").val() != "" && $("#phone2").val() != "" && $('#askprice_permission').is(':checked') && $("#Message option:selected").val() != "0") {
+                    $('#askprice_permission_button_send').prop('disabled', false);
+                } else {
+                    $('#askprice_permission_button_send').prop('disabled', true);
+                }
+            }
+
+        });
+
+
+        function reactivateForm() {
+            document.getElementById("askprice_form").reset();
+            $("#askprice_form").show();
+            $(".alert-success").hide();
+        }
+
+        function send_promotion() {
+            $(".alert-success").hide();
+            $(".alert-warning").hide();
+            $("#phoneNumber").val($("#phone").val());
+
+            var serializedData = $("#askprice_form").serialize();
+
+
+            $.ajax({
+                type: "POST",
+                url: '/landingAskPricePost?lang=tr',
+                async: true,
+                data: serializedData,
+                cache: false,
+                beforeSend: function () {
+                    $('#askprice_permission_button_send').prop('disabled', true);
+                    $('#askprice_permission_button_send').html('Se trimite ...');
+                },
+                success: function (b) {
+                    if (b == "1" || (typeof b.status !== 'undefined' && b.status == "1")) {
+
+                        $("#fullname").val("");
+                        $("#phone2").val("");
+                        $("#message").val("");
+                        $("#email2").val("");
+                        $('#askprice_permission_button_send').prop('disabled', false);
+                        $('#askprice_permission_button_send').html('Trimite');
+
+                        if (typeof b.hashedPhoneNumber !== 'undefined') {
+
+                            dataLayer.push({
+                                'event': 'create_lead_user',
+                                'userID': b.hashedPhoneNumber
+                            });
+                        }
+
+                        dataLayer.push({
+                            'event': 'landing_finishForm',
+                            'formName': window.gtmFormName,
+                            'pageCategory': 'Landing Page'
+                        });
+
+                        window.location.href += '?page=success';
+                        $("#spErr").html("<span style='margin: 20px 0; display: block; color: #25a517;'>Formularul dvs. a fost trimis cu succes.</span>");
+
+
+
+                    } else {
+                        $(".alert-warning").fadeIn();
+                        $('#askprice_permission_button_send').html('Trimite');
+                        $("#spErr").html("<span style='margin: 20px 0; display: block; color: #ca2020;'>A apărut o problemă tehnică.Încercați din nou mai târziu.</span>");
+                    }
+                    $('#askprice_permission_button_send').prop('disabled', false);
+                },
+                error: function (b) {
+                    $(".alert-warning").fadeIn();
+                    $('#askprice_permission_button_send').html('Trimite');
+                    $('#askprice_permission_button_send').prop('disabled', false);
+                }
+            });
+        }
+
+    </script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+{% extends "column_4_8.html" %}
+{% load i18n %}
+
+{% block title %}مركز مموريال للمرضى الدوليين{% endblock %}
+
+{% block breadcrumb %}
+	<li><a href="">مركز مموريال للمرضى الدوليين</a></li>
+{% endblock %}
+
+{% block breadcrumbmobile %}
+	<li><a href="">مركز مموريال للمرضى الدوليين</a></li>
+{% endblock %}
+
+{% block column_4 %}
+<div class="leftMenu">
+<h3>تعرّف على مموريال</h3>
+		<ul class="sidebar-nav">
+			<li><a {% ifequal flatpage.url '/ar/corporate/presentation/' %}class="selected"{% endifequal %} href="/ar/corporate/presentation/">عرض</a></li> <!-- flatpages -->
+			<li><a {% if hospital_x_url %}class="selected"{% endif %} href="{% url 'hospital_ar' %}">{% trans "10067" %}</a></li>
+			<li><a {% if tour_x_url %}class="selected"{% endif %} href="{% url 'tour_ar' %}">{% trans "10080" %}</a></li>
+			<li><a {% ifequal flatpage.url '/ar/corporate/international/' %}class="selected"{% endifequal %} href="/ar/corporate/international/">مركز مموريال للمرضى الدوليين</a></li> <!-- flatpages -->
+		</ul>
+	</div>
+{% endblock %}
+
+{% block column_8 %}
+	<div class="relatedNews kurumsal-kimlik clearfix" style="text-align: justify;">
+		<h1>طلب التأشيرة للمرضى العراقيين والليبيّن</h1>
+<p>هل تحتاج المساعدة للحصول على التأشيرة؟ بإمكان مموريال توفير المساعدة لتسهيل الحصول على التأشيرة.</p>
+
+<p>للحصول على معلومات حول إجراءات التأشيرة، يرجى ملء الاستمارة وإرسالها لنا، و بمجرد استلامنا لبياناتك، سنرسل لك كافة المعلومات اللازمة بالسرعة الممكنة.</p>
+<script>
+	function onSubmit(token) {
+		document.getElementById("visa_application_form").submit();
+	}
+</script>
+	
+<form class="form-horizontal" action="." method="post" id="visa_application_form" enctype="multipart/form-data">{% csrf_token %}
+				<div class="form-group">
+					
+					<div class="col-sm-10">
+						<input type="text" name="name" class="form-control" id="id_name" placeholder="الاسم الكامل" value="{% if form.name.value %}{{ form.name.value }}{% endif %}">
+						<span id="helpBlock" class="help-block">يرجى كتابة الاسم الكامل</span>
+						{{ form.name.errors }}
+					</div>
+					<label for="id_name" class="col-sm-2 control-label">الاسم الكامل:</label>
+				</div>
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        <select id="countries_phone_visa" class="form-control bfh-countries" data-country="TR"></select>
+
+                    </div>
+                     <label for="countries_phone2" class="col-sm-2 control-label">{% trans "100102" %}</label>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-10">
+                        <input type="text" name="phone" class="form-control bfh-phone" id="id_phone" data-country="countries_phone_visa" >
+                        <span id="helpBlock" class="help-block">{% trans "10084" %}</span>
+                        {{ form.phone.errors }}
+                    </div>
+                    <label for="id_phone" class="col-sm-2 control-label">رقم الهاتف:</label>
+                </div>
+				<div class="form-group">
+	
+					<div class="col-sm-10">
+						<input type="email" name="email" class="form-control" id="id_email" placeholder="البريد الإلكتروني" value="{% if form.email.value %}{{ form.email.value }}{% endif %}">
+						<span id="helpBlock" class="help-block">البريد الإلكتروني:</span>
+						{{ form.email.errors }}
+					</div>
+					<label for="id_email" class="col-sm-2 control-label">البريد الإلكتروني:</label>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-10">
+						<input type="text" name="country" class="form-control" id="id_country" placeholder="الرجاء ادخال بلدك" value="{% if form.email.value %}{{ form.email.value }}{% endif %}">
+						<span id="helpBlock" class="help-block">الرجاء ادخال بلدك</span>
+						{{ form.email.errors }}
+					</div>
+					<label for="id_country" class="col-sm-2 control-label">دولة:</label>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10"><button type="submit" class="btn btn-default btn-memorial g-recaptcha" data-sitekey="6Ld6hSEUAAAAAN0SsdRRgbh-V90ONj8sabLs1UtT" data-callback='onSubmit'>{% trans "10038" %}</button></div>
+				</div>
+</form>
+	</div>
+
+
+
+{% endblock %}

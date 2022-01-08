@@ -1,0 +1,142 @@
+{% extends "column_4_8.html" %}
+{% load i18n %}
+
+{% block title %}Hipertermi{% endblock %}
+{% block datalayer %}
+    <script>
+        window.dataLayer = window.dataLayer||[];
+        window.dataLayer.push({
+            'event': 'pageDetails',
+            'page': {
+                type: 'Hipertermi',
+                tag: 'Hipertermi',
+                category: '{% trans "10006" %}',
+                expertise: '',
+                keyElement: ''
+            }
+        });
+    </script>
+{% endblock %}
+{% block breadcrumb %}
+<li><a href="/hipertermi/">Hipertermi</a></li>
+{% endblock %}
+
+{% block breadcrumbmobile %}
+<li><a href="/hipertermi/">Hipertermi</a></li>
+{% endblock %}
+
+{% block column_4 %}
+<div class="leftMenu">
+   <!--Onkoloji menu-->
+   <h3>Memorial Onkoloji Merkezi</h3>
+   <ul class="sidebar-nav">
+      <li><a href="/bolumler/onkoloji-merkezi/?hastane=antalya">Memorial Antalya Hastanesi Onkoloji Merkezi</a></li>  
+   </ul>
+   <!--Onkoloji menu-->
+
+   <!-- sideform -->
+   <style type="text/css">#sideformcontainer { display: block; }</style>
+   <script>
+      function onSubmit(token) {
+         document.getElementById("form").submit();
+      }
+   </script>
+   <div id="sideformcontainer">
+      <h3 style="margin-top: 7px;">Ayrıntılı Bilgi İçin Form Doldurun</h3>
+      <form class="campainForm" action="." method="post" id="form">
+         {% csrf_token %}
+         <div class="form-group">
+            <input class="form-control" type="text" placeholder="Adı Soyadı" name="fullname" id="id_fullname" value="{% if form.fullname.value %}{{ form.fullname.value }}{% endif %}"/>
+         </div>
+         <div class="form-group">
+            <input class="form-control" type="text" placeholder="E-Posta" name="email" id="id_email" value="{% if form.email.value %}{{ form.email.value }}{% endif %}"/>
+         </div>
+         <div class="form-group">
+          <select id="countries_phone_hipetermi" class="form-control bfh-countries" data-country="TR"></select>
+        </div>
+         <div class="form-group">
+             <input class="form-control bfh-phone" type="tel" placeholder="{% trans '10167' %}"
+                    name="phone" id="id_phone" data-country="countries_phone_hipetermi"/>
+         </div>
+         {% ifequal msg 1 %}
+            <div class="alert alert-success" role="alert" style="display: block!important;">{% trans "10092" %}</div>
+         {% endifequal %}
+         {% ifequal msg 2 %}
+            <div class="alert alert-warning" role="alert" style="display: block!important;">{% trans "10042" %}</div>
+         {% endifequal %}
+         {% ifequal msg 3 %}
+            <div class="alert alert-warning" role="alert" style="display: block!important;">{% trans "10042" %}</div>
+         {% endifequal %}  
+         <button type="submit" class="btn btn-memorial pull-right g-recaptcha" data-sitekey="6Ld6hSEUAAAAAN0SsdRRgbh-V90ONj8sabLs1UtT" data-callback='onSubmit' id="sideformbutton">Gönder</button>				
+      </form>
+   </div>
+   <!-- sideform -->   
+   
+</div>
+{% endblock %}
+
+{% block conversion %}				
+   {% if msg == 1 %}
+      <!-- Google Code for Memorial-Form Doldurma Conversion Page -->
+      <script type="text/javascript">
+      /* <![CDATA[ */
+      var google_conversion_id = 968621241;
+      var google_conversion_language = "en";
+      var google_conversion_format = "3";
+      var google_conversion_color = "ffffff";
+      var google_conversion_label = "N9srCPD3p2YQufnvzQM";
+      var google_remarketing_only = false;
+      /* ]]> */
+      </script>
+      <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+      </script>
+      <noscript>
+      <div style="display:inline;">
+      <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/968621241/?label=N9srCPD3p2YQufnvzQM&amp;guid=ON&amp;script=0"/>
+      </div>
+      </noscript>
+      <script type="text/javascript">console.log("Hipertermi Conversion");</script>
+   {% endif %}  
+{% endblock %}
+
+{% block column_8 %}
+<div class="relatedNews kurumsal-kimlik clearfix">
+<h1>Hipertermi</h1>
+<p>Özel geliştirilen cihazlar aracılığı ile hastanın tüm vücut ısısını ya da bölgesel olarak tümörün ısısını artırmayı hedefleyen “Hipertermi yöntemleri”, günümüzde pek çok hastalık için önemli bir tedavi seçeneği haline gelmiştir. Isı ile tedavi anlamına gelen hiperterminin, birçok farklı alt türü olan kanser hastalığının tedavisi için kullanıldığında, kemoterapi ve radyoterapinin etkinliğini artırdığını gösteren çok sayıda çalışma bulunmaktadır. Bu haliyle hipertermi, kanser alanında kanıta dayalı “tamamlayıcı” bir yöntemdir. Tüm Vücut Hipertermi ve Bölgesel Hipertermi olmak üzere 2 ana başlık altında incelenmektedir.</p>
+<h2>Tüm vücut hipertermi ile kanser tedavisi</h2>
+<p>Sağlıklı bir kişi hastalık tehdidine artan bir vücut ısısı ile yani ateşle karşılık verir. Tüm vücudu ısıtarak ateş çıkarma, bağışıklık yanıtını artırmayı tetikler. Ateş, bağışıklık sisteminin aktifleşmesi ve düzenlenmesinde önemli bir rol oynar; bu “doğal, geçici bir immünolojik özel program” olarak nitelendirilebilir.</p>
+<p>Tüm vücut hiperterminin kanser tedavisindeki temel rolü, beraberinde uygulanan kemoterapinin etkinliğini artırmak ve bağışıklık sistemini güçlendirmektir. Özellikle yaygın tümörü olan hastalarda kemoterapi ile birlikte uygulandığında tedavinin etkinliğini artırabilmekte, ayrıca bağışıklık sistemi fonksiyonlarında ölçülebilir bir artışı tetikleyebilmektedir.</p>
+<p>Tüm vücut hipertermide, en eski tedavi prensiplerinden biri olan ateş çıkarmak için, deriye zarar vermeyen ve derinlik etkili su filtreli infrared-A ışını yayan lambalar doğrudan karın ve gövdeye yöneltilir.</p>
+<p><img style="width: 100% !important; height: auto;" src="../../../../upload/2016/4/6688ff72-8eb0-4f17-9386-c4793fc85a7a.jpg" alt="" /></p>
+<p>İşlem sırasında hastanın vital fonksiyonları (tansiyon, nabız, oksijen satürasyonu, solunum sıklığı ve vücut ısısı) yakın takip edilerek, vücut ısısında kontrollü ve hedeflenmiş bir artış sağlanmaktadır.</p>
+<p>Yapılan çalışmalar bağışıklık sisteminin aktifleşmesi için en uygun vücut ısısı değerlerinin 39 °C – 40 °C olduğunu gösterdiği için, kanser tedavisinde hedef vücut ısısı “orta” tüm vücut hipertermi olarak da nitelendirilen 39 °C – 40 °C arasıdır. Tedavi, vücudun verdiği tepkiye ve hedef ısıya ulaşılma süresine göre değişebilmekle birlikte, ortalama 4 saat kadar sürmektedir.</p>
+<h2>Bölgesel (lokal) hipertermi ile kanser tedavisi</h2>
+<p>Bölgesel hipertermi, kanser tedavisi alanında uzun yıllar süren çalışmaların sonunda geliştirildi. Radyo frekans dalgaları ile tümörlü bölgeyi ısıtma prensibine dayalı bu yöntem, güvenli ve etkili bir şekilde kemoterapi ve radyoterapi gibi mevcut kanser tedavilerinin etkinliğini artırabilir.</p>
+<p>“Bölgesel derin elektro hipertermi” olarak da adlandırılan bu yöntemde, tümörlü bölgeye yoğun bir enerji uygulanır ve dokuda hedeflenen ısı 42 °C – 44 °C derece arasıdır.</p>
+<p>Tümör hücreleri çeşitli hücresel mekanizmaları kullanarak bağışıklık (immün) sisteminden gizlenmektedir. Ancak bölgesel hipertermi uygulanarak verilen ısının etkisi altında bu hücreler görülebilir. Bu yolla hipertermi, radyoterapi ve/veya kemoterapiyi daha etkili hale getirebilir. Bazı vakalarda daha önce uygulandığında etkili olmayan kemoterapi ve/veya radyoterapi, hipertermi ile birlikte kullanıldığında etkili olabilir.</p>
+<p>Hipertermi etkisi altında kanser hücreleri “ısı şok proteinleri” oluşturur; bu proteinler bozulmuş hücre yüzeylerinde görünürler. Vücudun kendi immun sistemi bu proteinleri yabancı hücreler olarak algılar. Bu da immun hücrelerinin kanser hücreleri ile savaşması için net bir göstergedir. Hipertermi altında sağlıklı hücrelerde belirgin bir ısı şok proteini artışı oluşmaz ve normal hücreler hipertermi işleminden zarar görmez.</p>
+<p><img style="width: 100% !important; height: auto;" src="../../../../upload/2016/4/70b6f8ae-d4a9-434f-bf35-8d13315c4b02.jpg" alt="" width="700" height="286" /></p>
+<p>Ortalama 60 dakika süren tedaviler sırasında hasta tedavi yatağında rahatça uzanır. Gücü ayarlanabilir radyo frekans dalgaları, karşılıklı iki elektrot başlığı ile tümör alanına yöneltilir ve 42 °C – 44 °C arası yüksek ısıya ulaşılır. Bu sıcaklık kanser hücrelerine ve tümör damarlarına zarar verir. </p>
+<p><u>Bölgesel hipertermi uygulama alanları:</u></p>
+<ul>
+<li>Primer tümörler veya yayılım göstermiş (metastaz) tümörler</li>
+<li>Organlardaki tümörler (karaciğer, pankreas, böbrekler, akciğerler v.s.)</li>
+<li>Sindirim sistemi tümörleri</li>
+<li>Kalça bölgesi (pelvis) tümörleri</li>
+<li>Baş ve boyun tümörleri</li>
+<li>Beyin tümörleri veya beyine yayılım (metastaz)</li>
+<li>Meme kanseri ( meme kanserinin lokal nüksü)</li>
+<li>Prostat kanseri</li>
+<li>Melanom</li>
+<li>Yüzeysel tümörler</li>
+</ul>
+<p><strong>Hipertermi uygulamalarının etki mekanizmaları:</strong></p>
+<ul>
+<li>Isının neden olduğu hücresel stres ve hasara bağlı kanser hücrelerinin apoptoza (programlı hücre ölümü) gitmesi.</li>
+<li>Kanserli dokuda hipoksi (oksijen azlığı) ve asidik bir ortam mevcuttur. Bu durum kanserli dokuya kemoterapi ilaçlarının ve radyoterapinin etkisini azaltır. Isı artışı ile tümörün kanlanması artar, dolayısı ile asidik ortam azalır.</li>
+<li>Isı ile hücresel düzeyde “ısı şok proteinleri”nin üretimi artar; bu da natural-killer olarak bilinen bağışıklık hücrelerinin aktivitesini artırır. Isı ile tümöre özgü antijen üretimi ve antijenlerin hücre dışına çıkışı artar. Bir nevi kanserli hücrelerin bağışıklık sisteminden gizlenmesini sağlayan maskeleri düşer. Böylelikle kanserin bağışıklık sistemi tarafından tanınması kolaylaşır.</li>
+<li>Kanserli dokudaki tümörü besleyen kılcal damarların yapısı normal damarlardan farklıdır ve özellikle bölgesel hipertermi ile bu damarlarda mikro trombozlar (pıhtı) oluşarak tümörün beslenmesi bozulabilmektedir. </li>
+</ul>
+<p>Hem tüm vücut hipertermi hem de bölgesel hipertermi bağışıklık sisteminin özelleşmiş hücrelerinden olan antijen sunan hücrelerinin lenf bezlerine geçişini ve T hücrelerinin “tümör bölgesinde” immunolojik yanıtını kolaylaştırır.</p>
+</div>
+{% endblock %}

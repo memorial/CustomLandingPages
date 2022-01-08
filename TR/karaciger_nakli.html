@@ -1,0 +1,139 @@
+{% extends "column_4_8.html" %}
+{% load i18n %}
+
+{% block title %}Karaciğer Nakli - Memorial Organ Nakli Merkezleri{% endblock %}
+{% block datalayer %}
+    <script>
+        window.dataLayer = window.dataLayer||[];
+        window.dataLayer.push({
+            'event': 'pageDetails',
+            'page': {
+                type: 'Karaciğer Nakli - Memorial Organ Nakli Merkezleri',
+                tag: 'Karaciğer Nakli',
+                category: '{% trans "10006" %}',
+                expertise: '',
+                keyElement: ''
+            }
+        });
+    </script>
+{% endblock %}
+{% block breadcrumb %}
+<li><a href="/karaciger-nakli/">Karaciğer Nakli</a></li>
+{% endblock %}
+
+{% block breadcrumbmobile %}
+<li><a href="/karaciger-nakli/">Karaciğer Nakli</a></li>
+{% endblock %}
+
+{% block column_4 %}
+<div class="leftMenu">
+   <!--organ-nakli menu-->
+   <h3>Organ Nakli Bölümleri</h3>
+   <ul class="sidebar-nav">
+      <li><a href="/bolumler/organ-nakli/">Organ Nakli Merkezi</a></li>
+      <li><a href="/bolumler/organ-nakli/?hastane=sisli">Memorial Şişli Hastanesi Organ Nakli Merkezi</a></li>
+      <li><a href="/bolumler/organ-nakli/?hastane=atasehir">Memorial Bahçelievler Hastanesi Organ Nakli Merkezi</a></li>
+      <!--<li><a href="/bobreknakli-bobrekyetmezligi/">Böbrek Nakli</a></li>
+      <li><a href="#">Pankreas Nakli</a></li>
+         <li><a href="#">Çocuklarda Organ Nakli</a></li>
+         <li><a href="#">Organ Bağışı</a></li>-->
+   </ul>
+   <!--organ-nakli menu-->
+   <!--organ-nakli sağlık-rehberi-->
+   <h3>Sağlık Rehberi'nde Organ Nakli Bölümü</h3>
+   <ul class="strelka" style="margin-bottom: 0;">
+      <li><a href="/saglik-rehberleri/organ-bekleme-listelerinde-yitip-giden-hayatlara-seyirci-kalmayalim/">Organ Bekleme Listelerinde Yitip Giden Hayatlara Seyirci Kalmayalım</a></li>
+      <li><a href="/saglik-rehberleri/organ-nakli-hakkinda-merak-edilenler/">Organ Nakli Hakkında En Çok Merak Edilenler</a></li>
+      <li><a href="/saglik-rehberleri/kansiz-karaciger-nakli-riskleri-azaltiyor/">Kansız Karaciğer Nakli Riskleri Azaltıyor</a></li>
+      <li><a href="/saglik-rehberleri/nakil-cocuklarin-geleceklerini-de-kurtariyor/">Nakil Çocukların Geleceklerini de Kurtarıyor</a></li>
+      <li><a href="/saglik-rehberleri/yanlis-inanislar-organ-bagisina-engel-oluyor/">Yanlış İnanışlar Organ Bağışına Engel Oluyor</a></li>
+      <li><a href="/saglik-rehberleri/sadece-sevdiklerinizin-degil-tanimadiginiz-kisilerin-de-hayatini-kurtarabilirsiniz/">Sadece Sevdiklerinizin Değil Tanımadığınız Kişilerin de Hayatını Kurtarabilirsiniz</a></li>
+      <li><a href="/saglik-rehberleri/canli-vericiden-bobrek-nakli-artik-cok-daha-kolay/">Canlı Vericiden Böbrek Nakli Artık Çok Daha Kolay</a></li>
+   </ul>
+   <a class=" btn btn-memorial" href="/saglik-rehberleri/?bolum=organ-nakli">Tümünü Gör</a>
+   <!--organ-nakli sağlık-rehberi-->
+   <!-- todo videoların açılması -->
+   <!-- karaciğer-nakli videolar -->
+   <h2 style="margin-top: 10px;">Karaciğer Nakli Videoları</h2>
+   <style type="text/css">.formvideo {margin: 2px 7px; display: inline-block;} .formvideotext {vertical-align: top; margin-top: 7px; display: inline-block;}</style>
+   <a class="iframe" href="https://www.youtube.com/embed/gPK95DfrH7Y?autoplay=1" target="_blank" style="display: block; font-size: 16px;">
+   <img src="https://img.youtube.com/vi/gPK95DfrH7Y/0.jpg" width="60" height="45" class="img-polaroid formvideo">
+   <span class="formvideotext">Karaciğer Yetmezliği ve Nakli<br><i style="color: #2A87DB;">Prof. Dr. Yalçın Polat</i></span>
+   </a>
+   
+   <a class="iframe" href="https://www.youtube.com/embed/sa20MXUrWGA?autoplay=1" target="_blank" style="display: block; font-size: 16px;">
+   <img src="https://img.youtube.com/vi/sa20MXUrWGA/0.jpg" width="60" height="45" class="img-polaroid formvideo">
+   <span class="formvideotext">Organ Nakli<br><i style="color: #2A87DB;">Prof. Dr. Koray Acarlı</i></span>
+   </a>
+
+   <a class="iframe" href="https://www.youtube.com/embed/r2-RRZynn3o?autoplay=1" target="_blank" style="display: block; font-size: 16px;">
+   <img src="https://img.youtube.com/vi/r2-RRZynn3o/0.jpg" width="60" height="45" class="img-polaroid formvideo">
+   <span class="formvideotext">Türkiye'de Organ Nakli<br><i style="color: #2A87DB;">Prof. Dr. Yalçın Polat</i></span>
+   </a>
+   <!-- karaciğer-nakli videolar -->
+   <!-- sideform -->
+   <style type="text/css">#sideformcontainer { display: block; }</style>
+   <script>
+      function onSubmit(token) {
+         document.getElementById("form").submit();
+      }
+   </script>
+   <div id="sideformcontainer">
+      <h3 style="margin-top: 7px;">Ayrıntılı Bilgi İçin Form Doldurun</h3>
+      <form class="campainForm" action="." method="post" id="form">
+         {% csrf_token %}
+         <div class="form-group">
+            <input class="form-control" type="text" placeholder="Adı Soyadı" name="fullname" id="id_fullname" value="{% if form.fullname.value %}{{ form.fullname.value }}{% endif %}"/>
+         </div>
+         <div class="form-group">
+            <input class="form-control" type="text" placeholder="E-Posta" name="email" id="id_email" value="{% if form.email.value %}{{ form.email.value }}{% endif %}"/>
+         </div>
+          <div class="form-group">
+              <select id="countries_phone_karaciger" class="form-control bfh-countries" data-country="TR"></select>
+          </div>
+         <div class="form-group">
+             <input class="form-control bfh-phone" type="tel" placeholder="{% trans '10167' %}"
+                    name="phone" id="id_phone" data-country="countries_phone_karaciger"/>
+         </div>
+         {% ifequal msg 1 %}
+            <div class="alert alert-success" role="alert" style="display: block!important;">{% trans "10092" %}</div>
+         {% endifequal %}
+         {% ifequal msg 2 %}
+            <div class="alert alert-warning" role="alert" style="display: block!important;">{% trans "10042" %}</div>
+         {% endifequal %}
+         {% ifequal msg 3 %}
+            <div class="alert alert-warning" role="alert" style="display: block!important;">{% trans "10042" %}</div>
+         {% endifequal %}  
+         <button type="submit" class="btn btn-memorial pull-right g-recaptcha" data-sitekey="6Ld6hSEUAAAAAN0SsdRRgbh-V90ONj8sabLs1UtT" data-callback='onSubmit' id="sideformbutton">Gönder</button>				
+      </form>
+   </div>
+   <!-- sideform -->
+</div>
+{% endblock %}
+<!--
+   {% block conversion %}				
+   
+   {% endblock %}
+   -->
+{% block column_8 %}
+<div class="relatedNews kurumsal-kimlik clearfix">
+   <h1>Karaciğer Nakli</h1>
+   <p>Karaciğer nakli, kronik karaciğer yetmezliğinin tek tedavisidir. Hasta karaciğerin sağlam bir karaciğer ile değiştirilmesi anlamına gelir. Bütün dünyada en sık karaciğer nakli yapılan hastalık grubunu sirozlar oluşturur. Bunu doğumsal birtakım hastalıklar ve bazı karaciğer tümörleri izler.</p>
+   <h2>Nakil için sağlam karaciğer nasıl bulunur?</h2>
+   <p><a href="https://www.memorial.com.tr/bolumler/organ-nakli/">Organ nakli</a> için organ gerekir ve organların kaynağı ise insanlardır. Nakil için uygun organ hayatını kaybetmiş insanlardan veya hastanın yakınları arasından, canlı vericilerden alınabilmektedir.</p>
+   <p>Yoğun bakım şartlarında hayatını kaybetmiş (beyin ölümü) insanların yakınları ‘organ bağışı’ kararını verdikleri takdirde, o organlar ile pek çok hastanın hayatı kurtarılmaktadır. Bu şekilde bağışlanan organlarla yapılan karaciğer nakline “kadaverik karaciğer nakli” adı verilir.</p>
+   <p>Organ bağışı sayısı yeterli olmadığı için, hastaların çoğu yeni bir karaciğer beklerken hayatlarını kaybetmektedirler. Buna çözüm olarak başka bir canlıdan (hastanın bir yakını) karaciğerinin bir parçası alınarak hastanın hayatını kurtarmak mümkündür (canlıdan karaciğer nakli). Bu amaçla, hastanın kendi kan grubundan bir yakını böyle bir ameliyata gönüllü olur. Verici adayı olan kişi yoğun tetkik ve değerlendirmelerden geçirilir. Eğer karaciğer vermesine herhangi bir engel yok ise; hastanın kilosuna uygun olan karaciğer bölümü (sağ veya sol) vericiden alınır ve hastanın karaciğerinin yerine takılır.</p>
+   <h2>Herhangi bir karaciğer herhangi bir insana takılabilir mi?</h2>
+   <p>Karaciğer nakli için öncelikle hasta ve vericinin kan gruplarının uygun olması gerekir. Sonrasında verici adayının tetkiklerine başlanır. Bu süreç; sosyal, psikolojik ve tıbbi değerlendirmelerden oluşur. Tıbbi değerlendirme; kan ve idrar tetkikleri, bulaşıcı hastalıkların araştırılması, radyolojik incelemeler ve diğer tıbbi birimlerin (kardiyoloji, göğüs hastalıkları vb.) görüşlerinin alınması olarak gruplandırılabilir. Hastanın ihtiyacı olan karaciğer miktarı, verici adayının genel sağlığı, karaciğerinin uygun olarak bölünüp bölünemeyeceği, safra yollarının yapısı gibi birçok faktör, hasta ile verici adayı arasındaki ameliyatın gerçekleşmesinde rol oynar.</p>
+   <h2>Karaciğer nakli riskli midir?</h2>
+   <p>Bu risk karaciğer nakli yapılmasını gerektiren hastalığın ağırlığı ile değişir. Bu hastalar genellikle her türlü rezervi tükenmiş, çok ağır durumda hastalardır. Öte yandan, karaciğer nakli bilinen en büyük ameliyatlardan biridir. "Ağır hasta + büyük ameliyat" riskleri artıran en önemli faktördür. Ayrıca karaciğer değişirken vücudun en büyük damarları kesilip dikilmekte, ve bu damarlara ait ciddi istenmeyen kanamalar olabilmektedir. Bazen yeni takılan karaciğer takıldığı vücutta iyi çalışmayabilir. Bağışıklık sistemi baskılanan bu hastalarda enfeksiyonlar ciddi sorun yaratabilir.</p>
+   <h2>Doku reddi (rejeksiyon) ne demektir?</h2>
+   <p>Vücudumuzun bağışıklık sistemi, kendi hücrelerini tanır ve bunlara reaksiyon göstermez. Ancak vücuda bir başkasına ait hücreler (Kan, organ...) girdiğinde ise bu hücrelerin yabancı olduğunu derhal anlar ve onlara karşı silahlanıp, bu yabancıyı vücuttan atmanın yollarını arar. Vücuda giren mikroplara karşı da benzer şekilde davranılır. İşte vücudun nakledilen organa hasar veren bu tepkisine doku reddi (rejeksiyon) denir. Doku reddi, organ ve doku nakillerinde her an görülebilen ve erken fark edilip önlem alınmaz ise nakil edilen doku veya organın işe yaramaz (ölümü) hale gelmesine neden olan bir reaksiyondur. Doku reddine mani olmak için, organ nakli yapılan hastalar ömür boyu bağışıklık sisteminin bu etkisini en aza indirmeye yönelik ilaçlar kullanırlar. Buna immünosupresyon (bağışıklığın baskılanması) denir. Bu ilaçlara rağmen bazen doku reddi gelişir. Bunu yeni takılan karaciğerin fonksiyonlarının bozulması ve yapılan karaciğer biyopsisinde doku reddine ait bulguların saptanması ile tanımak mümkündür. Bu tarz bir alevlenme genellikle sorunsuz bir şekilde tedavi edilir ve her şey normale döner.</p>
+   <h2>Karaciğer nakli olanlar ömür boyu ilaç kullanmalı mı?</h2>
+   <p><a href="/bobreknakli-bobrekyetmezligi/">Böbrek nakli</a> ve tüm organ nakli olan hastalarda olduğu gibi, karaciğer nakli yapılan hastalar da ömür boyu bağışıklık sistemini baskı altında tutmak için ilaç kullanırlar. Bu durum, tedavi başarısının temel şartıdır. Eğer ilaç kullanılmaz veya düzensiz bir kullanım söz konusu olur ise, bağışıklık sistemi hemen bu yabancı organa karşı savaş başlatır ve bu durum organın belki de hayatın kaybı ile sonlanabilir.</p>
+   <h2>Karaciğer nakli yapılan insanlar normal hayata dönebilirler mi?</h2>
+   <p>Karaciğer naklinin amacı, kişiyi normal, aktif, üretken hayatına geri döndürebilmektir. Hem hastanın hem de vericinin ameliyat öncesindeki performanslarına dönmeleri hedeflenmektedir. Merkezimizde gerçekleşen karaciğer nakilleri dünyada kabul edilen başarı oranlarının üzerindeki rakamlara ulaşmıştır.</p>
+   <h2>Karaciğer nakli yapılacak merkez nasıl seçilmeli?</h2>
+   <p>Karaciğer nakli sadece ameliyatla ilgili bir işlem değildir. Hazırlık ve nakil sonrası takip süreci için merkezin; ameliyathaneden laboratuvarına, görüntüleme ünitelerinden yoğun bakımına, yatan hasta katlarından diğer branşlara kadar bölümün üst düzey kalitede olması ve ortak çalışması çok önemlidir.</p>
+</div>
+{% endblock %}

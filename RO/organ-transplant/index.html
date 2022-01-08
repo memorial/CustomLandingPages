@@ -1,0 +1,943 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Memoria Organ Transplant">
+    <title>Memorial Organ Transplant</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/css/responsive33.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/css/style.css" rel="stylesheet">
+    <link href="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/css/carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/css/intlInputPhone.css">
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/css/intlInputPhone.min.css">
+    <!-- Custom Google Font : Open Sans -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/js/html5shiv.js"></script>
+      <script src="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/js/respond.min.js"></script>
+    <![endif]-->
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/images/favicon.png">
+    <!-- Subtle Loading bar -->
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/js/pace.js"></script>
+    <!-- Hotjar Tracking Code for https://www.memorial.com.tr/ro/organ-transplant -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 2645237, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TGPGSC9');</script>
+    <!-- End Google Tag Manager -->
+
+    <style>
+
+
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 99; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+            .close:hover,
+            .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+    </style>
+
+    <script>window.gtmFormName = 'organ-transplant-ro';</script>
+
+    <!-- tel interaction, whatsapp interaction,  -->
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}js/gtmSenderLP.js"></script>
+
+</head>
+<body class="web-app">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGPGSC9"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="preloader"></div>
+    <div class="modal bd-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="        background-image: url('{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/images/header_bg.jpg');
+">
+                <button type="button" id="close" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <!-- Logo -->
+                <div class="logo"> <a href="#"><img src="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/images/memorial_logo.png" class="image" alt="readymade-logo"></a> </div>
+                <!-- Hero Title -->
+                <h4 class="main-title text-center" style="color: black">Mulțumim, vă vom contacta în cel mai scurt timp!</h4>
+
+
+                <!-- Web app banner -->
+                <div class="row">
+                    <div class="col-md-12 text-center tick">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/images/tick2.png" alt="Web App Banner" style="width:300px;height:auto" class="img-responsive center-block">
+                    </div>
+                </div>
+                <!-- // Web app banner Ends -->
+            </div>
+
+        </div>
+    </div>
+    <!-- Parallax Header Starts -->
+    <main id="top" class="masthead" role="main">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo"> <a href="#"><img src="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/images/memorial_logo.png" alt="readymade-logo"></a> </div>
+            <!-- Hero Title -->
+            <h1 class="main-title" style="color: #a91022">Primul spital privat speciliazat pe transplatul hepatic şi renal</h1>
+            <!-- Sub Title -->
+            <h4 class="sub-title" style="color: #a91022">Suntem lângă dumneavoastră la fiecare pas spre vindecare</h4>
+
+            <!-- Web app banner -->
+            <div class="row">
+                <div class="col-md-6">
+                    <iframe class="video-responsive" width="450" height="270" src="https://www.youtube.com/embed/q4td9SLoBhQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-6">
+                    <img src="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/images/web-app-banner.png" alt="Web App Banner" class="img-responsive center-block" style=" padding-top: 5px; max-width: 90%;">
+                </div>
+
+                <div class="col-md-12">
+                    <h4 style=" color: #104979;margin-top:10px">Completează formularul de mai jos și cere informații despre serviciile noastre medicale!</h4>
+                </div>
+            </div>
+            <!-- // Web app banner Ends -->
+            <!-- Mailchimp Subscribe form -->
+            <div class="row" id="form">
+                <div class="col-md-12">
+                    <div class="subscribe-block">
+                        <div class="row">
+                            <form class="form-horizontal" role="form" action="/memorial-evinizde-form/" id="askprice_form" method="POST">
+                                <input id="geturl" name="url" type="hidden" value="" />
+                                <input id="campaign" name="campaign" type="hidden" value="33221144" />
+                                <input type="hidden" value="Memorial Organ Transplant" name="mailTitle" id="mailTitle" />
+                                <script>
+                                    document.getElementById("geturl").value = location.href;
+                                </script>
+                                <input name="crmMailId" type="hidden" value="28" />
+
+                                <input id="geturl" name="url" type="hidden" value="" />
+
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6">
+                                        <input class="form-control input-lg" name="fullname" id="fullname" maxlength="30" type="text" placeholder="Nume şi Prenume" required>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-6">
+
+                                        <input class="form-control input-lg" name="email2" id="email2" maxlength="40" aria-describedby="emailHelp" type="email" placeholder="Email" required>
+
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6" style="margin-top:20px;border-radius:6px;height:46px ">
+                                        <div class="input-phone"></div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12">
+                                        <label class="help-block" style="display: inline; font-weight: 500; font-size:16px;color:#104979">Vă rugăm să verificați dacă numărul introdus este corect! Pentru a ne asigura că putem intra în legătură cu dumneavoastră, va rugăm să vă introduceți adresa de email!</label>
+                                    </div>
+                                </div>
+
+                                <div class="row" style="margin-top:20px">
+                                    <div class="col-md-12 col-sm-12">
+                                        <input class="form-control input-lg" cols="30" rows="4" maxlength="200" name="message" id="message" type="text" placeholder="Mesaj" required>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top:20px">
+                                    <div class="col-md-12 col-sm-12">
+                                        <label for="askprice_permission" class="help-block" style="display: inline; font-weight: 500; font-size:16px;color:#104979">
+                                            <label class="container3">
+                                                <input id="askprice_permission" style="width:18px;height:18px;" name="askprice_permission" type="checkbox">
+                                                <span class="checkmark3"></span>
+                                            </label>  Am luat la cunoștință <a class="link" href="https://www.memorial.com.tr/en/corporate/information-security-policy" target='_blank' style="color: #104979!important;"><strong>informațiile</strong></a> oferite de Protecția Generală a Datelor. Sunt de acord ca datele mele personale să fie procesate în scop medical și accept să fiu contactat/ă  pentru a primi informații în legătură cu serviciile medicale.
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="row" style="margin-top:20px">
+                                    <div class="col-md-12 col-sm-12">
+                                        <center>
+                                            <button type="submit" id="askprice_permission_button_send" style="display: block; width:-webkit-fill-available; font-size:2rem; height:auto"
+                                                    class="btn btn-warning btn-block btn-lg" disabled>
+                                                Trimite
+                                            </button>
+                                            <span id="spErr" style="margin-top:20px"></span>
+                                        </center>
+                                    </div>
+                                </div>
+                                <div class="field" style="text-align: center;">
+
+                                </div>
+
+                            </form>
+                        </div>
+                        <span id="result" class="loading"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- // Mailchimp Subscribe form Ends -->
+
+        </div>
+        <!--  Scroll to Explore -->
+        <a href="#explore" class="scrollto">
+            <p class="scrollto--arrow"><img src="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/images/mavidown_arrow.png" alt="scroll down arrow"></p>
+        </a>
+        <!-- // Scroll to Explore Ends -->
+    </main>
+    <!-- // Parallax Header Ends -->
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Features Section -->
+
+        <div class="zigzag">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row has-margin-bottom-sm">
+                        <div class="col-sm-4">
+                            <div class="icon-wrap"> <img src="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/images/maviicon_1.png" alt="img" class="img-responsive center-block"></div>
+                        </div>
+                        <div class="col-sm-8">
+                            <h4 class="zigzag-lead">Tranfer de la Aeroport</h4>
+                            <p>Pacienții noștrii au asigurate serviciile de transfer între aeroport, hotel şi spital, şi retur.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row has-margin-bottom-sm">
+                        <div class="col-sm-4">
+                            <div class="icon-wrap"><img src="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/images/maviicon_2.png" alt="img" class="img-responsive center-block"></div>
+                        </div>
+                        <div class="col-sm-8">
+                            <h4 class="zigzag-lead">Cazare</h4>
+                            <p>Le oferim pacienților listele noastre cu hotelurile partenere din care îşi pot alege varianta cea mai potrivită pentru ei. Listele noastre conțin hoteluri de 3,4 şi 5 stele.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Second row-->
+            <div class="row has-margin-top">
+                <div class="col-md-6">
+                    <div class="row has-margin-bottom-sm">
+                        <div class="col-sm-4">
+                            <div class="icon-wrap"> <img src="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/images/maviicon_3.png" alt="img" class="img-responsive center-block"></div>
+                        </div>
+                        <div class="col-sm-8">
+                            <h4 class="zigzag-lead">Translator</h4>
+                            <p>Pe toată perioada șederii la Memorial  pacienții vor fi însoțiți de un translator.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="icon-wrap"><img src="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/images/maviicon_4.png" alt="img" class="img-responsive center-block"></div>
+                        </div>
+                        <div class="col-sm-8">
+                            <h4 class="zigzag-lead">Acreditări</h4>
+                            <p>Memorial a obținut una dintre cele mai prestigioase acreditări, recunoscute la nivel mondial, pentru standardele înalte şi calitatea serviciilor sale.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- // Container Ends -->
+    <!-- Parallax Footer Starts -->
+    <main class="footercta" role="main" id="footerctaresim" style="">
+        <div class="container">
+
+            <!-- Footer Title -->
+
+            <div class="row" style="flex-direction:row">
+                <div class="col-lg-9" style="padding-top:100px;font-size:18px;line-height:1.5"><strong>Încă din prima zi, Memorial Health Group şi-a protejat pacienții, rudele acestora şi angajații împotriva COVID-19 (Coronavirus) şi a asigurat cele mai înalte standarde de igienă. În acest context pandemic, Memorial face totul pentru a vă asigura un mediu sigur şi steril.</strong></div>
+                <div class="col-lg-3"><img src="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/images/hijyenromence.jpg" style="margin-top:20px" alt="img" class="img-responsive center-block"></div>
+            </div>
+        </div>
+    </main>
+    <!-- // Parallax Footer Ends -->
+    <!-- Container -->
+    <div class="container" id="explore">
+        <!-- Hero Image -->
+
+        <div class="zigzag">
+            <div class="row">
+                <!--<div class="col-md-5"> <img src="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/images/image_1.jpg" alt="img" class="img-responsive center-block"> </div>--><!--style="padding-top:0px; max-width:100%;"-->
+                <div class="col-md-12">
+                    <h4 class="zigzag-lead">Secția de Chirurgie Generală şi Transplantul de Organe</h4>
+                    <p style="font-size:18px">
+                        În prezent, Memorial este primul spital privat care a obținut licența pentru transplatul renal şi cel hepatic, având ca rate de succes  (99% renal)  şi (93.5% hepatic). Memorial a realizat cu succes primul transplat hepatic cu un donator incompatibil din punct de vedere sangvin. Scopul nostru este să oferim paciențior o nouă șansă la viață, motiv pentru care facem tot posibilul să evoluăm stiințific, tehnologic şi uman.  Zilnic cercetătorii noștrii fac progrese uriașe şi suntem cu un pas mai aproape să facem imposibilul posibil.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="zigzag">
+            <div class="row">
+                <div class="col-md-5 col-md-push-7"> <img src="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/images/image_1.jpg" alt="img" class="img-responsive center-block"> </div>
+                <div class="col-md-7 col-md-pull-5">
+                    <h4 class="zigzag-lead">TRANSPLANTUL DE RINICHI</h4>
+                    <p style="font-size:18px">
+                        Cel mai eficient tratament al insuficienței renale cronice este transplantul de rinichi.
+                        Insuficiența renală cronică înseamnă o afectare permanentă a funcției renale. Astăzi, singurul tratament cunoscut al insuficienței renale cronice este transplantul de rinichi. Cu toate acestea, unii pacienți cu insuficiență renală cronică folosesc opțiunea de dializă. Dializa nu trebuie considerată o alternativă la transplantul de rinichi, deoarece poate îndeplini doar parțial funcția renală. Mai mult decât atât, pentru pacientii cu dializa există numeroase probleme, cum ar fi: diete stricte, restricția de apă, imposibilitatea de a călători, izolarea de la viața socială, întreruperea serviciului sau a cursurilor educaționale și întarzierea dezvoltarii în cazul copiilor. Pacienții aflați în dializă trebuie să folosescă intens medicamente, deoarece rinichii nu mai îndeplinesc o mare parte din funcții (tensiunea arterială, medicamente pentru producerea sângelui etc.)
+
+
+                    </p>
+                </div>
+
+                <div class="col-md-12">
+                    <p style="font-size:18px">
+                        <strong>
+                            <br /><br />
+                            Pacienții cu transplant de rinichi au o calitate și o durată de viață mult mai bună decât pacienții aflați în dializă. Pacienții cu transplant de rinichi işi pot continua viața ca oricare persoană sănătoasă.
+                        </strong><br />
+                        Operația se realizează prin metoda laparoscopică, fiind mult mai eficientă şi estetică iar recuperarea pacientului este aproape imediată. Nu de puține ori, pacienții au fost externați chiar a doua zi după intervenție.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="zigzag">
+            <div class="row">
+                <div class="col-md-5"> <img src="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/images/image_2.jpg" alt="img" class="img-responsive center-block"> </div>
+                <div class="col-md-7">
+                    <h4 class="zigzag-lead">Transplantul de ficat</h4>
+                    <p style="font-size:18px;margin-top:20px">
+
+                        <strong>Transplantul de ficat este singurul tratament pentru insuficiența hepatică cronică. Prin acest mod, ficatul bolnav este înlocuit cu cel prelevat de la donator. Cirozele reprezintă cele mai frecvente boli care necesită  transplant hepatic, fiind urmate de unele boli congenitale sau de tumori hepatice.</strong>
+                    </p>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- // Container Ends -->
+    <!-- Parallax Footer Starts -->
+    <main class="footercta" role="main">
+        <div class="container">
+
+            <!-- Footer Title -->
+            <div class="section-title">
+                <h2>Contactați-ne</h2>
+                <h4 style="word-wrap:break-word"><br />Telefon : <a href="tel://+905493146783">(+90)5493146783 </a><br /> E-mail : internationalpatients@memorial.com.tr</h4>
+
+            </div>
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-md-4 text-center"> <a href="#form" class="btn btn-warning btn-lg gototop">Contactați-ne</a>  </div>
+                <div class="col-sm-4"></div>
+            </div>
+        </div>
+    </main>
+    <!-- // Parallax Footer Ends -->
+    <section class="faqs" id="sss">
+        <div class="container" style="margin-top:50px!important">
+            <div class="sectio-title-2">
+                <h2>Întrebări frecvente</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><strong>De ce ficat am nevoie in cazul unui transplant?</strong></a> </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body" style="color:black;">Pentru transplantul de ficat, grupele de sânge ale pacientului și donatorului trebuie să fie aceleaşi. Apoi, se începe examinarea detaliata a candidatului. Acest proces constă în evaluări sociale, psihologice și medicale. Evaluarile medicale constau in: testele de sânge, urină, investigarea bolilor infecțioase, examene radiologice și luarea de avize de la celelalte departamente medicale (cardiologie, boli toracice etc.). Se iau in considerare factori precum cantitatea de ficat necesară pacientului, starea generală de sănătate a donatorului, posibilitatea impartirii corespunzatoare a ficatului, structura tractului biliar joaca de asemenea un rol important in efectuarea operatiei de transplant hepatic.</div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingNine">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine"><strong>Este transplantul hepatic riscant?</strong> </a> </h4>
+                            </div>
+                            <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+                                <div class="panel-body" style="color:black;">
+                                    Acest risc variază în funcție de severitatea bolii persoanei care necesită transplant de ficat. Aceștia sunt, de obicei, pacienți care au epuizat tot felul de rezerve și a căror condiții medicale sunt foarte severe. Pe de altă parte, transplantul de ficat este unul dintre cele mai complexe intervenții chirurgicale cunoscute. În plus, în timp ce ficatul se transplantează, cele mai mari vase de sânge ale corpului sunt tăiate și suturate și poate apărea sângerări grave.  Uneori ficatul nou introdus poate să nu funcționeze bine în corpul unde este transplantat. La acești pacienți cu imunitate suprimată, infecțiile pot cauza probleme grave.
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><strong>Ce înseamnă respingerea (neacceptarea ) țesutului?</strong></a> </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body" style="color:black;">
+                                    Sistemul imunitar al corpului nostru își recunoaște propriile celule și nu reacționează la ele. Cu toate acestea, când celulele altcuiva (sânge, organe, etc) intră în corp, își dau seama imediat că aceste celule sunt străine și luptă împotriva lor cautând modalități de a elimina acest ’corp străin’ din corp. Microbii care intră în organism sunt tratați în mod similar. Această  reacție a organismului care dăunează organului transplantat se numește respingere (neacceptare) a țesutului. Respingerea țesuturilor este o reacție care poate fi observată în orice moment în transplanturile de organe ,țesutul sau organul transplantat îşi pierde funcţiile (moartea pacientului devine iminentă) dacă nu este detectat din timp și nu se iau măsurile de rigoare.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><strong>Ce fel de medicație se administrează după transplantul de rinichi?</strong></a> </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body" style="color:black;">
+                                    Pentru a ne asigura că nu există riscul de neacceptare al organului donat, se administrează  medicamente subpresive ce au rolul de a impidica  corpul de a respinge noul organ.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><strong>Cine poate să fie donator?</strong></a> </h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body" style="color:black;">
+                                    Transplantul se realizează numai de la donatori vii. Rudele până la gradul IV sunt eligibile pentru donare. În cazul în care pacientul nu are rude care să întrunească criteriile pentru a deveni donatori, transplantul se poate realiza dacă există totuși un donator din afara familiei ( comisia de etică se va întruni special şi va decide dacă transplantul poate avea loc)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--Grey Highlight Section-->
+    <div class="highlight" style="background:#f5f8fb; margin-top:0px">
+        <div class="container">
+            <div class="section-title" id="package">
+                <h2>Conturi Social Media</h2>
+            </div>
+            <div class="row" style="margin-bottom:50px">
+                <div class="col-sm-12">
+                    <div class="logos text-center">
+                        <a href="https://business.facebook.com/memorialhospitalsen/" target="_blank"><img src="https://cdn.memorial.com.tr/files/Uploads/1/139/facebooksvg_db1a.svg" alt="logo"></a>
+                        <a href="https://www.instagram.com/memorialhospitalsgroup/" target="_blank">
+                            <img src="https://cdn.memorial.com.tr/files/Uploads/1/139/instagramsvg_3435.svg" alt="logo">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCq3RsbEoCwcMaLjfeorH11Q" target="_blank">
+                            <img src="https://cdn.memorial.com.tr/files/Uploads/1/139/youtubesvg_8a88.svg" alt="logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--// End Grey Highlight Section-->
+    <!--Grey Highlight Section-->
+    <!--<div class="highlight" style="margin-top: 0px; background: #d3d7da">
+        <div class="container">-->
+    <!--Pricing-->
+    <!--<div class="section-title" id="package">
+        <h2>Cele mai populare</h2>
+    </div>
+    <section class="row breath planpricing">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+            <ul>
+                <li>Ginecologie oncologică</li>
+                <li>Înlocuire de valvă mitrală</li>
+                <li>Stimulator cerebral (PARKINSON)</li>
+                <li>Intervenții cu robotul DAVINCI</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <ul>
+                <li>Chirurgie colorectală şi HIPEK</li>
+                <li>Metoda ILIZAROV</li>
+                <li>Sindromul ovarelor polichistice</li>
+                <li>Chirurgie metabolică (Diabet tip2)</li>
+            </ul>
+        </div>
+        <div class="col-md-2"></div>
+    </section>-->
+    <!--// End Pricing-->
+    <!--</div>
+    </div>-->
+    <!--// End Grey Highlight Section-->
+    <!-- // Container Ends -->
+
+
+
+
+
+
+    <div class="clickToCall" id="clickToCall" style="display:none">
+        <a href="tel:+905493146783"
+           onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Hair-Transplant', eventLabel: 'Mobile Button'});">
+            <p class="call-button">
+                <img caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/images/clickToCall.png"
+                     style="width:60px; height:60px;" />
+            </p>
+        </a>
+    </div>
+    <!-- Container -->
+    <div class="container">
+        <section class="row breath footercontent">
+            <div class="col-sm-3"> </div>
+            <div class="col-sm-6 madeby">
+                <p style="color:black">Copyright © 2021 MEMORIAL | All Rights Reserved | www.memorial.com.tr | internationalpatients@memorial.com.tr</p>
+            </div>
+            <div class="col-sm-3 copyinfo">
+
+            </div>
+        </section>
+        <!-- // End Client Logos -->
+
+    </div>
+    <!-- // Container Ends -->
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+
+    <style>
+        @media screen and (min-width:768px) {
+
+            #clickToCall {
+                display: none !important;
+            }
+            #footerctaresim {
+                background-image: url('{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/images/header_bg222_mobile.jpg');
+            }
+        }
+
+        @media screen and (max-width:767px) {
+            .video-responsive {
+                width: 100%;
+                height: auto;
+            }
+
+            #clickToCall {
+                display: block !important;
+            }
+
+            .section-title h4 {
+                font-size: 16px;
+            }
+        }
+        #footerctaresim {
+            background-image: url('{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/images/header_bg222.png');
+        }
+
+        #myBtnS {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 156px;
+            height: 60px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #104979;
+            color: white;
+            cursor: pointer;
+            /* padding: 15px; */
+            border-radius: 4px;
+            display: none;
+        }
+
+            #myBtnS:hover {
+                background-color: #555;
+            }
+    </style>
+
+
+    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+        <a id="myBtnS" class="btn btn_cta scroll" href="#form" style="margin-bottom: 0px !important;display: none;"><span style="top: 10px;position: relative;">Contactați-ne</span></a>
+    </div>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtnS");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/js/jquery.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/js/bootstrap.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/js/easing.js"></script>
+    <!--<script src="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/js/nicescroll.js"></script>-->
+    <!--<script src="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/js/carousel.js"></script>-->
+
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/js/ketchup.all.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/js/intlInputPhone2.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/js/intlInputPhone2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <!--<script src="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/js/plugins/validation/localization/messages_tr.min.js"></script>-->
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}Organ-Transplantation-Ro/js/bootstrap-formhelpers.js?v=2"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}js/utmLinkSaver.js?v=3"></script>
+    <script>saveUtmLink(10);</script>
+
+    <script type="text/javascript">
+        window.onload = function () {
+
+            var captcha_badge = document.getElementsByClassName("grecaptcha-badge");
+            for (var i = 0; i < captcha_badge.length; i += 1) {
+                captcha_badge[i].setAttribute("data-badge", "inline");
+                captcha_badge[i].style.display = 'none';
+            }
+        };
+
+        function onSubmitRe(token) {
+            document.getElementById("ajax-contact-2").submit();
+        }
+
+        function validateEmail(email) {
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(email);
+        }
+
+        //{#var elementcaptcha = document.getElementById('recaptchabutton');#}
+        //{#elementcaptcha.onclick = validate;#}
+
+        function validate(event) {
+            event.preventDefault();
+            if (!document.getElementById('fullname').value) {
+                alert("Scrie - ti numele.");
+
+            } else if (!document.getElementById('phone2').value) {
+                alert("Notează-ți numărul de telefon.");
+
+
+            } else {
+                grecaptcha.execute();
+            }
+
+        }
+    </script>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+            window.location.href = window.location.href.replace(window.location.search, "");
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                window.location.href = window.location.href.replace(window.location.search, "");
+            }
+        }
+    </script>
+    <!--cookie policy-->
+    <!--<link rel="stylesheet" type="text/css" href="css/cookieconsent.css" />
+    <script src="js/cookieconsent.js"></script>
+
+    <script type="text/javascript">
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#f1f3f9",
+                        "text": "#28252c",
+                    },
+                    "button": {
+                        "background": "transparent",
+                        "text": "#28252c",
+                        "border": "#28252c"
+                    }
+                },
+                "content": {
+                    "message": "We use cookies so that you can get the most out of our services.By using memorial.com.tr you allow cookies.",
+                    "dismiss": "Okey",
+                    "link": "Click for details.",
+                    "href": "https://www.memorial.com.tr/kurumsal/cerezler-cookies-politikasi/"
+                }
+            })
+        });
+    </script>-->
+    <!--cookie policy-->
+
+    <script type="text/javascript">
+        window.onload = function () {
+
+            var captcha_badge = document.getElementsByClassName("grecaptcha-badge");
+            for (var i = 0; i < captcha_badge.length; i += 1) {
+                captcha_badge[i].setAttribute("data-badge", "inline");
+                captcha_badge[i].style.display = 'none';
+            }
+        };
+
+        function onSubmitRe(token) {
+            document.getElementById("ajax-contact-2").submit();
+        }
+
+        function validateEmail(email) {
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(email);
+        }
+
+        //{#var elementcaptcha = document.getElementById('recaptchabutton');#}
+        //{#elementcaptcha.onclick = validate;#}
+
+        function validate(event) {
+            event.preventDefault();
+            if (!document.getElementById('fullname').value) {
+                alert("Scrie - ti numele.");
+
+            } else if (!document.getElementById('phone2').value) {
+                alert("Notează-ți numărul de telefon.");
+
+
+            } else {
+                grecaptcha.execute();
+            }
+
+        }
+    </script>
+    <!-- ========= Scroll to Explore ========= -->
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            var urlParams = new URLSearchParams(window.location.search);
+            var pageData = urlParams.get('page');
+            console.log(pageData);
+
+            if (pageData == "success") {
+                var modal = document.getElementById("myModal");
+                modal.style.display = "block";
+            }
+
+
+            $('.input-phone').intlInputPhone();
+
+            var isFilterOn = false;
+            $(document).on("input", "#phone2", function () {
+                if (isFilterOn)
+                    this.value = this.value.replace(/\D/g, '');
+            });
+
+
+
+            $('body').on('DOMSubtreeModified', '.btn-cc', function () {
+                if ($(".btn-cc").html().replace(/&nbsp;/g, '') != "+90") {
+                    $('#phone2').unmask();
+                    $('#phone2').attr("maxlength", "15");
+                    isFilterOn = true;
+                    isButtonValid();
+                }
+                else {
+                    $('#phone2').mask('(500) 000-00-00', { placeholder: "(5__) ___-__-__" });
+                    isFilterOn = false;
+                    isButtonValid();
+                }
+            });
+
+            $('#askprice_permission').click(function () {
+                isButtonValid();
+            });
+
+            $("#askprice_permission_button_send").click(function () {
+                if ($("#countries_phone2").val() == "") {
+                    $("#ask_price_errorID").show();
+                    $("#ask_price_error_textID").html('Vă rugăm să selectați codul țării');
+                    return false;
+                }
+
+                if ($("#fullname").val() == "") {
+                    $("#").show();
+                    $("#spErr").html('<span style=\'color:#b9194b;\'>Vă rugăm să introduceți numele și prenumele.</span>');
+                    return false;
+                }
+                if ($("#fullname").val().length < 5) {
+                    $("#").show();
+                    $("#spErr").html('<span style=\'color:#b9194b;\'>Vă rugăm să introduceți un nume și prenume mai lungi de 4 caractere în total.</span>');
+                    return false;
+                }
+                if ($("#fullname").val().length > 30) {
+                    $("#").show();
+                    $("#spErr").html('<span style=\'color:#b9194b;\'>Vă rugăm să introduceți un nume și prenume scurte cu un total de 30 de caractere.</span>');
+                    return false;
+                }
+
+                if ($("#phone2").val().length < 6) {
+                    $("#spErr").html("<span style='color:#b9194b;'>Numărul de telefon nu poate fi mai mic de 6 cifre.</span>");
+                    return false;
+                }
+
+                $("#askprice_permission_button_send").attr("disabled", "disabled");
+                $('#askprice_permission_button_send').html('Se trimite...');
+
+                tel = $(".btn-cc").html().replace(/&nbsp;/g, '') + " " + $("#phone2").val().replace(/[^0-9]+/g, "");
+                $('#phone').val(tel);
+
+                send_promotion();
+            });
+
+            $("#fullname").on('input', function () { isButtonValid(); })
+            $("#phone2").on('input', function () { isButtonValid(); })
+            $("#Message").on('input', function () { isButtonValid(); })
+
+            function isButtonValid() {
+
+                if ($("#fullname").val() != "" && $("#phone2").val() != "" && $('#askprice_permission').is(':checked') && $("#Message option:selected").val() != "0") {
+                    $('#askprice_permission_button_send').prop('disabled', false);
+                } else {
+                    $('#askprice_permission_button_send').prop('disabled', true);
+                }
+            }
+
+        });
+
+
+        function reactivateForm() {
+            document.getElementById("askprice_form").reset();
+            $("#askprice_form").show();
+            $(".alert-success").hide();
+        }
+
+
+
+
+
+
+        function send_promotion() {
+            $(".alert-success").hide();
+            $(".alert-warning").hide();
+            $("#phoneNumber").val($("#phone").val());
+
+            var serializedData = $("#askprice_form").serialize();
+
+
+            $.ajax({
+                type: "POST",
+                url: '/landingAskPricePost?lang=tr',
+                async: true,
+                data: serializedData,
+                cache: false,
+                beforeSend: function () {
+                    $('#askprice_permission_button_send').prop('disabled', true);
+                    $('#askprice_permission_button_send').html('Se trimite ...');
+                },
+                success: function (b) {
+                    if (b == "1" || (typeof b.status !== 'undefined' && b.status == "1")) {
+                        $("#fullname").val("");
+                        $("#phone2").val("");
+                        $("#message").val("");
+                        $("#email2").val("");
+                        $('#askprice_permission_button_send').prop('disabled', false);
+                        $('#askprice_permission_button_send').html('Trimite');
+
+                        if (typeof b.hashedPhoneNumber !== 'undefined') {
+
+                            dataLayer.push({
+                                'event': 'create_lead_user',
+                                'userID': b.hashedPhoneNumber
+                            });
+                        }
+
+                        dataLayer.push({
+                            'event': 'landing_finishForm',
+                            'formName': window.gtmFormName,
+                            'pageCategory': 'Landing Page'
+                        });
+
+                        window.location.href += '?page=success';
+                        $("#spErr").html("<span style='margin: 20px 0; display: block; color: #25a517;'>Formularul dvs. a fost trimis cu succes.</span>");
+
+                    } else {
+                        $(".alert-warning").fadeIn();
+                        $('#askprice_permission_button_send').html('Trimite');
+                        $("#spErr").html("<span style='margin: 20px 0; display: block; color: #ca2020;'>A apărut o problemă tehnică.Încercați din nou mai târziu.</span>");
+                    }
+                    $('#askprice_permission_button_send').prop('disabled', false);
+                },
+                error: function (b) {
+                    $(".alert-warning").fadeIn();
+                    $('#askprice_permission_button_send').html('Trimite');
+                    $('#askprice_permission_button_send').prop('disabled', false);
+                }
+            });
+        }
+
+    </script>
+
+
+
+
+</body>
+</html>

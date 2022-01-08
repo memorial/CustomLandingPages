@@ -1,0 +1,2572 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+
+
+<!-- Mirrored from gico.io/wemulti/home-medical.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 May 2021 06:13:59 GMT -->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="robots" content="noindex">
+    <title>Memorial - Dijital Sağlık Asistanı</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/favicon.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <!--<link href="../../fonts.googleapis.com/css2e9cf.css?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link href="../../fonts.googleapis.com/css28312.css?family=Great+Vibes&amp;display=swap" rel="stylesheet">
+    <link href="../../fonts.googleapis.com/css26781.css?family=Dosis:wght@400;500;600&amp;display=swap" rel="stylesheet">-->
+    <!-- Bootstrap CSS -->
+    <link href="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font-awesome CSS -->
+    <link href="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/css/font-awesome.min.css" rel="stylesheet">
+    <!-- icofont CSS -->
+    <link href="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/css/icofont.min.css" rel="stylesheet">
+    <!-- animate.min CSS -->
+    <!--<link href="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/css/animate.min.html" rel="stylesheet">-->
+    <!-- owl CSS -->
+    <link href="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/css/owl.css" rel="stylesheet">
+    <link href="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/css/owl.carousel.min.css" rel="stylesheet">
+    <!-- pogo-slider CSS -->
+    <link href="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/css/pogo-slider.css" rel="stylesheet">
+
+    <!-- Style CSS -->
+    <link href="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/css/style.css" rel="stylesheet">
+
+    <!-- Theme Color -->
+    <link href="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/css/theme-color.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/css/intlInputPhone.min.css">
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/css/intlInputPhone.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        .zindex-1 {
+            z-index: -1 !important;
+        }
+
+        .validation {
+            border-color: #dc3545;
+            padding-right: calc(1.5em + .75rem);
+            background-image: url('{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/unlem.svg');
+            background-repeat: no-repeat;
+            background-position: right calc(.375em + .1875rem) center;
+            background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+        }
+
+        .validationUcgenUnlem {
+            padding-right: calc(1.5em + .75rem);
+            background-image: url('{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/ucgenunlem.svg');
+            background-repeat: no-repeat;
+            background-position: right calc(.375em + .1875rem) center;
+            background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+        }
+
+        /**************  Testimonials + FAQ Start  **************/
+        .navCizgi li {
+            padding-right: 20px;
+            border-right: 1px solid #f5f5f5;
+            line-height: 20px;
+        }
+
+            .navCizgi li:last-child {
+                border: none !important;
+            }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            z-index: 9999;
+        }
+
+            .flex-container > div {
+                width: 49%;
+                position: fixed;
+            }
+
+        .testi-faq {
+            width: 100%;
+            float: left;
+            padding: 80px 0 54px;
+        }
+
+        .testimonial-holder {
+            width: 100%;
+            float: left;
+            border: 1px solid #e1e1e1;
+            padding: 30px;
+            position: relative;
+        }
+
+        .user-thumb {
+            width: 120px;
+            float: left;
+            margin-right: 20px;
+            text-align: center;
+        }
+
+        #testimonial-slider .user-thumb img {
+            width: 150px;
+            height: 150px;
+            /*border-radius: 100%;*/
+            margin: auto auto 5px;
+        }
+
+        .user-thumb strong {
+            font-size: 14px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            color: #222;
+            display: block;
+        }
+
+        .user-thumb > i {
+            font-size: 12px;
+            color: #555555;
+        }
+
+        .test-text {
+            float: right;
+            text-align: left;
+            width: 70%;
+        }
+
+            .test-text p {
+                color: #777777;
+                font-size: 18px;
+                font-style: italic;
+                line-height: 30px;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 300;
+            }
+
+        .home-testimonials .owl-theme .owl-dots .owl-dot span {
+            backface-visibility: visible;
+            background: #ffffff;
+            border: 3px solid #cccccc;
+            border-radius: 30px;
+            display: block;
+            height: 15px;
+            margin: 5px 7px;
+            transition: opacity 0.2s ease 0s;
+            width: 15px;
+        }
+
+        .home-testimonials .owl-theme .owl-dots .owl-dot.active span,
+        .home-testimonials .owl-theme .owl-dots .owl-dot:hover span {
+            background: #c11e43;
+            border-color: #c11e43;
+        }
+
+        .panel-group .panel-heading + .panel-collapse > .list-group,
+        .panel-group .panel-heading + .panel-collapse > .panel-body {
+            border-top: 1px solid #ddd;
+        }
+
+        .panel-default > .panel-heading + .panel-collapse > .panel-body {
+            border-top-color: #c11e43;
+        }
+        /**************  Testimonials + FAQ End  **************/
+
+        .clickToCall {
+            position: fixed;
+            z-index: 99999;
+            left: 30px;
+            bottom: 20px;
+            width: 68px;
+            height: 68px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: block !important;
+        }
+
+        .cihaz {
+            width: 370px;
+            height: 420px;
+            margin-top: -20px;
+            margin-left: -20px;
+            margin: 0px 25px
+        }
+
+        .divWhiteEk {
+            min-height: 400px;
+            min-width: 450px;
+        }
+
+        @media (max-width:767px) {
+            .cp-tabs .nav-tabs > li {
+                width: 100%;
+            }
+
+            .cihaz {
+                width: 370px;
+                height: 420px;
+                margin: 0px 0px
+            }
+
+            .my-title h2 {
+                font-size: 21px;
+                line-height: 25px;
+            }
+
+            .divWhiteEk {
+                min-height: 300px !important;
+                min-width: 300px !important;
+            }
+
+            .cp-tabs .nav-tabs > li > a {
+                font-size: 14px;
+            }
+        }
+
+        @media only screen and (max-width:1024px) {
+            .cp-tabs .nav-tabs > li {
+                width: 100%;
+            }
+
+            .cihaz {
+                width: 370px;
+                height: 420px;
+            }
+
+            .my-title h2 {
+                font-size: 21px;
+                line-height: 25px;
+            }
+
+            .divWhiteEk {
+                min-height: 300px !important;
+                min-width: 300px !important;
+            }
+        }
+
+        @media only screen and (max-width: 575px) {
+
+
+            .cp-tabs .nav-tabs > li {
+                width: 100%;
+            }
+
+            .cihaz {
+                width: 370px;
+                height: 420px;
+                /* margin-left: -80px !important;*/
+            }
+
+            .my-title h2 {
+                font-size: 21px;
+                line-height: 25px;
+            }
+
+            .divWhiteEk {
+                min-height: 300px !important;
+                min-width: 300px !important;
+                margin-top: 50px;
+            }
+
+            .cp-tabs .nav-tabs > li > a {
+                font-size: 14px;
+            }
+        }
+
+        .divWhite {
+            /* padding: 25px; */
+            background-color: #F5F5F5;
+            padding: 25px 30px;
+            border-radius: 5px;
+            /*-webkit-box-shadow: 0px 60px 80px 0px rgb(0 0 0 / 15%);
+            -moz-box-shadow: 0px 60px 80px 0px rgba(0,0,0,0.15);*/
+            /* box-shadow: 0px 60px 80px 0px rgb(0 0 0 / 15%);*/
+        }
+
+            .divWhite ul li {
+                margin-bottom: 10px;
+            }
+
+        .vektorImage {
+            width: 39px;
+            margin-top: -3px;
+            position: relative;
+            float: left;
+            margin-right: 8px;
+        }
+
+        .cp-tabs .tab-content {
+            /*border: 1px solid #cccccc;*/
+            /*padding: 30px;*/
+            font-size: 16px;
+            line-height: 28px;
+            color: #333333;
+        }
+
+        .cp-tabs .nav-tabs {
+            border: 0px;
+        }
+
+            .cp-tabs .nav-tabs > li {
+                margin: 0px;
+            }
+
+                .cp-tabs .nav-tabs > li > a {
+                    border: 0px;
+                    border-radius: 0;
+                    margin-right: 2px;
+                    background: #6c757d1c;
+                    font-size: 18px;
+                    color: #222222;
+                    font-weight: 500;
+                    padding: 0px 25px;
+                    line-height: 59px;
+                    box-shadow: 2px 3px 4px #6c757d;
+                }
+
+                    .cp-tabs .nav-tabs > li > a:hover {
+                        /*box-shadow: 2px 2px 1px #c11e43;*/
+                    }
+
+                    .cp-tabs .nav-tabs > li > a.active,
+                    .cp-tabs .nav-tabs > li > a.active:focus,
+                    .cp-tabs .nav-tabs > li > a.active:hover {
+                        background: #c11e43;
+                        color: #fff;
+                        border: 0px;
+                    }
+
+                .cp-tabs .nav-tabs > li > a {
+                    font-size: 16px;
+                    line-height: 40px;
+                    margin-right: 7px;
+                    margin-top: 5px;
+                    padding: 0 10px;
+                    border-radius: 4px;
+                    text-decoration: none;
+                }
+
+        .nav > li > a {
+            position: relative;
+            display: block;
+            padding: 15px 15px;
+        }
+
+        .product_claims__12116 .product_claim__item {
+            width: 14.666666666667%;
+        }
+
+        @media (max-width:767px) {
+            .divWhite {
+                padding: 15px 0px !important;
+            }
+
+            .faqs .panel-default > .panel-heading a.collapsed {
+                margin-left: -15px !important;
+            }
+
+            .pagination .pager li {
+                font-size: 176%;
+                font-size: 2.28rem
+            }
+
+            .cp-tabs .nav-tabs > li > a {
+                font-size: 14px;
+            }
+        }
+
+        .popup-element-title {
+            background: url(/sites/all/themes/dexcom/images/popup-icon-24h.png) no-repeat 100% 0;
+            padding-right: 20px;
+            min-height: 25px
+        }
+
+        .popup-title-active {
+            background-image: url(/sites/all/themes/dexcom/images/popup-icon-24h.png)
+        }
+
+        .product_claims {
+            text-align: center
+        }
+
+        .product_claims__dark {
+            background-color: #1a1a1a;
+            color: #cecece
+        }
+
+            .product_claims__dark .product_claim__item {
+                border-right: 1px solid #2f2f2f
+            }
+
+                .product_claims__dark .product_claim__item.last {
+                    border: none
+                }
+
+            .product_claims__dark a {
+                color: #cecece;
+                text-decoration: none
+            }
+
+        .product_claims__light {
+            background-color: #fff
+        }
+
+            .product_claims__light .product_claim__item {
+                border-right: 1px solid #eaeaea
+            }
+
+                .product_claims__light .product_claim__item.last {
+                    border: none;
+                }
+
+            .product_claims__light a {
+                text-decoration: none;
+                color: inherit
+            }
+
+        .product_claims .product_claim__row {
+            display: inline
+        }
+
+        .product_claims .product_claim__item {
+            display: inline-block;
+            vertical-align: top;
+            padding: 2em 1em;
+            min-height: 225px
+        }
+
+        .product_claims .product_claim__image,
+        .product_claims .product_claim__title,
+        .product_claims .product_claim__title-mobile {
+            margin-bottom: 1em
+        }
+
+        .product_claims .product_claim__title,
+        .product_claims .product_claim__title-mobile {
+            font-size: 1.2em;
+            font-family: museo, Helvetica, Arial, sans-serif;
+            font-weight: 400;
+        }
+
+        .product_claims .product_claim__title {
+            display: block;
+            min-height: 40px
+        }
+
+        .product_claims .product_claim__title-mobile {
+            display: none;
+            margin-bottom: 0
+        }
+
+        .product_claims .product-claim-icon {
+            max-width: 100px
+        }
+
+        .product_claims .product_claim__copy {
+            font-size: .8em
+        }
+
+        @media (max-width:767px) {
+            .product_claims__dark .product_claim__item,
+            .product_claims__dark .product_claim__item.last {
+                border: 1px solid #2f2f2f
+            }
+
+                .product_claims__dark .product_claim__item.right {
+                    margin-left: -5px
+                }
+
+            .product_claims__light .product_claim__item,
+            .product_claims__light .product_claim__item.last {
+                border: 1px solid #eaeaea
+            }
+
+                .product_claims__light .product_claim__item.right {
+                    margin-left: -5px
+                }
+
+            .product_claims .product_claim__row {
+                display: block
+            }
+
+                .product_claims .product_claim__row .product_claim__item {
+                    width: 49%
+                }
+
+            .product_claims .product_claim__title {
+                display: none;
+                margin-bottom: 0
+            }
+
+            .product_claims .product_claim__title-mobile {
+                display: block;
+                margin-bottom: 1em
+            }
+
+            .context-lead-generation .panel-display {
+                background: #eeedeb
+            }
+
+                .context-lead-generation .panel-display .pane-bean-dexcom-logo-only {
+                    background-color: #fff
+                }
+
+            .context-lead-generation.intln-ca .panel-display {
+                background-color: #fff
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header class="header-area" id="home">
+        <div class="header-top-area">
+            <div class="container">
+                <div class="row">
+
+                </div>
+            </div>
+        </div>
+        <div class="header-navbar sticky" id="myHeader">
+            <nav class="navbar navbar-expand-lg" id="mainNav">
+                <div class="container">
+                    <!--<a href="https://www.memorial.com.tr/dijital-saglik-asistani"><img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/logo.png" alt=""></a>-->
+                    <a href="https://www.memorial.com.tr/dijital-saglik-asistani"><img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/LogoWhiteYeni.png" alt=""></a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto navCizgi">
+
+                            <li class="nav-item dropdown" id="navbarFirstItem">
+
+                                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dijital Sağlık Takip Programları</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item js-scroll-trigger" href="#programs" id="covid19"> Covid-19 Dijital Takip Programı</a>
+                                    <a class="dropdown-item js-scroll-trigger" href="#programs" id="kalp"> Kalp Sağlığı Dijital Takip Programı</a>
+                                    <a class="dropdown-item js-scroll-trigger" href="#programs" id="diyabet"> Diyabet Dijital Takip Programı</a>
+
+                                </div>
+                            </li>
+                            <li class="nav-item" id="navbarFirstItemDesktop">
+                                <a class="nav-link js-scroll-trigger" href="#programs">Dijital Sağlık Takip Programları</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#nasilkullanirim">Nasıl Sahip Olabilirim?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#sss">SSS</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#contact">Hemen Bilgi Al</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="DesktopGiris" style="padding:66px 0px 0px 0px;">
+        <!--<span class="simg"><img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/slide/slide1.jpg" alt=""></span>
+        Main Slider-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <!--<div class="carousel-item active">
+                    <img class="d-block w-100" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/bg/banner1.jpg" alt="First slide">
+                    <div class="container">
+                        <div class="carousel-caption" style="text-align: left; position:absolute;  top:0;left:0; right:0; bottom:0;  display:flex; align-items:center">
+
+                            <div class="bannerSolKisim">
+                                <h2 style="color:#c11e43"><span id="girisyazisi">DİJİTAL SAĞLIK ASİSTANI HER ZAMAN HER YERDE SAĞLIĞIN GÜVENDE…</span></h2>
+                                <p style="color:#333">
+                                    <span id="girisyazisi"> Dijital Takip Programları ile ihtiyacınız olan sağlık hizmetine istediğiniz yerde, istediğiniz zaman ulaşabilirsiniz.<br /><br /></span> Uzman doktorunuz ve hemşireniz tedavinizi planlayıp takip edebilir, izin verdiğiniz yakınlarınız ve siz sağlık ölçümlerinizi izleyebilirsiniz.<br />
+                                </p>-->
+                <!--<a class="btn btn-primary theme-btn" href="#programs" role="button">Programlar</a>-->
+                <!--<a class="btn btn-primary theme-btn" href="#contact" role="button">Hemen Bilgi Al</a>
+                            </div>
+                            <div class="bannerSagKisim"><img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/bgonplan.png" alt="" class="img-fluid"></div>
+                        </div>
+                    </div>
+                </div>-->
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/bg/banner4.png" alt="First slide">
+                    <div class="container">
+                        <div class="carousel-caption" style="text-align: left; position:absolute;  top:0;left:0; right:0; bottom:0;  display:flex; align-items:center">
+
+                            <div class="col-md-7 bannerSolKisim">
+                                <h2 style="color:#c11e43"><span id="girisyazisi">DİJİTAL SAĞLIK ASİSTANI HER ZAMAN HER YERDE SAĞLIĞIN GÜVENDE…</span></h2>
+                                <p style="color:#333">
+                                    <span id="girisyazisi"> Dijital Takip Programları ile ihtiyacınız olan sağlık hizmetine istediğiniz yerde, istediğiniz zaman ulaşabilirsiniz.<br /><br /></span> Uzman doktorunuz ve hemşireniz tedavinizi planlayıp takip edebilir, izin verdiğiniz yakınlarınız ve siz sağlık ölçümlerinizi izleyebilirsiniz.<br />
+                                </p>
+                                <!--<a class="btn btn-primary theme-btn" href="#programs" role="button">Programlar</a>-->
+                                <a class="btn btn-primary theme-btn" href="#contact" role="button">Hemen Bilgi Al</a>
+                            </div>
+                            <div class="bannerSagKisim"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/bg/banner5.jpg" alt="Second slide">
+                    <div class="container">
+                        <div class="carousel-caption" style="text-align: left; position:absolute;  top:0;left:0; right:0; bottom:0;  display:flex; align-items:center">
+
+                            <div class="col-md-7 bannerSolKisim">
+                                <h2 style="color:#c11e43"><span id="girisyazisi">DİYABET DİJİTAL TAKİP PROGRAMI</span></h2>
+                                <p style="color:#333">
+                                   Diyabet Dijital Takip Programı ile glikoz değerlerinizi hızlı ve doğru şekilde takip edebilir, diyabet kontrolünüzü uzman doktorlarımızın ve diyabet hemşirelerimizin desteği ile sağlayabilirsiniz.<br /><br />
+                                </p>
+                                <!--<a class="btn btn-primary theme-btn" href="#programs" role="button">Programlar</a>-->
+                                <a class="btn btn-primary theme-btn" href="#contact" role="button">Hemen Bilgi Al</a>
+                            </div>
+                            <div class="bannerSagKisim"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/bg/banner6.jpg" alt="Third slide">
+                    <div class="container">
+                        <div class="carousel-caption" style="text-align: left; position:absolute;  top:0;left:0; right:0; bottom:0;  display:flex; align-items:center">
+
+                            <div class="col-md-6 bannerSolKisim">
+                                <h2 style="color:#c11e43"><span id="girisyazisi">KALP SAĞLIĞI DİJİTAL TAKİP PROGRAMI</span></h2>
+                                <p style="color:#333">
+                                    Program sayesinde doktorunuz ile görüntülü görüşme yaparak, ameliyat sonrası ölçümlerinizin takibi ve değerlendirilmesini sağlayabilirsiniz. <br />
+                                </p>
+                                <!--<a class="btn btn-primary theme-btn" href="#programs" role="button">Programlar</a>-->
+                                <a class="btn btn-primary theme-btn" href="#contact" role="button">Hemen Bilgi Al</a>
+                            </div>
+                            <div class="bannerSagKisim"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <!--Main Slider End
+
+
+        <!-- Hero Start -->
+    <section class="hero-area overlay-black jarallax background-image" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/bg/1.png" id="MobileGiris" style="display:flex; padding:20px 0px;  flex-direction:column; background-image: url('{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/bg/1.png');">
+        <div>
+
+
+            <div class="hero-doctor-img">
+                <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/bgonplan.png" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="hero-col">
+
+                            <h2 style="color:#c11e43">Her Zaman Her Yerde Sağlığın Güvende… </h2>
+                            <p style="color:#333">
+                                Dijital Takip Programları ile ihtiyacınız olan sağlık hizmetine istediğiniz yerde,<br /> istediğiniz zaman ulaşabilirsiniz.<br /> Uzman doktorunuz ve hemşireniz tedavinizi planlayıp takip edebilir,<br /> izin verdiğiniz yakınlarınız ve siz sağlık ölçümlerinizi izleyebilirsiniz.<br />
+                            </p>
+                            <!--<a class="btn btn-primary theme-btn" href="#programs" role="button">Programlar</a>-->
+                            <a class="btn btn-primary theme-btn" href="#contact" role="button">Hemen Bilgi Al</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--Call Start-->
+    <section class="call-area background-image" style="padding:80px 0px;" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/bg/1.png">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 mb-5" style="text-align:center">
+                    <h2>Memorial Dijital Sağlık Asistanı Nedir?</h2>
+
+                </div>
+                <div class="col-lg-7 mb-5">
+                    <div class="call-col px-4">
+
+
+                        <p style=" color: #454a4f;">
+                            İhtiyacınız olan sağlık hizmetine, <strong>Uzaktan Takip Sistemi</strong>, <strong>e-Doktor Hizmeti</strong> ve <strong>Evde Bakım Hizmeti</strong> ile istediğiniz yerde, istediğiniz zaman ulaşabilirsiniz.
+                        </p>
+                        <p style=" color: #454a4f;">
+                            <br /><strong>Uzaktan Takip Sistemi</strong>, Kronik veya belirli süre kontrol altında tutulması gereken hastalıklarınızın takibi için oluşturulan taşınabilir akıllı sağlık teknolojisi; günlük yaşam akışınızı bozmadan, doktorunuz tarafından belirlenen tüm ölçümlerin yapılmasına, ilaç takibinin sağlanmasına ve ihtiyaç anında ilgili sağlık profesyonelleri ile iletişime geçmenize olanak sağlayan bir programdır.
+                        </p>
+
+                        <p style=" color: #454a4f;">
+                            <br />Akıllı teknolojiler ile uzaktan hasta takibi sağlayan Memorial Dijital Sağlık Asistanı programları kapsamında, doktorunuz kalp atışlarınızı, EKG'nizi, tansiyonunuzu, şekerinizi, ateşinizi, kandaki oksijen doygunluğunuzu ve daha birçok ölçümleri uzaktan takip edebilmektedir. Sistem ayrıca geçmişe yönelik değerlerinizin analizini yaparak, kişisel sağlık öykünüzle birlikte sizin için o anda en doğru tedavinin planlanmasına yardımcı olmaktadır.
+                        </p>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-5" id="DesktopVideo">
+                    <div class="video-box background-image 3dhover" id="videobox" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/bg/3.jpg">
+
+                        <button type="button" class="btn video-btn" style="outline:none" data-toggle="modal" data-src="" data-target="#myModal">
+                            <i class="icofont-play-alt-3"></i>
+                        </button>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-5" id="MobileVideo">
+                    <iframe class="iframeVideoYoutube" data-bg="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/bg/3.jpg" src="https://www.youtube.com/embed/ru6_hWpVXlE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+                        <!--<span class="sq80 fs30 btn-white flex-cc solid bdr-2 rd">
+                            <i class="fa fa-play mr-l-6"></i>
+                        </span>-->
+                    </iframe>
+
+                </div>
+                <div class="col-lg-12">
+                    <div class="call-col px-4 py-3">
+
+                        <p style=" color: #454a4f;">
+                            <br /><strong>Memorial e-Doktor Hizmeti</strong>, sizin ve ailenizin sağlık problemleri, kronik hastalıklarınızın takibi ve ihtiyaç duyduğunuz her türlü sağlık sorunu için istediğiniz branşta doktor ile canlı ve görüntülü görüşme imkanı sağlayan bir online sağlık hizmeti uygulamasıdır.<br />
+                        </p>
+                        <p style=" color: #454a4f;">
+                            <br /> <strong>Memorial Evde Bakım Hizmeti</strong>, ihtiyacınız olan sağlık hizmetine evinizden çıkmadan ulaşabileceğiniz, sağlık problemleriniz, kronik hastalıklarınızın takibi ve desteğe ihtiyaç duyduğunuz her türlü sağlık sorunuz için uzman doktor muayenesi, hemşirelik hizmetleri, laboratuvar ve radyoloji tetkikleri dahil pek çok hizmeti, hastaneye gitmenize gerek kalmadan, evinizde veya işyerinizde sunduğumuz programdır.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="modal" id="myModal" style="z-index:99999;padding-top:30vh" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+
+                <div class="modal-body">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Why Choose Start-->
+    <section class="about-area" id="programs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="my-title" style="margin-top:40px">
+                        <h2>MEMORIAL DİJİTAL SAĞLIK TAKİP PROGRAMLARI</h2>
+                        <div class="bdr clearfix"></div>
+                        <!--Tabs Start-->
+                        <div class="row" id="DesktopSaglikTakipProgramlari">
+                            <div class="cp-tabs">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation"><a href="#aaa" class="active" aria-controls="aaa" role="tab" data-toggle="tab">Covid-19 Dijital Takip Programı</a></li>
+
+
+                                    <li role="presentation"><a href="#bbb" aria-controls="bbb" role="tab" data-toggle="tab">Kalp Sağlığı Dijital Takip Programı</a></li>
+
+
+
+                                    <li role="presentation"><a href="#ccc" aria-controls="ccc" role="tab" data-toggle="tab">Diyabet Dijital Takip Programı</a></li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content mb50" style="padding-top:30px">
+                                    <div role="tabpanel" class="tab-pane active" id="aaa">
+                                        <div class="item team-item">
+
+                                            <div class="divWhite">
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                        <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/covid.jpg" alt="" id="covidImgDektop" style="display:block" class="img-fluid">
+                                                        <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/covid_min.jpg" alt="" id="covidImgMobil" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-md-7">
+
+                                                        <h4>Covid-19 Dijital Takip Programı</h4>
+                                                        <div class="bdr"></div>
+
+                                                        <p>
+                                                            COVID-19 hastalığı sürecinde veya hastanedeki tedaviniz sonrası evde devam eden izlem süreciniz için hazırlanan takip programları ile gerekli ölçümleriniz yapılmakta, yakınlarınız ve sağlık profesyonelleri ile Memorial Dijital Sağlık Asistanı aracılığıyla
+                                                            paylaşılarak sağlık desteği sunulmaktadır.
+
+                                                        </p>
+                                                        <p>
+                                                            <br /> Program sayesinde ölçümleriniz izlenip, görüntülü doktor görüşmesiyle değerlendirilir ve Evde Bakım hemşiresi tarafından yerinde kan alma işlemiyle değerlerinizin takibi sağlanır. Rutin takipleriniz
+                                                            ve kendinizi iyi hissetmediğiniz anlar için sağlık profesyonelleri ile mobil uygulama üzerinden görüşme/mesajlaşma imkânı sunulur. Koronavirüsün akciğerlerinizde bıraktığı olası etkileri gidermek
+                                                            için de Fizyoterapi uzmanları ile Online Solunum Terapisi hizmeti verilir.<br />
+                                                        </p>
+                                                        <br>
+                                                        <table>
+                                                            <tr>
+                                                                <td>
+                                                                    <span class="vektorImage">
+                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/1.png">
+                                                                    </span>
+                                                                </td>
+                                                                <td> Genel Sağlık Takip Cihazı</td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <span class="vektorImage">
+                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/2.png">
+                                                                    </span>
+                                                                </td>
+                                                                <td>Online Doktor Görüşmesi</td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <span class="vektorImage">
+                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/3.png">
+                                                                    </span>
+                                                                </td>
+                                                                <td>Evde Kan Alımı ve Laboratuvar Testleri</td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <span class="vektorImage">
+                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/4.png">
+                                                                    </span>
+                                                                </td>
+                                                                <td>Sağlık Profesyonelleri ile Görüşme / Mesajlaşma</td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <span class="vektorImage">
+                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/5.png">
+                                                                    </span>
+                                                                </td>
+                                                                <td>Online Solunum Terapisi</td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <span class="vektorImage">
+                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/6.png">
+                                                                    </span>
+                                                                </td>
+                                                                <td>Fiziksel Kontrol Muayenesi</td>
+
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" style="padding-bottom:50px;" id="bbb">
+                                        <div class="item team-item">
+                                            <div class="divWhite">
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                        <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/kalp.jpg" alt="" id="covidImgDektop" style="display:block" class="img-fluid">
+                                                        <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/kalp_min.jpg" alt="" id="covidImgMobil" class="img-fluid">
+
+                                                    </div>
+                                                    <div class="col-md-7">
+
+                                                        <h4>Kalp Sağlığı Dijital Takip Programı</h4>
+                                                        <div class="bdr"></div>
+
+                                                        <p>
+                                                            Kronik kalp rahatsızlığı, aritmi, kalp yetmezliği ve pek çok kalp hastalıkları ile kritik girişimsel işlemler ve ameliyatlarınız sonrasında periyodik kontrollerinizin yapılması hastalığınızın seyri ve genel sağlık durumunuz açısından büyük önem taşımaktadır.
+                                                            Memorial Dijital Sağlık Asistanı ile düzenli olarak takiplerinizin yapılması sağlanır.
+
+                                                        </p>
+                                                        <p>
+                                                            <br /> Program sayesinde doktorunuz ile görüntülü görüşme yaparak, ameliyat sonrası ölçümlerinizin takibi ve değerlendirilmesi sağlanır. Kontrolleriniz ve kendinizi iyi hissetmediğiniz anlar için
+                                                            sağlık profesyonelleri ile mobil uygulama üzerinden görüşme/mesajlaşma imkânı sunulur. Gerektiğinde Evde Bakım Hizmetleri kapsamında bulunduğunuz yerde kan alımı, görüntüleme hizmetleri, yerinde
+                                                            hemşirelik veya doktor hizmetleri sağlanır.<br />
+                                                        </p>
+                                                        <br>
+                                                        <table>
+                                                            <tr>
+                                                                <td>
+                                                                    <span class="vektorImage">
+                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/1.png">
+                                                                    </span>
+                                                                </td>
+                                                                <td>Genel Sağlık Takip Cihazı</td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <span class="vektorImage">
+                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/2.png">
+                                                                    </span>
+                                                                </td>
+                                                                <td>Online Doktor Görüşmesi</td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <span class="vektorImage">
+                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/3.png">
+                                                                    </span>
+                                                                </td>
+                                                                <td>Sağlık Profesyonelleri ile Görüşme/Mesajlaşma</td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <span class="vektorImage">
+                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/4.png">
+                                                                    </span>
+                                                                </td>
+                                                                <td>Hastanede Kan Tahlilleri ve Radyolojik İncelemeler (İhtiyaç Halinde)</td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <span class="vektorImage">
+                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/5.png">
+                                                                    </span>
+                                                                </td>
+                                                                <td>Fiziksel Kontrol Muayenesi</td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <span class="vektorImage">
+                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/6.png">
+                                                                    </span>
+                                                                </td>
+                                                                <td>Evde Bakım Hizmetleri (İhtiyaç Halinde)</td>
+
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" style="padding-bottom:60px;" id="ccc">
+                                        <div class="item team-item">
+                                            <div class="divWhite">
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                        <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/diyabet.jpg" alt="" id="covidImgDektop" style="display:block" class="img-fluid">
+                                                        <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/diyabet_min.jpg" alt="" id="covidImgMobil" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-md-7">
+                                                        <h4>Diyabet Dijital Takip Programı</h4>
+                                                        <div class="bdr"></div>
+                                                        <p>
+                                                            Diyabetik hastaların kan şeker düzeylerinin takip edilmesi, kayıt altına alınması, hipoglisemi ve hiperglisemi durumlarının sıklığı ve tespit edilmesi, komplikasyonların erken tanısı ve gerekli desteğin sağlanması açısından önemlidir.
+
+                                                        </p>
+                                                        <p>
+                                                            <br /> Program sayesinde glikoz ölçüm değerleriniz kayıt altına alınarak uzman hekim ve diyabet hemşirelerimiz tarafından değerlendirilir, diyetisyenlerimiz tarafından karbonhidrat sayımı eğitimi
+                                                            verilir, diyet programınız düzenlenir ve hekiminiz tarafından tedaviniz düzenlenir. <br />
+                                                        </p>
+                                                        <br>
+                                                        <table>
+                                                            <tr>
+                                                                <td>
+                                                                    <span class="vektorImage">
+                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/1.png">
+                                                                    </span>
+                                                                </td>
+                                                                <td>Flash veya Sürekli Glikoz Ölçümü (CGM) Sensör ve Cihazları</td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <span class="vektorImage">
+                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/2.png">
+                                                                    </span>
+                                                                </td>
+                                                                <td>Genel Sağlık Takip Cihazı (İhtiyaç halinde)</td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <span class="vektorImage">
+                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/3.png">
+                                                                    </span>
+                                                                </td>
+                                                                <td>Online doktor görüşmesi</td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <span class="vektorImage">
+                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/4.png">
+                                                                    </span>
+                                                                </td>
+                                                                <td>Online diyetisyen görüşmesi</td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <span class="vektorImage">
+                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/3.png">
+                                                                    </span>
+                                                                </td>
+                                                                <td>Sağlık profesyonelleri ile görüşme/mesajlaşma</td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <span class="vektorImage">
+                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/5.png">
+                                                                    </span>
+                                                                </td>
+                                                                <td>Hastanede veya Evde Kan Alma (İhtiyaç halinde)</td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <span class="vektorImage">
+                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/6.png">
+                                                                    </span>
+                                                                </td>
+                                                                <td>Fiziksel kontrol muayenesi</td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="2">* Abbott Freestyle Libre Flash Glikoz Ölçümü Sensörleri veya Dexcom G6 Sürekli Glikoz Ölçümü Sensörleri ile yapılmaktadır.</td>
+
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="row" id="MobileSaglikTakipProgramlari">
+                            <!-- Faq Start -->
+                            <div class="faq-area">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-12" style="padding:0px">
+                                            <div class="faq-col">
+
+                                                <div class="my-faq-accordion">
+                                                    <div class="accordion" id="accordionExampleC">
+                                                        <div class="card">
+                                                            <div class="card-header" id="headingOneASTP">
+                                                                <h5 class="mb-0">
+                                                                    <button class="btn btn-link" type="button" data-toggle="collapse" id="MobileSaglikTakipProgramlariIlkEleman" data-target="#collapseOneASTP" aria-expanded="true" aria-controls="collapseOneASTP">
+                                                                        <i class="icofont-swoosh-right"></i>
+                                                                        Covid-19 Dijital Takip Programı
+                                                                    </button>
+                                                                </h5>
+                                                            </div>
+                                                            <div id="collapseOneASTP" class="collapse show" aria-labelledby="headingOneASTP" data-parent="#accordionExampleC">
+                                                                <div class="card-body" style="padding: 8px 0px 20px 0px;">
+                                                                    <div class="row">
+                                                                        <div class="col-md-5">
+                                                                            <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/covid.jpg" alt="" id="covidImgDektop" style="display:block" class="img-fluid">
+                                                                            <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/covid_min.jpg" alt="" id="covidImgMobil" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="col-md-7">
+
+                                                                            <h4>Covid-19 Dijital Takip Programı</h4>
+                                                                            <div class="bdr"></div>
+
+                                                                            <p>
+                                                                                COVID-19 hastalığı sürecinde veya hastanedeki tedaviniz sonrası evde devam eden izlem süreciniz için hazırlanan takip programları ile gerekli ölçümleriniz yapılmakta, yakınlarınız ve sağlık profesyonelleri ile Memorial Dijital Sağlık Asistanı aracılığıyla
+                                                                                paylaşılarak sağlık desteği sunulmaktadır.
+
+                                                                            </p>
+                                                                            <p>
+                                                                                <br /> Program sayesinde ölçümleriniz izlenip, görüntülü doktor görüşmesiyle değerlendirilir ve Evde Bakım hemşiresi tarafından yerinde kan alma işlemiyle değerlerinizin takibi sağlanır. Rutin takipleriniz
+                                                                                ve kendinizi iyi hissetmediğiniz anlar için sağlık profesyonelleri ile mobil uygulama üzerinden görüşme/mesajlaşma imkânı sunulur. Koronavirüsün akciğerlerinizde bıraktığı olası etkileri gidermek
+                                                                                için de Fizyoterapi uzmanları ile Online Solunum Terapisi hizmeti verilir.<br />
+                                                                            </p>
+                                                                            <br>
+                                                                            <table>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <span class="vektorImage">
+                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/1.png">
+                                                                                        </span>
+                                                                                    </td>
+                                                                                    <td> Genel Sağlık Takip Cihazı</td>
+
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <span class="vektorImage">
+                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/2.png">
+                                                                                        </span>
+                                                                                    </td>
+                                                                                    <td>Online Doktor Görüşmesi</td>
+
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <span class="vektorImage">
+                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/3.png">
+                                                                                        </span>
+                                                                                    </td>
+                                                                                    <td>Evde Kan Alımı ve Laboratuvar Testleri</td>
+
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <span class="vektorImage">
+                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/4.png">
+                                                                                        </span>
+                                                                                    </td>
+                                                                                    <td>Sağlık Profesyonelleri ile Görüşme / Mesajlaşma</td>
+
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <span class="vektorImage">
+                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/5.png">
+                                                                                        </span>
+                                                                                    </td>
+                                                                                    <td>Online Solunum Terapisi</td>
+
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <span class="vektorImage">
+                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/6.png">
+                                                                                        </span>
+                                                                                    </td>
+                                                                                    <td>Fiziksel Kontrol Muayenesi</td>
+
+                                                                                </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card">
+                                                            <div class="card-header" id="headingTwoBSTP">
+                                                                <h5 class="mb-0">
+                                                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwoBSTP" aria-expanded="false" aria-controls="collapseTwoBSTP">
+                                                                        <i class="icofont-swoosh-right"></i>
+                                                                        Kalp Sağlığı Dijital Takip Programı
+                                                                    </button>
+                                                                </h5>
+                                                            </div>
+                                                            <div id="collapseTwoBSTP" class="collapse" aria-labelledby="headingTwoBSTP" data-parent="#accordionExampleC">
+                                                                <div class="card-body" style="padding: 8px 0px 20px 0px;">
+                                                                    <div class="row">
+                                                                        <div class="col-md-5">
+                                                                            <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/kalp.jpg" alt="" id="covidImgDektop" style="display:block" class="img-fluid">
+                                                                            <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/kalp_min.jpg" alt="" id="covidImgMobil" class="img-fluid">
+
+                                                                        </div>
+                                                                        <div class="col-md-7">
+
+                                                                            <h4>Kalp Sağlığı Dijital Takip Programı</h4>
+                                                                            <div class="bdr"></div>
+
+                                                                            <p>
+                                                                                Kronik kalp rahatsızlığı, aritmi, kalp yetmezliği ve pek çok kalp hastalıkları ile kritik girişimsel işlemler ve ameliyatlarınız sonrasında periyodik kontrollerinizin yapılması hastalığınızın seyri ve genel sağlık durumunuz açısından büyük önem taşımaktadır.
+                                                                                Memorial Dijital Sağlık Asistanı ile düzenli olarak takiplerinizin yapılması sağlanır.
+
+                                                                            </p>
+                                                                            <p>
+                                                                                <br /> Program sayesinde doktorunuz ile görüntülü görüşme yaparak, ameliyat sonrası ölçümlerinizin takibi ve değerlendirilmesi sağlanır. Kontrolleriniz ve kendinizi iyi hissetmediğiniz anlar için
+                                                                                sağlık profesyonelleri ile mobil uygulama üzerinden görüşme/mesajlaşma imkânı sunulur. Gerektiğinde Evde Bakım Hizmetleri kapsamında bulunduğunuz yerde kan alımı, görüntüleme hizmetleri, yerinde
+                                                                                hemşirelik veya doktor hizmetleri sağlanır.<br />
+                                                                            </p>
+                                                                            <br>
+                                                                            <table>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <span class="vektorImage">
+                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/1.png">
+                                                                                        </span>
+                                                                                    </td>
+                                                                                    <td>Genel Sağlık Takip Cihazı</td>
+
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <span class="vektorImage">
+                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/2.png">
+                                                                                        </span>
+                                                                                    </td>
+                                                                                    <td>Online Doktor Görüşmesi</td>
+
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <span class="vektorImage">
+                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/3.png">
+                                                                                        </span>
+                                                                                    </td>
+                                                                                    <td>Sağlık Profesyonelleri ile Görüşme/Mesajlaşma</td>
+
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <span class="vektorImage">
+                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/4.png">
+                                                                                        </span>
+                                                                                    </td>
+                                                                                    <td>Hastanede Kan Tahlilleri ve Radyolojik İncelemeler (İhtiyaç Halinde)</td>
+
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <span class="vektorImage">
+                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/5.png">
+                                                                                        </span>
+                                                                                    </td>
+                                                                                    <td>Fiziksel Kontrol Muayenesi</td>
+
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <span class="vektorImage">
+                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/6.png">
+                                                                                        </span>
+                                                                                    </td>
+                                                                                    <td>Evde Bakım Hizmetleri (İhtiyaç Halinde)</td>
+
+                                                                                </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card">
+                                                            <div class="card-header" id="headingThreeCSTP">
+                                                                <h5 class="mb-0">
+                                                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThreeCSTP" aria-expanded="false" aria-controls="collapseThreeCSTP">
+                                                                        <i class="icofont-swoosh-right"></i>
+                                                                        Diyabet Dijital Takip Programı
+                                                                    </button>
+                                                                </h5>
+                                                            </div>
+                                                            <div id="collapseThreeCSTP" class="collapse" aria-labelledby="headingThreeCSTP" data-parent="#accordionExampleC">
+                                                                <div class="card-body" style="padding: 8px 0px 20px 0px;">
+                                                                    <div class="item team-item">
+                                                                        <div class="row">
+                                                                            <div class="col-md-5">
+                                                                                <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/diyabet.jpg" alt="" id="covidImgDektop" style="display:block" class="img-fluid">
+                                                                                <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/diyabet_min.jpg" alt="" id="covidImgMobil" class="img-fluid">
+                                                                            </div>
+                                                                            <div class="col-md-7">
+                                                                                <h4>Diyabet Dijital Takip Programı</h4>
+                                                                                <div class="bdr"></div>
+                                                                                <p>
+                                                                                    Diyabetik hastaların kan şeker düzeylerinin takip edilmesi, kayıt altına alınması, hipoglisemi ve hiperglisemi durumlarının sıklığı ve tespit edilmesi, komplikasyonların erken tanısı ve gerekli desteğin sağlanması açısından önemlidir.
+
+                                                                                </p>
+                                                                                <p>
+                                                                                    <br /> Program sayesinde glikoz ölçüm değerleriniz kayıt altına alınarak uzman hekim ve diyabet hemşirelerimiz tarafından değerlendirilir, diyetisyenlerimiz tarafından karbonhidrat sayımı eğitimi
+                                                                                    verilir, diyet programınız düzenlenir ve hekiminiz tarafından tedaviniz düzenlenir. <br />
+                                                                                </p>
+                                                                                <br>
+                                                                                <table>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <span class="vektorImage">
+                                                                                                <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/1.png">
+                                                                                            </span>
+                                                                                        </td>
+                                                                                        <td>Flash veya Sürekli Glikoz Ölçümü (CGM) Sensör ve Cihazları</td>
+
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <span class="vektorImage">
+                                                                                                <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/2.png">
+                                                                                            </span>
+                                                                                        </td>
+                                                                                        <td>Genel Sağlık Takip Cihazı (İhtiyaç halinde)</td>
+
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <span class="vektorImage">
+                                                                                                <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/3.png">
+                                                                                            </span>
+                                                                                        </td>
+                                                                                        <td>Online doktor görüşmesi</td>
+
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <span class="vektorImage">
+                                                                                                <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/4.png">
+                                                                                            </span>
+                                                                                        </td>
+                                                                                        <td>Online diyetisyen görüşmesi</td>
+
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <span class="vektorImage">
+                                                                                                <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/3.png">
+                                                                                            </span>
+                                                                                        </td>
+                                                                                        <td>Sağlık profesyonelleri ile görüşme/mesajlaşma</td>
+
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <span class="vektorImage">
+                                                                                                <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/5.png">
+                                                                                            </span>
+                                                                                        </td>
+                                                                                        <td>Hastanede veya Evde Kan Alma (İhtiyaç halinde)</td>
+
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <span class="vektorImage">
+                                                                                                <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/6.png">
+                                                                                            </span>
+                                                                                        </td>
+                                                                                        <td>Fiziksel kontrol muayenesi</td>
+
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td colspan="2">* Abbott Freestyle Libre Flash Glikoz Ölçümü Sensörleri veya Dexcom G6 Sürekli Glikoz Ölçümü Sensörleri ile yapılmaktadır.</td>
+
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!--Tabs End-->
+
+
+        </div>
+    </section>
+
+    <!--Why Choose End-->
+
+
+    <section class="about-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="my-title">
+                        <h2>MEMORIAL DİJİTAL SAĞLIK TAKİP CiHAZLARIMIZ</h2>
+                        <div class="bdr clearfix"></div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+
+                                <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takipcihazlari.png" alt="" class="img-fluid ">
+
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class=" about-col">
+
+                                    <p>
+                                        <br />
+                                        <br />
+                                        Memorial Dijital Sağlık Takip mobil uygulaması (DAKİK), Genel Sağlık Takip Cihazı ve Uzun Süreli Ritim Takibi için Patch Holter Cihazı ile entegre çalışabilecek şekilde kurgulanmıştır. Takip cihazları kullanılarak yapılan
+                                        ölçümler otomatik olarak mobil uygulamanızdaki Memorial DAKIK uygulamasına aktarılmakta ve sağlık profesyonelleri tarafından takip edilebilmektedir.
+                                    </p>
+
+
+
+                                    <p>
+
+                                        Entegre cihazlar dışında diğer medikal cihazlarınız üzerinden yaptığınız ölçümler de mobil uygulama üzerinde kayıt edilebilir, bu değerler de takibinizi yapan doktorunuz ve hemşireniz ile paylaşılabilmektedir.
+                                        <br />
+                                        <br />
+
+                                    </p>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" id="DesktopTakipCihazlari">
+                            <div class="cp-tabs">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation"><a href="#stc" class="active" aria-controls="stc" role="tab" data-toggle="tab">Genel Sağlık Takip Cihazı</a></li>
+
+
+                                    <li role="presentation"><a href="#ph" aria-controls="ph" role="tab" data-toggle="tab">Patch EKG (HOLTER)</a></li>
+
+
+
+                                    <li role="presentation"><a href="#sg" aria-controls="sg" role="tab" data-toggle="tab">Sürekli Glikoz Ölçüm (CGM) Cihazı</a></li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <!-- Tab panes -->
+                                <div class="tab-content mb50" style="padding-top:30px;font-size:16px">
+                                    <div role="tabpanel" class="tab-pane active" id="stc">
+                                        <div class="item team-item">
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip1.png" id="covidImgDektop" style="display:block;" alt="" class="img-fluid ">
+
+                                                    <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip1_min.png" alt="" id="covidImgMobil" class="img-fluid">
+                                                </div>
+                                                <div class="col-md-7">
+                                                    <h4>Genel Sağlık Takip Cihazı</h4>
+                                                    <div class="bdr"></div>
+                                                    <p>
+                                                        Genel Sağlık Takip Cihazı ile tansiyon, nabız, oksijen satürasyonu (SpO2), ateş, kan şekeri, EKG gibi vital parametreleriniz cihaz üzerindeki sensörler aracılığıyla ölçülür, bluetooth bağlantısıyla akıllı telefonunuza indirilen mobil uygulama ile eşleştirilir,
+                                                        sonrasında yaptığınız tüm ölçümler kendi doktorunuza veya hizmet aldığınız hastaneye dijital olarak iletilir. Tüm bu parametreler, grafiksel olarak toplanır ve doktorun yorumlaması için kendisine
+                                                        sunulur. <br /><br />
+                                                        <ul>
+                                                            <li>
+                                                                <span class="vektorImage">
+                                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/1.png">
+                                                                </span>Koldan tansiyon ölçümü
+                                                            </li>
+                                                            <li>
+                                                                <span class="vektorImage">
+                                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/2.png">
+                                                                </span>Nabız
+                                                            </li>
+                                                            <li>
+                                                                <span class="vektorImage">
+                                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/3.png">
+                                                                </span>Temassız ateş ölçümü
+                                                            </li>
+                                                            <li>
+                                                                <span class="vektorImage">
+                                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/4.png">
+                                                                </span>Parmaktan kan satürasyonu
+                                                            </li>
+                                                            <li>
+                                                                <span class="vektorImage">
+                                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/5.png">
+                                                                </span>Kan Şekeri
+                                                            </li>
+                                                            <li>
+                                                                <span class="vektorImage">
+                                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/6.png">
+                                                                </span>Anlık EKG
+                                                            </li>
+                                                        </ul>
+
+                                                        <div class="row mb-30 mt-5">
+                                                            <div class="col-md-12">
+                                                                <a href="https://itunes.apple.com/us/app/memorial/id1350361107" rel="nofollow" target="_blank">
+                                                                    <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/appstore.png" alt="" class="img-fluid 3dhover">
+                                                                </a>
+
+                                                                <a href="https://play.google.com/store/apps/details?id=com.uzaktanhastatakip&hl=tr" rel="nofollow" target="_blank">
+                                                                    <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/playstore.png" alt="" id="googleplaystoreimg" class="img-fluid 3dhover">
+                                                                </a>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="ph">
+                                        <div class="item team-item">
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip2.png" id="covidImgDektop" style="display:block; " alt="" class="img-fluid">
+                                                    <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip2_min.png" id="covidImgMobil" alt="" class="img-fluid ">
+                                                </div>
+                                                <div class="col-md-7">
+                                                    <h4>Patch EKG (HOLTER)</h4>
+                                                    <div class="bdr"></div>
+                                                    <p>
+                                                        Patch EKG Takip Cihazı ile kalp atışlarınız kayıt altında tutulabilmekte ve kronik kalp rahatsızlığı, aritmi, kalp yetmezliği gibi birçok hastalık takip edilebilmektedir. Cihaz üzerindeki sensörler aracılığıyla EKG takibiniz sağlanır, bluetooth bağlantısıyla akıllı telefonunuza indirilen mobil uygulama ile eşleştirilir. Ölçümleriniz hekiminiz tarafından canlı olarak takip edilebildiği gibi hasta tarafından sorun yaşanan zaman dilimine ait kayıtlar da hekime dijital yollardan iletilmektedir<br /><br />
+                                                        <!--<span class="vektorImage">
+                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/7.png">
+                                                        </span>Uzun Süreli ve Sürekli EKG Takibi<br /><br />-->
+                                                    </p>
+                                                    <p>
+                                                        Yaklaşık 10 gram ağırlığında ve 4 cm uzunluğundaki bu cihaz Dünya'nın en minik Holter EKG Monitörleri arasındadır. Hastanelerde Holter adını verdiğimiz bu cihaz sayesinde 24 Saatlik kalp atışları kayıt altında tutulabilmekte ve ritm bozuklukları tespit edilebilmektedir.
+
+                                                    </p>
+                                                    <p>
+                                                        <br />Ayrıca Kalp krizi sonrası, kalp ameliyatı sonrası, stent takılması veya ritm bozukluklarının takibinde, hatta tüm kalp hastalarında kullanılabilmektedir.
+
+                                                    </p>
+                                                    <div class="row mb-30 mt-5">
+                                                        <div class="col-md-12">
+                                                            <a href="https://itunes.apple.com/us/app/memorial/id1350361107" rel="nofollow" target="_blank">
+                                                                <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/appstore.png" alt="" class="img-fluid 3dhover">
+                                                            </a>
+
+                                                            <a href="https://play.google.com/store/apps/details?id=com.uzaktanhastatakip&hl=tr" rel="nofollow" target="_blank">
+                                                                <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/playstore.png" alt="" id="googleplaystoreimg" class="img-fluid 3dhover">
+                                                            </a>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div role="tabpanel" class="tab-pane" id="sg">
+                                        <div class="item team-item">
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip3.png" id="covidImgDektop" style="display: block;" alt="" class="img-fluid">
+                                                    <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip3_min.png" id="covidImgMobil" alt="" class="img-fluid ">
+                                                </div>
+                                                <div class="col-md-7">
+                                                    <h4>Sürekli Glikoz Ölçüm (CGM) Cihazı</h4>
+                                                    <div class="bdr"></div>
+                                                    <p>
+                                                        Dexcom G6 veya Abbott Libre Freestyle Libre cihazları ile glikoz değerlerinizi hızlı ve doğru şekilde takip edebilir, Memorial Dijital Sağlık Takip Dakik uygulaması ile diyabet kontrolünüzü uzman doktorlarımızın ve diyabet hemşirelerimizin desteği ile sağlayabilirsiniz.
+                                                        <br /><br />
+
+                                                    </p>
+                                                    <p>
+                                                        <br />
+                                                        <strong>Abbott Freestyle Libre Flash Glikoz Ölçümü Sensörleri</strong>, kullanımı kolay, gelişmiş sensör teknolojisinden faydalanır.
+                                                        İnce, esnek bir steril filament (5 mm uzunluğunda) derinin hemen altına yerleştirilir. 14 günlük sensör kolunuzun üst arka kısmında durur ve gündüz ve gece boyunca glikoz ölçümlerini otomatik olarak alır. Ölçümleri görmek için FreeStyle LibreLink mobil uygulamayı sensöre yaklaştırır ve sensörü okutursunuz. Ağrısız, 1 saniyelik bir okutma ile, kıyafetleriniz üzerinden bile glikoz okuması sağlanır.
+                                                        Daha fazla bilgi için ürünün web sitesini ziyaret edebilirsiniz.<a href="https://www.freestylelibre.com.tr/libre/" target="_blank">https://www.freestylelibre.com.tr/libre/</a>
+
+                                                    </p>
+                                                    <p>
+                                                        <br />
+                                                        <strong>Dexcom G6 Sürekli Glikoz Ölçümü Sensörleri</strong>,küçük ve takması kolay, suya dayanıklı ince bir sensöre sahiptir. 10 günlük Sensör, cildin yüzeyinin hemen altındaki glikoz seviyelerini doğru bir şekilde ölçer ve değerleri verici (transmitter) ile uyumlu akıllı cihazınıza veya alıcıya kablosuz olarak her 5 dakikada bir gönderir.
+                                                        Daha fazla bilgi için ürünün web sitesini ziyaret edebilirsiniz. <a href="https://dexcomtr.com/dexcom-g6/" target="_blank">https://dexcomtr.com/dexcom-g6/</a>
+
+                                                    </p>
+                                                    <p>
+                                                        <br />
+                                                        <strong>Sensörlerin Genel Özellikleri:</strong>
+                                                        <ul>
+                                                            <li>● Uzun Sensör Ömrü</li>
+                                                            <li>● Otomatik aplikatör ile basit sensör yerleştirme</li>
+                                                            <li>● Su Geçirmez</li>
+                                                            <li>● Doğru Glikoz Ölçümü</li>
+                                                            <li>● Kalibrasyon Gerekmez</li>
+                                                            <li>● Veri Paylaşımı</li>
+                                                        </ul>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row" id="MobileTakipCihazlari">
+                            <!-- Faq Start -->
+                            <div class="faq-area">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-12" style="padding:0px">
+                                            <div class="faq-col">
+
+                                                <div class="my-faq-accordion">
+                                                    <div class="accordion" id="accordionExampleE">
+                                                        <div class="card">
+                                                            <div class="card-header" id="headingOneATC">
+                                                                <h5 class="mb-0">
+                                                                    <button class="btn btn-link" type="button" data-toggle="collapse" id="MobileTakipCihazlariIlkEleman" data-target="#collapseOneATC" aria-expanded="true" aria-controls="collapseOneATC">
+                                                                        <i class="icofont-swoosh-right"></i>
+                                                                        Genel Sağlık Takip Cihazı
+                                                                    </button>
+                                                                </h5>
+                                                            </div>
+                                                            <div id="collapseOneATC" class="collapse show" aria-labelledby="headingOneATC" data-parent="#accordionExampleE">
+                                                                <div class="card-body" style="padding: 8px 0px 20px 0px;">
+                                                                    <div class="row">
+                                                                        <div class="col-md-5">
+                                                                            <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip1.png" id="covidImgDektop" style="display:block;" alt="" class="img-fluid ">
+
+                                                                            <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip1_min.png" alt="" id="covidImgMobil" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="col-md-7">
+                                                                            <h4>Genel Sağlık Takip Cihazı</h4>
+                                                                            <div class="bdr"></div>
+                                                                            <p>
+                                                                                Genel Sağlık Takip Cihazı ile tansiyon, nabız, oksijen satürasyonu (SpO2), ateş, kan şekeri, EKG gibi vital parametreleriniz cihaz üzerindeki sensörler aracılığıyla ölçülür, bluetooth bağlantısıyla akıllı telefonunuza indirilen mobil uygulama ile eşleştirilir,
+                                                                                sonrasında yaptığınız tüm ölçümler kendi doktorunuza veya hizmet aldığınız hastaneye dijital olarak iletilir. Tüm bu parametreler, grafiksel olarak toplanır ve doktorun yorumlaması için kendisine
+                                                                                sunulur. <br /><br />
+                                                                                <ul>
+                                                                                    <li>
+                                                                                        <span class="vektorImage">
+                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/1.png">
+                                                                                        </span>Koldan tansiyon ölçümü
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <span class="vektorImage">
+                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/2.png">
+                                                                                        </span>Nabız
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <span class="vektorImage">
+                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/3.png">
+                                                                                        </span>Temassız ateş ölçümü
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <span class="vektorImage">
+                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/4.png">
+                                                                                        </span>Parmaktan kan satürasyonu
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <span class="vektorImage">
+                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/5.png">
+                                                                                        </span>Kan Şekeri
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <span class="vektorImage">
+                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/6.png">
+                                                                                        </span>Anlık EKG
+                                                                                    </li>
+                                                                                </ul>
+
+                                                                                <div class="row mb-30 mt-5">
+                                                                                    <div class="col-md-12">
+                                                                                        <a href="https://itunes.apple.com/us/app/memorial/id1350361107" rel="nofollow" target="_blank">
+                                                                                            <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/appstore.png" alt="" class="img-fluid 3dhover">
+                                                                                        </a>
+
+                                                                                        <a href="https://play.google.com/store/apps/details?id=com.uzaktanhastatakip&hl=tr" rel="nofollow" target="_blank">
+                                                                                            <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/playstore.png" alt="" id="googleplaystoreimg" class="img-fluid 3dhover">
+                                                                                        </a>
+
+                                                                                    </div>
+                                                                                </div>
+
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card">
+                                                            <div class="card-header" id="headingTwoBTC">
+                                                                <h5 class="mb-0">
+                                                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwoBTC" aria-expanded="false" aria-controls="collapseTwoBTC">
+                                                                        <i class="icofont-swoosh-right"></i>
+                                                                        Patch EKG (HOLTER)
+                                                                    </button>
+                                                                </h5>
+                                                            </div>
+                                                            <div id="collapseTwoBTC" class="collapse" aria-labelledby="headingTwoBTC" data-parent="#accordionExampleE">
+                                                                <div class="card-body" style="padding: 8px 0px 20px 0px;">
+                                                                    <div class="row">
+                                                                        <div class="col-md-5">
+                                                                            <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip2.png" id="covidImgDektop" style="display:block; " alt="" class="img-fluid">
+                                                                            <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip2_min.png" id="covidImgMobil" alt="" class="img-fluid ">
+                                                                        </div>
+                                                                        <div class="col-md-7">
+                                                                            <h4>Patch EKG (HOLTER)</h4>
+                                                                            <div class="bdr"></div>
+                                                                            <p>
+                                                                                Patch EKG Takip Cihazı ile kalp atışlarınız kayıt altında tutulabilmekte ve kronik kalp rahatsızlığı, aritmi, kalp yetmezliği gibi birçok hastalık takip edilebilmektedir. Cihaz üzerindeki sensörler aracılığıyla EKG takibiniz sağlanır, bluetooth bağlantısıyla akıllı telefonunuza indirilen mobil uygulama ile eşleştirilir. Ölçümleriniz hekiminiz tarafından canlı olarak takip edilebildiği gibi hasta tarafından sorun yaşanan zaman dilimine ait kayıtlar da hekime dijital yollardan iletilmektedir<br /><br />
+                                                                                <!--<span class="vektorImage">
+                                                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/7.png">
+                                                                                </span>Uzun Süreli ve Sürekli EKG Takibi<br /><br />-->
+                                                                            </p>
+                                                                            <p>
+                                                                                Yaklaşık 10 gram ağırlığında ve 4 cm uzunluğundaki bu cihaz Dünya'nın en minik Holter EKG Monitörleri arasındadır. Hastanelerde Holter adını verdiğimiz bu cihaz sayesinde 24 Saatlik kalp atışları kayıt altında tutulabilmekte ve ritm bozuklukları tespit edilebilmektedir.
+
+                                                                            </p>
+                                                                            <p>
+                                                                                <br />Ayrıca Kalp krizi sonrası, kalp ameliyatı sonrası, stent takılması veya ritm bozukluklarının takibinde, hatta tüm kalp hastalarında kullanılabilmektedir.
+
+                                                                            </p>
+                                                                            <div class="row mb-30 mt-5">
+                                                                                <div class="col-md-12">
+                                                                                    <a href="https://itunes.apple.com/us/app/memorial/id1350361107" rel="nofollow" target="_blank">
+                                                                                        <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/appstore.png" alt="" class="img-fluid 3dhover">
+                                                                                    </a>
+
+                                                                                    <a href="https://play.google.com/store/apps/details?id=com.uzaktanhastatakip&hl=tr" rel="nofollow" target="_blank">
+                                                                                        <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/playstore.png" alt="" id="googleplaystoreimg" class="img-fluid 3dhover">
+                                                                                    </a>
+
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card">
+                                                            <div class="card-header" id="headingThreeCTC">
+                                                                <h5 class="mb-0">
+                                                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThreeCTC" aria-expanded="false" aria-controls="collapseThreeCTC">
+                                                                        <i class="icofont-swoosh-right"></i>
+                                                                        Sürekli Glikoz Ölçüm (CGM) Cihazı
+                                                                    </button>
+                                                                </h5>
+                                                            </div>
+                                                            <div id="collapseThreeCTC" class="collapse" aria-labelledby="headingThreeCTC" data-parent="#accordionExampleE">
+                                                                <div class="card-body" style="padding: 8px 0px 20px 0px;">
+                                                                    <div class="item team-item">
+                                                                        <div class="row">
+                                                                            <div class="col-md-5">
+                                                                                <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip3.png" id="covidImgDektop" style="display: block;" alt="" class="img-fluid">
+                                                                                <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip3_min.png" id="covidImgMobil" alt="" class="img-fluid ">
+                                                                            </div>
+                                                                            <div class="col-md-7">
+                                                                                <h4>Sürekli Glikoz Ölçüm (CGM) Cihazı</h4>
+                                                                                <div class="bdr"></div>
+                                                                                <p>
+                                                                                    Dexcom G6 veya Abbott Libre Freestyle Libre cihazları ile glikoz değerlerinizi hızlı ve doğru şekilde takip edebilir, Memorial Dijital Sağlık Takip Dakik uygulaması ile diyabet kontrolünüzü uzman doktorlarımızın ve diyabet hemşirelerimizin desteği ile sağlayabilirsiniz.
+                                                                                    <br /><br />
+
+                                                                                </p>
+                                                                                <p>
+                                                                                    <br />
+                                                                                    <strong>Abbott Freestyle Libre Flash Glikoz Ölçümü Sensörleri</strong>, kullanımı kolay, gelişmiş sensör teknolojisinden faydalanır.
+                                                                                    İnce, esnek bir steril filament (5 mm uzunluğunda) derinin hemen altına yerleştirilir. 14 günlük sensör kolunuzun üst arka kısmında durur ve gündüz ve gece boyunca glikoz ölçümlerini otomatik olarak alır. Ölçümleri görmek için FreeStyle LibreLink mobil uygulamayı sensöre yaklaştırır ve sensörü okutursunuz. Ağrısız, 1 saniyelik bir okutma ile, kıyafetleriniz üzerinden bile glikoz okuması sağlanır.
+                                                                                    Daha fazla bilgi için ürünün web sitesini ziyaret edebilirsiniz.<a href="https://www.freestylelibre.com.tr/libre/" target="_blank">https://www.freestylelibre.com.tr/libre/</a>
+
+                                                                                </p>
+                                                                                <p>
+                                                                                    <br />
+                                                                                    <strong>Dexcom G6 Sürekli Glikoz Ölçümü Sensörleri</strong>,küçük ve takması kolay, suya dayanıklı ince bir sensöre sahiptir. 10 günlük Sensör, cildin yüzeyinin hemen altındaki glikoz seviyelerini doğru bir şekilde ölçer ve değerleri verici (transmitter) ile uyumlu akıllı cihazınıza veya alıcıya kablosuz olarak her 5 dakikada bir gönderir.
+                                                                                    Daha fazla bilgi için ürünün web sitesini ziyaret edebilirsiniz. <a href="https://dexcomtr.com/dexcom-g6/" target="_blank">https://dexcomtr.com/dexcom-g6/</a>
+
+                                                                                </p>
+                                                                                <p>
+                                                                                    <br />
+                                                                                    <strong>Sensörlerin Genel Özellikleri:</strong>
+                                                                                    <ul>
+                                                                                        <li>● Uzun Sensör Ömrü</li>
+                                                                                        <li>● Otomatik aplikatör ile basit sensör yerleştirme</li>
+                                                                                        <li>● Su Geçirmez</li>
+                                                                                        <li>● Doğru Glikoz Ölçümü</li>
+                                                                                        <li>● Kalibrasyon Gerekmez</li>
+                                                                                        <li>● Veri Paylaşımı</li>
+                                                                                    </ul>
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section class="about-area" id="avantajlar" style="margin-top:15px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="my-title">
+                        <h2>MEMORIAL DİJİTAL SAĞLIK ASİSTANI’NIN AVANTAJLARI</h2>
+
+                        <div class="bdr clearfix"></div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="about-col" style="margin-top:30px;font-size:16px">
+                                    <strong>Tercih ettiğiniz program kapsamında:</strong><br />
+                                    <br />
+                                    <table id="avantajtable">
+                                        <tr>
+                                            <td>
+                                                <span class="vektorImage">
+                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/nasilkullanirim/6.png">
+                                                </span>
+                                            </td>
+                                            <td>Hayati önem taşıyan veriler (EKG, nabız, tansiyon, oksijen satürasyonu (SpO2-kandaki oksijen doygunluğu) ateş ve kan şekeri analizi) kayıt altında tutularak analiz ve takibi yapılabilmektedir.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="vektorImage">
+                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/nasilkullanirim/1.png">
+                                                </span>
+                                            </td>
+                                            <td>Kalp krizi, stent takılması veya diğer kalp ameliyatlarınız sonrası evde takip ve destek hizmeti sağlanabilmektedir.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="vektorImage">
+                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/nasilkullanirim/7.png">
+                                                </span>
+                                            </td>
+                                            <td>Hastaların takibi sırasında ihtiyaç duyulduğunda uzman sağlık profesyoneli ile görüntülü görüşme ve mesajlaşma hizmeti sağlanabilmektedir.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="vektorImage">
+                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/nasilkullanirim/2.png">
+                                                </span>
+                                            </td>
+                                            <td>Hastaların ilaçlarının çıkan sonuçlara göre düzenlenmesi ve kontrolü sağlanabilmektedir.</td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class=" about-col">
+                                    <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/avantaj.png" alt="" class="img-fluid 3dhover">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+    <section class="about-area" id="nasilkullanirim" style="margin-top:15px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="my-title">
+                        <h2>NASIL SAHİP OLABİLİRİM?</h2>
+
+                        <div class="bdr clearfix"></div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class=" about-col">
+                                    <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/nasılsahipolurum.png" alt="" class="img-fluid 3dhover">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="about-col" style="margin-top:50px;font-size:16px">
+                                    <strong>Tercih ettiğiniz program kapsamında:</strong><br />
+                                    <br />
+                                    <table id="avantajtable">
+                                        <tr>
+                                            <td>
+                                                <span class="vektorImage">
+                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/nasilkullanirim/2.png">
+                                                </span>
+                                            </td>
+                                            <td> 1. Memorial Sağlık Grubu uzman hekimlerinin tavsiyesi ile size uygun olan takip programı ve süresi belirlenir.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="vektorImage">
+                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/nasilkullanirim/4.png">
+                                                </span>
+                                            </td>
+                                            <td> 2. Ödeme işleminden sonra cihaz teslim edilir. (12 aydan kısa süreli kullanımlarda cihaz bedeli depozito olarak alınır, cihaz teslim edildiğinde bu bedel iade edilir).</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="vektorImage">
+                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/nasilkullanirim/3.png">
+                                                </span>
+                                            </td>
+                                            <td> 3. Gerekli bilgilendirmeler sonrası Hizmet Sözleşmesi imzalanır.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="vektorImage">
+                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/nasilkullanirim/7.png">
+                                                </span>
+                                            </td>
+                                            <td> 4. Memorial Dijital Sağlık Asistanı sistemi üzerinde hasta kaydı oluşturulur. Akıllı telefonunuza takip uygulaması indirilir.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="vektorImage">
+                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/nasilkullanirim/5.png">
+                                                </span>
+                                            </td>
+                                            <td>5. Teslim aldığınız cihaz ile seri numaraları aracılığıyla sistem eşleştirilmesi sağlanır ve sistem kullanıma hazır hale gelir.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="vektorImage">
+                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/nasilkullanirim/1.png">
+                                                </span>
+                                            </td>
+                                            <td> 6. Aynı uygulamayı yakınlarınız da indirerek vereceğiniz paylaşım onayı ile sağlık verilerinizi izleyebilir.</td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+    <!-- Faq Start -->
+    <section class="faq-area" id="sss">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="faq-col">
+                        <div class="my-title">
+                            <h2>SIKÇA SORULAN SORULAR</h2>
+                        </div>
+                        <div class="my-faq-accordion">
+                            <div class="accordion" id="accordionExampleA">
+                                <div class="card">
+                                    <div class="card-header" id="headingOneA">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOneA" aria-expanded="true" aria-controls="collapseOneA">
+                                                <i class="icofont-swoosh-right"></i>
+                                                Online Muayane görüşmelerimi nasıl gerçekleştireceğim?
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseOneA" class="collapse show" aria-labelledby="headingOneA" data-parent="#accordionExampleA">
+                                        <div class="card-body">
+                                            <p>
+                                                Program kapsamında yer alan online görüşme randevularınız sağlık profesyonellerimiz tarafından, hekimin randevu programına göre sizlerin seçeceği tarih ve saat için organize edilecektir. Online hekim görüşmesi
+                                                için mobil uygulamanın mesajlar bölümünde yer alan video görüşme altyapısı kullanılacaktır. Sağlık profesyonellerimiz tarafından randevu saatinizde video konferans arama isteği tarafınıza gönderilerek görüşmeniz
+                                                gerçekleştirilecektir.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingTwoB">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwoB" aria-expanded="false" aria-controls="collapseTwoB">
+                                                <i class="icofont-swoosh-right"></i>
+                                                Paket süremi uzatabilir miyim?
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseTwoB" class="collapse" aria-labelledby="headingTwoB" data-parent="#accordionExampleA">
+                                        <div class="card-body">
+                                            <p>Paket sürenizi uzatabilirsiniz. Detaylı bilgi için çağrı merkezimiz ya da hizmet aldığınız hastane ile iletişime geçebilirsiniz.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingThreeC">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThreeC" aria-expanded="false" aria-controls="collapseThreeC">
+                                                <i class="icofont-swoosh-right"></i>
+                                                Cihazım Çalışmıyor veya Zarar Gördü ? Ne Yapmalıyım?
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseThreeC" class="collapse" aria-labelledby="headingThreeC" data-parent="#accordionExampleA">
+                                        <div class="card-body">
+                                            <p>
+                                                Hastaneden ayrıldıktan sonra cihazın kullanımı ile ilgili sorun yaşamanız halinde lütfen çağrı merkezimiz ya da hizmet aldığınız hastane ile iletişime geçiniz. Cihazı bileşenlerine ayırmayınız veya tamir etmeyiniz.
+                                                Onarım yalnızca hastanemizdeki yetkili kişi tarafından yapılır.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingFourD">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFourD" aria-expanded="false" aria-controls="collapseFourD">
+                                                <i class="icofont-swoosh-right"></i>
+                                                Ölçümlerim hatalı çıkıyor ne yapmalıyım?
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseFourD" class="collapse" aria-labelledby="headingFourD" data-parent="#accordionExampleA">
+                                        <div class="card-body">
+                                            <p>
+                                                Ölçüm değerlerinizin hatalı olduğunu düşünmeniz halinde uygulamanın mesajlar bölümünden sağlık profesyonelleri ile iletişime geçebilirsiniz. Sağlık profesyonelleri uygulama üzerinden gerekli kontrolleri sağlayıp,
+                                                sizleri bilgilendirecektir.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingFiveE">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFiveE" aria-expanded="false" aria-controls="collapseFiveE">
+                                                <i class="icofont-swoosh-right"></i>
+                                                Sonuçlarım belirlenen ölçüm değerlerinden yüksek çıkıyor ne yapmalıyım?
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseFiveE" class="collapse" aria-labelledby="headingFiveE" data-parent="#accordionExampleA">
+                                        <div class="card-body">
+                                            <p>
+                                                Ölçüm değerlerinizin yüksek/düşük çıkması halinde uygulamanın mesajlar bölümünden sağlık profesyonellerimiz ile iletişime geçebilirsiniz. Hemşiremiz veya hekimimiz tarafından size gerekli yönlendirmeler yapılacaktır.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingFiveEF">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFiveEF" aria-expanded="false" aria-controls="collapseFiveEF">
+                                                <i class="icofont-swoosh-right"></i>
+                                                Acil bir durum olduğunda ne yapmalıyım?
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseFiveEF" class="collapse" aria-labelledby="headingFiveEF" data-parent="#accordionExampleA">
+                                        <div class="card-body">
+                                            <p>
+                                                Hastalığın seyri ile ilgili ani gelişen travma, bilinç kaybı veya takip cihazı tarafından belirlenen kritik değer üzerindeki ölçümler bazında tıbbi müdahale gerektiren ve beklenmeyen bir durumun oluşması
+                                                halinde derhal en yakın hastaneye başvurmanız gerekmektedir.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingSixF">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSixF" aria-expanded="false" aria-controls="collapseSixF">
+                                                <i class="icofont-swoosh-right"></i>
+                                                Ölçüm sonuçlarımı kimler takip edebilir?
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseSixF" class="collapse" aria-labelledby="headingSixF" data-parent="#accordionExampleA">
+                                        <div class="card-body">
+                                            <p>Hastalara ait veriler, sadece hastanın kendisi, hastanın onay verdiği yakınları ve sağlık profesyonelleri tarafından görülebilmektedir.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingSevenG">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSevenG" aria-expanded="false" aria-controls="collapseSevenG">
+                                                <i class="icofont-swoosh-right"></i>
+                                                Hizmetten yararlanmak istemiyorum? İptal edebilir miyim?
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseSevenG" class="collapse" aria-labelledby="headingSevenG" data-parent="#accordionExampleA">
+                                        <div class="card-body">
+                                            <p>
+                                                Sözleşme kapsamında belirlenen program süresinden önce takip cihazını ve hizmetini iptal veya iade etmek istemeniz halinde, sizden o güne kadar kullanılan hizmetler için bir kullanım bedeli tahsil edilir. İptal
+                                                süreci ile ilgili detaylı bilgi için lütfen çağrı merkezimiz ya da hizmet aldığınız hastane ile iletişime geçiniz.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Contact Start -->
+    <section class="contact-area" id="contact">
+        <div class="container" style="z-index:9">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="my-title" style="margin-bottom:-20px">
+                        <!--style="margin-bottom:0px;-webkit-box-shadow:none;box-shadow:none;"-->
+                        <h4>Hemen Bilgi Al</h4>
+                        <div class="bdr clearfix" style="margin-bottom:20px"></div>
+                        <div class="form-col">
+                            <form id="askprice_form" method="post" action="/memorial-evinizde-form/">
+                                <input id="geturl" name="url" type="hidden" value="" />
+                                <input id="campaign" name="campaign" type="hidden" value="666111" />
+                                <input type="hidden" value="Dijital Sağlik Asistani" name="mailTitle" id="mailTitle" />
+                                <script>
+                                    document.getElementById("geturl").value = location.href;
+                                </script>
+                                <input name="crmMailId" type="hidden" value="28" />
+                                <div class="row mb-5">
+                                    <div class="col-lg-6">
+
+                                        <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Adınız Soyadınız" aria-describedby="fullnameFeedback">
+                                        <span id="fullnamespErr"></span>
+
+                                    </div>
+                                    <div class="col-lg-6">
+
+                                        <!--<input type="text" name="phone" class="form-control" id="phoneNumber" value="1" hidden aria-describedby="phoneNumberFeedback">-->
+                                        <div class="input-phone"></div>
+                                        <span id="phoneNumberspErr"></span>
+
+                                    </div>
+                                </div>
+                                <div class="row mb-5">
+                                    <div class="col-lg-12">
+
+                                        <input type="email" class="form-control" name="email" id="email2" placeholder="Email">
+                                        <span id="email2spErr"></span>
+
+                                    </div>
+                                </div>
+                                <div class="row mb-5">
+                                    <div class="col-lg-12">
+
+                                        <textarea name="message" id="message" class="form-control" cols="30" rows="4" placeholder="Mesaj"></textarea>
+                                        <span id="messagespErr"></span>
+
+
+                                    </div>
+                                </div>
+                                <div class="row mb-5">
+                                    <div class="col-lg-12">
+                                        <label for="askprice_permission" class="help-block" style="display: inline; font-weight: 500;line-height: 0.5;">
+                                            <label class="container3">
+                                                <input id="askprice_permission" name="askprice_permission" type="checkbox" value="true">
+                                                <span class="checkmark3"></span>
+                                            </label> &nbsp;Kişisel Verilerin Korunması Kanunu uyarınca ilgili <a class="link" href="https://www.memorial.com.tr/kurumsal/kisisel-verilerin-korunmasi/" target='_blank'
+                                                                                                                 style="color:#9a1c43 !important;">Bilgilendirme'yi</a> okudum. Kişisel verilerimin belirtilen kapsamda işlenmesini ve sağlık hizmet sunumu amacıyla tarafımla iletişime geçilmesini kabul ediyorum.
+                                        </label>
+                                    </div>
+                                    <div class="col-lg-12" style="margin-top:10px">
+                                        <button class="btn btn-primary theme-btn" id="askprice_permission_button_send" type="submit" disabled>Gönder</button>
+                                    </div>
+                                    <div class="col-12" style="margin-top:10px">
+                                        <cemter>
+                                            <span id="spErr"></span>
+                                        </cemter>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- Footer Start -->
+    <footer class="footer-area background-image" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/footer-bg.jpg">
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/LogoWhiteYeni.png" id="footerLogo" alt="" class="img-fluid">
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="mb-30 copyright-col">
+
+                        <div class="contact-info-col" id="footerTel">
+                            <div class="contact-info-box">
+                                <a style="text-decoration:none" href="tel:4448899">
+                                    <i class="icofont-ui-call"></i> 444 88 99
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4"></div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="flex-container">
+        <div> <a href="tel:4448899" style="display:none" id="bize-arayin" title="Bize Arayin"><i class="icofont-ui-call"></i>444 88 99</a></div>
+        <div><a href="#contact" style="display:none" id="bize-ulasin" title="Bize Ulasin"><i class="flaticon-email"></i>Hemen Bilgi Al</a></div>
+    </div>
+    <a href="#" id="back-to-top" title="Back to top"><i class="fas fa-long-arrow-alt-up"></i></a>
+
+    <a href="#contact" id="hemen-bilgi-al" title="Hemen bilgi al">Hemen Bilgi Al</a>
+
+    <!-- jQuery -->
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/js/jquery.min.js"></script>
+
+
+
+    <!-- popper.min -->
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/js/popper.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/js/bootstrap.min.js"></script>
+
+    <!-- All Included JavaScript -->
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/js/jquery.easing.min.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/js/full-overlay.js"></script>
+
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/js/owl.carousel.min.js"></script>
+
+
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/js/isotope.pkgd.min.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/js/jquery.waypoints.min.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/js/jquery.countup.min.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/js/froogaloop2.min.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/js/html5lightbox.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/js/jarallax.min.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/js/jquery.plate.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/js/jquery.pogo-slider.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/js/masonry.pkgd.min.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/js/countdown.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/js/skeletabs.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/js/intlInputPhone2.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/js/intlInputPhone2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+
+
+    <!-- Google map -->
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/js/map.js"></script>
+    <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdEPAHqgxFK5pioDAB3rsvKchAtXxRGO4&amp;callback=initMap"></script>-->
+    <!-- Custom Js -->
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/js/custom.js"></script>
+    <!--<script type="text/javascript">
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#f1f3f9",
+                        "text": "#28252c",
+                    },
+                    "button": {
+                        "background": "transparent",
+                        "text": "#28252c",
+                        "border": "#28252c"
+                    }
+                },
+                "content": {
+                    "message": "Hizmetlerimizden en iyi şekilde faydalanabilmeniz için çerezler kullanıyoruz. memorial.com.tr'yi kullanarak çerezlere izin vermiş olursunuz.",
+                    "dismiss": "Tamam",
+                    "link": "Detaylar için tıklayınız.",
+                    "href": "https://www.memorial.com.tr/kurumsal/cerezler-cookies-politikasi/"
+                }
+            })
+        });
+    </script>-->
+    <!-- cookie policy -->
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.carousel').carousel({
+                interval: 5000
+            })
+
+            // Gets the video src from the data-src on each button
+
+            var $videoSrc;
+            $('.video-btn').click(function () {
+                //$videoSrc = $(this).data("src");
+                $videoSrc = "https://www.youtube.com/embed/ru6_hWpVXlE";
+                $("#videobox").addClass("zindex-1");
+
+            });
+
+            $('#myModal').on('hidden.bs.modal', function (e) {
+                $("#videobox").removeClass("zindex-1");
+            })
+
+
+            // when the modal is opened autoplay it
+            $('#myModal').on('shown.bs.modal', function (e) {
+
+                // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+                $("#video").attr('src', "https://www.youtube.com/embed/ru6_hWpVXlE" + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+            })
+
+
+
+            // stop playing the youtube video when I close the modal
+            $('#myModal').on('hide.bs.modal', function (e) {
+                // a poor man's stop video
+                $("#video").attr('src', "https://www.youtube.com/embed/ru6_hWpVXlE");
+            })
+
+
+            $('#MobileTakipCihazlariIlkEleman').removeClass('collapsed');
+            $('#collapseOneATC').removeClass('show');
+
+            $('#MobileSaglikTakipProgramlariIlkEleman').removeClass('collapsed');
+            $('#collapseOneASTP').removeClass('show');
+
+
+            $('.input-phone').intlInputPhone();
+
+            var isFilterOn = false;
+            $(document).on("input", "#phone2", function () {
+                if (isFilterOn)
+                    this.value = this.value.replace(/\D/g, '');
+            });
+
+            $('#phone2').mask('(500) 000-00-00', { placeholder: "(5__) ___-__-__" });
+
+            $('body').on('DOMSubtreeModified', '.btn-cc', function () {
+                if ($(".btn-cc").html().replace(/&nbsp;/g, '') != "+90") {
+                    $('#phone2').unmask();
+                    $('#phone2').attr("maxlength", "15");
+                    isFilterOn = true;
+                    isButtonValid();
+                }
+                else {
+                    $('#phone2').mask('(500) 000-00-00', { placeholder: "(5__) ___-__-__" });
+                    isFilterOn = false;
+                    isButtonValid();
+                }
+            });
+
+            $('#askprice_permission').click(function () {
+                isButtonValid();
+            });
+
+
+            $("#askprice_permission_button_send").click(function () {
+                $('#fullname').removeClass('validation');
+                $('#phone2').removeClass('validation');
+                $('#message').removeClass('validation');
+                $('#email2').removeClass('validation');
+                $("#fullnamespErr").html('');
+                $("#phoneNumberspErr").html('');
+                $("#email2spErr").html('');
+                $("#messagespErr").html('');
+                var spErrCount = 0;
+
+                if ($("#countries_phone2").val() == "") {
+                    $("#ask_price_errorID").show();
+                    $("#ask_price_error_textID").html('Lütfen ülke kodunu seçiniz');
+
+                }
+
+
+                if ($("#fullname").val() == "") {
+                    $("#").show();
+
+                    document.getElementById("fullname").classList.add("validation");
+                    $("#fullnamespErr").html("<span class='validationUcgenUnlem' style='color:#c11e43;'>Lütfen geçerli bir ad ve soyad giriniz.</span>");
+                    spErrCount += 1;
+                }
+
+                if ($("#fullname").val().length < 5) {
+                    $("#").show();
+                    document.getElementById("fullname").classList.add("validation");
+                    $("#fullnamespErr").html("<span class='validationUcgenUnlem' style='color:#c11e43;'>Lütfen geçerli bir ad ve soyad giriniz.</span>");
+                    spErrCount += 1;
+                }
+
+                if ($("#fullname").val().length > 30) {
+                    $("#").show();
+                    document.getElementById("fullname").classList.add("validation");
+                    $("#fullnamespErr").html("<span class='validationUcgenUnlem' style='color:#c11e43;'>Lütfen geçerli bir ad ve soyad giriniz.</span>");
+                    spErrCount += 1;
+                }
+
+
+                if ($("#phone2").val().length < 15) {
+                    $("#").show();
+                    document.getElementById("phone2").classList.add("validation");
+                    $("#phoneNumberspErr").html("<span class='validationUcgenUnlem' style='color:#c11e43;'>Lütfen geçerli bir telefon numarası giriniz.</span>");
+                    spErrCount += 1;
+                }
+
+
+
+                if ($("#email2").val().length < 10) {
+                    $("#").show();
+                    document.getElementById("email2").classList.add("validation");
+                    $("#email2spErr").html("<span class='validationUcgenUnlem' style='color:#c11e43;'>Lütfen geçerli bir e-mail adresi giriniz.</span>");
+                    spErrCount += 1;
+                }
+
+                if ($("#message").val().length < 3) {
+                    $("#").show();
+                    document.getElementById("message").classList.add("validation");
+                    $("#messagespErr").html("<span class='validationUcgenUnlem' style='color:#c11e43;'>Bu alan gereklidir.</span>");
+                    spErrCount += 1;
+                }
+
+
+                if (spErrCount == 0) {
+
+                    $("#askprice_permission_button_send").attr("disabled", "disabled");
+                    $('#askprice_permission_button_send').html('Gönderiliyor...');
+
+                    tel = $(".btn-cc").html().replace(/&nbsp;/g, '') + " " + $("#phone2").val().replace(/[^0-9]+/g, "");
+
+                    $('#phone').val(tel);
+
+                    send_promotion();
+                }
+
+
+            });
+
+
+
+            function isButtonValid() {
+
+                if ($('#askprice_permission').is(':checked')) {
+                    $('#askprice_permission_button_send').prop('disabled', false);
+                } else {
+                    $('#askprice_permission_button_send').prop('disabled', true);
+                }
+            }
+
+
+        });
+
+
+
+        function send_promotion() {
+            $(".alert-success").hide();
+            $(".alert-warning").hide();
+            $("#phoneNumber").val($("#phone").val());
+
+            var serializedData = $("#askprice_form").serialize();
+
+            $.ajax({
+                type: "POST",
+                url: '/landingAskPricePost?lang=tr',
+                async: true,
+                data: serializedData,
+                cache: false,
+                beforeSend: function () {
+                    $('#askprice_permission_button_send').prop('disabled', true);
+                    $('#askprice_permission_button_send').html('Gönderiliyor...');
+                },
+                success: function (b) {
+                    if (b == "1") {
+                        $("#fullname").val("");
+                        $("#phone2").val("");
+                        $('#askprice_permission_button_send').prop('disabled', false);
+                        $('#askprice_permission_button_send').html('Gönder');
+                        $("#spErr").html("<span style='margin: 20px 0; display: block; color: #25a517;'>Formunuz başarıyla gönderildi.</span>");
+
+                    } else {
+                        $(".alert-warning").fadeIn();
+                        $('#askprice_permission_button_send').html('Gönder');
+                        $("#spErr").html("<span style='margin: 20px 0; display: block; color: #ca2020;'>Teknik bir sorun oluştu. Lütfen daha sonra tekrar deneyiniz.</span>");
+                    }
+                    $('#askprice_permission_button_send').prop('disabled', false);
+                },
+                error: function (b) {
+                    $(".alert-warning").fadeIn();
+                    $('#askprice_permission_button_send').html('Gönder');
+                    $('#askprice_permission_button_send').prop('disabled', false);
+                }
+            });
+        }
+    </script>
+
+
+
+</body>
+
+
+<!-- Mirrored from gico.io/wemulti/home-medical.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 28 May 2021 06:14:22 GMT -->
+
+</html>

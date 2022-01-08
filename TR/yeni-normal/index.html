@@ -1,0 +1,1198 @@
+﻿<!DOCTYPE html>
+<html lang="tr-TR">
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+<head>
+
+
+    <style>
+        .accordion {
+            background-color: #ddd;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        .active, .accordion:hover {
+            background-color: #ccc;
+        }
+
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+    </style>
+    <style>
+/* The container */
+.containerR {
+  display: block;
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 19px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.containerR input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 22px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+    border: 0.5px solid #111;
+}
+
+/* On mouse-over, add a grey background color */
+.containerR:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.containerR input:checked ~ .checkmark {
+  background-color: #b9194b;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.containerR input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.containerR .checkmark:after {
+ 	top: 8px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+</style>
+    <style>
+/* The container */
+.container3 {
+      /* display: block; */
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 18px;
+
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container3 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+height: 20px;
+    width: 20px;
+    border-radius: 25%;
+  background-color: #eee;
+  border: 0.5px solid #111;
+}
+
+/* On mouse-over, add a grey background color */
+.container3:hover input ~ .checkmark3 {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container3 input:checked ~ .checkmark3 {
+  background-color: #b9194b;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark3:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container3 input:checked ~ .checkmark3:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container3 .checkmark3:after {
+  left: 7px;
+    top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+</style>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            'event': 'pageDetails',
+            'page': {
+                type: 'Memorial Yanınızda-TR',
+                tag: 'Memorial Yanınızda',
+                category: 'Ana Sayfa',
+                expertise: '',
+                keyElement: ''
+            }
+        });
+    </script>
+    <!-- End Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TGPGSC9');</script>
+	
+	<script>window.gtmFormName='yeni-normal-tr';</script>
+	
+	<!-- tel interaction, whatsapp interaction,  -->
+	<script src="{{ CDN_URL }}{{ STATIC_URL }}js/gtmSenderLP.js"> </script>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+
+    <title>Memorial Yeni Normal</title>
+
+<!--{#    <meta name="theme-color" content="#b9194b"/>#}-->
+    <meta name="description" content="Memorial Yeni Normal"/>
+    <meta name="robots" content="index, follow"/>
+    <link rel="canonical" href="https://www.memorial.com.tr/yeni-normal"/>
+    <meta name="author" content="Memorial Sağlık Grubu">
+
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/css/font-awesome.min.css" type="text/css"/>
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/assets/css/fonts.css" type="text/css"/>
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/assets/css/style.min3.css" type="text/css"/>
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/assets/css/style-Mem4.css?v=1044471823"
+          type="text/css"/>
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/assets/css/animate.min.css" type="text/css"/>
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/assets/css/owl.carousel.min.css"
+          type="text/css"/>
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/assets/css/owl.theme.default.min.css"
+          type="text/css"/>
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/assets/css/jquery.fancybox.min.css"
+          type="text/css"/>
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/assets/css/datepicker.min.css"
+          type="text/css"/>
+
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}yeni-normal/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/css/normalize.css">
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/css/plugins/magnific-popup.css">
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/css/plugins/slick11.css">
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/css/style37.css?v=1.1">
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/css/responsive34.css">
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/css/intlInputPhone.css">
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/css/intlInputPhone.min.css">
+
+<!--{#    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/css/styleFormCountry.css">#}-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/bootstrap-formhelpers/css/bootstrap-formhelpers.min.css"
+          rel="stylesheet" type="text/css"/>
+
+
+    <!-- css -->
+    <!-- <link rel="apple-touch-icon" href="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/img/apple-touch-icon.png"> -->
+    <!--x-->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src='https://www.google.com/recaptcha/api.js?hl=tr'></script>
+
+
+    <style>
+        img {
+          max-width: 100%;
+          vertical-align: middle;
+        }
+        .trigger {
+            display: none;
+        }
+
+        @media (max-width: 2000px) and (min-width: 1666px) {
+            .slider, .slider-wrapper {
+                position: relative;
+                height: 757px;
+            }
+        }
+
+        @media (max-width: 1665px) and (min-width: 1301px) {
+            .slider, .slider-wrapper {
+                position: relative;
+                height: 560px;
+            }
+        }
+
+        @media (max-width: 1300px) and (min-width: 1199px) {
+            .slider, .slider-wrapper {
+                position: relative;
+                height: 450px;
+            }
+        }
+
+        @media (max-width: 1199px) and (min-width: 992px) {
+            .slider, .slider-wrapper {
+                position: relative;
+                height: 350px;
+            }
+        }
+
+
+        @media (max-width: 991px) and (min-width: 768px) {
+            .slider, .slider-wrapper {
+                position: relative;
+                height: 727px;
+                display: block;
+            }
+        }
+        @media (max-width: 767px){
+            .anagorselyeni {
+                display: none !important;
+            }
+
+            .mobilgorselyeni {
+                display: block !important;
+            }
+            p {
+                font-size: 16px !important;
+                font-weight: 300;
+                color: #777777;
+            }
+
+        }
+
+	.mobilgorselyeni{
+		display: none;
+	}
+	.anagorselyeni{
+		display: block;
+	}
+        .slide {
+
+            width: 100%;
+            overflow: hidden;
+            position: absolute;
+
+            left: 0;
+            top: 0;
+            z-index: 5000;
+            opacity: 0;
+            transition: opacity .5s ease-in-out;
+        }
+
+        .slide-img {
+            object-fit: fill;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .slide-figure {
+            position: relative;
+            margin: 0;
+        }
+
+        .slide-caption {
+            position: absolute;
+            bottom: 30%;
+            width: calc(100% - 1rem);
+            color: white;
+            text-align: center;
+            left: 50%;
+        }
+
+        .trigger:checked + .slide {
+            z-index: 6000;
+            opacity: 1;
+        }
+
+        .slider-nav {
+            width: 100%;
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        .slider-nav__item {
+            display: inline-block;
+        }
+
+        .slider-nav__label {
+            font-size: 13px;
+            background-color: #333;
+            display: block;
+            height: 2em;
+            line-height: 2em;
+            width: 2em;
+            text-align: center;
+            border-radius: 50%;
+            color: white;
+            cursor: pointer;
+            transition: background-color .25s, color .25s ease-in-out;
+        }
+
+        .slider-nav__label:hover,
+        .slider-nav__label:active,
+        .slider-nav__label:focus {
+            background-color: gray;
+            color: black;
+        }
+
+    </style>
+
+    <!--[if lt IE 10]>
+    <div class="notCompatibleBrowser">
+        <span>Daha iyi bir görünüm için lütfen tarayıcınızı güncelleyiniz.</span>
+    </div>
+    <script type="text/javascript" src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/assets/js/html5shiv.min.js"></script>
+<![endif]-->
+
+    <style>
+        .social{
+	position: relative;
+	overflow-y: hidden;
+	margin: 10px 0px;
+	/*{#padding-top: 25px;#}*/
+	border-top: 1px solid #fafafa;
+}
+
+.social_ico li{
+	display: inline-block;
+}
+
+.social_ico li a{
+	display: block;
+	width: 40px;
+	height: 40px;
+	line-height: 42px;
+	margin-right: 10px;
+	margin-bottom: 15px;
+	font-size: 300;
+	text-align: center;
+	border: 1px solid #999999;
+	color: #777777;
+}
+
+.social_ico li a:hover{
+	background-color: #b9194b;
+	color: #ffffff;
+	border: 1px solid #b9194b;
+}
+
+.social_ico li a i{font-size: 1.4em;}
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <!--{# ========== NAVIGATION ========== #}
+    {#<nav class="navbar navbar-inverse navbar-fixed-top">#}
+    {#    <div class="container-fluid">#}
+    {#        <div class="navbar-header">#}
+    {#            <a class="navbar-brand scroll" href="#section_1">#}
+    {#                <h1><img class="brand_logo" src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/img/logoYeniSon3.png"#}
+    {#                         width="250"></h1>#}
+    {#            </a>#}
+    {#        </div>#}
+    {#    </div>#}
+    {#</nav>#}
+    {#     ========== NAVIGATION ========== #}-->
+
+    <section class="banner newNormalAtMemorialBanner anagorselyeni">
+        <img src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/img/yeninormal/banner2.jpg" />
+        <!--{#    <h1>YENİ NORMAL’DE “YÜKSEK HİJYEN STANDARTLARIMIZ” İLE HİZMETİNİZDEYİZ!</h1>#}-->
+    </section>
+
+    <section class="banner newNormalAtMemorialBanner mobilgorselyeni">
+        <img caption="false"
+             src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/img/yeninormal/mobilBanner2.jpg"
+             style="width:100%; height:auto;" />
+    </section>
+
+
+    <section class="MemorialOnlineDetail">
+
+        <center>
+            <div class="table">
+                <div class="text center blue table-cell">
+                    <span id="desktop"> <h2 style="color:#b9194b">YENİ NORMAL’DE <b>YÜKSEK HİJYEN STANDARTLARIMIZ</b>&nbsp;İLE HİZMETİNİZDEYİZ!</h2></span><br>
+
+                    <span id="mobil"><h2 style="color:#b9194b">YENİ NORMAL’DE <b><br>YÜKSEK HİJYEN STANDARTLARIMIZ<br></b>İLE HİZMETİNİZDEYİZ!</h2></span>
+
+                    <p>
+                        Memorial Sağlık Grubu olarak tüm dünyayı ve ülkemizi tehdit eden COVID-19 (Coronavirus) salgınına
+                        yönelik hastalarımızı, hasta yakınlarını ve çalışanlarımızı korumak için hastalığın görülmeye
+                        başladığı ilk günden itibaren çok sayıda önlem almış olup, “Yeni Normal” olarak adlandırılan bu
+                        süreçte <b>“Yüksek Hijyen Standartlarımız”</b> ile siz misafirlerimize hizmet vermeye devam
+                        ediyoruz.
+                    <p>
+                        Bu süreçte tüm Hastanelerimiz ve Tıp Merkezlerimizde poliklinikler, bekleme alanları, yatan hasta
+                        odaları, asansörler ve tuvaletler gibi ortak alanlarda <b>temizlik</b> ve <b>
+                            dezenfeksiyon
+                            sıklıkları
+                        </b> ve <b>önlemleri</b> arttırılarak yüksek kalite standartlarımız ile sağlık
+                        hizmetlerimizi sunuyoruz.
+                    </p>
+                    <p>
+                        <b>Misafirlerimizin ve çalışanlarımızın sağlığı için</b> aldığımız önlemlerle Yeni Normal’de <b>
+                            güvenle
+                            hizmetinizdeyiz!
+                        </b>
+                    </p>
+                </div>
+                <div class="clearFix"></div>
+            </div>
+        </center>
+
+        <!-- ========== SECTION 5 ========== -->
+        <section id="section_5" class="contact">
+            <div class="container">
+
+                <div class="col-xs-12 col-sm-7 col-md-7">
+                    <div class="contact_container">
+
+                        <!-- Google Code for Memorial-Form Doldurma Conversion Page -->
+                        <script type="text/javascript">
+                            /* <![CDATA[ */
+                            var google_conversion_id = 968621241;
+                            var google_conversion_language = "en";
+                            var google_conversion_format = "3";
+                            var google_conversion_color = "ffffff";
+                            var google_conversion_label = "N9srCPD3p2YQufnvzQM";
+                            var google_remarketing_only = false;
+                            /* ]]> */
+                        </script>
+                        <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+                        </script>
+                        <noscript>
+                            <div style="display:inline;">
+                                <img height="1" width="1" style="border-style:none;" alt=""
+                                     src="//www.googleadservices.com/pagead/conversion/968621241/?label=N9srCPD3p2YQufnvzQM&amp;guid=ON&amp;script=0" />
+                            </div>
+                        </noscript>
+                        <div class="col-xs-12 section_heading" style="padding-bottom: 0px !important;text-align: center;">
+                            <h2 class="section_title" style="color: #b9194b;">RANDEVU AL</h2>
+                        </div>
+                        <div class="clearfix"></div>
+
+                        <form id="askprice_form" method="post" action="/landingContactPost">
+                            <input id="geturl" name="url" type="hidden" value="" />
+                            <input id="type1" name="type" type="hidden" value="4" />
+                            <script>
+                                document.getElementById("geturl").value = location.href;
+                            </script>
+
+                            <div class="field">
+                                <input type="text" id="fullname" class="form-control" name="fullname"
+                                       placeholder="Ad ve Soyad" required style="height: 40px;">
+                            </div>
+
+
+
+                            <div class="field" style="display: none">
+                                <input type="text" name="bolumid" value="1" hidden>
+                            </div>
+
+                            <div class="field">
+                                <div class="input-phone"></div>
+                            </div>
+                            <br>
+                            <div class="field">
+                                <input type="text" id="email" name="email" class="form-control" required placeholder="Email" style="height: 40px;">
+                            </div>
+
+                            <div class="field" style="margin-bottom: 10px">
+                                <label for="askprice_permission" class="help-block" style="display: inline; font-weight: 500;">
+                                    <label class="container3">
+                                        <input id="askprice_permission" name="askprice_permission" type="checkbox">
+                                        <span class="checkmark3"></span>
+                                    </label>
+                                    Kişisel
+                                    Verilerin
+                                    Korunması Kanunu uyarınca ilgili <a class="link"
+                                                                        href="https://www.memorial.com.tr/kurumsal/kisisel-verilerin-korunmasi/"
+                                                                        target='_blank'
+                                                                        style="color:#9a1c43 !important;">Bilgilendirme'yi</a>
+                                    okudum. Kişisel verilerimin belirtilen
+                                    kapsamda işlenmesini ve sağlık hizmet sunumu amacıyla tarafımla iletişime
+                                    geçilmesini
+                                    kabul ediyorum.
+                                </label>
+                            </div>
+
+                            <div class="field" style="text-align: center;">
+                                <center>
+                                    <button type="submit" id="askprice_permission_button_send" style="display: block;"
+                                            class="btn btn_cta" disabled>
+                                        Gönder
+                                    </button>
+                                    <span id="spErr"></span>
+                                </center>
+                            </div>
+                        </form>
+                        <div id="form-messages"></div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-5 col-md-5" style="margin-top: 20px;">
+                    <div class="contact_container">
+                        <h3 style="margin-top: 5px; font-weight: 700;">İletişim Bilgileri</h3>
+                        <div class="contact_info" style="margin-top: -20px;">
+
+                            <a href="tel:4448899"
+                               onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'E-Doktor', eventLabel: 'Mobile Button'});">
+                                <p class="call-button">
+                                    <img caption="false"
+                                         src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/img/Ahize.png"
+                                         style="width:30px; height:30px;float: left;" />
+                                </p>
+                            </a>
+
+                            <a target="_blank" href="tel:4447888" class="link contact_details" style="font-size: 22px;">444 7 888</a>
+                        </div>
+
+                        <div class="social">
+                            <ul class="social_ico">
+                                <li>
+                                    <a href="https://facebook.com/memorialhospitalstr" target="_blank"
+                                       title="Facebook"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/MemorialSaglik" target="_blank" title="Twitter">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://plus.google.com/+Memorialsaglik" target="_blank"
+                                       title="Google Plus"><i class="fa fa-google-plus"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ========== SECTION 5 ========== -->
+
+        <div class="table">
+            <div class="text center blue table-cell">
+                <div class="profile">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <iframe class="iframeVideo"
+                                data-bg="images/800x600_01.jpg id=" memorialVidFrame width="100%" height="100%"
+                                src="https://www.youtube.com/embed/YG1CQAzcUPQ" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen="">
+                            <span class="sq80 fs30 btn-white flex-cc solid bdr-2 rd">
+                                <i class="fa fa-play mr-l-6"></i>
+                            </span>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="clearFix"></div>
+        </div>
+
+        <center>
+            <div class="table">
+                <div class="text center blue table-cell">
+                    <h2 style="font-weight: bold">YENİ NORMAL’DE HANGİ ÖNLEMLERİ ALDIK?</h2>
+                </div>
+                <div class="clearFix"></div>
+            </div>
+        </center>
+
+
+
+
+
+        <div class="table">
+            <div class="image left table-cell">
+                <img src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/img/yeninormal/gorsel1_.jpg" />
+            </div>
+            <div class="text right blue table-cell">
+                <h2>HASTANEMİZE GİRİŞLER</h2>
+                <h3>Yeni Normal’de hastaneye girişimiz nasıl olacak?</h3>
+                <p>
+                    • Hastane girişleri kontrollü hale getirilerek tüm misafirlerimiz ve çalışanlarımızın güvenliği için ana
+                    giriş kapısında <b>ateş ölçümü</b> ve <b>semptom sorgulaması</b> yapılmakta, <b>el dezenfektanı</b> ve <b>maske</b> sağlanmaktadır.
+                </p>
+                <p>
+                    • Hastalarımızın en kısa sürede ilgili alana yönlenmesini sağlayacak <b>bilgilendirme</b> ve <b>danışma hizmeti</b>
+                    sunulmaktadır.
+                </p>
+            </div>
+            <div class="clearFix"></div>
+        </div>
+
+        <div class="table">
+            <div class="image right table-cell">
+                <img src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/img/yeninormal/gorsel2_.jpg" />
+            </div>
+            <div class="text left blue table-cell">
+                <h2>ARAÇ TESLİMİ ve VALE HİZMETİ</h2>
+                <h3>Aracımızı vale çalışanına güvenle teslim edebilir miyiz?</h3>
+                <p>
+                    • Otoparklarımızda hizmet veren valelerimiz araçlarınızı teslim alırken ve teslim ederken
+                    <b>el dezenfektanı</b> kullanmaktadır.
+                </p>
+                <p>
+                    • Vale hizmeti sırasında araç içi hijyeni korumak için <b>"kullan at koltuk kılıfı"</b> ve <b>
+                        “direksiyon, vites
+                        topuzu için koruyucu malzeme”
+                    </b> kullanılmaktadır.
+                </p>
+            </div>
+
+            <div class="clearFix"></div>
+        </div>
+
+        <div class="table">
+            <div class="image left table-cell">
+                <img src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/img/yeninormal/gorsel3_S.jpg" />
+            </div>
+            <div class="text right blue table-cell">
+                <h2>HAVALANDIRMA SİSTEMLERİMİZ</h2>
+                <h3>Havalandırma sistemi güvenli mi? </h3>
+                <p>
+                    • Tüm hastanelerimizde havalandırma sistemi <b>%100 Temiz Hava ile</b> çalışır ve <b>
+                        solunan hava size geri
+                        dönmez.
+                    </b>
+                </p>
+                <p>
+                    • Hastanelerimizdeki tüm alanlarda havalandırma sistemi <b>uluslararası standartlara uygun</b> şekilde <b>
+                        yüksek
+                        teknoloji ile
+                    </b> donatılmıştır. Ortama çok kademeli filtre edilmiş ve iklimlendirilmiş, %100 taze hava
+                    alınmakta ve solunan hava güvenli bir şekilde %100 dış ortama atılmaktadır.
+                </p>
+                <p>
+                    • Havalandırma ve iklimlendirme sistemleri deneyimli, eğitimli, bilgili personel ve <b>
+                        akıllı otomasyon
+                        sistemleri
+                    </b> ile yönetilmektedir.
+                </p>
+                <p>
+                    • Mikrobiyal kontaminasyon seviyelerinin rutin olarak belirli seviyelerde izlenmesi ve korunması için
+                    havalandırma ve iklimlendirme <b>sistemlerimizin bakımları</b> periyodik olarak, hijyen koşullarına uygun bir şekilde yapılmaktadır.
+
+                </p>
+
+            </div>
+            <div class="clearFix"></div>
+        </div>
+
+        <div class="table">
+            <div class="image right table-cell">
+                <img src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/img/yeninormal/gorsel4_S.jpg" />
+            </div>
+            <div class="text left blue table-cell">
+                <h2>POLİKLİNİK HİZMETLERİ</h2>
+                <h3>Poliklinik randevularına nasıl gelmeliyim?</h3>
+                <p>
+                    • Bekleme alanlarında oluşabilecek yoğunluk ve beklemelerin önüne geçmek adına polikliniklere <b>randevu</b> almanızı ve randevu saatine <b>en erken 15 dk kala</b> hastanemize gelmenizi
+                    önermekteyiz.
+                </p>
+                <p>
+                    • Poliklinik ve yatan hasta ziyaretlerinde hastalarımıza sabit ve sadece
+                    <b>‘’tek’’</b> refakatçi eşlik edebilmektedir.
+                </p>
+                <p>
+                    • Hastane içinde tüm çalışanlarımız maske kullanmaktadır. Sizlerden de hem kendi hem de çalışanlarımızın
+                    sağlığını korumak için <b>maske</b> kullanımına dikkat etmenizi beklemekteyiz.
+                </p>
+                <p>
+                    • Yüksek risk grubunda olan onkoloji ve organ nakli hastalarımız, alınan diğer tedbirlerin yanı sıra
+                    <b>ekstra önlemler ile ayrıştırılmış alanlarda</b> tedavilerini almaktadır.
+
+                </p>
+            </div>
+
+            <div class="clearFix"></div>
+        </div>
+
+        <div class="table">
+            <div class="image left table-cell">
+                <img src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/img/yeninormal/gorsel5_.jpg" />
+            </div>
+            <div class="text right blue table-cell">
+                <h2>SOSYAL MESAFE UYGULAMALARIMIZ</h2>
+                <h3>Sosyal mesafe nasıl sağlanmaktadır?</h3>
+                <p>
+                    • Siz misafirlerimize bankolarımızda daha güvenle hizmet verebilmek için <b>seperatörler</b>
+                    konumlandırılmıştır.
+                </p>
+                <p>
+                    • <b>Bekleme alanlarımızdaki</b> oturma düzeni sosyal mesafe kurallarına uygun olacak şekilde yeniden
+                    oluşturulmuştur.
+                </p>
+                <p>
+                    • Tüm çalışanlarımıza, <b>sosyal mesafe</b> ve <b>hijyen kuralları</b> konusunda eğitimler verilmiştir.
+                </p>
+                <p>
+                    • <b>Asansör</b> kullanımı kişi sayısı ile sınırlandırılmış ve zemine ilgili görseller yerleştirilmiştir.
+                </p>
+
+            </div>
+            <div class="clearFix"></div>
+        </div>
+
+        <div class="table">
+            <div class="image right table-cell">
+                <img src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/img/yeninormal/gorsel6_.jpg" />
+            </div>
+            <div class="text left blue table-cell">
+                <h2>HİJYEN UYGULAMALARIMIZ</h2>
+                <h3>Poliklinik ve Genel Alanlarda hangi hijyen önlemleri alınmıştır? </h3>
+                <p>
+                    • Bankolar, doktor muayene odaları, hastane girişleri ve ortak alanlarda <b>el dezenfektanları</b>
+                    bulunmaktadır.
+                </p>
+                <p>
+                    • <b>Radyoloji görüntüleme odaları, kan alma odası</b> ve <b>
+                        muayene
+                        odaları
+                    </b> gibi tıbbi alanlar gün içerisinde sıklıkla dezenfekte edilmektedir.
+                </p>
+                <p>
+                    • Hastane içindeki dergi, gazete, broşür, menü gibi tüm
+                    <b>basılı materyaller</b> kaldırılmıştır.
+                </p>
+
+            </div>
+            <div class="clearFix"></div>
+        </div>
+
+        <div class="table">
+            <div class="image left table-cell">
+                <img src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/img/yeninormal/gorsel7_S.jpg" />
+            </div>
+            <div class="text right blue table-cell">
+                <h2>YATAN HASTA ODALARIMIZ</h2>
+                <h3>Yatan hasta odaları için alınan ekstra önlemler nelerdir?</h3>
+                <p>
+                    • Yatan hasta odalarımız <b>özel temizleyici ürünler</b> ile <b>yüksek hijyen standartlarımız</b> çerçevesinde
+                    dezenfekte edilerek sağlığınız ve güvenliğiniz için kullanımınıza sunulmuştur.
+                </p>
+                <p>
+                    • <b>Çarşaf, yorgan ve yastık kılıfları</b> gibi tüm tekstil ürünlerimiz çapraz kontaminasyonu
+                    önlemek için belirli standart derecelerde, özel yıkama programları ile <b>4 aşamalı</b> (ön yıkama, ana yıkama,
+                    durulama ve sıkma) olarak hazırlanmaktadır.
+                </p>
+
+            </div>
+            <div class="clearFix"></div>
+        </div>
+
+        <div class="table">
+            <div class="image right table-cell">
+                <img src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/img/yeninormal/gorsel8_.jpg" />
+            </div>
+            <div class="text left blue table-cell">
+                <h2>AMELİYATHANELERİMİZ</h2>
+                <h3>Ameliyathanelerde alınan önlemler nelerdir?</h3>
+                <p>
+                    • Ameliyatlarınız; özel koruyucu ekipmanlar kullanan uzman ekipler tarafından uluslararası
+                    standartlardaki <b>negatif basınçlı odalarda</b> ve <b>yüksek hijyen</b> standartlarına uygun olarak
+                    gerçekleştirilmektedir.
+                </p>
+
+
+            </div>
+            <div class="clearFix"></div>
+        </div>
+
+        <div class="table">
+            <div class="image left table-cell">
+                <img src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/img/yeninormal/gorsel9_.jpg" />
+            </div>
+            <div class="text right blue table-cell">
+                <h2>KAFETERYA VE YEMEK SERVİSİ</h2>
+                <h3>Yemek servislerinde hijyeni nasıl sağlıyorsunuz?</h3>
+                <p>
+                    • Yemek servislerinde görev alan çalışanlarımıza, verilen <b>özel eğitimler</b> ile hasta güvenliği konusunda
+                    dikkat edilmesi gereken hususlar tekrarlanmış, çalışanlarımızın <b>kişisel koruyucu ekipmanları</b> doğru
+                    kullanımı sağlanmıştır.
+                </p>
+                <p>
+                    • <b>Hijyen kuralları</b> ve <b>gıda güvenliği</b> konusunda eğitimli servis ekibimiz uygun koruyucu donanımlar ile
+                    özel diyetinize uygun yemek menünüzü odanızda sizlere servis etmektedir.
+                </p>
+                <p>
+                    • Kafeteryalarımız Sağlık Bakanlığı’nın tebliğlerine uygun olarak hizmet vermekte; gıda güvenliği ve
+                    hijyen kurallarına göre <b>periyodik olarak denetlenmektedir.</b>
+                </p>
+
+
+            </div>
+            <div class="clearFix"></div>
+        </div>
+
+    </section>
+
+
+
+    <p class="healthyDays">“Çünkü Sağlığınız Değerli”</p>
+    <div class="profile">
+        <span style="height: 10px">&nbsp;</span>
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <a class="btnMobilAlt btn_cta scroll" href="#section_5">Randevu Al</a>
+        </div>
+    </div>
+    <section class="MemorialOnlineDetail">
+
+        <div class="table">
+            <div class="text center blue table-cell">
+                <div class="profile">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <iframe class="iframeVideo"
+                                data-bg="images/800x600_01.jpg id=" memorialVidFrame width="100%" height="100%"
+                                src="https://www.youtube.com/embed/hMv_R6Gr1Bk" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen="">
+                            <span class="sq80 fs30 btn-white flex-cc solid bdr-2 rd">
+                                <i class="fa fa-play mr-l-6"></i>
+                            </span>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="clearFix"></div>
+        </div>
+    </section>
+
+    <div class="clickToCall">
+        <a href="tel:4447888"
+           onclick="ga('send', 'event', { eventCategory: 'Contact', eventAction: 'E-Doktor', eventLabel: 'Mobile Button'});">
+            <p class="call-button">
+                <img caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}memorial-evinizde/img/clickToCall.png"
+                     style="width:60px; height:60px;" />
+            </p>
+        </a>
+    </div>
+
+    <style>
+
+        #myBtnS {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            width: 156px;
+            height: 60px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #b9194b;
+            color: white;
+            cursor: pointer;
+            /* padding: 15px; */
+            border-radius: 4px;
+            display: none;
+        }
+
+            #myBtnS:hover {
+                background-color: #555;
+            }
+    </style>
+
+
+    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+        <a id="myBtnS" class="btn btn_cta scroll" href="#section_5" style="margin-bottom: 0px !important;display: none;"><span style="top: 10px;position: relative;">Randevu Al</span></a>
+    </div>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtnS");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+
+    <footer>
+        <!-- ========== COPYRIGHT ========== -->
+        <div class="copyright text-center">
+            <p class="copyright_text">
+                Copyright © 2020 MEMORIAL | Tüm Hakları Saklıdır | <a class="link"
+                                                                      href="https://www.memorial.com.tr/"
+                                                                      target="_blank">www.memorial.com.tr</a>
+
+            </p>
+        </div>
+        <!-- ========== COPYRIGHT ========== -->
+    </footer>
+
+
+
+    <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/css/bootstrap3.min.css">
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/assets/js/jquery-3.5.1.mine56d.js?v=1044471840"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/assets/js/jquery-migrate-3.3.0.mine56d.js?v=1044471840"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/assets/js/jquery.unobtrusive-ajax.mine56d.js?v=1044471840"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/assets/js/jquery.validate.mine56d.js?v=1044471840"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/assets/js/jquery.validate.unobtrusive.mine56d.js?v=1044471840"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/assets/js/jquery.inputmask.mine56d.js?v=1044471840"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/assets/js/datepicker.mine56d.js?v=1044471840"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/assets/js/datepicker.tr-TRe56d.js?v=1044471840"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/assets/js/owl.carousel.mine56d.js?v=1044471840"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/assets/js/jquery.fancybox.mine56d.js?v=1044471840"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/assets/js/jquery.stickye56d.js?v=1044471840"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/assets/js/lazyload.mine56d.js?v=1044471840"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/assets/js/signalr.min.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/assets/js/hube56d.js?v=1044471840"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/assets/js/scripts.mine56d.js?v=1044471840"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/assets/js/search.js"></script>
+
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}memorial-evinizde/js/jquery.min.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}memorial-evinizde/js/plugins/jquery.nav.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}memorial-evinizde/js/plugins/jquery.smooth-scroll.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}memorial-evinizde/js/bootstrap.min.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}memorial-evinizde/js/plugins/jquery.paroller.min.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}memorial-evinizde/js/plugins/jquery.quicksand.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}memorial-evinizde/js/plugins/jquery.easing.1.3.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}memorial-evinizde/js/plugins/magnific-popup.min.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}memorial-evinizde/js/plugins/waypoints.min.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}memorial-evinizde/js/plugins/jquery.counterup.min.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}memorial-evinizde/js/plugins/slick.min.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}memorial-evinizde/js/main.js?v=1.1"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}memorial-evinizde/js/plugins/validation/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+
+
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/js/intlInputPhone2.js"></script>
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}yeni-normal/js/intlInputPhone2.min.js"></script>
+
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}js/utmLinkSaver.js?v=3"></script>
+    <script>saveUtmLink(10);</script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $('.input-phone').intlInputPhone();
+
+            var isFilterOn = false;
+            $(document).on("input", "#phone2", function () {
+                if (isFilterOn)
+                    this.value = this.value.replace(/\D/g, '');
+            });
+
+            $('#phone2').mask('(500) 000-00-00', { placeholder: "(5__) ___-__-__" });
+
+            $('body').on('DOMSubtreeModified', '.btn-cc', function () {
+                if ($(".btn-cc").html().replace(/&nbsp;/g, '') != "+90") {
+                    $('#phone2').unmask();
+                    $('#phone2').attr("maxlength", "15");
+                    isFilterOn = true;
+                    isButtonValid();
+                }
+                else {
+                    $('#phone2').mask('(500) 000-00-00', { placeholder: "(5__) ___-__-__" });
+                    isFilterOn = false;
+                    isButtonValid();
+                }
+            });
+
+            $('#askprice_permission').click(function () {
+                isButtonValid();
+            });
+
+            $("#askprice_permission_button_send").click(function () {
+
+                if ($("#countries_phone2").val() == "") {
+                    $("#ask_price_errorID").show();
+                    $("#ask_price_error_textID").html('Lütfen ülke kodunu seçiniz');
+                    return false;
+                }
+
+
+                if ($("#fullname").val() == "") {
+                    $("#").show();
+                    $("#spErr").html('<span style=\'color:#b9194b;\'>Lütfen ad ve soyad giriniz.</span>');
+                    return false;
+                }
+
+                if ($("#email").val() == "") {
+                    $("#").show();
+                    $("#spErr").html('<span style=\'color:#b9194b;\'>Lütfen email giriniz.</span>');
+                    return false;
+                }
+
+
+
+                if ($("#phone2").val().length < 10) {
+                    $("#spErr").html("<span style='color:#b9194b;'>Telefon 10 haneden küçük olamaz</span>");
+                    return false;
+                }
+
+
+                //$("#ask_price_errorID").hide();
+                //$("#ask_price_error_textID").html('');
+                $("#askprice_permission_button_send").attr("disabled", "disabled");
+                $('#askprice_permission_button_send').html('Gönderiliyor...');
+
+                tel = $(".btn-cc").html().replace(/&nbsp;/g, '') + " " + $("#phone2").val().replace(/[^0-9]+/g, "");
+                //{#console.log($(".btn-cc").html().replace(/&nbsp;/g, '')+"  ||  "+tel);#}
+                $('#phone').val(tel);
+
+                send_promotion();
+            });
+
+
+
+            $("#fullname").on('input', function () { isButtonValid(); })
+            $("#phone2").on('input', function () { isButtonValid(); })
+            $("#email").on('input', function () { isButtonValid(); })
+
+            function isButtonValid() {
+
+                if ($("#fullname").val() != "" && $("#email").val() != "" && $("#phone2").val() != "" && $('#askprice_permission').is(':checked')) {
+                    $('#askprice_permission_button_send').prop('disabled', false);
+                } else {
+                    $('#askprice_permission_button_send').prop('disabled', true);
+                }
+            }
+
+        });
+        function reactivateForm() {
+            document.getElementById("askprice_form").reset();
+            $("#askprice_form").show();
+            $(".alert-success").hide();
+        }
+
+        function send_promotion() {
+
+
+            $(".alert-success").hide();
+            $(".alert-warning").hide();
+            $.ajax({
+                url: $("#askprice_form").attr("action"),
+                type: "POST",
+                async: true,
+                data: $("#askprice_form").serialize(),
+                cache: false,
+                beforeSend: function () {
+                    $('#askprice_permission_button_send').prop('disabled', true);
+                    $('#askprice_permission_button_send').html('Gönderiliyor...');
+                },
+                success: function (b) {
+                    if (b == "1" || (typeof b.status !== 'undefined' && b.status == "1")) {
+                        $("#fullname").val("");
+                        $("#phone2").val("");
+                        $("#email").val("");
+                        $('#askprice_permission_button_send').prop('disabled', false);
+                        $('#askprice_permission_button_send').html('Gönder');
+                        $("#spErr").html("<span style='margin: 20px 0; display: block; color: #25a517;'>Formunuz başarıyla gönderilmiştir.</span>");
+
+                        dataLayer.push({
+                            'event': 'landing_finishForm',
+                            'formName': window.gtmFormName,
+                            'pageCategory': 'Landing Page'
+                        });
+                        if (typeof b.hashedPhoneNumber !== 'undefined') {
+
+                            dataLayer.push({
+                                'event': 'create_lead_user',
+                                'userID': b.hashedPhoneNumber
+                            });
+                        }
+
+                    } else {
+                        $(".alert-warning").fadeIn();
+                        $('#askprice_permission_button_send').html('Gönder');
+                        $("#spErr").html("<span style='margin: 20px 0; display: block; color: #ca2020;'>Teknik bir problem oldu. Lütfen daha sonra tekrar deneyiniz.</span>");
+                    }
+                    $('#askprice_permission_button_send').prop('disabled', false);
+                },
+                error: function (b, d, c) {
+                    $(".alert-warning").fadeIn();
+                    $('#askprice_permission_button_send').html('Gönder');
+                    $('#askprice_permission_button_send').prop('disabled', false);
+                }
+            });
+        }
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+{% extends "column_4_8.html" %}
+{% load i18n %}
+
+{% block title %}Medical Visa Application {% endblock %}
+
+{% block breadcrumb %}
+	<li><a href="">Medical Visa Application</a></li>
+{% endblock %}
+
+{% block breadcrumbmobile %}
+	<li><a href="">Medical Visa Application</a></li>
+{% endblock %}
+
+{% block column_4 %}
+<div class="leftMenu">
+<h3>About Us</h3>
+	<ul class="sidebar-nav">
+		<li><a {% ifequal flatpage.url '/en/corporate/presentation/' %}class="selected"{% endifequal %} href="/en/corporate/presentation/">Introduction</a></li> <!-- flatpages -->
+		<li><a {% if hospital_x_url %}class="selected"{% endif %} href="{% url 'hospital_en' %}">{% trans "10067" %}</a></li>
+		<li><a {% if tour_x_url %}class="selected"{% endif %} href="{% url 'tour_en' %}">{% trans "10080" %}</a></li>
+		<li><a {% ifequal flatpage.url '/en/corporate/international/' %}class="selected"{% endifequal %} href="/en/corporate/international/">International Patient Center</a></li> <!-- flatpages -->
+		<li><a {% ifequal flatpage.url '/en/corporate/first-practices/' %}class="selected"{% endifequal %} href="/en/corporate/first-practices/">First Practices</a></li> <!-- flatpages -->
+		<li><a {% ifequal flatpage.url '/en/corporate/aha-membership/' %}class="selected"{% endifequal %} href="/en/corporate/aha-membership/">AHA Membership</a></li> <!-- flatpages -->
+		<li><a {% ifequal flatpage.url '/en/corporate/goals/' %}class="selected"{% endifequal %} href="/en/corporate/goals/">Our Goals</a></li> <!-- flatpages -->
+	</ul>
+	</div>
+{% endblock %}
+
+{% block column_8 %}
+	<div class="relatedNews kurumsal-kimlik clearfix" style="text-align: justify;">
+		<h1>Medical Visa Application for Iraqi and Libyan Patients</h1>
+<p>Do you need help for medical visa application? Memorial can provide assistance in your  medical visa application and make  it easier for you .  </p>
+
+<p>In order to get more detailed information regarding the visa process , please fill out the information form and reach us. Once we receive your contact informations,  you will be informed about the steps of medical visa application  as soon as possible.</p> 
+	<script>
+		function onSubmit(token) {
+		   document.getElementById("visa_form").submit();
+		}
+	</script>
+	
+<form class="form-horizontal" action="." method="post" id="visa_form" enctype="multipart/form-data">{% csrf_token %}
+				<div class="form-group">
+					<label for="id_name" class="col-sm-2 control-label">Full name:</label>
+					<div class="col-sm-10">
+						<input type="text" name="name" class="form-control" id="id_name" placeholder="Full name" value="{% if form.name.value %}{{ form.name.value }}{% endif %}">
+						<span id="helpBlock" class="help-block">{% trans "10083" %}</span>
+						{{ form.name.errors }}
+					</div>
+				</div>
+                <div class="form-group">
+                    <label for="countries_phone2" class="col-sm-2 control-label">{% trans "100102" %}</label>
+                    <div class="col-sm-10">
+                        <select id="countries_phone_visa" class="form-control bfh-countries" data-country="TR"></select>
+                        <span id="helpBlock" class="help-block">{% trans "100101" %}</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                   <label for="id_phone" class="col-sm-2 control-label">Phone Number:</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="phone" class="form-control bfh-phone" id="id_phone" data-country="countries_phone_visa" >
+                        <span id="helpBlock" class="help-block">{% trans "10084" %}</span>
+                        {{ form.phone.errors }}
+                    </div>
+                </div>
+				<div class="form-group">
+					<label for="id_email" class="col-sm-2 control-label">E-mail address:</label>
+					<div class="col-sm-10">
+						<input type="email" name="email" class="form-control" id="id_email" placeholder="E-mail address" value="{% if form.email.value %}{{ form.email.value }}{% endif %}">
+						<span id="helpBlock" class="help-block">{% trans "10098" %}</span>
+						{{ form.email.errors }}
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="id_country" class="col-sm-2 control-label">Nationality:</label>
+					<div class="col-sm-10">
+						<input type="text" name="country" class="form-control" id="id_country" placeholder="Please enter your country." value="{% if form.email.value %}{{ form.email.value }}{% endif %}">
+						<span id="helpBlock" class="help-block">Please enter your nationality.</span>
+						{{ form.email.errors }}
+					</div>
+				</div>
+                {% ifequal msg 1 %}<div class="alert alert-success" role="alert">{% trans "10092" %}</div>{% endifequal %}
+                {% ifequal msg 2 %}<div class="alert alert-danger" role="alert">{% trans "10042" %}</div>{% endifequal %}
+                {% ifequal msg 3 %}<div class="alert alert-warning" role="alert">{% trans "10093" %}</div>{% endifequal %}
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10"><button type="submit" class="btn btn-default btn-memorial g-recaptcha" data-sitekey="6Ld6hSEUAAAAAN0SsdRRgbh-V90ONj8sabLs1UtT" data-callback='onSubmit'>{% trans "10038" %}</button></div>
+				</div>
+			</form>
+	</div>
+
+
+
+{% endblock %}

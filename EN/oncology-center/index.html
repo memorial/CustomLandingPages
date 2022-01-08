@@ -1,0 +1,1159 @@
+
+<div class="banner animatedParent">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-7 col-sm-offset-6 col-sm-6 schedules animated fadeInLeft">
+                <div class="ribbon"><span>Inquire now!</span></div>
+                <!--<form method="post" action="/en/oncology-center-form/" class="firstForm" id="firstForm" name="firstForm">-->
+                <form method="post" class="firstForm" id="firstForm" name="firstForm">
+                    <input id="geturl2" name="url" type="hidden" value="" />
+                    <script>
+                        document.getElementById("geturl2").value = location.href;
+                    </script>
+                    <input type="hidden" name="subject" value="Oncology Center - Contact Form" />
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <input type="text" placeholder="Full Name" id="id_fullname1" name="fullname">
+                            <input type="text" placeholder="E-mail Address" id="id_email1" name="email">
+                            <input type="text" placeholder="Phone Number" id="id_phone1" name="phone">
+                        </div>
+                    </div>
+                    <textarea type="text" placeholder="Your Message" id="id_message1" name="message"></textarea>
+                    <div id="mailstatus0"></div>
+                    <!--//recaptch-->
+                    <!--<div id='recaptcha1' class="g-recaptcha" data-sitekey="6Ld6hSEUAAAAAN0SsdRRgbh-V90ONj8sabLs1UtT"
+        data-callback="onSubmitRe1" data-size="invisible">
+    </div>-->
+                    <button id="formbutton1" class="btn" data-callback='onSubmitRe1'>Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<section class="clearfix features style text-center animatedParent">
+    <div class="container">
+        <a name="transplants"></a>
+        <h2 class="text-bold text-uppercase color-memorial after-mid-l pb-25">
+            WHAT WE DO
+        </h2>
+        <div class="row flx">
+            <div class="col-sm-4 mt-70 b50 pt-20 pb-20 bgw">
+                <figure>
+                    <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/memorial-hospital-cancer-genetics-clinic.jpg"
+                         alt="Memorial Hospital Kidney Transplantation">
+                </figure>
+                <h5 class="text-bold color-memorial">CANCER<br />GENETICS CLINIC</h5>
+                <p class="justify">
+                    If you think you might be at risk for an inherited cancer, it's a
+                    good idea to meet with a genetics counselor. He or she will review your family
+                    medical history, talk to you about the role of genetics in cancer and perform a
+                    hereditary cancer risk assessment. This assessment will cover:
+                    <li class="justify">Your chances of having a genetic mutation</li>
+                    <li class="justify">Personalized genetic testing recommendations</li>
+                    <li class="justify">A general estimate of your personal cancer risks</li>
+                    <li class="justify">
+                        Individualized cancer screening and prevention recommendations
+                    </li>
+                </p><br />&nbsp;&nbsp;<br />
+                <input type="button" onclick="javascript:showGenetics();" class="btn musketeers" value="More Info">
+            </div>
+            <div class="col-sm-4 mt-70 b50 pt-20 pb-20 bgw">
+                <figure>
+                    <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/memorial-hospital-nuclear-medicine.jpg"
+                         alt="Memorial Hospital Nuclear Medicine">
+                </figure>
+                <h5 class="text-bold color-memorial">ONCOLOGY <br />CENTER</h5>
+                <p class="justify">
+                    Cancer is a diseases of dysfunctioning in organ or in organ system as
+                    a result of uncontrolled cell proliferation. Considering this aspect, cancer
+                    indicates differences both in diagnostic and treatment and follow-up requirements.
+                    This is because oncology patients should be treated in a multidisciplinary approach
+                    with every aspects. Advantages in imaging systems allow accurate diagnostic in early
+                    stages and after that proper surgical treatment with combination of medical and
+                    radiation oncology protocols allow patients to overcome the diseases.
+                    <!-- In contemporary days, there are high rates of success in cancer treatment under favor of scientific developments and medical experience.</p>
+                        <p class="justify" style="padding-bottom:50px;">Memorial Oncology Centers are dedicated providing services to you by the means of individualized comprehensive treatment with its internationally acknowledged medical expertise and state-of-the-art technological infrastructure in both diagnostic procedures and treatment protocols as well as spiritual support.-->
+                </p>
+                <input type="button" onclick="javascript:showNuclear();" class="btn musketeers" value="More Info">
+            </div>
+            <div class="col-sm-4 mt-70 b50 pt-20 pb-20 bgw">
+                <figure>
+                    <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/memorial-hospital-radiation-oncology.jpg"
+                         alt="Memorial Hospital Radiation Oncology">
+                </figure>
+                <h5 class="text-bold color-memorial">HEMATOLOGY / <br />BLOOD DISEASES</h5>
+                <p class="justify">
+                    Memorial Hospital in Istanbul has an experienced team of physicians
+                    and nurses in the Hematology Department. The hospital provides a high quality care
+                    together with its several departments for immunology, blood bank, radiology,
+                    intensive care unit and bone marrow transplantation center.
+                </p>
+                <p class="justify">
+                    Frequent hematological diseases are:
+                    <li class="justify">Multiple myeloma</li>
+                    <li class="justify">Hodgkin lymphoma</li>
+                    <li class="justify">Non-Hodgkin-lymphomas</li>
+                    <li class="justify">Acute myeloid leukemia (AML)</li>
+                    <li class="justify">Acute lymphoblastic leukemia (ALL)</li>
+                    <!-- <li class="justify">Chronic lymphocytic leukemia (CLL)</li>
+                    <li class="justify">Myelodysplastic syndrome (MDS)</li>
+                    <li class="justify">Myeloproliferative diseases</li>
+                    <li class="justify">Anemia, functional or numerical abnormalities of leucocytes (white blood cells, WBC), erythrocytes (red blood cells, RBC) and platelets</li>
+                    <li class="justify">Coagulation disorders</li>
+                    <li class="justify">Diseases of the immune system.</li>
+                    -->
+                </p>
+                <input type="button" onclick="javascript:showRadiation();" class="btn musketeers" value="More Info">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="services bg-blue color-white no-pad clearfix animatedParent">
+    <section class="counter-wrapper tm-bg">
+        <div class="counter-empty-space"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-6">
+                    <div class="tm-fun-fact text-center">
+                        <span class="counter" id="counter3">355</span>
+                        <h5>Bone Marrow Transplantations Annually</h5>
+                    </div>
+                    <div class="empty-space col-xs-b30"></div>
+                </div><!-- .col -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="tm-fun-fact text-center">
+                        <span class="counter" id="counter4">73000</span>
+                        <h5>Operations Annually</h5>
+                    </div>
+                    <div class="empty-space col-xs-b30"></div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="tm-fun-fact text-center">
+                        <span class="counter" id="counter5">1800000</span>
+                        <h5>Patiens Annually</h5>
+                    </div>
+                    <div class="empty-space col-xs-b30"></div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="tm-fun-fact text-center taCenter">
+                        <span class="counter" id="counter6">7000</span>
+                        <h5>Employees</h5>
+                    </div>
+                    <div class="empty-space col-xs-b30"></div>
+                </div> <!-- .col -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="tm-fun-fact text-center">
+                        <span class="counter" id="counter1">35000</span>
+                        <h5>International Patients Annually</h5>
+                    </div>
+                    <div class="empty-space col-xs-b30"></div>
+                </div><!-- .col -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="tm-fun-fact text-center">
+                        <span class="counter" id="counter2">100</span>
+                        <h5>Countries</h5>
+                    </div>
+                    <div class="empty-space col-xs-b30"></div>
+                </div><!-- .col -->
+            </div>
+        </div>
+        <div class="counter-empty-space"></div>
+    </section>
+</section>
+
+
+
+
+
+<section class="clearfix features style text-center animatedParent">
+    <div class="container">
+        <a name="transplants"></a>
+        <h2 class="text-bold text-uppercase color-memorial after-mid-l pb-25">
+            Memorial International
+            Patient Center
+        </h2>
+        <div class="row">
+            <div class="col-sm-12 mt-70">
+                <p class="justify">
+                    Memorial Healthcare Group (MHG) serves both domestic and
+                    international patients with its network of hospitals and satellite clinics in
+                    İstanbul, Ankara, Antalya, Diyarbakır and Kayseri. MHG is a worldwide recognized
+                    brand in Organ Transplantation, Cardiovascular Surgery, Cardiology, Oncology and IVF
+                    treatments at international standards.
+                </p>
+                <br />
+                <div class="col-sm-4">
+                    <img class="mipc-icon"
+                         src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/icon-plane.png"
+                         alt="AIRPORT TRANSFERS">
+                    <h5>AIRPORT TRANSFERS</h5>
+                </div>
+                <div class="col-sm-4">
+                    <img class="mipc-icon"
+                         src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/icon-hotel.png"
+                         alt="HOTEL RESERVATIONS">
+                    <h5>HOTEL RESERVATIONS</h5>
+                </div>
+                <div class="col-sm-4">
+                    <img class="mipc-icon"
+                         src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/icon-world.png"
+                         alt="INTERPRETATION SERVICES IN NATIVE LANGUAGES">
+                    <h5>INTERPRETATION SERVICES IN NATIVE LANGUAGES</h5>
+                </div>
+                <br />
+            </div>
+            <input type="button" onclick="javascript:showMIPC();" class="btn" value="More Info" id="mipc-more-info">
+            <div id="mipcFullText"></div>
+            <div id="mipc-full" class="fullText">
+                <p class="justify">
+                    Memorial International Patient Center (MIPC) is side by side with our
+                    patients and their families in every step of their treatments. and is proud to be
+                    chosen by thousands of patients from over 90 countries each year. Most of our staff
+                    and interpreters are native speakers who strive to do their best in order to make
+                    the patient experience as smooth as possible.
+                </p>
+                <h4>MIPC provides the following information and services :</h4>
+                <li class="textAlignLeft">
+                    Memorial’s Second Opinion including treatment plan prepared by
+                    Memorial Physicians
+                </li>
+                <li class="textAlignLeft">Cost estimates for anticipated treatment</li>
+                <li class="textAlignLeft">
+                    Multilanguage speaking staff and provision of interpreting
+                    services
+                </li>
+                <li class="textAlignLeft">Medical appointments</li>
+                <li class="textAlignLeft">
+                    Facilitation of admission, discharge and follow-up processes
+                </li>
+                <li class="textAlignLeft">Arrangement of air and ground ambulance services</li>
+                <li class="textAlignLeft">
+                    Discounted flight rates and additional benefits via our
+                    preferred carrier Turkish Airlines
+                </li>
+                <li class="textAlignLeft">Airport transfers</li>
+                <li class="textAlignLeft">Memorial Guest House services</li>
+                <li class="textAlignLeft">Travel and accommodation arrangements</li>
+                <li class="textAlignLeft">Other services available upon request</li>
+                <li class="textAlignLeft">Visa application services</li>
+                <br />
+                <h4>Memorial International Patient Center Contact Information</h4>
+
+                <div>
+                    <div class="col-md-6 justify">
+                        <li>Piyalepaşa Blv. 34385, Şişli/İstanbul</li>
+                        <li>
+                            <a href="tel://+90 (212) 314 66 66" alt="Call International Patient Center">
+                                Phone : +90
+                                (212) 314 66 66
+                            </a>
+                            (Ext: 7579)
+                        </li>
+                        <li>Fax : +90 (212) 314 66 67</li>
+                        <li>
+                            E-mail : <a href='&#109;ail&#116;&#111;&#58;%6&#57;&#110;&#116;er%6E&#97;&#116;%69%&#54;F&#37;&#54;E&#97;l&#112;%6&#49;%74%69en&#37;74&#37;7&#51;%40m&#101;&#109;o&#114;&#105;a&#108;&#46;c%6Fm&#46;tr'>i&#110;t&#101;rnationalpatie&#110;ts&#64;me&#109;or&#105;&#97;&#108;&#46;co&#109;&#46;&#116;r</a>
+                        </li>
+                        <li>
+                            Website : <a href="http://www.memorial.com.tr/en/"
+                                         alt="Memorial International Patient Center">http://www.memorial.com.tr/en/</a>
+                        </li>
+                        <li>
+                            For appointments, please call <a href="tel://+90 (212) 444 7 888"
+                                                             alt="Call International Patient Center">+90 (212) 444 7 888</a>
+                        </li>
+                        <br />
+                    </div>
+                    <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.335493876765!2d28.970507415598423!3d41.06165862408679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab72325d1a9cf%3A0xaddd3acd2b43b336!2sMemorial+%C5%9Ei%C5%9Fli+Hospital!5e0!3m2!1sen!2str!4v1546046326866"
+                                width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+
+                <br>
+                <p class="textAlignLeft"><button class="btn" onclick="javascript:closeAllText();">close</button></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="our-team animatedParent">
+    <a name="doctors"></a>
+    <div class="container">
+        <div id="doctors"></div>
+        <h2 class="text-bold text-uppercase text-center after-mid-l pb-25">our doctors</h2>
+        <div class="row mt-40">
+
+            <div id="owl-car" class="owl-carousel owl-theme">
+                <div class="item darkCyan">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/m-teoman-yanmaz-memorial.jpg"
+                                 alt="Assoc. Prof. M. Teoman Yanmaz">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/m-teoman-yanmaz/"
+                           alt="Assoc. Prof. M. Teoman Yanmaz">
+                            <h6 class="color-memorial text-bold">Assoc. Prof. M. Teoman Yanmaz</h6>
+                            <p>Medical Oncology Specialist</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item dodgerBlue">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/serkan-keskin-memorial.jpg"
+                                 alt="Assoc. Prof. Serkan Keskin">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/serkan-keskin/"
+                           alt="Assoc. Prof. Serkan Keskin">
+                            <h6 class="color-memorial text-bold">Assoc. Prof. Serkan Keskin</h6>
+                            <p>Medical Oncology Specialist</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item orange">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/esra-kaytan-saglam-memorial.jpg"
+                                 alt="Prof. Esra Kaytan Sağlam">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/esra-kaytan-saglam/"
+                           alt="Prof. Esra Kaytan Sağlam">
+                            <h6 class="color-memorial text-bold">Prof. Esra Kaytan Sağlam</h6>
+                            <p>Head of Radiation Oncology Department</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item skyBlue">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/zuleyha-akgun-memorial.jpg"
+                                 alt="Assoc. Prof. Züleyha Akgün">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/zuleyha-akgun/"
+                           alt="Assoc. Prof. Züleyha Akgün">
+                            <h6 class="color-memorial text-bold">Assoc. Prof. Züleyha Akgün</h6>
+                            <p>Radiation Oncology Specialist</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item orange">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/yesim-ozdemir-memorial.jpg"
+                                 alt="MD Yeşim Özdemir">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/s-yesim-ozdemir/" alt="MD Yeşim Özdemir">
+                            <h6 class="color-memorial text-bold">MD Yeşim Özdemir</h6>
+                            <p>Responsible Doctor of Genetic Diseases Diagnosis Center</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item zombieGreen">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/remzi-karaman-memorial.jpg"
+                                 alt="MD Remzi Karaman">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/remzi-karaman/" alt="MD Remzi Karaman">
+                            <h6 class="color-memorial text-bold">MD Remzi Karaman</h6>
+                            <p>Nuclear Medicine Specialist</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item darkCyan">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/ahmet-gocmen-memorial.jpg"
+                                 alt="Prof. Ahmet Göçmen">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/ahmet-gocmen/" alt="Prof. Ahmet Göçmen">
+                            <h6 class="color-memorial text-bold">Prof. Ahmet Göçmen</h6>
+                            <p>Obstetrician and Gynecologist</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item forestGreen">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/atila-tanyeli-memorial.jpg"
+                                 alt="Prof. Atila Tanyeli">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/atila-tanyeli/" alt="Prof. Atila Tanyeli">
+                            <h6 class="color-memorial text-bold">Prof. Atila Tanyeli</h6>
+                            <p>Paediatrician</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item darkCyan">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/inci-yildiz-memorial.jpg"
+                                 alt="Prof. İnci Yıldız">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/inci-yildiz/" alt="Prof. İnci Yıldız">
+                            <h6 class="color-memorial text-bold">Prof. İnci Yıldız</h6>
+                            <p>Pediatric Hematology and Oncology Specialist</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item darkCyan">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/emin-gokhan-kandemir-memorial.jpg"
+                                 alt="Prof. Emin Gökhan Kandemir">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/emin-gokhan-kandemir/"
+                           alt="Prof. Emin Gökhan Kandemir">
+                            <h6 class="color-memorial text-bold">Prof. Emin Gökhan Kandemir</h6>
+                            <p>Internal Diseases and Medical Oncology Specialist</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item steelGray">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/kezban-nur-pilanci-memorial.jpg"
+                                 alt="Assoc. Prof. Kezban Nur Pilancı">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/kezban-nur-pilanci/"
+                           alt="Assoc. Prof. Kezban Nur Pilancı">
+                            <h6 class="color-memorial text-bold">Assoc. Prof. Kezban Nur Pilancı</h6>
+                            <p>Medical Oncology Specialist</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item skyBlue">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/fazilet-oner-dincbas-memorial.jpg"
+                                 alt="Prof. Fazilet Öner Dinçbaş (K)">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/fazilet-oner-dincbas/"
+                           alt="Prof. Fazilet Öner Dinçbaş (K)">
+                            <h6 class="color-memorial text-bold">Prof. Fazilet Öner Dinçbaş (K)</h6>
+                            <p>Radiation Oncology Specialist</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item orange">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/nuri-kaydihan-memorial.jpg"
+                                 alt="MD Nuri Kaydıhan">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/nuri-kaydihan/" alt="MD Nuri Kaydıhan">
+                            <h6 class="color-memorial text-bold">MD Nuri Kaydıhan</h6>
+                            <p>Radiation Oncology Specialist</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item darkCyan">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/akin-yildiz-memorial.jpg"
+                                 alt="Prof. Akın Yıldız (K)">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/akin-yildiz/" alt="Prof. Akın Yıldız (K)">
+                            <h6 class="color-memorial text-bold">Prof. Akın Yıldız (K)</h6>
+                            <p>Nuclear Medicine Specialist</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item forestGreen">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/aria-forouz-memorial.jpg"
+                                 alt="MD Aria Forouz">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/aria-forouz/" alt="MD Aria Forouz">
+                            <h6 class="color-memorial text-bold">MD Aria Forouz</h6>
+                            <p>Nuclear Medicine Specialist</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item darkCyan">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/veysel-sal-memorial.jpg"
+                                 alt="Assoc. Prof. Veysel Şal">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/veysel-sal/" alt="Assoc. Prof. Veysel Şal">
+                            <h6 class="color-memorial text-bold">Assoc. Prof. Veysel Şal</h6>
+                            <p>
+                                Obstetrician and Gynecologist - Gynecologic Oncology Surgery Specialist
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item dodgerBlue">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/kubra-aydin-memorial.jpg"
+                                 alt="Assoc. Prof. Kübra Aydın">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/kubra-aydin/" alt="Assoc. Prof. Kübra Aydın">
+                            <h6 class="color-memorial text-bold">Assoc. Prof. Kübra Aydın</h6>
+                            <p>Medical Oncology Specialist</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item darkCyan">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/naziyet-kose-memorial.jpg"
+                                 alt="MD Naziyet Köse">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/naziyet-kose/" alt="MD Naziyet Köse">
+                            <h6 class="color-memorial text-bold">MD Naziyet Köse</h6>
+                            <p>Medical Oncology Specialist</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item darkCyan">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/selcuk-cemil-ozturk-memorial.jpg"
+                                 alt="MD Selçuk Cemil Öztürk">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/selcuk-cemil-ozturk/"
+                           alt="MD Selçuk Cemil Öztürk">
+                            <h6 class="color-memorial text-bold">MD Selçuk Cemil Öztürk</h6>
+                            <p>Medical Oncology Specialist</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item darkCyan">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/yildiz-guney-memorial.jpg"
+                                 alt="Prof. Yıldız Güney">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/yildiz-guney/" alt="Prof. Yıldız Güney">
+                            <h6 class="color-memorial text-bold">Prof. Yıldız Güney</h6>
+                            <p>Head of Radiation Oncology Department</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item violet">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/bulent-kucukpilakci-memorial.jpg"
+                                 alt="MD Bülent Küçükpilakçı">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/bulent-kucukpilakci/"
+                           alt="MD Bülent Küçükpilakçı">
+                            <h6 class="color-memorial text-bold">MD Bülent Küçükpilakçı</h6>
+                            <p>Radiation Oncology Specialist</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item zombieGreen">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/ahmet-demir-memorial.jpg"
+                                 alt="Assoc. Prof. Ahmet Demir">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/ahmet-demir/" alt="Assoc. Prof. Ahmet Demir">
+                            <h6 class="color-memorial text-bold">Assoc. Prof. Ahmet Demir</h6>
+                            <p>Paediatrician</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item darkCyan">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/mustafa-ozdogan-memorial.jpg"
+                                 alt="Prof. Mustafa Özdoğan">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/mustafa-ozdogan/" alt="Prof. Mustafa Özdoğan">
+                            <h6 class="color-memorial text-bold">Prof. Mustafa Özdoğan</h6>
+                            <p>Medical Oncology Specialist</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item darkCyan">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/aysegul-kargi-memorial.jpg"
+                                 alt="Assoc. Prof. Ayşegül Kargı">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/aysegul-kargi/"
+                           alt="Assoc. Prof. Ayşegül Kargı">
+                            <h6 class="color-memorial text-bold">Assoc. Prof. Ayşegül Kargı</h6>
+                            <p>Medical Oncology Specialist</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item darkCyan">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/seyda-gunduz-memorial.jpg"
+                                 alt="Assoc. Prof. Şeyda Gündüz">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/seyda-gunduz/" alt="Assoc. Prof. Şeyda Gündüz">
+                            <h6 class="color-memorial text-bold">Assoc. Prof. Şeyda Gündüz</h6>
+                            <p>Medical Oncology Specialist</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item yellow">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/m-murat-inal-memorial.jpg"
+                                 alt="Prof. M. Murat İnal">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/m-murat-inal/" alt="Prof. M. Murat İnal">
+                            <h6 class="color-memorial text-bold">Prof. M. Murat İnal</h6>
+                            <p>Obstetrician and Gynecologist</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item darkCyan">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/halit-karaca-memorial.jpg"
+                                 alt="Assoc. Prof. Halit Karaca">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/halit-karaca/" alt="Assoc. Prof. Halit Karaca">
+                            <h6 class="color-memorial text-bold">Assoc. Prof. Halit Karaca</h6>
+                            <p>Medical Oncology Specialist</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item darkCyan">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/mahmut-ilhan-memorial.jpg"
+                                 alt="Prof. Mahmut İlhan">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/mahmut-ilhan/" alt="Prof. Mahmut İlhan">
+                            <h6 class="color-memorial text-bold">Prof. Mahmut İlhan</h6>
+                            <p>Medical Oncology Specialist</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item darkCyan">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/ahmet-siyar-ekinci-memorial.jpg"
+                                 alt="Assoc. Prof. Ahmet Şiyar Ekinci">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/ahmet-siyar-ekinci/"
+                           alt="Assoc. Prof. Ahmet Şiyar Ekinci">
+                            <h6 class="color-memorial text-bold">Assoc. Prof. Ahmet Şiyar Ekinci</h6>
+                            <p>Medical Oncology Specialist</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item darkCyan">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/m-ali-kaplan-memorial.jpg"
+                                 alt="Assoc. Prof. M. Ali Kaplan">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/m-ali-kaplan/" alt="Assoc. Prof. M. Ali Kaplan">
+                            <h6 class="color-memorial text-bold">Assoc. Prof. M. Ali Kaplan</h6>
+                            <p>Medical Oncology Specialist</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item darkCyan">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/mehmet-murat-akin-memorial.jpg"
+                                 alt="MD Mehmet Murat Akın">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/mehmet-murat-akin/" alt="MD Mehmet Murat Akın">
+                            <h6 class="color-memorial text-bold">MD Mehmet Murat Akın</h6>
+                            <p>Radiation Oncology Specialist</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item darkCyan">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/serdar-altindag-memorial.jpg"
+                                 alt="MD Serdar Altındağ">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/serdar-altindag/" alt="MD Serdar Altındağ">
+                            <h6 class="color-memorial text-bold">MD Serdar Altındağ</h6>
+                            <p>Nuclear Medicine Specialist</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item darkCyan">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/ozlem-tay-memorial.jpg"
+                                 alt="RD Özlem Tay">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/ozlem-tay/" alt="RD Özlem Tay">
+                            <h6 class="color-memorial text-bold">RD Özlem Tay</h6>
+                            <p>Diet and Nutrition Specialist</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item darkCyan">
+                    <div class="member bg-white">
+                        <figure>
+                            <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/doctors/omer-yavuz-yetis-memorial.jpg"
+                                 alt="L.P. Ömer Yavuz Yetiş">
+                        </figure>
+                        <a href="https://www.memorial.com.tr/en/doctors/omer-yavuz-yetis/" alt="L.P. Ömer Yavuz Yetiş">
+                            <h6 class="color-memorial text-bold">L.P. Ömer Yavuz Yetiş</h6>
+                            <p>Clinical Psychologist</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="style-res accordian-section animatedParent">
+    <div id="faq"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <h3 class="hqFaq">Have more questions?</h3>
+                <br />
+                <!--<form method="post" action="/en/oncology-center-form/" id="secondForm" name="secondForm">-->
+                <form method="post" id="secondForm" name="secondForm">
+                    <input id="geturl" name="url" type="hidden" value="" />
+                    <script>
+                        document.getElementById("geturl").value = location.href;
+                    </script>
+                    <input id="geturl" name="url" type="hidden" value="" />
+                    <script>
+                        document.getElementById("geturl").value = location.href;
+                    </script>
+                    <input type="hidden" name="subject" value="Oncology Center - Contact Form" />
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <input type="text" placeholder="Full Name" id="id_fullname2" name="fullname">
+                            <input type="text" placeholder="E-mail Address" id="id_email2" name="email">
+                            <input type="text" placeholder="Phone Number" id="id_phone2" name="phone">
+                        </div>
+                    </div>
+                    <textarea type="text" placeholder="Your Message" id="id_message2" name="message"></textarea>
+                    <div id="mailstatus1"></div>
+                    <!--//recaptch-->
+                    <!--<div id='recaptcha2' class="g-recaptcha" data-sitekey="6Lf0qN8UAAAAADtNyk3P0AcNLn7PNANnle7r1TlZ"
+         data-callback="onSubmitRe2" data-size="invisible">
+    </div>-->
+                    <button id="formbutton2" class="btn" data-callback='onSubmitRe2'>Send</button>
+
+                </form>
+            </div>
+            <div class="col-sm-6 col-sm-offset-1">
+                <script src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/js/ytembed.js">
+                </script>
+                <div id="youtubeDivUser"></div>
+                <script>
+                    ytEmbed.init({
+                        'block': 'youtubeDivUser',
+                        'type': 'channel',
+                        'q': 'UCq3RsbEoCwcMaLjfeorH11Q',
+                        'results': 0,
+                        'layout': 'thumbnails',
+                        'player': 'embed',
+                        'height': 240,
+                        'width': 480,
+                        'display_first': true
+                    });
+
+                </script>
+            </div>
+        </div>
+</section>
+
+<!-- Patient Stories
+<section class="latest-posts text-center"><a name="gallery"></a>
+    <div class="container">
+        <h3 class="text-bold text-uppercase text-center after-mid-l pb-25">Patient Stories</h3>
+        <div class="row mt-50">
+            <div class="col-sm-4">
+                <div class="posts">
+                    <figure><img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/memorial-hospital-kidney-transplant-story-tn.jpg" alt="Memorial Hospital kidney transplant story"></figure>
+                    <div class="info">
+                        <div class="inner">
+                        <h6 class="sh6">A life without dialysis thanks to Cross-Kidney Transplantation</h6>
+                        <button class="btn" onclick="javascript:showStory('1');">Read More</button>
+                        <br />
+                        <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/memorial-hospital-kidney-transplant-story.jpg" data-lightbox="memorial-hospital-kidney-transplant-story"><i class="fa fa-search rms"></i></a>
+                        </div>
+                        <br />
+                    </div>
+                </div>
+                        <div id="story1" class="hs story">
+                            <br />
+                        <p class="justify">Couples came from two different countries of the Balkans and met in Istanbul. One family members from Macedonia and the other from Bulgaria. Both patients were suffering from kidney failure. Their fate has changed in Memorial after a successful cross-kidney transplantation operation. Borislav and Ermira are currently in good health, enjoying their new life without dialysis.</p>
+                        <p class="justify">Our team wishes a long and healthy life to our patients!</p>
+                        </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="posts">
+                    <figure><img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/memorial-hospital-500th-transplantation-tn.jpg" alt="Memorial Hospital"></figure>
+                    <div class="info">
+                        <div class="inner">
+                        <h6 class="sh6">The 500th Transplant Was Performed in Hizmet Hospital Organ Transplantation Center!</h6>
+                        <button class="btn" onclick="javascript:showStory('2');">Read More</button>
+                        <br />
+                        <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/memorial-hospital-500th-transplantation.jpg" data-lightbox="memorial-hospital-story2"><i class="fa fa-search rms"></i></a>
+                        </div>
+                        <br />
+                    </div>
+                </div>
+                        <div id="story2" class="hs story">
+                            <br />
+                            <p class="justify">Memorial Hizmet Hospital Kidney Transplant Center has provided 500 patients a second chance to life. With rapid recovery process, high success rates and laparoscopic donor operations Hizmet Hospital is proud to serve its patients since 2000.</p>
+                        </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="posts">
+                    <figure><img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/memorial-hospital-mother-love-tn.jpg" alt="Memorial Hospital"></figure>
+                    <div class="info">
+                        <div class="inner">
+                        <h6 class="sh6">The proof of the strong love of mother to her child.</h6>
+                        <button class="btn" onclick="javascript:showStory('3');">Read More</button>
+                        <br />
+                        <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/memorial-hospital-mother-love.jpg" data-lightbox="memorial-hospital-mother-love"><i class="fa fa-search rms"></i></a>
+                        </div>
+                        <br />
+                    </div>
+                </div>
+                        <div id="story3" class="hs story">
+                            <br />
+                            <p class="justify">Brave Bosnian mother Zemira Čerimović gave life her son for a second time. This time she did this by giving a part of her liver to her son Dino with a liver transplantation operated by Yalcin Polat and Prof.Dr. Cigdem Arikan. Happy and full of positive energies of Dino and Zemir were an inspiration to the entire staff of the hospital and an example that there is no obstacle in life with a positive attitude.</p>
+                            <p class="justify">We wish a lot of health and happiness for this wonderful family who give an inspration for being brave.</p>
+                        </div>
+            </div>
+        </div>
+    </div>
+</section>
+        -->
+
+
+<div class="promo bg-blue4 color-white clearfix pt-40 pb-40">
+    <a name="contact"></a>
+    <div id="contactus"></div>
+    <div class="container contactContainer">
+        <ul class="tabs text-bold clearfix">
+            <li class="contacttabli hospital active"><a href="#tab1">Memorial Ankara Hospital</a></li>
+            <li class="contacttabli hospital"><a href="#tab3">Memorial Ataşehir Hospital</a></li>
+            <li class="contacttabli hospital"><a href="#tab2">Memorial Bahçelievler Hospital</a></li>
+            <li class="contacttabli hospital"><a href="#tab4">Memorial Diyarbakır Hospital</a></li>
+            <li class="contacttabli hospital"><a href="#tab5">Memorial Kayseri Hospital</a></li>
+        </ul>
+
+        <div class="tab-panel bg-white">
+            <div id="tab2" class="tab-pane">
+                <h4>Memorial Bahçelievler</h4>
+                <br />
+                <div class="col-md-6">
+                    <li>Bahçelievler Mh. Adnan Kahveci Blv. No:227 Bahçelievler/İstanbul</li>
+                    <li>
+                        <a href="tel://+90 212 444 7 888" alt="Call Memorial Bahçelievler">
+                            +90 212 444 7
+                            888
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel://+90 212 314 66 66" alt="Call Memorial Bahçelievler">
+                            +90 212 314
+                            66 66
+                        </a>
+                    </li>
+                    <br />
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/bahcelievler-8.jpg"
+                       data-lightbox="bahcelievler" alt="Memorial Bahçelievler">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/bahcelievler-8-tn.jpg"
+                             alt="Memorial Bahçelievler" class="gthumbnail">
+                    </a>
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/bahcelievler-1.jpg"
+                       data-lightbox="bahcelievler" alt="Memorial Bahçelievler">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/bahcelievler-1-tn.jpg"
+                             alt="Memorial Bahçelievler" class="gthumbnail">
+                    </a>
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/bahcelievler-2.jpg"
+                       data-lightbox="bahcelievler" alt="Memorial Bahçelievler">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/bahcelievler-2-tn.jpg"
+                             alt="Memorial Bahçelievler" class="gthumbnail">
+                    </a>
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/bahcelievler-3.jpg"
+                       data-lightbox="bahcelievler" alt="Memorial Bahçelievler">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/bahcelievler-3-tn.jpg"
+                             alt="Memorial Bahçelievler" class="gthumbnail">
+                    </a>
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/bahcelievler-4.jpg"
+                       data-lightbox="bahcelievler" alt="Memorial Bahçelievler">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/bahcelievler-4-tn.jpg"
+                             alt="Memorial Bahçelievler" class="gthumbnail">
+                    </a>
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/bahcelievler-5.jpg"
+                       data-lightbox="bahcelievler" alt="Memorial Bahçelievler">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/bahcelievler-5-tn.jpg"
+                             alt="Memorial Bahçelievler" class="gthumbnail">
+                    </a>
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/bahcelievler-6.jpg"
+                       data-lightbox="bahcelievler" alt="Memorial Bahçelievler">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/bahcelievler-6-tn.jpg"
+                             alt="Memorial Bahçelievler" class="gthumbnail">
+                    </a>
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/bahcelievler-7.jpg"
+                       data-lightbox="bahcelievler" alt="Memorial Bahçelievler">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/bahcelievler-7-tn.jpg"
+                             alt="Memorial Bahçelievler" class="gthumbnail">
+                    </a>
+                    <br />
+                </div>
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.5295188177433!2d28.849202815713138!3d40.991781979302544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa4a990e7c5e9%3A0xa6be302d3ce58013!2sMemorial+Bah%C3%A7elievler+Hospital!5e0!3m2!1sen!2str!4v1546561995753"
+                            width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div id="tab1" class="tab-pane active">
+                <h4>Memorial Ankara</h4>
+                <br />
+                <div class="col-md-6">
+                    <li>Balgat Mah. Mevlana Blv. 1422. Sok. No: 4, 06520, Çankaya/Ankara</li>
+                    <li>
+                        <a href="tel://+90 212 444 7 888" alt="Call Memorial Ankara">
+                            +90 212 444 7
+                            888
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel://+90 312 253 66 66" alt="Call Memorial Ankara">
+                            +90 312 253 66
+                            66
+                        </a>
+                    </li>
+                    <br />
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/ankara-6.jpg"
+                       data-lightbox="ankara" alt="Memorial Ankara">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/ankara-6-tn.jpg"
+                             alt="Memorial Ankara" class="gthumbnail">
+                    </a>
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/ankara-1.jpg"
+                       data-lightbox="ankara" alt="Memorial Ankara">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/ankara-1-tn.jpg"
+                             alt="Memorial Ankara" class="gthumbnail">
+                    </a>
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/ankara-2.jpg"
+                       data-lightbox="ankara" alt="Memorial Ankara">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/ankara-2-tn.jpg"
+                             alt="Memorial Ankara" class="gthumbnail">
+                    </a>
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/ankara-3.jpg"
+                       data-lightbox="ankara" alt="Memorial Ankara">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/ankara-3-tn.jpg"
+                             alt="Memorial Ankara" class="gthumbnail">
+                    </a>
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/ankara-4.jpg"
+                       data-lightbox="ankara" alt="Memorial Ankara">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/ankara-4-tn.jpg"
+                             alt="Memorial Ankara" class="gthumbnail">
+                    </a>
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/ankara-5.jpg"
+                       data-lightbox="ankara" alt="Memorial Ankara">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/ankara-5-tn.jpg"
+                             alt="Memorial Ankara" class="gthumbnail">
+                    </a>
+                    <br />
+                </div>
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.687473340299!2d32.81323531568493!3d39.90362897942807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34f516d319681%3A0xe3fa091e9b309e00!2sMemorial+Hospital+Ankara!5e0!3m2!1sen!2str!4v1546562031618"
+                            width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div id="tab3" class="tab-pane">
+                <h4>Memorial Ataşehir</h4>
+                <br />
+                <div class="col-md-6">
+                    <li>Küçükbakkalköy Mah. Vedat Günyol Cad. No: 28-30, 34758, Ataşehir/İstanbul</li>
+                    <li>
+                        <a href="tel://+90 549 639 3366" alt="Call Memorial Ataşehir Hospital">
+                            +90 549
+                            639 3366
+                        </a>
+                    </li>
+                    <br />
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-atasehir-1.jpg"
+                       data-lightbox="memorialatasehir" alt="Memorial Ataşehir Hospital">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-atasehir-1-tn.jpg"
+                             alt="Memorial Ataşehir Hospital" class="gthumbnail">
+                    </a>
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-atasehir-2.jpg"
+                       data-lightbox="memorialatasehir" alt="Memorial Ataşehir Hospital">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-atasehir-2-tn.jpg"
+                             alt="Memorial Ataşehir Hospital" class="gthumbnail">
+                    </a>
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-atasehir-3.jpg"
+                       data-lightbox="memorialatasehir" alt="Memorial Ataşehir Hospital">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-atasehir-3-tn.jpg"
+                             alt="Memorial Ataşehir Hospital" class="gthumbnail">
+                    </a>
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-atasehir-4.jpg"
+                       data-lightbox="memorialatasehir" alt="Memorial Ataşehir Hospital">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-atasehir-4-tn.jpg"
+                             alt="Memorial Ataşehir Hospital" class="gthumbnail">
+                    </a>
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-atasehir-5.jpg"
+                       data-lightbox="memorialatasehir" alt="Memorial Ataşehir Hospital">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-atasehir-5-tn.jpg"
+                             alt="Memorial Ataşehir Hospital" class="gthumbnail">
+                    </a> <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-atasehir-6.jpg"
+                            data-lightbox="memorialatasehir" alt="Memorial Ataşehir Hospital">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-atasehir-6-tn.jpg"
+                             alt="Memorial Ataşehir Hospital" class="gthumbnail">
+                    </a>
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-atasehir-7.jpg"
+                       data-lightbox="memorialatasehir" alt="Memorial Ataşehir Hospital">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-atasehir-7-tn.jpg"
+                             alt="Memorial Ataşehir Hospital" class="gthumbnail">
+                    </a>
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-atasehir-8.jpg"
+                       data-lightbox="memorialatasehir" alt="Memorial Ataşehir Hospital">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-atasehir-8-tn.jpg"
+                             alt="Memorial Ataşehir Hospital" class="gthumbnail">
+                    </a>
+                    <br />
+                </div>
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.8687992189434!2d29.104666815712825!3d40.98435367930318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac639d71d2949%3A0x7b2cb6e1958313b9!2sMemorial+Ata%C5%9Fehir+Hastanesi!5e0!3m2!1str!2ses!4v1552066202584"
+                            width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div id="tab4" class="tab-pane">
+                <h4>Memorial Diyarbakır</h4>
+                <br />
+                <div class="col-md-6">
+                    <li>Peyas Mah. Fırat Blv. No:12, Diclekent/Diyarbakır</li>
+                    <li>
+                        <a href="tel://+90 (412) 314 66 66" alt="Call Memorial Diyarbakır Hospital">
+                            +90
+                            (412) 314 66 66
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel://4447888" alt="Call Memorial Diyarbakır Hospital">444 7 888</a>
+                    </li>
+                    <br />
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-diyarbakir-1.jpg"
+                       data-lightbox="memorialdiyarbakir" alt="Memorial Diyarbakır Hospital">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-diyarbakir-1-tn.jpg"
+                             alt="Memorial Diyarbakır Hospital" class="gthumbnail">
+                    </a>
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-diyarbakir-2.jpg"
+                       data-lightbox="memorialdiyarbakir" alt="Memorial Diyarbakır Hospital">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-diyarbakir-2-tn.jpg"
+                             alt="Memorial Diyarbakır Hospital" class="gthumbnail">
+                    </a>
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-diyarbakir-3.jpg"
+                       data-lightbox="memorialdiyarbakir" alt="Memorial Diyarbakır Hospital">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-diyarbakir-3-tn.jpg"
+                             alt="Memorial Diyarbakır Hospital" class="gthumbnail">
+                    </a>
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-diyarbakir-4.jpg"
+                       data-lightbox="memorialdiyarbakir" alt="Memorial Diyarbakır Hospital">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-diyarbakir-4-tn.jpg"
+                             alt="Memorial Diyarbakır Hospital" class="gthumbnail">
+                    </a>
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-diyarbakir-5.jpg"
+                       data-lightbox="memorialdiyarbakir" alt="Memorial Diyarbakır Hospital">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-diyarbakir-5-tn.jpg"
+                             alt="Memorial Diyarbakır Hospital" class="gthumbnail">
+                    </a>
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-diyarbakir-6.jpg"
+                       data-lightbox="memorialdiyarbakir" alt="Memorial Diyarbakır Hospital">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-diyarbakir-6-tn.jpg"
+                             alt="Memorial Diyarbakır Hospital" class="gthumbnail">
+                    </a>
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-diyarbakir-7.jpg"
+                       data-lightbox="memorialdiyarbakir" alt="Memorial Diyarbakır Hospital">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-diyarbakir-7-tn.jpg"
+                             alt="Memorial Diyarbakır Hospital" class="gthumbnail">
+                    </a>
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-diyarbakir-8.jpg"
+                       data-lightbox="memorialdiyarbakir" alt="Memorial Diyarbakır Hospital">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-diyarbakir-8-tn.jpg"
+                             alt="Memorial Diyarbakır Hospital" class="gthumbnail">
+                    </a>
+                    <br />
+                </div>
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.755197112325!2d40.18552101563523!3d37.93614907973027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40751fb73597a38f%3A0x6b1a57b2208d6308!2sMemorial+Diyarbak%C4%B1r+Hastanesi!5e0!3m2!1str!2ses!4v1552065923167"
+                            width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div id="tab5" class="tab-pane">
+                <h4>Memorial Kayseri</h4>
+                <br />
+                <div class="col-md-6">
+                    <li>
+                        Örnekevler Mah. Salih Avgun Paşa Cad. Temizel Sok. No: 13, 38010,
+                        Kocasinan/Kayseri
+                    </li>
+                    <li>
+                        <a href="tel://+90 (0352) 315 66 66" alt="Call Memorial Kayseri">
+                            +90 (0352) 315
+                            66 66
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel://4447888" alt="Call Memorial Diyarbakır Hospital">444 7 888</a>
+                    </li>
+                    <br />
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-kayseri-1.jpg"
+                       data-lightbox="memorialdiyarbakir" alt="Memorial Kayseri Hospital">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-kayseri-1-tn.jpg"
+                             alt="Memorial Kayseri Hospital" class="gthumbnail">
+                    </a>
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-kayseri-2.jpg"
+                       data-lightbox="memorialdiyarbakir" alt="Memorial Kayseri Hospital">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-kayseri-2-tn.jpg"
+                             alt="Memorial Kayseri Hospital" class="gthumbnail">
+                    </a>
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-kayseri-3.jpg"
+                       data-lightbox="memorialdiyarbakir" alt="Memorial Kayseri Hospital">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-kayseri-3-tn.jpg"
+                             alt="Memorial Kayseri Hospital" class="gthumbnail">
+                    </a>
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-kayseri-4.jpg"
+                       data-lightbox="memorialdiyarbakir" alt="Memorial Kayseri Hospital">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-kayseri-4-tn.jpg"
+                             alt="Memorial Kayseri Hospital" class="gthumbnail">
+                    </a>
+                    <a href="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-kayseri-5.jpg"
+                       data-lightbox="memorialdiyarbakir" alt="Memorial Kayseri Hospital">
+                        <img src="{{ CDN_URL }}{{ STATIC_URL }}oncology-center/assets/img/hospitals/memorial-kayseri-5-tn.jpg"
+                             alt="Memorial Kayseri Hospital" class="gthumbnail">
+                    </a>
+                    <br />
+                </div>
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.5244521092377!2d35.47736171565496!3d38.72872577959702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x152b121d0618c919%3A0x6c03e638a2f6c9cb!2sMemorial+Kayseri+Hastanesi!5e0!3m2!1str!2ses!4v1552065955375"
+                            width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
