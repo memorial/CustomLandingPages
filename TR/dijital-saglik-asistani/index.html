@@ -9,18 +9,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="İhtiyacınız olan sağlık hizmetine, Uzaktan Takip Sistemi, e-Doktor Hizmeti ve Evde Bakım Hizmeti ile istediğiniz yerde, istediğiniz zaman ulaşabilirsiniz.">
     <meta name="keywords" content="">
     <meta name="author" content="">
-    <title>Memorial - Dijital Sağlık Asistanı</title>
+    <title>Dijital Sağlık Asistanı - Memorial</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600&display=swap' rel='preload' type='text/css'>
+    <link rel="canonical" href="https://www.memorial.com.tr/dijital-saglik-asistani" />
 
     <!-- Favicon -->
     <link rel="icon" href="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/favicon.png" type="image/x-icon">
 
     <!-- Google Fonts -->
-    <!--<link href="../../fonts.googleapis.com/css2e9cf.css?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
-    <link href="../../fonts.googleapis.com/css28312.css?family=Great+Vibes&amp;display=swap" rel="stylesheet">
-    <link href="../../fonts.googleapis.com/css26781.css?family=Dosis:wght@400;500;600&amp;display=swap" rel="stylesheet">-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600&display=swap' rel='stylesheet' type='text/css'>
     <!-- Bootstrap CSS -->
     <link href="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/css/bootstrap.min.css" rel="stylesheet">
 
@@ -46,7 +46,42 @@
     <link href="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/css/responsive.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/css/intlInputPhone.min.css">
     <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/css/intlInputPhone.css">
+    <style type="text/css">
+        a[href^='https://www.youtube.com/'], iframe[src^='https://www.youtube.com/'] {
+            display: block;
+            width: 100%;
+            height: 330px;
+            position: relative;
+        }
 
+        a[href^='https://www.youtube.com/'] {
+            background-color: black;
+            background-position: center;
+            background-size: cover;
+        }
+
+            a[href^='https://www.youtube.com/']::before {
+                content: '';
+                display: inline-block;
+                background-image: url('https://cdn.memorial.com.tr/files/images/icon-youtube.svg');
+                position: absolute;
+                width: 48px;
+                height: 48px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+
+        @@media (min-width:577px) {
+            a[href^='https://www.youtube.com/'], iframe[src^='https://www.youtube.com/'] {
+                display: block;
+                width: 560px;
+                height: 315px;
+            }
+        }
+    </style>
     <!-- Hotjar Tracking Code for https://www.memorial.com.tr/dijital-saglik-asistani -->
     <script>
         (function (h, o, t, j, a, r) {
@@ -71,10 +106,10 @@
         })(window, document, 'script', 'dataLayer', 'GTM-TGPGSC9');</script>
     <!-- End Google Tag Manager -->
 
-<script>window.gtmFormName='dijital-saglik-asistani-tr';</script>
-	
-	<!-- tel interaction, whatsapp interaction,  -->
-	<script src="{{ CDN_URL }}{{ STATIC_URL }}js/gtmSenderLP.js"> </script>
+    <script>window.gtmFormName = 'dijital-saglik-asistani-tr';</script>
+
+    <!-- tel interaction, whatsapp interaction,  -->
+    <script src="{{ CDN_URL }}{{ STATIC_URL }}js/gtmSenderLP.js"></script>
 
 </head>
 
@@ -96,8 +131,8 @@
         <div class="header-navbar sticky" id="myHeader">
             <nav class="navbar navbar-expand-lg" id="mainNav">
                 <div class="container">
-                    <!--<a href="https://www.memorial.com.tr/dijital-saglik-asistani"><img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/logo.png" alt=""></a>-->
-                    <a href="https://www.memorial.com.tr/dijital-saglik-asistani"><img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/LogoWhiteYeni.png" alt=""></a>
+
+                    <a href="https://www.memorial.com.tr/dijital-saglik-asistani"><img class="lazyload" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/LogoWhiteYeni.png" width="200" height="46" alt="img"></a>
 
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -136,8 +171,7 @@
     </header>
 
     <section id="DesktopGiris" style="padding:66px 0px 0px 0px;">
-        <!--<span class="simg"><img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/slide/slide1.jpg" alt=""></span>
-        Main Slider-->
+
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -146,7 +180,7 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/bg/banner4.jpg" alt="First slide">
+                    <img class="d-block w-100 lazyload" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/bg/banner4.jpg" width="1435" height="508" alt="First slide">
                     <div class="container">
                         <div class="carousel-caption" style="text-align: left; position:absolute;  top:0;left:0; right:0; bottom:0;  display:flex; align-items:center">
 
@@ -164,7 +198,7 @@
                 </div>
 
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/bg/banner6.jpg" alt="Third slide">
+                    <img class="d-block w-100 lazyload" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/bg/banner6.jpg" width="1435" height="508" alt="Third slide">
                     <div class="container">
                         <div class="carousel-caption" style="text-align: left; position:absolute;  top:0;left:0; right:0; bottom:0;  display:flex; align-items:center">
 
@@ -181,7 +215,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/bg/banner5.jpg" alt="Second slide">
+                    <img class="d-block w-100 lazyload" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/bg/banner5.jpg" width="1435" height="508" alt="Second slide">
                     <div class="container">
                         <div class="carousel-caption" style="text-align: left; position:absolute;  top:0;left:0; right:0; bottom:0;  display:flex; align-items:center">
 
@@ -216,7 +250,7 @@
 
 
         <div class="hero-doctor-img" style="position:relative;bottom:0; margin-bottom:0px;margin-top:7vh">
-            <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/bg/banner_1_mobil.png" alt="" class="img-fluid">
+            <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/bg/banner_1_mobil.png" alt="img" width="415" height="561" class="img-fluid lazyload">
         </div>
         <div class="hero-area overlay-black jarallax background-image" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/bg/1.png" style="display:flex; padding:20px 0px; background-position:bottom; position:relative; flex-direction:column; background-position:top; background-attachment:fixed; background-image: url('{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/bg/1.png');">
             <div class="container">
@@ -243,7 +277,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 mb-5" style="text-align:center">
-                    <h2 style="color:#c20e38">Memorial Dijital Sağlık Asistanı Nedir?</h2>
+                    <h1 style="color:#c20e38; font-size:40px;">Memorial Dijital Sağlık Asistanı Nedir?</h1>
 
                 </div>
                 <div class="col-lg-7 mb-5">
@@ -263,8 +297,8 @@
                     </div>
                 </div>
                 <div class="col-lg-5">
-                    <iframe width="560" height="315" style="background-image: url(images/video/DSA-Preview.png); -webkit-background-size: cover; -moz-background-size: cover;-o-background-size: cover; background-size: cover;" class="videoBoyut1" src="https://www.youtube.com/embed/Xyh5rcYB1W0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+                    <!--<iframe width="560" height="315" style="background-image: url(images/video/DSA-Preview.png); -webkit-background-size: cover; -moz-background-size: cover;-o-background-size: cover; background-size: cover;" class="videoBoyut1" src="https://www.youtube.com/embed/Xyh5rcYB1W0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                    <a class="videoBoyut1" href="https://www.youtube.com/embed/Xyh5rcYB1W0"></a>
                 </div>
 
                 <div class="col-lg-12">
@@ -336,8 +370,8 @@
                                             <div class="divWhite">
                                                 <div class="row">
                                                     <div class="col-md-5">
-                                                        <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/covid.jpg" alt="" id="covidImgDektop" style="display:block" class="img-fluid">
-                                                        <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/covid_min.jpg" alt="" id="covidImgMobil" class="img-fluid">
+                                                        <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/covid.jpg" alt="img" id="covidImgDektop" style="display:block" width="370" height="436" class="img-fluid lazyload">
+                                                        <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/covid_min.jpg" alt="img" id="covidImgMobil" width="369" height="249" class="img-fluid lazyload">
                                                     </div>
                                                     <div class="col-md-7">
 
@@ -358,7 +392,7 @@
                                                             <tr>
                                                                 <td>
                                                                     <span class="vektorImage">
-                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/1.png">
+                                                                        <img alt="evde doktor" caption="false" width="112" height="112" class="lazyload" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/1.png">
                                                                     </span>
                                                                 </td>
                                                                 <td> Genel Sağlık Takip Cihazı</td>
@@ -367,7 +401,7 @@
                                                             <tr>
                                                                 <td>
                                                                     <span class="vektorImage">
-                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/2.png">
+                                                                        <img alt="evde doktor" caption="false" width="112" height="112" class="lazyload" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/2.png">
                                                                     </span>
                                                                 </td>
                                                                 <td>Online Doktor Görüşmesi</td>
@@ -376,7 +410,7 @@
                                                             <tr>
                                                                 <td>
                                                                     <span class="vektorImage">
-                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/3.png">
+                                                                        <img alt="evde doktor" caption="false" width="112" height="112" class="lazyload" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/3.png">
                                                                     </span>
                                                                 </td>
                                                                 <td>Evde Kan Alımı ve Laboratuvar Testleri</td>
@@ -385,7 +419,7 @@
                                                             <tr>
                                                                 <td>
                                                                     <span class="vektorImage">
-                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/4.png">
+                                                                        <img alt="evde doktor" caption="false" width="112" height="112" class="lazyload" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/4.png">
                                                                     </span>
                                                                 </td>
                                                                 <td>Doktorunuz ve hemşireniz ile Görüşme / Mesajlaşma</td>
@@ -394,7 +428,7 @@
                                                             <tr>
                                                                 <td>
                                                                     <span class="vektorImage">
-                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/5.png">
+                                                                        <img alt="evde doktor" caption="false" width="112" height="112" class="lazyload" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/5.png">
                                                                     </span>
                                                                 </td>
                                                                 <td>Online Solunum Terapisi</td>
@@ -403,7 +437,7 @@
                                                             <tr>
                                                                 <td>
                                                                     <span class="vektorImage">
-                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/6.png">
+                                                                        <img alt="evde doktor" caption="false" width="112" height="112" class="lazyload" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/6.png">
                                                                     </span>
                                                                 </td>
                                                                 <td>Fiziksel Kontrol Muayenesi</td>
@@ -422,8 +456,8 @@
                                             <div class="divWhite">
                                                 <div class="row">
                                                     <div class="col-md-5">
-                                                        <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/kalp.jpg" alt="" id="covidImgDektop" style="display:block" class="img-fluid">
-                                                        <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/kalp_min.jpg" alt="" id="covidImgMobil" class="img-fluid">
+                                                        <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/kalp.jpg" alt="img" id="covidImgDektop" width="370" height="436" style="display:block" class="img-fluid lazyload">
+                                                        <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/kalp_min.jpg" alt="img" id="covidImgMobil" width="369" height="250" class="img-fluid lazyload">
 
                                                     </div>
                                                     <div class="col-md-7">
@@ -446,7 +480,7 @@
                                                             <tr>
                                                                 <td>
                                                                     <span class="vektorImage">
-                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/1.png">
+                                                                        <img alt="evde doktor" caption="false" width="112" height="112" class="lazyload" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/1.png">
                                                                     </span>
                                                                 </td>
                                                                 <td>Genel Sağlık Takip Cihazı</td>
@@ -455,7 +489,7 @@
                                                             <tr>
                                                                 <td>
                                                                     <span class="vektorImage">
-                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/2.png">
+                                                                        <img alt="evde doktor" caption="false" width="112" height="112" class="lazyload" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/2.png">
                                                                     </span>
                                                                 </td>
                                                                 <td>Online Doktor Görüşmesi</td>
@@ -464,7 +498,7 @@
                                                             <tr>
                                                                 <td>
                                                                     <span class="vektorImage">
-                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/3.png">
+                                                                        <img alt="evde doktor" caption="false" width="112" height="112" class="lazyload" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/3.png">
                                                                     </span>
                                                                 </td>
                                                                 <td>Doktorunuz ve hemşireniz ile Görüşme/Mesajlaşma</td>
@@ -473,7 +507,7 @@
                                                             <tr>
                                                                 <td>
                                                                     <span class="vektorImage">
-                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/4.png">
+                                                                        <img alt="evde doktor" caption="false" width="112" height="112" class="lazyload" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/4.png">
                                                                     </span>
                                                                 </td>
                                                                 <td>Hastanede Kan Tahlilleri ve Radyolojik İncelemeler (İhtiyaç Halinde)</td>
@@ -482,7 +516,7 @@
                                                             <tr>
                                                                 <td>
                                                                     <span class="vektorImage">
-                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/5.png">
+                                                                        <img alt="evde doktor" caption="false" width="112" height="112" class="lazyload" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/5.png">
                                                                     </span>
                                                                 </td>
                                                                 <td>Fiziksel Kontrol Muayenesi</td>
@@ -491,7 +525,7 @@
                                                             <tr>
                                                                 <td>
                                                                     <span class="vektorImage">
-                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/6.png">
+                                                                        <img alt="evde doktor" caption="false" width="112" height="112" class="lazyload" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/6.png">
                                                                     </span>
                                                                 </td>
                                                                 <td>Evde Bakım Hizmetleri (İhtiyaç Halinde)</td>
@@ -510,8 +544,8 @@
                                             <div class="divWhite">
                                                 <div class="row">
                                                     <div class="col-md-5">
-                                                        <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/diyabet.jpg" alt="" id="covidImgDektop" style="display:block" class="img-fluid">
-                                                        <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/diyabet_min.jpg" alt="" id="covidImgMobil" class="img-fluid">
+                                                        <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/diyabet.jpg" alt="img" id="covidImgDektop" width="370" height="436" style="display:block" class="img-fluid lazyload">
+                                                        <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/diyabet_min.jpg" alt="img" id="covidImgMobil" width="370" height="250" class="img-fluid lazyload">
                                                     </div>
                                                     <div class="col-md-7">
                                                         <h4>Diyabet Dijital Takip Programı</h4>
@@ -528,7 +562,7 @@
                                                             <tr>
                                                                 <td>
                                                                     <span class="vektorImage">
-                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/1.png">
+                                                                        <img class="lazyload" alt="evde doktor" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/1.png">
                                                                     </span>
                                                                 </td>
                                                                 <td>Flash veya Sürekli Şeker Ölçümü (CGM) Sensör ve Cihazları</td>
@@ -537,7 +571,7 @@
                                                             <tr>
                                                                 <td>
                                                                     <span class="vektorImage">
-                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/2.png">
+                                                                        <img class="lazyload" alt="evde doktor" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/2.png">
                                                                     </span>
                                                                 </td>
                                                                 <td>Genel Sağlık Takip Cihazı (İhtiyaç halinde)</td>
@@ -546,7 +580,7 @@
                                                             <tr>
                                                                 <td>
                                                                     <span class="vektorImage">
-                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/3.png">
+                                                                        <img class="lazyload" alt="evde doktor" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/3.png">
                                                                     </span>
                                                                 </td>
                                                                 <td>Online doktor görüşmesi</td>
@@ -555,7 +589,7 @@
                                                             <tr>
                                                                 <td>
                                                                     <span class="vektorImage">
-                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/4.png">
+                                                                        <img class="lazyload" alt="evde doktor" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/4.png">
                                                                     </span>
                                                                 </td>
                                                                 <td>Online diyetisyen görüşmesi</td>
@@ -564,7 +598,7 @@
                                                             <tr>
                                                                 <td>
                                                                     <span class="vektorImage">
-                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/3.png">
+                                                                        <img class="lazyload" alt="evde doktor" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/3.png">
                                                                     </span>
                                                                 </td>
                                                                 <td>Doktorunuz ve hemşireniz ile görüşme/mesajlaşma</td>
@@ -573,7 +607,7 @@
                                                             <tr>
                                                                 <td>
                                                                     <span class="vektorImage">
-                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/5.png">
+                                                                        <img class="lazyload" alt="evde doktor" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/5.png">
                                                                     </span>
                                                                 </td>
                                                                 <td>Hastanede veya Evde Kan Alma (İhtiyaç halinde)</td>
@@ -582,7 +616,7 @@
                                                             <tr>
                                                                 <td>
                                                                     <span class="vektorImage">
-                                                                        <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/6.png">
+                                                                        <img class="lazyload" alt="evde doktor" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/6.png">
                                                                     </span>
                                                                 </td>
                                                                 <td>Fiziksel kontrol muayenesi</td>
@@ -624,7 +658,7 @@
                                                                     <button class="btn btn-link" type="button" data-toggle="collapse" id="MobileSaglikTakipProgramlariIlkEleman" data-target="#collapseOneASTP" aria-expanded="true" aria-controls="collapseOneASTP">
                                                                         <i class="icofont-swoosh-right"></i>
                                                                         Covid-19 Dijital Takip Programı
-                                                                        <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
+                                                                        <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img class="lazyload" caption="false" width="256" height="256" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
                                                                     </button>
                                                                 </h5>
                                                             </div>
@@ -632,8 +666,8 @@
                                                                 <div class="card-body" style="padding: 8px 0px 20px 0px;">
                                                                     <div class="row">
                                                                         <div class="col-md-5">
-                                                                            <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/covid.jpg" alt="" id="covidImgDektop" style="display:block" class="img-fluid">
-                                                                            <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/covid_min.jpg" alt="" id="covidImgMobil" class="img-fluid">
+                                                                            <img width="370" height="436" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/covid.jpg" alt="img" id="covidImgDektop" style="display:block" class="img-fluid lazyload">
+                                                                            <img width="369" height="249" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/covid_min.jpg" alt="img" id="covidImgMobil" class="img-fluid lazyload">
                                                                         </div>
                                                                         <div class="col-md-7">
 
@@ -655,7 +689,7 @@
                                                                                 <tr>
                                                                                     <td>
                                                                                         <span class="vektorImage">
-                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/1.png">
+                                                                                            <img class="lazyload" alt="evde doktor" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/1.png">
                                                                                         </span>
                                                                                     </td>
                                                                                     <td> Genel Sağlık Takip Cihazı</td>
@@ -664,7 +698,7 @@
                                                                                 <tr>
                                                                                     <td>
                                                                                         <span class="vektorImage">
-                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/2.png">
+                                                                                            <img alt="evde doktor" class="lazyload" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/2.png">
                                                                                         </span>
                                                                                     </td>
                                                                                     <td>Online Doktor Görüşmesi</td>
@@ -673,7 +707,7 @@
                                                                                 <tr>
                                                                                     <td>
                                                                                         <span class="vektorImage">
-                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/3.png">
+                                                                                            <img alt="evde doktor" class="lazyload" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/3.png">
                                                                                         </span>
                                                                                     </td>
                                                                                     <td>Evde Kan Alımı ve Laboratuvar Testleri</td>
@@ -682,7 +716,7 @@
                                                                                 <tr>
                                                                                     <td>
                                                                                         <span class="vektorImage">
-                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/4.png">
+                                                                                            <img alt="evde doktor" class="lazyload" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/4.png">
                                                                                         </span>
                                                                                     </td>
                                                                                     <td>Doktorunuz ve hemşireniz ile Görüşme / Mesajlaşma</td>
@@ -691,7 +725,7 @@
                                                                                 <tr>
                                                                                     <td>
                                                                                         <span class="vektorImage">
-                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/5.png">
+                                                                                            <img alt="evde doktor" class="lazyload" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/5.png">
                                                                                         </span>
                                                                                     </td>
                                                                                     <td>Online Solunum Terapisi</td>
@@ -700,7 +734,7 @@
                                                                                 <tr>
                                                                                     <td>
                                                                                         <span class="vektorImage">
-                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/6.png">
+                                                                                            <img alt="evde doktor" class="lazyload" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/covid/6.png">
                                                                                         </span>
                                                                                     </td>
                                                                                     <td>Fiziksel Kontrol Muayenesi</td>
@@ -718,7 +752,7 @@
                                                                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwoBSTP" aria-expanded="false" aria-controls="collapseTwoBSTP">
                                                                         <i class="icofont-swoosh-right"></i>
                                                                         Kalp Sağlığı Dijital Takip Programı
-                                                                        <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
+                                                                        <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img caption="false" class="lazyload" width="256" height="256" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
                                                                     </button>
                                                                 </h5>
                                                             </div>
@@ -726,8 +760,8 @@
                                                                 <div class="card-body" style="padding: 8px 0px 20px 0px;">
                                                                     <div class="row">
                                                                         <div class="col-md-5">
-                                                                            <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/kalp.jpg" alt="" id="covidImgDektop" style="display:block" class="img-fluid">
-                                                                            <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/kalp_min.jpg" alt="" id="covidImgMobil" class="img-fluid">
+                                                                            <img width="370" height="436" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/kalp.jpg" alt="img" id="covidImgDektop" style="display:block" class="img-fluid lazyload">
+                                                                            <img width="369" height="250" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/kalp_min.jpg" alt="img" id="covidImgMobil" class="img-fluid lazyload">
 
                                                                         </div>
                                                                         <div class="col-md-7">
@@ -750,7 +784,7 @@
                                                                                 <tr>
                                                                                     <td>
                                                                                         <span class="vektorImage">
-                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/1.png">
+                                                                                            <img alt="evde doktor" class="lazyload" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/1.png">
                                                                                         </span>
                                                                                     </td>
                                                                                     <td>Genel Sağlık Takip Cihazı</td>
@@ -759,7 +793,7 @@
                                                                                 <tr>
                                                                                     <td>
                                                                                         <span class="vektorImage">
-                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/2.png">
+                                                                                            <img alt="evde doktor" class="lazyload" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/2.png">
                                                                                         </span>
                                                                                     </td>
                                                                                     <td>Online Doktor Görüşmesi</td>
@@ -768,7 +802,7 @@
                                                                                 <tr>
                                                                                     <td>
                                                                                         <span class="vektorImage">
-                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/3.png">
+                                                                                            <img alt="evde doktor" class="lazyload" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/3.png">
                                                                                         </span>
                                                                                     </td>
                                                                                     <td>Doktorunuz ve hemşireniz ile Görüşme/Mesajlaşma</td>
@@ -777,7 +811,7 @@
                                                                                 <tr>
                                                                                     <td>
                                                                                         <span class="vektorImage">
-                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/4.png">
+                                                                                            <img alt="evde doktor" class="lazyload" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/4.png">
                                                                                         </span>
                                                                                     </td>
                                                                                     <td>Hastanede Kan Tahlilleri ve Radyolojik İncelemeler (İhtiyaç Halinde)</td>
@@ -786,7 +820,7 @@
                                                                                 <tr>
                                                                                     <td>
                                                                                         <span class="vektorImage">
-                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/5.png">
+                                                                                            <img alt="evde doktor" class="lazyload" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/5.png">
                                                                                         </span>
                                                                                     </td>
                                                                                     <td>Fiziksel Kontrol Muayenesi</td>
@@ -795,7 +829,7 @@
                                                                                 <tr>
                                                                                     <td>
                                                                                         <span class="vektorImage">
-                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/6.png">
+                                                                                            <img alt="evde doktor" class="lazyload" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/6.png">
                                                                                         </span>
                                                                                     </td>
                                                                                     <td>Evde Bakım Hizmetleri (İhtiyaç Halinde)</td>
@@ -813,7 +847,7 @@
                                                                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThreeCSTP" aria-expanded="false" aria-controls="collapseThreeCSTP">
                                                                         <i class="icofont-swoosh-right"></i>
                                                                         Diyabet Dijital Takip Programı
-                                                                        <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
+                                                                        <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img caption="false" class="lazyload" width="256" height="256" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
                                                                     </button>
                                                                 </h5>
                                                             </div>
@@ -822,8 +856,8 @@
                                                                     <div class="item team-item">
                                                                         <div class="row">
                                                                             <div class="col-md-5">
-                                                                                <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/diyabet.jpg" alt="" id="covidImgDektop" style="display:block" class="img-fluid">
-                                                                                <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/diyabet_min.jpg" alt="" id="covidImgMobil" class="img-fluid">
+                                                                                <img width="370" height="436" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/diyabet.jpg" alt="img" id="covidImgDektop" style="display:block" class="img-fluid lazyload">
+                                                                                <img width="370" height="250" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/diyabet_min.jpg" alt="img" id="covidImgMobil" class="img-fluid lazyload">
                                                                             </div>
                                                                             <div class="col-md-7">
                                                                                 <h4>Diyabet Dijital Takip Programı</h4>
@@ -840,7 +874,7 @@
                                                                                     <tr>
                                                                                         <td>
                                                                                             <span class="vektorImage">
-                                                                                                <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/1.png">
+                                                                                                <img class="lazyload" alt="evde doktor" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/1.png">
                                                                                             </span>
                                                                                         </td>
                                                                                         <td>Flash veya Sürekli Glikoz Ölçümü (CGM) Sensör ve Cihazları</td>
@@ -849,7 +883,7 @@
                                                                                     <tr>
                                                                                         <td>
                                                                                             <span class="vektorImage">
-                                                                                                <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/2.png">
+                                                                                                <img class="lazyload" alt="evde doktor" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/2.png">
                                                                                             </span>
                                                                                         </td>
                                                                                         <td>Genel Sağlık Takip Cihazı (İhtiyaç halinde)</td>
@@ -858,7 +892,7 @@
                                                                                     <tr>
                                                                                         <td>
                                                                                             <span class="vektorImage">
-                                                                                                <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/3.png">
+                                                                                                <img class="lazyload" alt="evde doktor" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/3.png">
                                                                                             </span>
                                                                                         </td>
                                                                                         <td>Online doktor görüşmesi</td>
@@ -867,7 +901,7 @@
                                                                                     <tr>
                                                                                         <td>
                                                                                             <span class="vektorImage">
-                                                                                                <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/4.png">
+                                                                                                <img class="lazyload" alt="evde doktor" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/4.png">
                                                                                             </span>
                                                                                         </td>
                                                                                         <td>Online diyetisyen görüşmesi</td>
@@ -876,7 +910,7 @@
                                                                                     <tr>
                                                                                         <td>
                                                                                             <span class="vektorImage">
-                                                                                                <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/3.png">
+                                                                                                <img class="lazyload" alt="evde doktor" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/kalp/3.png">
                                                                                             </span>
                                                                                         </td>
                                                                                         <td>Doktorunuz ve hemşireniz ile görüşme/mesajlaşma</td>
@@ -885,7 +919,7 @@
                                                                                     <tr>
                                                                                         <td>
                                                                                             <span class="vektorImage">
-                                                                                                <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/5.png">
+                                                                                                <img class="lazyload" alt="evde doktor" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/5.png">
                                                                                             </span>
                                                                                         </td>
                                                                                         <td>Hastanede veya Evde Kan Alma (İhtiyaç halinde)</td>
@@ -894,7 +928,7 @@
                                                                                     <tr>
                                                                                         <td>
                                                                                             <span class="vektorImage">
-                                                                                                <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/6.png">
+                                                                                                <img class="lazyload" alt="evde doktor" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/diyabet/6.png">
                                                                                             </span>
                                                                                         </td>
                                                                                         <td>Fiziksel kontrol muayenesi</td>
@@ -946,7 +980,7 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
 
-                                <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takipcihazlari.png" alt="" class="img-fluid ">
+                                <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takipcihazlari.png" width="1000" height="1000" alt="img" class="img-fluid lazyload ">
 
                             </div>
                             <div class="col-lg-6 col-md-6">
@@ -994,9 +1028,9 @@
                                         <div class="item team-item">
                                             <div class="row">
                                                 <div class="col-md-5">
-                                                    <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip1.png" id="covidImgDektop" style="display:block;" alt="" class="img-fluid ">
+                                                    <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip1.png" width="1000" height="1000" id="covidImgDektop" style="display:block;" alt="img" class="img-fluid lazyload">
 
-                                                    <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip1_min.png" alt="" id="covidImgMobil" class="img-fluid">
+                                                    <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip1_min.png" width="1024" height="684" alt="img" id="covidImgMobil" class="img-fluid lazyload">
                                                 </div>
                                                 <div class="col-md-7">
                                                     <h4>Genel Sağlık Takip Cihazı</h4>
@@ -1008,48 +1042,47 @@
                                                         <ul>
                                                             <li>
                                                                 <span class="vektorImage">
-                                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/1.png">
+                                                                    <img class="lazyload" alt="evde doktor" caption="false" width="112" height="112" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/1.png">
                                                                 </span>Koldan tansiyon ölçümü
                                                             </li>
                                                             <li>
                                                                 <span class="vektorImage">
-                                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/2.png">
+                                                                    <img class="lazyload" alt="evde doktor" caption="false" width="112" height="112" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/2.png">
                                                                 </span>Nabız
                                                             </li>
                                                             <li>
                                                                 <span class="vektorImage">
-                                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/3.png">
+                                                                    <img class="lazyload" alt="evde doktor" caption="false" width="112" height="112" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/3.png">
                                                                 </span>Temassız ateş ölçümü
                                                             </li>
                                                             <li>
                                                                 <span class="vektorImage">
-                                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/4.png">
+                                                                    <img class="lazyload" alt="evde doktor" caption="false" width="112" height="112" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/4.png">
                                                                 </span>Parmaktan kan satürasyonu
                                                             </li>
                                                             <li>
                                                                 <span class="vektorImage">
-                                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/5.png">
+                                                                    <img class="lazyload" alt="evde doktor" caption="false" width="112" height="112" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/5.png">
                                                                 </span>Kan şekeri
                                                             </li>
                                                             <li>
                                                                 <span class="vektorImage">
-                                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/6.png">
+                                                                    <img class="lazyload" alt="evde doktor" caption="false" width="112" height="112" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/6.png">
                                                                 </span>Anlık EKG
                                                             </li>
                                                         </ul>
                                                         <div class="row mt-5">
-                                                            <!--<video poster="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/video/Genel-Takip-Cihaz-Preview.png" class="videoBoyut" controls> <source src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/video/GenelTakip-Video.mp4" type="video/mp4"> </video>-->
-                                                            <iframe width="560" height="315" style="background-image: url(images/video/DSA-Preview.png);" class="videoBoyut1" src="https://www.youtube.com/embed/rsNtLpGWRt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                            <!--<iframe width="560" height="315" style="background-image: url(images/video/DSA-Preview.png);" class="videoBoyut1" src="https://www.youtube.com/embed/rsNtLpGWRt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>--><a class="videoBoyut1" href="https://www.youtube.com/embed/rsNtLpGWRt8"></a>
                                                         </div>
 
                                                         <div class="row mb-30 mt-5">
                                                             <div class="col-md-12">
                                                                 <a href="https://itunes.apple.com/us/app/memorial/id1350361107" rel="nofollow" target="_blank">
-                                                                    <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/appstore.png" alt="" class="img-fluid 3dhover">
+                                                                    <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/appstore.png" width="149" height="49" alt="img" class="img-fluid 3dhover lazyload">
                                                                 </a>
 
                                                                 <a href="https://play.google.com/store/apps/details?id=com.uzaktanhastatakip&hl=tr" rel="nofollow" target="_blank">
-                                                                    <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/playstore.png" alt="" id="googleplaystoreimg" class="img-fluid 3dhover">
+                                                                    <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/playstore.png" width="149" height="49" alt="img" id="googleplaystoreimg" class="img-fluid 3dhover lazyload">
                                                                 </a>
 
                                                             </div>
@@ -1065,17 +1098,14 @@
                                         <div class="item team-item">
                                             <div class="row">
                                                 <div class="col-md-5">
-                                                    <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip2.png" id="covidImgDektop" style="display:block; " alt="" class="img-fluid">
-                                                    <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip2_min.png" id="covidImgMobil" alt="" class="img-fluid ">
+                                                    <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip2.png" width="1000" height="1000" id="covidImgDektop" style="display:block; " alt="img" class="img-fluid lazyload">
+                                                    <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip2_min.png" width="1024" height="684" id="covidImgMobil" alt="img" class="img-fluid lazyload">
                                                 </div>
                                                 <div class="col-md-7">
                                                     <h4>Patch EKG (HOLTER) Takip Cihazı </h4>
                                                     <div class="bdr"></div>
                                                     <p>
                                                         Patch EKG (HOLTER) ile kalp atışlarınız kayıt altında tutulabilmekte ve kronik kalp rahatsızlığı, aritmi, kalp yetmezliği gibi birçok hastalık takip edilebilmektedir. Cihaz üzerindeki sensörler aracılığıyla EKG takibiniz sağlanır, bluetooth bağlantısıyla akıllı telefonunuza indirilen mobil uygulama ile eşleştirilir. Ölçümleriniz doktorunuz tarafından canlı olarak takip edilebildiği gibi, hasta tarafından sorun yaşanan zaman dilimine ait kayıtlar da doktorunuza dijital yollardan iletilmektedir<br /><br />
-                                                        <!--<span class="vektorImage">
-                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/7.png">
-                                                        </span>Uzun Süreli ve Sürekli EKG Takibi<br /><br />-->
                                                     </p>
                                                     <p>
                                                         Yaklaşık 10 gram ağırlığında ve 4 cm uzunluğundaki bu cihaz dünyanın en minik Holter EKG Monitörleri arasındadır. Holter adı verilen bu cihaz sayesinde, 24 saatlik kalp atışları kayıt altında tutulabilmekte ve ritim bozuklukları tespit edilebilmektedir.
@@ -1086,17 +1116,17 @@
 
                                                     </p>
                                                     <div class="row mt-5">
-                                                        <!--<video poster="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/video/Patch-Takip-Cihaz-Preview.png" class="videoBoyut" controls> <source src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/video/Patch-Video.mp4" type="video/mp4"> </video>-->
-                                                        <iframe width="560" height="315" style="background-image: url(images/video/Patch-Takip-Cihaz-Preview.png);" class="videoBoyut1" src="https://www.youtube.com/embed/q3yIZtqzqc8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                                        <!--<iframe width="560" height="315" style="background-image: url(images/video/Patch-Takip-Cihaz-Preview.png);" class="videoBoyut1" src="https://www.youtube.com/embed/q3yIZtqzqc8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>--><a class="videoBoyut1" href="https://www.youtube.com/embed/q3yIZtqzqc8"></a>
                                                     </div>
                                                     <div class="row mb-30 mt-5">
                                                         <div class="col-md-12">
                                                             <a href="https://itunes.apple.com/us/app/memorial/id1350361107" rel="nofollow" target="_blank">
-                                                                <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/appstore.png" alt="" class="img-fluid 3dhover">
+                                                                <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/appstore.png" width="149" height="49" alt="img" class="img-fluid 3dhover lazyload">
                                                             </a>
 
                                                             <a href="https://play.google.com/store/apps/details?id=com.uzaktanhastatakip&hl=tr" rel="nofollow" target="_blank">
-                                                                <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/playstore.png" alt="" id="googleplaystoreimg" class="img-fluid 3dhover">
+                                                                <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/playstore.png" width="149" height="49" alt="img" id="googleplaystoreimg" class="img-fluid 3dhover lazyload">
                                                             </a>
 
                                                         </div>
@@ -1113,8 +1143,8 @@
                                         <div class="item team-item">
                                             <div class="row">
                                                 <div class="col-md-5">
-                                                    <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip3.png" id="covidImgDektop" style="display: block;" alt="" class="img-fluid">
-                                                    <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip3_min.png" id="covidImgMobil" alt="" class="img-fluid ">
+                                                    <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip3.png" width="1000" height="1000" id="covidImgDektop" style="display: block;" alt="img" class="img-fluid lazyload">
+                                                    <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip3_min.png" width="1024" height="684" id="covidImgMobil" alt="img" class="img-fluid lazyload">
                                                 </div>
                                                 <div class="col-md-7">
                                                     <h4>Sürekli Şeker Ölçüm (CGM) Cihazı</h4>
@@ -1128,13 +1158,13 @@
                                                         <br />
                                                         <strong>Abbott Freestyle Libre Flash Şeker Ölçümü Sensörleri</strong>, kullanımı kolay, gelişmiş sensör teknolojisinden faydalanır.
                                                         İnce, esnek bir steril filament (5 mm uzunluğunda) derinin hemen altına yerleştirilir. 14 günlük sensör, kolunuzun üst arka kısmında durur ve gündüz ile gece boyunca şeker ölçümlerini otomatik olarak alır. Ölçümleri görmek için FreeStyle LibreLink mobil uygulamayı sensöre yaklaştırır ve sensörü okutursunuz. Ağrısız, 1 saniyelik bir okutma ile, kıyafetleriniz üzerinden bile şeker okuması sağlanır.
-                                                        Daha fazla bilgi için ürünün web sitesini ziyaret edebilirsiniz.<a href="https://www.freestylelibre.com.tr/libre/" target="_blank">https://www.freestylelibre.com.tr/libre/</a>
+                                                        Daha fazla bilgi için ürünün web sitesini ziyaret edebilirsiniz.<a rel="nofollow" href="https://www.freestylelibre.com.tr/libre/" target="_blank">https://www.freestylelibre.com.tr/libre/</a>
 
                                                     </p>
                                                     <p>
                                                         <br />
                                                         <strong>Dexcom G6 Sürekli Glikoz Ölçümü Sensörleri</strong>, küçük ve takması kolay, suya dayanıklı ince bir sensöre sahiptir. 10 günlük sensör, cildin yüzeyinin hemen altındaki şeker seviyelerini doğru bir şekilde ölçer ve değerleri verici (transmitter) ile uyumlu akıllı cihazınıza veya alıcıya kablosuz olarak her 5 dakikada bir gönderir.
-                                                        Daha fazla bilgi için ürünün web sitesini ziyaret edebilirsiniz. <a href="https://dexcomtr.com/dexcom-g6/" target="_blank">https://dexcomtr.com/dexcom-g6/</a>
+                                                        Daha fazla bilgi için ürünün web sitesini ziyaret edebilirsiniz. <a rel="nofollow" href="https://dexcomtr.com/dexcom-g6/" target="_blank">https://dexcomtr.com/dexcom-g6/</a>
 
                                                     </p>
                                                     <p>
@@ -1176,7 +1206,7 @@
                                                                     <button class="btn btn-link" type="button" data-toggle="collapse" id="MobileTakipCihazlariIlkEleman" data-target="#collapseOneATC" aria-expanded="true" aria-controls="collapseOneATC">
                                                                         <i class="icofont-swoosh-right"></i>
                                                                         Genel Sağlık Takip Cihazı
-                                                                        <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
+                                                                        <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img caption="false" width="256" height="256" class="lazyload" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
                                                                     </button>
                                                                 </h5>
                                                             </div>
@@ -1184,9 +1214,9 @@
                                                                 <div class="card-body" style="padding: 8px 0px 20px 0px;">
                                                                     <div class="row">
                                                                         <div class="col-md-5">
-                                                                            <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip1.png" id="covidImgDektop" style="display:block;" alt="" class="img-fluid ">
+                                                                            <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip1.png" width="1000" height="1000" id="covidImgDektop" style="display:block;" alt="img" class="img-fluid lazyload">
 
-                                                                            <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip1_min.png" alt="" id="covidImgMobil" class="img-fluid">
+                                                                            <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip1_min.png" width="1024" height="684" alt="img" id="covidImgMobil" class="img-fluid lazyload">
                                                                         </div>
                                                                         <div class="col-md-7">
                                                                             <h4>Genel Sağlık Takip Cihazı</h4>
@@ -1198,47 +1228,47 @@
                                                                                 <ul>
                                                                                     <li>
                                                                                         <span class="vektorImage">
-                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/1.png">
+                                                                                            <img class="lazyload" alt="evde doktor" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/1.png">
                                                                                         </span>Koldan tansiyon ölçümü
                                                                                     </li>
                                                                                     <li>
                                                                                         <span class="vektorImage">
-                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/2.png">
+                                                                                            <img class="lazyload" alt="evde doktor" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/2.png">
                                                                                         </span>Nabız
                                                                                     </li>
                                                                                     <li>
                                                                                         <span class="vektorImage">
-                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/3.png">
+                                                                                            <img class="lazyload" alt="evde doktor" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/3.png">
                                                                                         </span>Temassız ateş ölçümü
                                                                                     </li>
                                                                                     <li>
                                                                                         <span class="vektorImage">
-                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/4.png">
+                                                                                            <img class="lazyload" alt="evde doktor" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/4.png">
                                                                                         </span>Parmaktan kan satürasyonu
                                                                                     </li>
                                                                                     <li>
                                                                                         <span class="vektorImage">
-                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/5.png">
+                                                                                            <img class="lazyload" alt="evde doktor" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/5.png">
                                                                                         </span>Kan şekeri
                                                                                     </li>
                                                                                     <li>
                                                                                         <span class="vektorImage">
-                                                                                            <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/6.png">
+                                                                                            <img class="lazyload" alt="evde doktor" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/takip/6.png">
                                                                                         </span>Anlık EKG
                                                                                     </li>
                                                                                 </ul>
                                                                                 <div class="row mt-5">
-                                                                                    <!--<video poster="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/video/Genel-Takip-Cihaz-Preview.png" class="videoBoyut" controls> <source src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/video/GenelTakip-Video.mp4" type="video/mp4"> </video>-->
-                                                                                    <iframe width="560" height="315" style="background-image: url(images/video/DSA-Preview.png);" class="videoBoyut1" src="https://www.youtube.com/embed/rsNtLpGWRt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                                                                    <!--<iframe width="560" height="315" style="background-image: url(images/video/DSA-Preview.png);" class="videoBoyut1" src="https://www.youtube.com/embed/rsNtLpGWRt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>--><a class="videoBoyut1" href="https://www.youtube.com/embed/rsNtLpGWRt8"></a>
                                                                                 </div>
                                                                                 <div class="row mb-30 mt-5">
                                                                                     <div class="col-md-12">
                                                                                         <a href="https://itunes.apple.com/us/app/memorial/id1350361107" rel="nofollow" target="_blank">
-                                                                                            <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/appstore.png" alt="" class="img-fluid 3dhover">
+                                                                                            <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/appstore.png" alt="img" width="149" height="49" class="img-fluid 3dhover lazyload">
                                                                                         </a>
 
                                                                                         <a href="https://play.google.com/store/apps/details?id=com.uzaktanhastatakip&hl=tr" rel="nofollow" target="_blank">
-                                                                                            <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/playstore.png" alt="" id="googleplaystoreimg" class="img-fluid 3dhover">
+                                                                                            <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/playstore.png" alt="img" width="149" height="49" id="googleplaystoreimg" class="img-fluid 3dhover lazyload">
                                                                                         </a>
 
                                                                                     </div>
@@ -1256,7 +1286,7 @@
                                                                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwoBTC" aria-expanded="false" aria-controls="collapseTwoBTC">
                                                                         <i class="icofont-swoosh-right"></i>
                                                                         Patch EKG (HOLTER)
-                                                                        <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
+                                                                        <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img class="lazyload" caption="false" width="256" height="256" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
                                                                     </button>
                                                                 </h5>
                                                             </div>
@@ -1264,8 +1294,8 @@
                                                                 <div class="card-body" style="padding: 8px 0px 20px 0px;">
                                                                     <div class="row">
                                                                         <div class="col-md-5">
-                                                                            <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip2.png" id="covidImgDektop" style="display:block; " alt="" class="img-fluid">
-                                                                            <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip2_min.png" id="covidImgMobil" alt="" class="img-fluid ">
+                                                                            <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip2.png" width="1000" height="1000" id="covidImgDektop" style="display:block; " alt="img" class="img-fluid lazyload">
+                                                                            <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip2_min.png" width="1024" height="684" id="covidImgMobil" alt="img" class="img-fluid lazyload">
                                                                         </div>
                                                                         <div class="col-md-7">
                                                                             <h4>Patch EKG (HOLTER)</h4>
@@ -1283,17 +1313,17 @@
 
                                                                             </p>
                                                                             <div class="row mt-5">
-                                                                                <!--<video poster="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/video/Patch-Takip-Cihaz-Preview.png" class="videoBoyut" controls> <source src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/video/Patch-Video.mp4" type="video/mp4"> </video>-->
-                                                                                <iframe width="560" height="315" style="background-image: url(images/video/Patch-Takip-Cihaz-Preview.png);" class="videoBoyut1" src="https://www.youtube.com/embed/q3yIZtqzqc8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                                                                <!--<iframe width="560" height="315" style="background-image: url(images/video/Patch-Takip-Cihaz-Preview.png);" class="videoBoyut1" src="https://www.youtube.com/embed/q3yIZtqzqc8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>--><a class="videoBoyut1" href="https://www.youtube.com/embed/q3yIZtqzqc8"></a>
                                                                             </div>
                                                                             <div class="row mb-30 mt-5">
                                                                                 <div class="col-md-12">
                                                                                     <a href="https://itunes.apple.com/us/app/memorial/id1350361107" rel="nofollow" target="_blank">
-                                                                                        <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/appstore.png" alt="" class="img-fluid 3dhover">
+                                                                                        <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/appstore.png" alt="img" width="149" height="49" class="img-fluid 3dhover lazyload">
                                                                                     </a>
 
                                                                                     <a href="https://play.google.com/store/apps/details?id=com.uzaktanhastatakip&hl=tr" rel="nofollow" target="_blank">
-                                                                                        <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/playstore.png" alt="" id="googleplaystoreimg" class="img-fluid 3dhover">
+                                                                                        <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/playstore.png" alt="img" width="149" height="49" id="googleplaystoreimg" class="img-fluid 3dhover lazyload">
                                                                                     </a>
 
                                                                                 </div>
@@ -1310,7 +1340,7 @@
                                                                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThreeCTC" aria-expanded="false" aria-controls="collapseThreeCTC">
                                                                         <i class="icofont-swoosh-right"></i>
                                                                         Sürekli Glikoz Ölçüm (CGM) Cihazı
-                                                                        <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
+                                                                        <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img caption="false" width="256" height="256" class="lazyload" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
                                                                     </button>
                                                                 </h5>
                                                             </div>
@@ -1319,8 +1349,8 @@
                                                                     <div class="item team-item">
                                                                         <div class="row">
                                                                             <div class="col-md-5">
-                                                                                <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip3.png" id="covidImgDektop" style="display: block;" alt="" class="img-fluid">
-                                                                                <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip3_min.png" id="covidImgMobil" alt="" class="img-fluid ">
+                                                                                <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip3.png" width="1000" height="1000" id="covidImgDektop" style="display: block;" alt="img" class="img-fluid lazyload">
+                                                                                <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/takip3_min.png" width="1024" height="684" id="covidImgMobil" alt="img" class="img-fluid lazyload">
                                                                             </div>
                                                                             <div class="col-md-7">
                                                                                 <h4>Sürekli Şeker Ölçüm (CGM) Cihazı</h4>
@@ -1334,13 +1364,13 @@
                                                                                     <br />
                                                                                     <strong>Abbott Freestyle Libre Flash Şeker Ölçümü Sensörleri</strong>, kullanımı kolay, gelişmiş sensör teknolojisinden faydalanır.
                                                                                     İnce, esnek bir steril filament (5 mm uzunluğunda) derinin hemen altına yerleştirilir. 14 günlük sensör, kolunuzun üst arka kısmında durur ve gündüz ile gece boyunca şeker ölçümlerini otomatik olarak alır. Ölçümleri görmek için FreeStyle LibreLink mobil uygulamayı sensöre yaklaştırır ve sensörü okutursunuz. Ağrısız, 1 saniyelik bir okutma ile, kıyafetleriniz üzerinden bile şeker okuması sağlanır.
-                                                                                    Daha fazla bilgi için ürünün web sitesini ziyaret edebilirsiniz.<a href="https://www.freestylelibre.com.tr/libre/" target="_blank">https://www.freestylelibre.com.tr/libre/</a>
+                                                                                    Daha fazla bilgi için ürünün web sitesini ziyaret edebilirsiniz.<a rel="nofollow" href="https://www.freestylelibre.com.tr/libre/" target="_blank">https://www.freestylelibre.com.tr/libre/</a>
 
                                                                                 </p>
                                                                                 <p>
                                                                                     <br />
                                                                                     <strong>Dexcom G6 Sürekli Glikoz Ölçümü Sensörleri</strong>, küçük ve takması kolay, suya dayanıklı ince bir sensöre sahiptir. 10 günlük sensör, cildin yüzeyinin hemen altındaki şeker seviyelerini doğru bir şekilde ölçer ve değerleri verici (transmitter) ile uyumlu akıllı cihazınıza veya alıcıya kablosuz olarak her 5 dakikada bir gönderir.
-                                                                                    Daha fazla bilgi için ürünün web sitesini ziyaret edebilirsiniz. <a href="https://dexcomtr.com/dexcom-g6/" target="_blank">https://dexcomtr.com/dexcom-g6/</a>
+                                                                                    Daha fazla bilgi için ürünün web sitesini ziyaret edebilirsiniz. <a rel="nofollow" href="https://dexcomtr.com/dexcom-g6/" target="_blank">https://dexcomtr.com/dexcom-g6/</a>
 
                                                                                 </p>
                                                                                 <p>
@@ -1397,7 +1427,7 @@
                                         <tr>
                                             <td>
                                                 <span class="vektorImage">
-                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/nasilkullanirim/6.png">
+                                                    <img alt="evde doktor" class="lazyload" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/nasilkullanirim/6.png">
                                                 </span>
                                             </td>
                                             <td>Hayati önem taşıyan veriler (EKG, nabız, tansiyon, oksijen satürasyonu - SpO2-kandaki oksijen doygunluğu, ateş ve kan şekeri analizi) kayıt altında tutularak gerekli takipler yapılabilmektedir.</td>
@@ -1405,7 +1435,7 @@
                                         <tr>
                                             <td>
                                                 <span class="vektorImage">
-                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/nasilkullanirim/1.png">
+                                                    <img alt="evde doktor" class="lazyload" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/nasilkullanirim/1.png">
                                                 </span>
                                             </td>
                                             <td>Kalp krizi, stent takılması veya diğer kalp ameliyatlarınız sonrası evde takip ve destek hizmeti sağlanabilmektedir.</td>
@@ -1413,7 +1443,7 @@
                                         <tr>
                                             <td>
                                                 <span class="vektorImage">
-                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/nasilkullanirim/7.png">
+                                                    <img alt="evde doktor" class="lazyload" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/nasilkullanirim/7.png">
                                                 </span>
                                             </td>
                                             <td>Hastaların takibi sırasında ihtiyaç duyulduğunda uzman doktorumuz ve hemşiremiz ile görüntülü görüşme ve mesajlaşma hizmeti sağlanabilmektedir.</td>
@@ -1421,7 +1451,7 @@
                                         <tr>
                                             <td>
                                                 <span class="vektorImage">
-                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/nasilkullanirim/2.png">
+                                                    <img alt="evde doktor" class="lazyload" width="112" height="112" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/nasilkullanirim/2.png">
                                                 </span>
                                             </td>
                                             <td>Hastaların ilaçlarının çıkan sonuçlara göre düzenlenmesi ve kontrolü sağlanabilmektedir.</td>
@@ -1432,7 +1462,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class=" about-col">
-                                    <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/avantaj.png" alt="" class="img-fluid 3dhover">
+                                    <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/avantaj.png" width="792" height="782" alt="img" class="img-fluid 3dhover lazyload">
                                 </div>
                             </div>
                         </div>
@@ -1456,7 +1486,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class=" about-col">
-                                    <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/nasılsahipolurum.png" alt="" class="img-fluid 3dhover">
+                                    <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/about/nasılsahipolurum.png" width="791" height="782" alt="img" class="img-fluid 3dhover lazyload">
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -1467,24 +1497,16 @@
                                         <tr>
                                             <td>
                                                 <span class="vektorImage">
-                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/nasilkullanirim/2.png">
+                                                    <img alt="evde doktor" class="lazyload" caption="false" width="112" height="112" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/nasilkullanirim/2.png">
                                                 </span>
                                             </td>
                                             <td> 1. Memorial Sağlık Grubu'nun uzman doktorlarının tavsiyesi ile size uygun olan takip programı ve süresi belirlenir.</td>
                                         </tr>
 
-                                        <!--<tr>
-                                            <td>
-                                                <span class="vektorImage">
-                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/nasilkullanirim/3.png">
-                                                </span>
-                                            </td>
-                                            <td> 2. Ödeme işleminden sonra cihaz teslim edilir.</td>
-                                        </tr>-->
                                         <tr>
                                             <td>
                                                 <span class="vektorImage">
-                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/nasilkullanirim/4.png">
+                                                    <img alt="evde doktor" class=lazyload caption="false" width="112" height="112" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/nasilkullanirim/4.png">
                                                 </span>
                                             </td>
                                             <td> 2. Gerekli bilgilendirmeler sonrası Hizmet Sözleşmesi imzalanır.</td>
@@ -1492,7 +1514,7 @@
                                         <tr>
                                             <td>
                                                 <span class="vektorImage">
-                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/nasilkullanirim/7.png">
+                                                    <img alt="evde doktor" class="lazyload" caption="false" width="112" height="112" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/nasilkullanirim/7.png">
                                                 </span>
                                             </td>
                                             <td> 3. Memorial Dijital Sağlık Asistanı sistemi üzerinde hasta kaydı oluşturulur. Akıllı telefonunuza mobil takip (DAKİK) uygulaması indirilir.</td>
@@ -1500,7 +1522,7 @@
                                         <tr>
                                             <td>
                                                 <span class="vektorImage">
-                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/nasilkullanirim/5.png">
+                                                    <img alt="evde doktor" class="lazyload" caption="false" width="112" height="112" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/nasilkullanirim/5.png">
                                                 </span>
                                             </td>
                                             <td>4. Teslim aldığınız cihaz ile seri numaraları aracılığıyla sistem eşleştirilmesi sağlanır ve sistem kullanıma hazır hale gelir.</td>
@@ -1508,7 +1530,7 @@
                                         <tr>
                                             <td>
                                                 <span class="vektorImage">
-                                                    <img alt="evde doktor" caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/nasilkullanirim/1.png">
+                                                    <img alt="evde doktor" class="lazyload" caption="false" width="112" height="112" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/icon/nasilkullanirim/1.png">
                                                 </span>
                                             </td>
                                             <td> 5. Aynı uygulamayı yakınlarınız da indirerek vereceğiniz paylaşım onayı ile sağlık verilerinizi izleyebilir.</td>
@@ -1545,7 +1567,7 @@
                                             <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseEightH" aria-expanded="false" aria-controls="collapseEightH">
                                                 <i class="icofont-swoosh-right"></i>
                                                 Kullanici adı ve şifremi unuttum, ne yapabilirim?
-                                                <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
+                                                <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img class="lazyload" width="256" height="256" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
                                             </button>
                                         </h5>
                                     </div>
@@ -1563,7 +1585,7 @@
                                             <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseNineI" aria-expanded="false" aria-controls="collapseNineI">
                                                 <i class="icofont-swoosh-right"></i>
                                                 Uygulama açılmıyor? Ne yapmaliyim?
-                                                <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
+                                                <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img class="lazyload" width="256" height="256" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
                                             </button>
                                         </h5>
                                     </div>
@@ -1581,7 +1603,7 @@
                                             <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTenK" aria-expanded="false" aria-controls="collapseTenK">
                                                 <i class="icofont-swoosh-right"></i>
                                                 Uygulama üzerinden ilaç hatırlatma bilgisi gelmiyor?
-                                                <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
+                                                <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img class="lazyload" width="256" height="256" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
                                             </button>
                                         </h5>
                                     </div>
@@ -1599,7 +1621,7 @@
                                             <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseElevenJ" aria-expanded="false" aria-controls="collapseElevenJ">
                                                 <i class="icofont-swoosh-right"></i>
                                                 Cihazi teslim edeceğim randevu almam gerekiyor mu?
-                                                <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
+                                                <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img class="lazyload" width="256" height="256" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
                                             </button>
                                         </h5>
                                     </div>
@@ -1617,7 +1639,7 @@
                                             <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwelveT" aria-expanded="false" aria-controls="collapseTwelveT">
                                                 <i class="icofont-swoosh-right"></i>
                                                 Uygulama silindi yeniden nasil yükleyebilirim? Link gönderir misiniz?
-                                                <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
+                                                <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img class="lazyload" width="256" height="256" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
                                             </button>
                                         </h5>
                                     </div>
@@ -1637,7 +1659,7 @@
                                             <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOneA" aria-expanded="true" aria-controls="collapseOneA">
                                                 <i class="icofont-swoosh-right"></i>
                                                 Online muayane görüşmelerimi nasıl gerçekleştireceğim?
-                                                <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
+                                                <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img class="lazyload" width="256" height="256" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
                                             </button>
                                         </h5>
                                     </div>
@@ -1655,7 +1677,7 @@
                                             <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwoB" aria-expanded="false" aria-controls="collapseTwoB">
                                                 <i class="icofont-swoosh-right"></i>
                                                 Paket süremi uzatabilir miyim?
-                                                <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
+                                                <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img class="lazyload" width="256" height="256" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
                                             </button>
                                         </h5>
                                     </div>
@@ -1671,7 +1693,7 @@
                                             <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThreeC" aria-expanded="false" aria-controls="collapseThreeC">
                                                 <i class="icofont-swoosh-right"></i>
                                                 Cihazım çalışmıyor veya zarar gördü ? Ne yapmalıyım?
-                                                <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
+                                                <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img class="lazyload" width="256" height="256" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
                                             </button>
                                         </h5>
                                     </div>
@@ -1689,7 +1711,7 @@
                                             <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFourD" aria-expanded="false" aria-controls="collapseFourD">
                                                 <i class="icofont-swoosh-right"></i>
                                                 Ölçümlerim hatalı çıkıyor ne yapmalıyım?
-                                                <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
+                                                <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img class="lazyload" width="256" height="256" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
                                             </button>
                                         </h5>
                                     </div>
@@ -1707,7 +1729,7 @@
                                             <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFiveE" aria-expanded="false" aria-controls="collapseFiveE">
                                                 <i class="icofont-swoosh-right"></i>
                                                 Sonuçlarım belirlenen ölçüm değerlerinden yüksek çıkıyor ne yapmalıyım?
-                                                <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
+                                                <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img class="lazyload" width="256" height="256" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
                                             </button>
                                         </h5>
                                     </div>
@@ -1725,7 +1747,7 @@
                                             <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFiveEF" aria-expanded="false" aria-controls="collapseFiveEF">
                                                 <i class="icofont-swoosh-right"></i>
                                                 Acil bir durum olduğunda ne yapmalıyım?
-                                                <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
+                                                <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img class="lazyload" width="256" height="256" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
                                             </button>
                                         </h5>
                                     </div>
@@ -1744,7 +1766,7 @@
                                             <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSixF" aria-expanded="false" aria-controls="collapseSixF">
                                                 <i class="icofont-swoosh-right"></i>
                                                 Ölçüm sonuçlarımı kimler takip edebilir?
-                                                <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
+                                                <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img class="lazyload" width="256" height="256" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
                                             </button>
                                         </h5>
                                     </div>
@@ -1760,7 +1782,7 @@
                                             <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSevenG" aria-expanded="false" aria-controls="collapseSevenG">
                                                 <i class="icofont-swoosh-right"></i>
                                                 Bu hizmetten artık yararlanmak istemiyorum? İptal edebilir miyim?
-                                                <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img caption="false" src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
+                                                <span style="width: 30px; position: absolute; right: 18px; top: 50%; transform: translateY(-50%);"><img width="256" height="256" class="lazyload" caption="false" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/yukariOK.png"></span>
                                             </button>
                                         </h5>
                                     </div>
@@ -1869,11 +1891,11 @@
 
     </section>
     <!-- Footer Start -->
-    <footer class="footer-area background-image" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/footer-bg.jpg">
+    <footer class="footer-area background-image lazyload" data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/footer-bg.jpg">
         <div class="container">
             <div class="row mt-4">
                 <div class="col-lg-4">
-                    <img src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/LogoWhiteYeni.png" id="footerLogo" alt="" class="img-fluid">
+                    <img data-src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/images/medical/LogoWhiteYeni.png" width="200" height="46" id="footerLogo" alt="img" class="img-fluid lazyload">
                 </div>
 
                 <div class="col-lg-4">
@@ -1896,7 +1918,7 @@
     </footer>
 
     <div class="flex-container">
-        <div> <a href="tel:4448899" style="display:none" id="bize-arayin" title="Bize Arayin"><i class="icofont-ui-call"></i>444 88 99</a></div>
+        <div> <a rel="nofollow" href="tel:4448899" style="display:none" id="bize-arayin" title="Bize Arayin"><i class="icofont-ui-call"></i>444 88 99</a></div>
         <div><a href="#contact" style="display:none" id="bize-ulasin" title="Bize Ulasin"><i class="flaticon-email"></i>Hemen Bilgi Al</a></div>
     </div>
     <a href="#" id="back-to-top" title="Back to top"><i class="fas fa-long-arrow-alt-up"></i></a>
@@ -1935,7 +1957,7 @@
     <script src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/js/intlInputPhone2.js"></script>
     <script src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/js/intlInputPhone2.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
 
     <!-- Google map -->
     <script src="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/js/map.js"></script>
@@ -1945,30 +1967,31 @@
 
     <script src="{{ CDN_URL }}{{ STATIC_URL }}js/utmLinkSaver.js?v=3"></script>
     <script>saveUtmLink(10);</script>
-
-    <!--<script type="text/javascript">
-        window.addEventListener("load", function () {
-            window.cookieconsent.initialise({
-                "palette": {
-                    "popup": {
-                        "background": "#f1f3f9",
-                        "text": "#28252c",
-                    },
-                    "button": {
-                        "background": "transparent",
-                        "text": "#28252c",
-                        "border": "#28252c"
+    <!--youtube lazyload-->
+    <script type="text/javascript">
+        lazyload();
+        window.addEventListener("DOMContentLoaded", function () {
+            var youtubeVideos = document.querySelectorAll("a[href^='https://www.youtube.com/']");
+            if (youtubeVideos != "" && youtubeVideos != null) {
+                youtubeVideos.forEach(function (element, index) {
+                    element.innerHTML = "";
+                    if (element.href.split("/")[4] != "" && element.href.split("/")[4] != null) {
+                        element.style.backgroundImage = `url(https://img.youtube.com/vi/${element.href.split("/")[4]}/0.jpg)`;
                     }
-                },
-                "content": {
-                    "message": "Hizmetlerimizden en iyi şekilde faydalanabilmeniz için çerezler kullanıyoruz. memorial.com.tr'yi kullanarak çerezlere izin vermiş olursunuz.",
-                    "dismiss": "Tamam",
-                    "link": "Detaylar için tıklayınız.",
-                    "href": "https://www.memorial.com.tr/kurumsal/cerezler-cookies-politikasi/"
-                }
-            })
+                });
+
+                var youtubeIframeElement = "";
+                youtubeVideos.forEach(function (element, index) {
+                    element.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        youtubeIframeElement = `<iframe src="${element.href}?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+                        element.insertAdjacentHTML('beforebegin', youtubeIframeElement);
+                        element.remove();
+                    })
+                });
+            }
         });
-    </script>-->
+    </script>
     <!-- cookie policy -->
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
@@ -2214,7 +2237,9 @@
         }
     </script>
 
-
+    <script type="application/ld+json">
+        {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Kullanici adı ve şifremi unuttum, ne yapabilirim?","acceptedAnswer":{"@type":"Answer","text":"Şifrenizi unutmanız halinde, mobil uygulamanın giriş ekranında yer alan “şifre isteği” seçeneğinden hesap türünü hasta seçip, ilgili bölümleri (Telefon ve TC Kimlik Numarası) doldurduktan sonra telefon numaranıza gelen şifreyi kullanabilirsiniz."}},{"@type":"Question","name":"Uygulama açılmıyor? Ne yapmaliyim?","acceptedAnswer":{"@type":"Answer","text":" Hastaneden ayrıldıktan sonra mobil uygulamanın kullanımı ile ilgili sorun yaşamanız halinde Çağrı Merkezimiz ya da hizmet aldığınız hastanemiz ile iletişime geçmeniz gerekmektedir."}},{"@type":"Question","name":"Uygulama üzerinden ilaç hatırlatma bilgisi gelmiyor?","acceptedAnswer":{"@type":"Answer","text":" Detaylı bilgi için mesajlar bölümünden hemşiremiz ile görüşme sağlayabilirsiniz. Hemşiremiz uygulama üzerinden ilaç hatırlatma uyarılarını kontrol edip, sizleri bilgilendirecektir."}},{"@type":"Question","name":"Cihazi teslim edeceğim randevu almam gerekiyor mu?","acceptedAnswer":{"@type":"Answer","text":"Yararlandığınız sağlık programın son aşaması olarak hastanemizde fiziksel kontrol muayenesi var ise doktorumuz tarafından muayenenizin gerçekleştirilmesi gerekmektedir. Fiziksel muayene randevunuz, sizin ve doktorunuzun uygun olduğu bir tarih için planlanacaktır. Randevu tarihi için Çağrı Merkezimizden ya da hemşirenizden destek alabilirsiniz."}},{"@type":"Question","name":"Uygulama silindi yeniden nasil yükleyebilirim? Link gönderir misiniz?","acceptedAnswer":{"@type":"Answer","text":"Size teslim edilen Memorial amblemli cihaz kutusunda yer alan QR koduna (karekod) telefonunuzu okutarak uygulamayı telefonunuza tekrar indirebilirsiniz. IOS ve Android için iki farklı QR kodu cihaz kutusunda yer almaktadır.\n                                                Dilerseniz Google Play ya da Apple Store üzerinden de  “Dakik Uzaktan Takip Sistemleri” uygulamasını indirebilirsiniz."}},{"@type":"Question","name":"Online muayane görüşmelerimi nasıl gerçekleştireceğim?","acceptedAnswer":{"@type":"Answer","text":"Program kapsamında yer alan online görüşme randevularınız Tele-Tıp asistanı tarafından, doktorunuzun randevu programına göre sizin de tercih ettiğiniz tarih ve saat için organize edilecektir. Online doktor görüşmesi için mobil uygulamanın “mesajlar” bölümünde yer alan video görüşme altyapısı kullanılacaktır. Tele-Tıp asistanı tarafından randevu saatinizde video konferans arama isteği tarafınıza gönderilerek görüşmeniz gerçekleştirilecektir."}},{"@type":"Question","name":"Paket süremi uzatabilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Paket sürenizi doktorunuzla yapacağınız değerlendirme sonrası uzatabilirsiniz. Detaylı bilgi için doktorunuz, hemşireniz ya da Çağrı Merkezimiz ile iletişime geçebilirsiniz."}},{"@type":"Question","name":"Cihazım çalışmıyor veya zarar gördü ? Ne yapmalıyım?","acceptedAnswer":{"@type":"Answer","text":"Cihaz ile ilgili tamir veya yedek parça temini gereken durumlarda Çağrı merkezimiz ya da hizmet aldığınız hastanemiz ile iletişime geçmeniz gerekmektedir. Cihazı bileşenlerine ayırmaya veya tamir etmeye çalışmamanız önemlidir. Onarım ve bakım işlemler hastanemizdeki yetkili kişi tarafından yapılır."}},{"@type":"Question","name":"Ölçümlerim hatalı çıkıyor ne yapmalıyım?","acceptedAnswer":{"@type":"Answer","text":"Ölçüm değerlerinizin hatalı olduğunu düşünmeniz halinde, uygulamanın “mesajlar” bölümünden doktorunuz ve hemşireniz ile iletişime geçebilirsiniz. Hemşiremiz uygulama üzerinden gerekli kontrolleri sağlayıp, sizleri bilgilendirecektir."}},{"@type":"Question","name":"Sonuçlarım belirlenen ölçüm değerlerinden yüksek çıkıyor ne yapmalıyım?","acceptedAnswer":{"@type":"Answer","text":" Ölçüm değerlerinizin yüksek/düşük çıkması halinde uygulamanın “mesajlar” bölümünden doktorunuz veya hemşireniz ile iletişime geçebilirsiniz. Hemşireniz veya doktorunuz tarafından size gerekli yönlendirmeler yapılacaktır. Hastalığın seyri ile ilgili ani gelişen travma, bilinç kaybı veya takip cihazı tarafından belirlenen kritik değer üzerindeki ölçümler bazında tıbbi müdahale gerektiren ve beklenmeyen bir durumun oluşması halinde vakit kaybetmeden en yakın hastaneye başvurmanız gerekmektedir."}},{"@type":"Question","name":"Acil bir durum olduğunda ne yapmalıyım?","acceptedAnswer":{"@type":"Answer","text":"Hastalığın seyri ile ilgili ani gelişen travma, bilinç kaybı veya takip cihazı tarafından belirlenen kritik değer üzerindeki ölçümler bazında tıbbi müdahale gerektiren ve beklenmeyen bir durumun oluşması\n                                                halinde derhal en yakın hastaneye başvurmanız gerekmektedir."}},{"@type":"Question","name":"Ölçüm sonuçlarımı kimler takip edebilir?","acceptedAnswer":{"@type":"Answer","text":"Hastalara ait veriler, sadece hastanın kendisi, hastanın onay verdiği yakınları, doktorunuz ve hemşireniz tarafından görülebilmektedir."}},{"@type":"Question","name":"Bu hizmetten artık yararlanmak istemiyorum? İptal edebilir miyim?","acceptedAnswer":{"@type":"Answer","text":" Sözleşme kapsamında belirlenen program süresinden önce takip cihazını ve hizmetini iptal veya iade etmek istemeniz halinde, sizden o güne kadar kullanılan hizmetler için bir kullanım bedeli tahsil edilir. İptal\n                                                süreci ile ilgili detaylı bilgi için lütfen Çağrı Merkezimiz ya da hizmet aldığınız hastanemiz ile iletişime geçiniz."}},{"@type":"Question","name":"","acceptedAnswer":{"@type":"Answer","text":""}}]}
+    </script><!--FAQPage Code Generated by https://saijogeorge.com/json-ld-schema-generator/faq/-->
 
 </body>
 
