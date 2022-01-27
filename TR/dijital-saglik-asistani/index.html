@@ -47,20 +47,20 @@
     <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/css/intlInputPhone.min.css">
     <link rel="stylesheet" href="{{ CDN_URL }}{{ STATIC_URL }}dijital-saglik-asistani/css/intlInputPhone.css">
     <style type="text/css">
-        a[href^='https://www.youtube.com/'], iframe[src^='https://www.youtube.com/'] {
+        a[href^='https://www.youtube.com/embed'], iframe[src^='https://www.youtube.com/embed'] {
             display: block;
             width: 100%;
             height: 330px;
             position: relative;
         }
 
-        a[href^='https://www.youtube.com/'] {
+        a[href^='https://www.youtube.com/embed'] {
             background-color: black;
             background-position: center;
             background-size: cover;
         }
 
-            a[href^='https://www.youtube.com/']::before {
+            a[href^='https://www.youtube.com/embed']::before {
                 content: '';
                 display: inline-block;
                 background-image: url('https://cdn.memorial.com.tr/files/images/icon-youtube.svg');
@@ -75,11 +75,98 @@
             }
 
         @@media (min-width:577px) {
-            a[href^='https://www.youtube.com/'], iframe[src^='https://www.youtube.com/'] {
+            a[href^='https://www.youtube.com/embed'], iframe[src^='https://www.youtube.com/embed'] {
                 display: block;
                 width: 560px;
                 height: 315px;
             }
+        }
+
+
+        .videoboxTitle {
+            display: none;
+        }
+
+        .videobox {
+            background-color: black;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .videotext {
+            position: absolute;
+            text-align: center;
+            bottom: 0px;
+            left: 0px;
+            top: 20%;
+            right: 0px;
+            height: 100%;
+            width: 100%;
+        }
+
+            .videotext p {
+                font-size: 18px;
+                color: black;
+                font-weight: 200;
+            }
+
+        .videobutton {
+            position: absolute;
+            text-align: center;
+            bottom: 0px;
+            left: 0px;
+            top: 70%;
+            right: 0px;
+            height: 100%;
+            width: 100%;
+        }
+
+        .videobox::before {
+            content: '';
+            display: inline-block;
+            background-image: url('images/medical/bg/videooynatmabutonu.png');
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        @media all and (max-width: 480px) {
+            .videobox::before {
+                width: 40px;
+                height: 40px;
+            }
+
+            .videobutton {
+                display: none;
+            }
+
+            .videotext {
+                display: none;
+            }
+
+            .videobox::before {
+                width: 90px;
+                height: 90px;
+            }
+
+            .videoboxTitle {
+                display: block;
+            }
+        }
+
+        @media all and (max-width:780px) {
+            .videotext {
+                top: 12%;
+            }
+
+                .videotext p {
+                    font-size: 16px;
+                }
         }
     </style>
     <!-- Hotjar Tracking Code for https://www.memorial.com.tr/dijital-saglik-asistani -->
@@ -1409,7 +1496,30 @@
 
 
     </section>
+    <section class="about-area" id="videobox">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 videoboxTitle"><h2 style="font-size:30px;line-height:40px">Dijital Sağlık Asistanı Hasta Görüşü</h2></div>
+                <div class="col-lg-12">
 
+                    <a href="https://www.youtube.com/watch?v=Q_EO2De_vNw" class="mediabox">
+                        <div class="videobox">
+                            <img src="images/medical/bg/videobg.png">
+
+                            <div class="videotext">
+                                <h4>Dijital Sağlık Asistanı Hasta Görüşü</h4>
+                                <p>“50 günü hastanede geçirmiş biri olarak bu cihazın gerçekten benim için çok önemi vardı."</p>
+                            </div>
+                            <div class="videobutton">
+                                <a class="btn btn-primary theme-btn mediabox" style="padding: 8px 12px; font-size: 18px; height:40px" href="https://www.youtube.com/watch?v=Q_EO2De_vNw" role="button">Hasta Görüş Videosunu İzle</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
     <section class="about-area" id="avantajlar" style="margin-top:15px">
         <div class="container">
             <div class="row">
@@ -1812,7 +1922,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="my-title" style="margin-bottom:-20px">
-                        <!--style="margin-bottom:0px;-webkit-box-shadow:none;box-shadow:none;"-->
+                        
                         <h4>Hemen Bilgi Al</h4>
                         <div class="bdr clearfix" style="margin-bottom:20px"></div>
                         <div class="form-col">
@@ -1833,7 +1943,7 @@
                                     </div>
                                     <div class="col-lg-6">
 
-                                        <!--<input type="text" name="phone" class="form-control" id="phoneNumber" value="1" hidden aria-describedby="phoneNumberFeedback">-->
+                                       
                                         <div class="input-phone"></div>
                                         <span id="phoneNumberspErr"></span>
 
@@ -1843,7 +1953,7 @@
                                     <div class="col-lg-12">
 
                                         <input type="email" class="form-control" name="email" id="email2" placeholder="Email">
-                                        <!--<span id="email2spErr"></span>-->
+                                       
 
                                     </div>
                                 </div>
@@ -1970,8 +2080,9 @@
     <!--youtube lazyload-->
     <script type="text/javascript">
         lazyload();
+        MediaBox('.mediabox');
         window.addEventListener("DOMContentLoaded", function () {
-            var youtubeVideos = document.querySelectorAll("a[href^='https://www.youtube.com/']");
+            var youtubeVideos = document.querySelectorAll("a[href^='https://www.youtube.com/embed']");
             if (youtubeVideos != "" && youtubeVideos != null) {
                 youtubeVideos.forEach(function (element, index) {
                     element.innerHTML = "";
@@ -2018,37 +2129,6 @@
             $('.carousel').carousel({
                 interval: 5000
             })
-
-            // Gets the video src from the data-src on each button
-
-            var $videoSrc;
-            $('.video-btn').click(function () {
-                //$videoSrc = $(this).data("src");
-                $videoSrc = "https://www.youtube.com/embed/ru6_hWpVXlE";
-                $("#videobox").addClass("zindex-1");
-
-            });
-
-            $('#myModal').on('hidden.bs.modal', function (e) {
-                $("#videobox").removeClass("zindex-1");
-            })
-
-
-            // when the modal is opened autoplay it
-            $('#myModal').on('shown.bs.modal', function (e) {
-
-                // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
-                $("#video").attr('src', "https://www.youtube.com/embed/ru6_hWpVXlE" + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
-            })
-
-
-
-            // stop playing the youtube video when I close the modal
-            $('#myModal').on('hide.bs.modal', function (e) {
-                // a poor man's stop video
-                $("#video").attr('src', "https://www.youtube.com/embed/ru6_hWpVXlE");
-            })
-
 
             $('#MobileTakipCihazlariIlkEleman').removeClass('collapsed');
             $('#collapseOneATC').removeClass('show');
@@ -2134,14 +2214,6 @@
                     spErrCount += 1;
                 }
 
-
-
-                //if ($("#email2").val().length < 10) {
-                //    $("#").show();
-                //    document.getElementById("email2").classList.add("validation");
-                //    $("#email2spErr").html("<span class='validationUcgenUnlem' style='color:#c11e43;'>Lütfen geçerli bir e-mail adresi giriniz.</span>");
-                //    spErrCount += 1;
-                //}
 
                 if ($("#message").val().length < 3) {
                     $("#").show();
